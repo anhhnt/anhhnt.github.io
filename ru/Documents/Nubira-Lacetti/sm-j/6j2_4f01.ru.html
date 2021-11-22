@@ -1,0 +1,2249 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>.T2{    BORDER-TOP: white;}  .T3{    BORDER-BOTTOM: white;} .T4{    BORDER-TOP: white;    BORDER-BOTTOM: white} .I{ padding-left : 10pt}  .Tighten{ padding-left : 7pt} .Arial{ font-family : Arial, Helvetica, sans-serif;margin-left: 10pt;margin-right : 10pt } .TableB{ margin-left : 0pt}</style>
+<TITLE>Руководство по техническому обслуживанию2006 Nubira-Lacetti Код C0035</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+ function FixMenu()
+{
+menuTop = document.body.scrollTop + document.body.clientHeight -40;
+menu.style.top = menuTop;
+menu.style.width = document.body.clientWidth; 
+}
+
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px"><A border="0" href="6J2_4F01.ru.html"><IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="К началу документа"></A></SPAN><TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt"><TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Nubira-Lacetti</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left"><TABLE><TR>
+<TD width="5%" align="left"><A href="6J2_4F0.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="На предыдущую страницу"></A></TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left"><A href="6J2_4F02.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="На следующую страницу"></A></TD>
+</TR></TABLE></TD>
+<TD><TABLE width="65%" align="right"><TR>
+<TD style="font-size:10"><A href="../../../GMDE_TIS_START.html" target="_top"><IMG src="../../code/menu-images/home.gif" border="0" alt="Главная страница GMDE"></A></TD>
+<TD style="font-size:10"><A href="../toc_Nubira-Lacetti.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Загрузить нединамическое оглавление"></A></TD>
+<TD style="font-size:10"><A href="../toc_Nubira-Lacetti_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Загрузить динамическое оглавление"></A></TD>
+<TD style="font-size:10"><A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Помощь"></A></TD>
+</TR></TABLE></TD>
+</TR>
+</TBODY></TABLE>
+	
+	
+		<BR><IMG alt="J3B14F05" src="../../../../graphic-pool/J/3B/1/J3B14F05.png"><BR><A target="_blank" href="../../../../graphic-pool/J/3B/1/J3B14F05.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="J4F0C0035"><font size="4"><b>Код C0035 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="J4F0LFWSS"><font size="4"><b>Неисправность цепи датчика скорости переднего левого колеса</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="J4F0CD"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">При вращении задающего диска, представляющего собой зубчатое колесо, в обмотке датчика наводятся импульсы напряжения переменного тока. Импульс напряжения генерируется при прохождении каждого зуба диска. Контроллер тормозной системы использует частоту следования импульсов для расчета скорости вращения колеса. Значение напряжения генерируемого сигнала зависит от величины воздушного зазора между чувствительным элементом датчика и диском, а также от скорости вращения колеса.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0DIAGN"><b>ДИАГНОСТИКА</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Данная процедура предназначена для выявления неисправности датчика скорости колеса, замыкания цепи на землю или напряжение бортсети, либо слабого контакта в разъеме.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0CAUSE"><b>Причины</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Неисправный датчик скорости колеса или разъединенный разъем датчика.</Li>
+					<Li>Неисправность электропроводки.</Li>
+					<Li>Неисправность электрического разъема.</Li>
+					<Li>Неисправность задающего диска.</Li>
+					<Li>Установлен неверный датчик скорости колеса.</Li>
+					<Li>Неверный сигнал датчика.</Li>
+					<Li>Помехи сигнала датчика скорости колеса.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0FA"><b>Функционирование в режиме неисправности</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">АБС отключена, контрольная лампа АБС горит. Система электронного распределения тормозных усилий (EBD) включена. (См. "Матрица неисправности электронного распределения тормозных усилий" в этом разделе).</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0TD"><b>Описание проверки</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Последовательность соответствует шагам, указанным в диагностической таблице.</div>
+				<OL>
+					<Li value="1">С этого шага начинается проверка исправности задающего диска.</Li>
+					<Li value="6">Проверяется замыкание цепи на напряжение бортсети.</Li>
+					<Li value="8">Проверяется замыкание цепи на массу.</Li>
+					<Li value="10">Цепь проверяется на разрыв или повышенное сопротивление.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0DA"><b>Указания по диагностике</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Проверьте правильность трассы и надежность крепления жгута датчика. Это необходимо для исключения ложных срабатываний вследствие электромагнитных помех.</div>
+				<div class="T1" align="left">Тщательная проверка жгутов и разъемов является необходимым элементом диагностики. Невыполнение проверки жгутов проводов и электрических разъемов может привести к выявлению несуществующих неисправностей, замене исправных деталей и повторному возникновению неисправности.</div>
+				<div class="T1" align="left">При проведении дорожного испытания для определения скорости вращения колес можно использовать диагностический прибор. Следите за показаниями скорости на экране прибора, отмечая все отклонения, например, скорость вращения одного колеса может отличаться от скорости остальных колес, или могут наблюдаться хаотичные всплески или провалы сигнала датчика и пр. Если это не помогает выявить непостоянную неисправность, смочите жгут проводов датчика на днище кузова и проведите дорожное испытание, отслеживая показания скорости по диагностическому прибору.</div>
+				<P></P>
+<DIV><B><FONT color="navy">Важно: При занесении кода неисправности датчика скорости колеса в память контроллера тормозной системы загорается контрольная лампа АБС. При удалении кода с помощью диагностического прибора контрольная лампа не гаснет. Чтобы выключить контрольную лампу, необходимо сбросить скорость автомобиля до 12 км/ч.</FONT></B></DIV>
+<P></P>
+				
+			
+		
+		
+			<P></P>
+<DIV align="center" id="J4F0C00351"><font size="4"><b>Код C0035 - Неисправность цепи датчика скорости переднего левого колеса</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Осмотрите датчик скорости колеса.</div>
+								<div>Обнаружены ли признаки повреждения?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Поверните замок зажигание в положение LOCK.</Li>
+									<Li>Разъедините разъем датчика скорости переднего левого колеса.</Li>
+									<Li>При помощи цифрового вольтметра измерьте сопротивление между контактами разъема.</Li>
+								</OL>
+								<div>Измеренное при температуре около 25°C (77°Ф) сопротивление находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>1280-1920 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Замените датчик скорости колеса.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Переключите вольтметр в режим измерения напряжения переменного тока в милливольтном диапазоне.</Li>
+									<Li>Измерьте напряжение между контактами датчика скорости колеса, одновременно вращая колесо со скоростью около 1 оборота за 2 секунды.</Li>
+								</OL>
+								<div>Измеренное значение находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>≈ 120 В</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Замените датчик или задающий диск.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Разъедините разъем контроллера тормозной системы.</Li>
+									<Li>Подключите цифровой вольтметр между землей и одним контактом разъема датчика скорости колеса.</Li>
+									<Li>Поверните замок зажигания в положение ON.</Li>
+									<Li>Повторите описанную выше проверку для второго контакта.</Li>
+								</OL>
+								<div>Измеренное на обоих контактах напряжение находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>&gt; 1 В</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устраните замыкание на напряжение в неисправной цепи.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Поверните замок зажигание в положение LOCK.</Li>
+									<Li>Измерьте сопротивление относительно земли на контакте 6 разъема контроллера тормозной системы.</Li>
+									<Li>Измерьте сопротивление относительно земли на контакте 7 разъема контроллера тормозной системы.</Li>
+								</OL>
+								<div>Измеренное сопротивление обеих цепей соответствует указанному в таблице?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>∞</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устраните замыкание на землю в неисправной цепи.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Измерьте сопротивление между контактом 6 разъема контроллера тормозной системы и контактом разъема жгута датчика скорости колеса, соединенным с белым проводом.</Li>
+									<Li>Измерьте сопротивление между контактом 7 разъема контроллера тормозной системы и контактом разъема жгута датчика скорости колеса, соединенным с оранжевым проводом.</Li>
+								</OL>
+								<div>Сопротивление в обеих цепях соответствует указанному в таблице?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>&gt; 5 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устраните разрыв или повышенное сопротивление в неисправной цепи.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Замените блок АБС.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><IMG alt="J5B14F04" src="../../../../graphic-pool/J/5B/1/J5B14F04.png"><BR><A target="_blank" href="../../../../graphic-pool/J/5B/1/J5B14F04.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="J4F0C0040"><font size="4"><b>Код C0040 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="J4F0RFWSS"><font size="4"><b>Неисправность цепи датчика скорости переднего правого колеса</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="J4F0CD1"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">При вращении задающего диска, представляющего собой зубчатое колесо, в обмотке датчика наводятся импульсы напряжения переменного тока. Импульс напряжения генерируется при прохождении каждого зуба диска. Контроллер тормозной системы использует частоту следования импульсов для расчета скорости вращения колеса. Значение напряжения генерируемого сигнала зависит от величины воздушного зазора между чувствительным элементом датчика и диском, а также от скорости вращения колеса.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0DIAGN1"><b>ДИАГНОСТИКА</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Данная процедура предназначена для выявления неисправности датчика скорости колеса, замыкания цепи на землю или напряжение бортсети, либо слабого контакта в разъеме.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0CAUSE1"><b>Причины</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Неисправный датчик скорости колеса или разъединенный разъем датчика.</Li>
+					<Li>Неисправность электропроводки.</Li>
+					<Li>Неисправность электрического разъема.</Li>
+					<Li>Неисправность задающего диска.</Li>
+					<Li>Установлен неверный датчик скорости колеса.</Li>
+					<Li>Неверный сигнал датчика.</Li>
+					<Li>Помехи сигнала датчика скорости колеса.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0FA1"><b>Функционирование в режиме неисправности</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">АБС отключена, контрольная лампа АБС горит. Система электронного распределения тормозных усилий (EBD) включена. (См. "Матрица неисправности электронного распределения тормозных усилий" в этом разделе).</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0TD1"><b>Описание проверки</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Последовательность соответствует шагам, указанным в диагностической таблице.</div>
+				<OL>
+					<Li value="1">С этого шага начинается проверка исправности задающего диска.</Li>
+					<Li value="6">Проверяется замыкание цепи на напряжение бортсети.</Li>
+					<Li value="8">Проверяется замыкание цепи на массу.</Li>
+					<Li value="10">Цепь проверяется на разрыв или повышенное сопротивление.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0DA1"><b>Указания по диагностике</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Проверьте правильность трассы и надежность крепления жгута датчика. Это необходимо для исключения ложных срабатываний вследствие электромагнитных помех.</div>
+				<div class="T1" align="left">Тщательная проверка жгутов и разъемов является необходимым элементом диагностики. Невыполнение проверки жгутов проводов и электрических разъемов может привести к выявлению несуществующих неисправностей, замене исправных деталей и повторному возникновению неисправности.</div>
+				<div class="T1" align="left">При проведении дорожного испытания для определения скорости вращения колес можно использовать диагностический прибор. Следите за показаниями скорости на экране прибора, отмечая все отклонения, например, скорость вращения одного колеса может отличаться от скорости остальных колес, или могут наблюдаться хаотичные всплески или провалы сигнала датчика и пр. Если это не помогает выявить непостоянную неисправность, смочите жгут проводов датчика на днище кузова и проведите дорожное испытание, отслеживая показания скорости по диагностическому прибору.</div>
+				<P></P>
+<DIV><B><FONT color="navy">Важно: При занесении кода неисправности датчика скорости колеса в память контроллера тормозной системы загорается контрольная лампа АБС. При удалении кода с помощью диагностического прибора контрольная лампа не гаснет. Чтобы выключить контрольную лампу, необходимо сбросить скорость автомобиля до 12 км/ч.</FONT></B></DIV>
+<P></P>
+				
+			
+		
+		
+			<P></P>
+<DIV align="center" id="J4F0C00401"><font size="4"><b>Код C0040 - Неисправность цепи датчика скорости переднего правого колеса</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Осмотрите датчик скорости колеса.</div>
+								<div>Обнаружены ли признаки повреждения?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Поверните замок зажигание в положение LOCK.</Li>
+									<Li>Разъедините разъем датчика скорости переднего правого колеса.</Li>
+									<Li>При помощи цифрового вольтметра измерьте сопротивление между контактами разъема.</Li>
+								</OL>
+								<div>Измеренное при температуре около 25°C (77°Ф) сопротивление находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>1280-1920 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Замените датчик скорости колеса.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Переключите вольтметр в режим измерения напряжения переменного тока в милливольтном диапазоне.</Li>
+									<Li>Измерьте напряжение между контактами датчика скорости колеса, одновременно вращая колесо со скоростью около 1 оборота за 2 секунды.</Li>
+								</OL>
+								<div>Измеренное значение находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>≈ 120 В</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Замените датчик или задающий диск.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Разъедините разъем контроллера тормозной системы.</Li>
+									<Li>Подключите цифровой вольтметр между землей и одним контактом разъема датчика скорости колеса.</Li>
+									<Li>Поверните замок зажигания в положение ON.</Li>
+									<Li>Повторите описанную выше проверку для второго контакта.</Li>
+								</OL>
+								<div>Измеренное на обоих контактах напряжение находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>&gt; 1 В</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устраните замыкание на напряжение в неисправной цепи.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Поверните замок зажигание в положение LOCK.</Li>
+									<Li>Измерьте сопротивление относительно земли на контакте 4 разъема контроллера тормозной системы.</Li>
+									<Li>Измерьте сопротивление относительно земли на контакте 5 разъема контроллера тормозной системы.</Li>
+								</OL>
+								<div>Измеренное сопротивление обеих цепей соответствует указанному в таблице?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>∞</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устраните замыкание на землю в неисправной цепи.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Измерьте сопротивление между контактом 4 разъема контроллера тормозной системы и контактом разъема жгута датчика скорости колеса, соединенным с белым проводом.</Li>
+									<Li>Измерьте сопротивление между контактом 5 разъема контроллера тормозной системы и контактом разъема жгута датчика скорости колеса, соединенным с серым проводом.</Li>
+								</OL>
+								<div>Сопротивление в обеих цепях соответствует указанному в таблице?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>&gt; 5 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устраните разрыв или повышенное сопротивление в неисправной цепи.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Замените блок АБС.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><IMG alt="J5B14F05" src="../../../../graphic-pool/J/5B/1/J5B14F05.png"><BR><A target="_blank" href="../../../../graphic-pool/J/5B/1/J5B14F05.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="J4F0C0045"><font size="4"><b>Код C0045 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="J4F0LRFWS"><font size="4"><b>Неисправность цепи датчика скорости заднего левого колеса</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="J4F0CD2"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">При вращении задающего диска, представляющего собой зубчатое колесо, в обмотке датчика наводятся импульсы напряжения переменного тока. Импульс напряжения генерируется при прохождении каждого зуба диска. Контроллер тормозной системы использует частоту следования импульсов для расчета скорости вращения колеса. Значение напряжения генерируемого сигнала зависит от величины воздушного зазора между чувствительным элементом датчика и диском, а также от скорости вращения колеса.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0DIAGN2"><b>ДИАГНОСТИКА</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Данная процедура предназначена для выявления неисправности датчика скорости колеса, замыкания цепи на землю или напряжение бортсети, либо слабого контакта в разъеме.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0CAUSE2"><b>Причины</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Неисправный датчик скорости колеса или разъединенный разъем датчика.</Li>
+					<Li>Неисправность электропроводки.</Li>
+					<Li>Неисправность электрического разъема.</Li>
+					<Li>Неисправность задающего диска.</Li>
+					<Li>Установлен неверный датчик скорости колеса.</Li>
+					<Li>Неверный сигнал датчика.</Li>
+					<Li>Помехи сигнала датчика скорости колеса.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0FA2"><b>Функционирование в режиме неисправности</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">АБС отключена, контрольная лампа АБС горит. Система электронного распределения тормозных усилий (EBD) включена. (См. "Матрица неисправности электронного распределения тормозных усилий" в этом разделе).</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0TD2"><b>Описание проверки</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Последовательность соответствует шагам, указанным в диагностической таблице.</div>
+				<OL>
+					<Li value="1">С этого шага начинается проверка исправности задающего диска.</Li>
+					<Li value="6">Проверяется замыкание цепи на напряжение бортсети.</Li>
+					<Li value="8">Проверяется замыкание цепи на массу.</Li>
+					<Li value="10">Цепь проверяется на разрыв или повышенное сопротивление.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0DA2"><b>Указания по диагностике</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Проверьте правильность трассы и надежность крепления жгута датчика. Это необходимо для исключения ложных срабатываний вследствие электромагнитных помех.</div>
+				<div class="T1" align="left">Тщательная проверка жгутов и разъемов является необходимым элементом диагностики. Невыполнение проверки жгутов проводов и электрических разъемов может привести к выявлению несуществующих неисправностей, замене исправных деталей и повторному возникновению неисправности.</div>
+				<div class="T1" align="left">При проведении дорожного испытания для определения скорости вращения колес можно использовать диагностический прибор. Следите за показаниями скорости на экране прибора, отмечая все отклонения, например, скорость вращения одного колеса может отличаться от скорости остальных колес, или могут наблюдаться хаотичные всплески или провалы сигнала датчика и пр. Если это не помогает выявить непостоянную неисправность, смочите жгут проводов датчика на днище кузова и проведите дорожное испытание, отслеживая показания скорости по диагностическому прибору.</div>
+				<P></P>
+<DIV><B><FONT color="navy">Важно: При занесении кода неисправности датчика скорости колеса в память контроллера тормозной системы загорается контрольная лампа АБС. При удалении кода с помощью диагностического прибора контрольная лампа не гаснет. Чтобы выключить контрольную лампу, необходимо сбросить скорость автомобиля до 12 км/ч.</FONT></B></DIV>
+<P></P>
+				
+			
+		
+		
+			<P></P>
+<DIV align="center" id="J4F0C00451"><font size="4"><b>Код C0045 - Неисправность цепи датчика скорости заднего левого колеса</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Осмотрите датчик скорости колеса.</div>
+								<div>Обнаружены ли признаки повреждения?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Поверните замок зажигание в положение LOCK.</Li>
+									<Li>Разъедините разъем датчика скорости заднего левого колеса.</Li>
+									<Li>При помощи цифрового вольтметра измерьте сопротивление между контактами разъема.</Li>
+								</OL>
+								<div>Измеренное при температуре около 25°C (77°Ф) сопротивление находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>1280-1920 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Замените датчик скорости колеса.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Переключите вольтметр в режим измерения напряжения переменного тока в милливольтном диапазоне.</Li>
+									<Li>Измерьте напряжение между контактами датчика скорости колеса, одновременно вращая колесо со скоростью около 1 оборота за 2 секунды.</Li>
+								</OL>
+								<div>Измеренное значение находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>≈ 120 В</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Замените датчик или задающий диск.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Разъедините разъем контроллера тормозной системы.</Li>
+									<Li>Подключите цифровой вольтметр между землей и одним контактом разъема датчика скорости колеса.</Li>
+									<Li>Поверните замок зажигания в положение ON.</Li>
+									<Li>Повторите описанную выше проверку для второго контакта.</Li>
+								</OL>
+								<div>Измеренное на обоих контактах напряжение находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>&gt; 1 В</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устраните замыкание на напряжение в неисправной цепи.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Поверните замок зажигание в положение LOCK.</Li>
+									<Li>Измерьте сопротивление относительно земли на контакте 8 разъема контроллера тормозной системы.</Li>
+									<Li>Измерьте сопротивление относительно земли на контакте 9 разъема контроллера тормозной системы.</Li>
+								</OL>
+								<div>Измеренное сопротивление обеих цепей соответствует указанному в таблице?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>∞</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устраните замыкание на землю в неисправной цепи.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Измерьте сопротивление между контактом 8 разъема контроллера тормозной системы и контактом разъема жгута датчика скорости колеса, соединенным с красным проводом.</Li>
+									<Li>Измерьте сопротивление между контактом 9 разъема контроллера тормозной системы и контактом разъема жгута датчика скорости колеса, соединенным с черным проводом.</Li>
+								</OL>
+								<div>Сопротивление в обеих цепях соответствует указанному в таблице?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>&gt; 5 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устраните разрыв или повышенное сопротивление в неисправной цепи. Проверьте контакты 5 и 4 разъема C110 и контакты 3 и 4 разъема C901.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Замените блок АБС.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><IMG alt="J5B14F06" src="../../../../graphic-pool/J/5B/1/J5B14F06.png"><BR><A target="_blank" href="../../../../graphic-pool/J/5B/1/J5B14F06.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="J4F0C0050"><font size="4"><b>Код C0050 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="J4F0RRWSS"><font size="4"><b>Неисправность цепи датчика скорости заднего правого колеса</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="J4F0CD3"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">При вращении задающего диска, представляющего собой зубчатое колесо, в обмотке датчика наводятся импульсы напряжения переменного тока. Импульс напряжения генерируется при прохождении каждого зуба диска. Контроллер тормозной системы использует частоту следования импульсов для расчета скорости вращения колеса. Значение напряжения генерируемого сигнала зависит от величины воздушного зазора между чувствительным элементом датчика и диском, а также от скорости вращения колеса.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0DIAGN3"><b>ДИАГНОСТИКА</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Данная процедура предназначена для выявления неисправности датчика скорости колеса, замыкания цепи на землю или напряжение бортсети, либо слабого контакта в разъеме.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0CAUSE3"><b>Причины</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Неисправный датчик скорости колеса или разъединенный разъем датчика.</Li>
+					<Li>Неисправность электропроводки.</Li>
+					<Li>Неисправность электрического разъема.</Li>
+					<Li>Неисправность задающего диска.</Li>
+					<Li>Установлен неверный датчик скорости колеса.</Li>
+					<Li>Неверный сигнал датчика.</Li>
+					<Li>Помехи сигнала датчика скорости колеса.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0FA3"><b>Функционирование в режиме неисправности</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">АБС отключена, контрольная лампа АБС горит. Система электронного распределения тормозных усилий (EBD) включена. (См. "Матрица неисправности электронного распределения тормозных усилий" в этом разделе).</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0TD3"><b>Описание проверки</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Последовательность соответствует шагам, указанным в диагностической таблице.</div>
+				<OL>
+					<Li value="1">С этого шага начинается проверка исправности задающего диска.</Li>
+					<Li value="6">Проверяется замыкание цепи на напряжение бортсети.</Li>
+					<Li value="8">Проверяется замыкание цепи на массу.</Li>
+					<Li value="10">Цепь проверяется на разрыв или повышенное сопротивление.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0DA3"><b>Указания по диагностике</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Проверьте правильность трассы и надежность крепления жгута датчика. Это необходимо для исключения ложных срабатываний вследствие электромагнитных помех.</div>
+				<div class="T1" align="left">Тщательная проверка жгутов и разъемов является необходимым элементом диагностики. Невыполнение проверки жгутов проводов и электрических разъемов может привести к выявлению несуществующих неисправностей, замене исправных деталей и повторному возникновению неисправности.</div>
+				<div class="T1" align="left">При проведении дорожного испытания для определения скорости вращения колес можно использовать диагностический прибор. Следите за показаниями скорости на экране прибора, отмечая все отклонения, например, скорость вращения одного колеса может отличаться от скорости остальных колес, или могут наблюдаться хаотичные всплески или провалы сигнала датчика и пр. Если это не помогает выявить непостоянную неисправность, смочите жгут проводов датчика на днище кузова и проведите дорожное испытание, отслеживая показания скорости по диагностическому прибору.</div>
+				<P></P>
+<DIV><B><FONT color="navy">Важно: При занесении кода неисправности датчика скорости колеса в память контроллера тормозной системы загорается контрольная лампа АБС. При удалении кода с помощью диагностического прибора контрольная лампа не гаснет. Чтобы выключить контрольную лампу, необходимо сбросить скорость автомобиля до 12 км/ч.</FONT></B></DIV>
+<P></P>
+				
+			
+		
+		
+			<P></P>
+<DIV align="center" id="J4F0C00501"><font size="4"><b>Код C0050 - Неисправность цепи датчика скорости заднего правого колеса</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Осмотрите датчик скорости колеса.</div>
+								<div>Обнаружены ли признаки повреждения?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Поверните замок зажигание в положение LOCK.</Li>
+									<Li>Разъедините разъем датчика скорости заднего левого колеса.</Li>
+									<Li>При помощи цифрового вольтметра измерьте сопротивление между контактами разъема.</Li>
+								</OL>
+								<div>Измеренное при температуре около 25°C (77°Ф) сопротивление находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>1280-1920 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Замените датчик скорости колеса.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Переключите вольтметр в режим измерения напряжения переменного тока в милливольтном диапазоне.</Li>
+									<Li>Измерьте напряжение между контактами датчика скорости колеса, одновременно вращая колесо со скоростью около 1 оборота за 2 секунды.</Li>
+								</OL>
+								<div>Измеренное значение находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>≈ 120 В</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Замените датчик или задающий диск.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Разъедините разъем контроллера тормозной системы.</Li>
+									<Li>Подключите цифровой вольтметр между землей и одним контактом разъема датчика скорости колеса.</Li>
+									<Li>Поверните замок зажигания в положение ON.</Li>
+									<Li>Повторите описанную выше проверку для второго контакта.</Li>
+								</OL>
+								<div>Измеренное на обоих контактах напряжение находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>&gt; 1 В</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устраните замыкание на напряжение в неисправной цепи.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Поверните замок зажигание в положение LOCK.</Li>
+									<Li>Измерьте сопротивление относительно земли на контакте 1 разъема контроллера тормозной системы.</Li>
+									<Li>Измерьте сопротивление относительно земли на контакте 2 разъема контроллера тормозной системы.</Li>
+								</OL>
+								<div>Измеренное сопротивление обеих цепей соответствует указанному в таблице?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>∞</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устраните замыкание на землю в неисправной цепи.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Измерьте сопротивление между контактом 1 разъема контроллера тормозной системы и контактом разъема жгута датчика скорости колеса, соединенным с белым проводом.</Li>
+									<Li>Измерьте сопротивление между контактом 2 разъема контроллера тормозной системы и контактом разъема жгута датчика скорости колеса, соединенным с серым проводом.</Li>
+								</OL>
+								<div>Сопротивление в обеих цепях соответствует указанному в таблице?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>&gt; 5 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устраните разрыв или повышенное сопротивление в неисправной цепи. Проверьте контакты 3 и 10 разъема C110 и контакты 1 и 2 разъема C901.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Замените блок АБС.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><IMG alt="J5B14F07" src="../../../../graphic-pool/J/5B/1/J5B14F07.png"><BR><A target="_blank" href="../../../../graphic-pool/J/5B/1/J5B14F07.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="J4F0C0060"><font size="4"><b>Код C0060/C0065 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="J4F0LFIOV"><font size="4"><b>Неисправность соленоида переднего левого впускного и выпускного клапана</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="J4F0CD4"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Питание на цепи катушек электромагнитного клапана подается от аккумуляторной батареи при запитывании реле клапана. Контроллер тормозной системы обеспечивает заземление каждой катушки.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0DIAGN4"><b>ДИАГНОСТИКА</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Данная процедура предназначена для выявления неисправности впускного и выпускного клапанов переднего левого колеса.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0CAUSE4"><b>Причины</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Неисправный клапан.</Li>
+					<Li>Разрыв или замыкание в обмотке катушки клапана.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0FA4"><b>Функционирование в режиме неисправности</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">АБС отключена, контрольная лампа АБС включена и горит до окончания текущего цикла зажигания. Система электронного распределения тормозных усилий (EBD) отключена. Если неисправность носит непостоянный характер, контроллер тормозной системы включит систему в следующем цикле зажигания и занесет в свою память исторический код неисправности.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0TD4"><b>Описание проверки</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Последовательность соответствует шагам, указанным в диагностической таблице.</div>
+				<OL>
+					<Li value="1">С этого шага начинается проверка впускного клапана.</Li>
+					<Li value="3">В этом шаге проверяется выпускной клапан.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="J4F0C00601"><font size="4"><b>Код C0060/C0065 - Неисправность соленоида переднего левого впускного и выпускного клапана</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Приподнимите ту часть автомобиля, на которой проводится проверка, и установите на предусмотренные для этого опоры.</Li>
+									<Li>Поверните ключ зажигания в положение ON.</Li>
+									<Li>Подсоедините диагностический прибор к колодке диагностики и выберите "Wheel front left" ("Левое переднее колесо"), чтобы начать диагностику клапанов выбранного колеса. Будет проведена проверка как впускного, так и выпускного клапанов.</Li>
+									<Li>При появлении на экране прибора команды "Pressure hold" ("Постоянное давление") следует выжать педаль тормоза и удерживать ее в этом положении до окончания испытания.</Li>
+									<Li>Попросите помощника попробовать провернуть колесо.</Li>
+								</OL>
+								<div>Колесо проворачивается?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Удерживайте педаль тормоза нажатой.</Li>
+									<Li>При появлении на экране прибора команды "Pressure increase" ("Увеличение давления") попросите помощника повторить попытку провернуть колесо.</Li>
+								</OL>
+								<div>Колесо проворачивается?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Удерживайте педаль тормоза нажатой.</Li>
+									<Li>При появлении на экране прибора команды "Pressure release on" ("Снижение давления вкл.") попросите помощника повторить попытку провернуть колесо.</Li>
+								</OL>
+								<div>Колесо проворачивается?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Отпустите педаль тормоза, когда на экране прибора появится сообщение "Pressure release off" ("Снижение давления откл.").</Li>
+									<Li>Очистите все диагностические коды.</Li>
+									<Li>Выполните пробный выезд.</Li>
+								</OL>
+								<div>Код неисправности заносится снова?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Проверьте жгут проводов и контакты разъема на наличие непостоянных неисправностей.</Li>
+									<Li>Устраните выявленную неисправность.</Li>
+								</OL>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Замените блок АБС.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><IMG alt="J5B14F07" src="../../../../graphic-pool/J/5B/1/J5B14F07.png"><BR><A target="_blank" href="../../../../graphic-pool/J/5B/1/J5B14F07.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="J4F0C0070"><font size="4"><b>Код C0070/C0075 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="J4F0RFIOV"><font size="4"><b>Неисправность соленоида переднего правого впускного и выпускного клапана</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="J4F0CD5"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Питание на цепи катушек электромагнитного клапана подается от аккумуляторной батареи при запитывании реле клапана. Контроллер тормозной системы обеспечивает заземление каждой катушки.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0DIAGN5"><b>ДИАГНОСТИКА</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Данная процедура предназначена для выявления неисправности впускного и выпускного клапанов переднего правого колеса.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0CAUSE5"><b>Причины</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Разрыв или замыкание в обмотке катушки клапана.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0FA5"><b>Функционирование в режиме неисправности</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">АБС отключена, контрольная лампа АБС включена и горит до окончания текущего цикла зажигания. Система электронного распределения тормозных усилий (EBD) отключена. Если неисправность носит непостоянный характер, контроллер тормозной системы включит систему в следующем цикле зажигания и занесет в свою память исторический код неисправности.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0TD5"><b>Описание проверки</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Последовательность соответствует шагам, указанным в диагностической таблице.</div>
+				<OL>
+					<Li value="1">С этого шага начинается проверка впускного клапана.</Li>
+					<Li value="3">В этом шаге проверяется выпускной клапан.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="J4F0C00701"><font size="4"><b>Код C0070/C0075 - Неисправность соленоида переднего правого впускного и выпускного клапана</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Приподнимите ту часть автомобиля, на которой проводится проверка, и установите на предусмотренные для этого опоры.</Li>
+									<Li>Поверните ключ зажигания в положение ON.</Li>
+									<Li>Подсоедините диагностический прибор к колодке диагностики и выберите "Wheel front right" ("Правое переднее колесо"), чтобы начать диагностику клапанов выбранного колеса. Будет проведена проверка как впускного, так и выпускного клапанов.</Li>
+									<Li>При появлении на экране прибора команды "Pressure hold" ("Постоянное давление") следует выжать педаль тормоза и удерживать ее в этом положении до окончания испытания.</Li>
+									<Li>Попросите помощника попробовать провернуть колесо.</Li>
+								</OL>
+								<div>Колесо проворачивается?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Удерживайте педаль тормоза нажатой.</Li>
+									<Li>При появлении на экране прибора команды "Pressure increase" ("Увеличение давления") попросите помощника повторить попытку провернуть колесо.</Li>
+								</OL>
+								<div>Колесо проворачивается?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Удерживайте педаль тормоза нажатой.</Li>
+									<Li>При появлении на экране прибора команды "Pressure release on" ("Снижение давления вкл.") попросите помощника повторить попытку провернуть колесо.</Li>
+								</OL>
+								<div>Колесо проворачивается?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Отпустите педаль тормоза, когда на экране прибора появится сообщение "Pressure release off" ("Снижение давления откл.").</Li>
+									<Li>Очистите все диагностические коды.</Li>
+									<Li>Выполните пробный выезд.</Li>
+								</OL>
+								<div>Код неисправности заносится снова?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Проверьте жгут проводов и контакты разъема на наличие непостоянных неисправностей.</Li>
+									<Li>Устраните выявленную неисправность.</Li>
+								</OL>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Замените блок АБС.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><IMG alt="J5B14F07" src="../../../../graphic-pool/J/5B/1/J5B14F07.png"><BR><A target="_blank" href="../../../../graphic-pool/J/5B/1/J5B14F07.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="J4F0C0080"><font size="4"><b>Код C0080/C0085 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="J4F0LRIOV"><font size="4"><b>Неисправность соленоида заднего левого впускного и выпускного клапана</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="J4F0CD6"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Питание на цепи катушек электромагнитного клапана подается от аккумуляторной батареи при запитывании реле клапана. Контроллер тормозной системы обеспечивает заземление каждой катушки.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0DIAGN6"><b>ДИАГНОСТИКА</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Данная процедура предназначена для выявления неисправности впускного и выпускного клапанов заднего левого колеса.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0CAUSE6"><b>Причины</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Неисправный клапан.</Li>
+					<Li>Разрыв или замыкание в обмотке катушки клапана.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0FA6"><b>Функционирование в режиме неисправности</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">АБС отключена, контрольная лампа АБС включена и горит до окончания текущего цикла зажигания. Система электронного распределения тормозных усилий (EBD) отключена. Если неисправность носит непостоянный характер, контроллер тормозной системы включит систему в следующем цикле зажигания и занесет в свою память исторический код неисправности.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0TD6"><b>Описание проверки</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Последовательность соответствует шагам, указанным в диагностической таблице.</div>
+				<OL>
+					<Li value="1">С этого шага начинается проверка впускного клапана.</Li>
+					<Li value="3">В этом шаге проверяется выпускной клапан.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="J4F0C00801"><font size="4"><b>Код C0080/C0085 - Неисправность соленоида заднего левого впускного и выпускного клапана</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Приподнимите ту часть автомобиля, на которой проводится проверка, и установите на предусмотренные для этого опоры.</Li>
+									<Li>Поверните ключ зажигания в положение ON.</Li>
+									<Li>Подсоедините диагностический прибор к колодке диагностики и выберите "Wheel rear left" ("Левое заднее колесо"), чтобы начать диагностику клапанов выбранного колеса. Будет проведена проверка как впускного, так и выпускного клапанов.</Li>
+									<Li>При появлении на экране прибора команды "Pressure hold" ("Постоянное давление") следует выжать педаль тормоза и удерживать ее в этом положении до окончания испытания.</Li>
+									<Li>Попросите помощника попробовать провернуть колесо.</Li>
+								</OL>
+								<div>Колесо проворачивается?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Удерживайте педаль тормоза нажатой.</Li>
+									<Li>При появлении на экране прибора команды "Pressure increase" ("Увеличение давления") попросите помощника повторить попытку провернуть колесо.</Li>
+								</OL>
+								<div>Колесо проворачивается?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Удерживайте педаль тормоза нажатой.</Li>
+									<Li>При появлении на экране прибора команды "Pressure release on" ("Снижение давления вкл.") попросите помощника повторить попытку провернуть колесо.</Li>
+								</OL>
+								<div>Колесо проворачивается?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Отпустите педаль тормоза, когда на экране прибора появится сообщение "Pressure release off" ("Снижение давления откл.").</Li>
+									<Li>Очистите все диагностические коды.</Li>
+									<Li>Выполните пробный выезд.</Li>
+								</OL>
+								<div>Код неисправности заносится снова?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Проверьте жгут проводов и контакты разъема на наличие непостоянных неисправностей.</Li>
+									<Li>Устраните выявленную неисправность.</Li>
+								</OL>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Замените блок АБС.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><IMG alt="J5B14F07" src="../../../../graphic-pool/J/5B/1/J5B14F07.png"><BR><A target="_blank" href="../../../../graphic-pool/J/5B/1/J5B14F07.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="J4F0C0090"><font size="4"><b>Код C0090/C0095 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="J4F0RRIOV"><font size="4"><b>Неисправность соленоида заднего правого впускного и выпускного клапана</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="J4F0CD7"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Питание на цепи катушек электромагнитного клапана подается от аккумуляторной батареи при запитывании реле клапана. Контроллер тормозной системы обеспечивает заземление каждой катушки.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0DIAGN7"><b>ДИАГНОСТИКА</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Данная процедура предназначена для выявления неисправности впускного и выпускного клапанов заднего правого колеса.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0CAUSE7"><b>Причины</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Неисправный клапан.</Li>
+					<Li>Разрыв или замыкание в обмотке катушки клапана.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0FA7"><b>Функционирование в режиме неисправности</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">АБС отключена, контрольная лампа АБС включена и горит до окончания текущего цикла зажигания. Система электронного распределения тормозных усилий (EBD) отключена. Если неисправность носит непостоянный характер, контроллер тормозной системы включит систему в следующем цикле зажигания и занесет в свою память исторический код неисправности.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0TD7"><b>Описание проверки</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Последовательность соответствует шагам, указанным в диагностической таблице.</div>
+				<OL>
+					<Li value="1">С этого шага начинается проверка впускного клапана.</Li>
+					<Li value="3">В этом шаге проверяется выпускной клапан.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="J4F0C00901"><font size="4"><b>Код C0090/C0095 - Неисправность соленоида заднего правого впускного и выпускного клапана</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Приподнимите ту часть автомобиля, на которой проводится проверка, и установите на предусмотренные для этого опоры.</Li>
+									<Li>Поверните ключ зажигания в положение ON.</Li>
+									<Li>Подсоедините диагностический прибор к колодке диагностики и выберите "Wheel rear right" ("Правое заднее колесо"), чтобы начать диагностику клапанов выбранного колеса. Будет проведена проверка как впускного, так и выпускного клапанов.</Li>
+									<Li>При появлении на экране прибора команды "Pressure hold" ("Постоянное давление") следует выжать педаль тормоза и удерживать ее в этом положении до окончания испытания.</Li>
+									<Li>Попросите помощника попробовать провернуть колесо.</Li>
+								</OL>
+								<div>Колесо проворачивается?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Удерживайте педаль тормоза нажатой.</Li>
+									<Li>При появлении на экране прибора команды "Pressure increase" ("Увеличение давления") попросите помощника повторить попытку провернуть колесо.</Li>
+								</OL>
+								<div>Колесо проворачивается?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Удерживайте педаль тормоза нажатой.</Li>
+									<Li>При появлении на экране прибора команды "Pressure release on" ("Снижение давления вкл.") попросите помощника повторить попытку провернуть колесо.</Li>
+								</OL>
+								<div>Колесо проворачивается?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Отпустите педаль тормоза, когда на экране прибора появится сообщение "Pressure release off" ("Снижение давления откл.").</Li>
+									<Li>Очистите все диагностические коды.</Li>
+									<Li>Выполните пробный выезд.</Li>
+								</OL>
+								<div>Код неисправности заносится снова?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Проверьте жгут проводов и контакты разъема на наличие непостоянных неисправностей.</Li>
+									<Li>Устраните выявленную неисправность.</Li>
+								</OL>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Замените блок АБС.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><BR><TABLE align="center"><TR>
+<TD align="left"><A href="6J2_4F0.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="На предыдущую страницу"></A></TD>
+<TD align="left"></TD>
+<TD align="left"><A href="6J2_4F02.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="На следующую страницу"></A></TD>
+<TD></TD>
+</TR></TABLE>
+<TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Авторское право принадлежит General Motors Chevrolet Europe Все права защищены</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

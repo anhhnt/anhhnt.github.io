@@ -1,0 +1,664 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>.T2{    BORDER-TOP: white;}  .T3{    BORDER-BOTTOM: white;} .T4{    BORDER-TOP: white;    BORDER-BOTTOM: white} .I{ padding-left : 10pt}  .Tighten{ padding-left : 7pt} .Arial{ font-family : Arial, Helvetica, sans-serif;margin-left: 10pt;margin-right : 10pt } .TableB{ margin-left : 0pt}</style>
+<TITLE>Руководство по техническому обслуживанию2006 Kalos Диагностический код неисправности P0606</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+ function FixMenu()
+{
+menuTop = document.body.scrollTop + document.body.clientHeight -40;
+menu.style.top = menuTop;
+menu.style.width = document.body.clientWidth; 
+}
+
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px"><A border="0" href="6T2_1F20.ru.html"><IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="К началу документа"></A></SPAN><TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt"><TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Kalos/Aveo</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left"><TABLE><TR>
+<TD width="5%" align="left"><A href="6T2_1F19.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="На предыдущую страницу"></A></TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left"><A href="6T2_1F21.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="На следующую страницу"></A></TD>
+</TR></TABLE></TD>
+<TD><TABLE width="65%" align="right"><TR>
+<TD style="font-size:10"><A href="../../../GMDE_TIS_START.html" target="_top"><IMG src="../../code/menu-images/home.gif" border="0" alt="Главная страница GMDE"></A></TD>
+<TD style="font-size:10"><A href="../toc_Kalos.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Загрузить нединамическое оглавление"></A></TD>
+<TD style="font-size:10"><A href="../toc_Kalos_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Загрузить динамическое оглавление"></A></TD>
+<TD style="font-size:10"><A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Помощь"></A></TD>
+</TR></TABLE></TD>
+</TR>
+</TBODY></TABLE>
+	
+	
+		<P></P>
+<DIV align="center" id="T1F0P0606"><font size="4"><b>Диагностический код неисправности P0606 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T1F0SCMIP"><font size="4"><b>Быстродействие процессора в модуле управления</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="T1F0CD13"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">ЭСУД является центром управления системы впрыска топлива. Она постоянно отслеживает информацию от различных датчиков и управляет системами, которые влияют на работу автомобиля. ЭСУД также осуществляет функции диагностики системы. Она может распознавать проблемы в работе, оповещать водителя посредством контрольной лампы индикации (Проверь двигатель), а также хранить диагностический код(ы) неисправности(ей), которые определяют проблемные зоны и помогают при проведении ремонта. Электронно-перепрограммируемая постоянная память (EEPROM) используется для хранения программной информации и калибровок, необходимых для диагностики двигателя, трансмиссии и передач Диагностический код неисправности сохраняется, когда контроллер ЭСУД определяет ошибку обмена данными  по интерфейсу SPI между главным CPU и ИС выходного драйвера.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0CSDT13"><b>Условия установки кода неисправности.</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Зажигание включено.</Li>
+					<Li>Напряжение аккумуляторной батареи больше 11 В.</Li>
+					<Li>Контроллер ЭСУД обнаруживает прерывание связи через SPI (последовательный периферийный интерфейс) между главным ЦП и интегрированной микросхемы драйвера выходных сигналов.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0ATWD13"><b>Действия, выполняемые при установке кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Контрольная лампа индикации неисправности загорается.</Li>
+					<Li>Контроллер записывает рабочие условия в момент определения неисправности. Эта информация сохраняется в буфере записей состояния и протоколах неисправностей.</Li>
+					<Li>Сохраняется архив диагностических кодов неисправности.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0CCMI13"><b>Условия очистки кода неисправности/индикации неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Архив диагностических кодов неисправности очищается через 40 последовательных циклов нагрева без неисправностей.
+</Li>
+					<Li>Диагностический код неисправности может быть очищен сканирующим прибором.</Li>
+					<Li>Отключение питания контроллера ЭСУД более, чем на 10 секунд.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="T1F0P06061"><font size="4"><b>DTC P0606 - Быстродействие процессора в модуле управления</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Провести проверку бортовой системы диагностики (EOBD).</div>
+								<div>Проверка проведена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к разделу  <A target="_blank" href="6T2_1F02.ru.html#T1F0ODSC1">Проверка бортовой системы диагностики"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Выключите зажигание.</Li>
+									<Li>Заменить контроллер ЭСУД.</Li>
+								</OL>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Используя сканирующий прибор, очистить диагностические коды неисправностей.</Li>
+									<Li>Запустить двигатель и дать ему поработать на холостом ходу при нормальной рабочей температуре.</Li>
+									<Li>Совершить поездку для установки кодов неисправности, как это указано во вспомогательном тексте.</Li>
+								</OL>
+								<div>Сканирующий прибор определяет эту диагностику как прошедшую и успешную?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверьте, не установлены ли дополнительные диагностические коды неисправности.</div>
+								<div>Отображены ли диагностические коды неисправности, которые не были продиагностированы?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к соответствующей таблице диагностических кодов неисправности</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме
+							</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="S6B11F63" src="../../../../graphic-pool/S/6B/1/S6B11F63.png"><BR><A target="_blank" href="../../../../graphic-pool/S/6B/1/S6B11F63.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="T1F0P0660"><font size="4"><b>Диагностический код неисправности P0660 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T1F0IMTVS1"><font size="4"><b>Цепь управления электромагнитом клапана регулировки впускного коллектора (IMT)</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="T1F0CD6"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Контроллер электронной системы управления двигателем (ЭСУД) контролирует работу электромагнита, осуществляя управление электрической цепи клапана регулировки впускного коллектора (IMT). В обычном положении электромагнитный клапан закрыт. Включая "массу", контроллер ЭСУД запитывает клапан.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0CSD6"><b>Условия установки кода неисправности.</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Двигатель работает</Li>
+					<Li>Контроллер ЭСУД обнаруживает обрыв и замыкание цепи.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0ATWD6"><b>Действия, выполняемые при установке кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Контрольная лампа индикации неисправности не загорается.</Li>
+					<Li>Контроллер записывает рабочие условия в момент определения неисправности. Эта информация сохраняется в буфере записей состояния и протоколах неисправностей.</Li>
+					<Li>Сохраняется архив диагностических кодов неисправности.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0CCMD6"><b>Условия очистки кода неисправности/индикации неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Архив диагностических кодов неисправности очищается через 40 последовательных циклов нагрева без неисправностей.</Li>
+					<Li>Диагностический код неисправности может быть очищен сканирующим прибором.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0DA6"><b>Диагностическая информация</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Периодическая неисправность может быть вызвана слабым контактом, перетертой изоляцией или обрывом проводки в изоляции.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="T1F0P06601"><font size="4"><b>DTC P0660 - Цепь управления электромагнитом клапана регулировки впускного коллектора (IMT)</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Провести проверку бортовой системы диагностики (OBD).</div>
+								<div>Проверка системы завершена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <A target="_blank" href="6T2_1F02.ru.html#T1F0ODSC">"Проверка бортовой системы диагностики"</A>.
+</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Повернуть ключ зажигания в положение блокировки.</Li>
+									<Li>Отсоединить разъём электромагнита клапана регулировки впускного коллектора (IMT).</Li>
+									<Li>Измерить сопротивление электромагнита клапана IMT.</Li>
+								</OL>
+								<div>Находится ли замеренное сопротивление в пределах указанного значения?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Отсоединить разъем главного реле.</Li>
+									<Li>Проверить на наличие обрыва или замыкания на массу в проводе между клеммой 1 разъема электромагнита клапана регулировки впускного коллектора и разъемом блока предохранителей приборного щитка.</Li>
+								</OL>
+								<div>Проблема найдена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Восстановить провод и клемму разъема.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Повернуть ключ зажигания в положение блокировки.</Li>
+									<Li>Отсоединить разъём контроллера электронной системы управления двигателем (ЭСУД).</Li>
+									<Li>Проверить на наличие обрыва или замыкания на массу в проводе между клеммой 2 разъема электромагнита клапана регулировки впускного коллектора и клеммой К13 разъема контроллера ЭСУД.</Li>
+								</OL>
+								<div>Проблема найдена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить электромагнит клапана IMT.</div>
+								<div>Замена закончена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить контроллер ЭСУД.</div>
+								<div>Замена закончена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейдите к   <I>Шагу 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Используя сканирующий прибор, очистить диагностические коды неисправностей.</Li>
+									<Li>Запустите двигатель.</Li>
+									<Li>Прогнать двигатель на холостых оборотах до достижения обычной рабочей температуры.</Li>
+									<Li>Совершить поездку для установки кодов неисправности, как указано во вспомогательном тексте.</Li>
+								</OL>
+								<div>Сканирующий прибор определяет эту диагностику как прошедшую и успешную?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверьте, не установлены ли дополнительные диагностические коды неисправности.</div>
+								<div>Отображены ли диагностические коды неисправности, которые не были продиагностированы?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к соответствующей таблице диагностических кодов неисправности</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="T1F0P0700"><font size="4"><b>Диагностический код неисправности P0700 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T1F0TCMRM"><font size="4"><b>Контроллер КПП заставил загореться контрольную лампу индикации неисправности</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="T1F0CD0"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Контроллер КПП и контроллер ЭСУД соединены между собой посредством последовательного канала передачи данных. Контроллер КПП выдает Р-код (сообщение о состоянии) Класса II на контроллер ЭСУД каждые 100 миллисекунд для подтверждения правильной работы трансмиссии.</div>
+				<div class="T1" align="left">Если контроллер КПП определяет в трансмиссии неисправность типа А или В, то он выдает на контроллер ЭСУД Р-код для включения контрольной лампы индикации неисправности и для установки кода неисправности Р0700.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0CSD0"><b>Условия установки кода неисправности.</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Сообщение, полученное от контроллера КПП, указывающее на неисправность, определяется в самом контроллере.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0ATWD0"><b>Действия, выполняемые при установке кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Контрольная лампа индикации неисправности загорается.</Li>
+					<Li>Контроллер записывает рабочие условия в момент определения неисправности. Эта информация сохраняется в буфере записей состояния и/или протоколах неисправностей.</Li>
+					<Li>Сохраняется архив диагностических кодов неисправности. </Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0CCMD0"><b>Условия очистки кода неисправности/индикации неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Архив диагностических кодов неисправности очищается через 40 последовательных циклов нагрева без неисправностей.</Li>
+					<Li>Диагностический код неисправности может быть очищен сканирующим прибором.</Li>
+					<Li>Отключение питания контроллера ЭСУД более, чем на 10 секунд.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0DA0"><b>Диагностическая информация</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Неустойчивая неисправность может быть вызвана слабым контактом, перетертой изоляции или обрывом проводки под изоляцией. </div>
+				<div class="T1" align="left">Проверить отсутствие слабого контакта или поврежденного жгута контроллера ЭСУД/КПП. Проверить цепь канала передачи данных на отсутствие следующего:</div>
+				<UL>
+					<Li>Соединение клемм</Li>
+					<Li>Неисправность замков</Li>
+					<Li>Деформированность</Li>
+					<Li>Повреждения клемм</Li>
+					<Li>Слабый контакт клемм с разъемами проводки.</Li>
+					<Li>Повреждения жгутов</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="T1F0P07001"><font size="4"><b>DTC P0700 - Контроллер КПП заставил загореться контрольную лампу индикации неисправности</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Провести проверку бортовой системы диагностики (EOBD).</div>
+								<div>Проверка проведена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к разделу  <A target="_blank" href="6T2_1F02.ru.html#T1F0ODSC1">Проверка бортовой системы диагностики"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Подключить сканирующий прибор к колодке диагностики.</Li>
+									<Li>Включите зажигание.</Li>
+									<Li>При помощи сканирующего прибора выбрать диагностический код неисправности контроллера КПП.</Li>
+								</OL>
+								<div>Отображается ли код неисправности трансмиссии?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Устранить неисправность трансмиссии. Раздел по ремонту трансмиссии смотри в таблице с соответствующими кодами неисправности.</Li>
+									<Li>Используя сканирующий прибор, обнулить коды неисправностей контроллера КПП.</Li>
+								</OL>
+								<div>Закончен ли ремонт? </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Используя сканирующий прибор, очистить диагностические коды неисправностей.</Li>
+									<Li>Запустить двигатель и дать ему поработать на холостом ходу при нормальной рабочей температуре.</Li>
+									<Li>Совершить поездку для установки кодов неисправности, как это указано во вспомогательном тексте.</Li>
+								</OL>
+								<div>Сканирующий прибор определяет эту диагностику как прошедшую и успешную?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверьте, не установлены ли дополнительные диагностические коды неисправности.</div>
+								<div>Отображены ли диагностические коды неисправности, которые не были продиагностированы?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к соответствующей таблице диагностических кодов неисправности</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><BR><TABLE align="center"><TR>
+<TD align="left"><A href="6T2_1F19.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="На предыдущую страницу"></A></TD>
+<TD align="left"></TD>
+<TD align="left"><A href="6T2_1F21.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="На следующую страницу"></A></TD>
+<TD></TD>
+</TR></TABLE>
+<TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Авторское право принадлежит General Motors Chevrolet Europe Все права защищены</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

@@ -1,0 +1,3808 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>.T2{    BORDER-TOP: white;}  .T3{    BORDER-BOTTOM: white;} .T4{    BORDER-TOP: white;    BORDER-BOTTOM: white} .I{ padding-left : 10pt}  .Tighten{ padding-left : 7pt} .Arial{ font-family : Arial, Helvetica, sans-serif;margin-left: 10pt;margin-right : 10pt } .TableB{ margin-left : 0pt}</style>
+<TITLE>Руководство по техническому обслуживанию2006 Evanda C1207 - чрезмерно большие колебания скорости левого заднего колеса</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+ function FixMenu()
+{
+menuTop = document.body.scrollTop + document.body.clientHeight -40;
+menu.style.top = menuTop;
+menu.style.width = document.body.clientWidth; 
+}
+
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px"><A border="0" href="6V2_4F02.ru.html"><IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="К началу документа"></A></SPAN><TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt"><TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Evanda</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left"><TABLE><TR>
+<TD width="5%" align="left"><A href="6V2_4F01.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="На предыдущую страницу"></A></TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left"><A href="6V2_4F03.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="На следующую страницу"></A></TD>
+</TR></TABLE></TD>
+<TD><TABLE width="65%" align="right"><TR>
+<TD style="font-size:10"><A href="../../../GMDE_TIS_START.html" target="_top"><IMG src="../../code/menu-images/home.gif" border="0" alt="Главная страница GMDE"></A></TD>
+<TD style="font-size:10"><A href="../toc_Evanda.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Загрузить нединамическое оглавление"></A></TD>
+<TD style="font-size:10"><A href="../toc_Evanda_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Загрузить динамическое оглавление"></A></TD>
+<TD style="font-size:10"><A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Помощь"></A></TD>
+</TR></TABLE></TD>
+</TR>
+</TBODY></TABLE>
+	
+	
+		<P></P>
+<DIV align="center" id="V4F0C1207"><font size="4"><b>C1207 - чрезмерно большие колебания скорости левого заднего колеса </b></font></DIV>
+<P></P>
+		
+			<BR><div align="center">
+<IMG alt="V5B34F07" src="../../../../graphic-pool/V/5B/3/V5B34F07.png"><BR><A target="_blank" href="../../../../graphic-pool/V/5B/3/V5B34F07.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0CD"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">При вращении колеса датчик скорости вырабатывает сигнал в виде напряжения переменного тока, возрастающего по мере увеличения скорости колеса. Блок HECU использует частоту сигнала переменного тока для расчета скорости колеса.  Датчик скорости подключен к HECU с помощью так называемой "витой пары" проводов. Благодаря скручиванию проводов уменьшается восприимчивость к электромагнитным помехам, которые могут привести к записи в память диагностического кода неисправности.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0CSD"><b>Условия установки кода неисправности.</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Для записи в память диагностического кода неисправности C1207 должны быть выполнены все перечисленные ниже условия:</div>
+				<UL>
+					<Li>Диагностические коды неисправностей C1200 или C1203 или C1206 или C1209 не являются текущими.</Li>
+					<Li>Выключатель контрольной лампы тормоза выключен.</Li>
+					<Li>Ускорение или торможение левого заднего колеса находится вне нормального диапазона значений.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0ATWDS"><b>Действия, выполняемые при установке кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Реле электромагнитных клапанов размыкается, прекращая подачу питания на электродвигатель насоса и на электромагнитные клапаны.</Li>
+					<Li>В память записывается диагностический код неисправности C1207.</Li>
+					<Li>Система АБС отключена, горит контрольная лампа АБС.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0CCD"><b>Условия удаления кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Если условия, ставшие причиной записи в память диагностического кода C1207, больше не существуют, то стереть этот диагностический код можно с помощью соответствующего диагностического прибора.</Li>
+					<Li>Диагностический код неисправности, который не записывался в память в течение 100 циклов вождения, стирается из архивных данных.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0DA"><b>Указания по диагностике</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">При определении причины перемежающейся неисправности необходимо тщательно осмотреть провода и разъемы. Сюда входит  следующее:</div>
+				<UL>
+					<Li>Снятие защитного кабелепровода и проверка проводов на повреждения, замыкания и загрязнения.</Li>
+					<Li>Осмотр контактов с целью проверки правильности их выполнения и отсутствия повреждений.</Li>
+					<Li>Проверка контактов на усилие удержания с помощью запасного контактного штырька или гнезда.</Li>
+					<Li>Извлечение контактов из разъемов для проверки надежности обжатия проволоки контактом.</Li>
+				</UL>
+				<div class="T1" align="left">Если, по словам водителя, контрольная лампа АБС загорается только при повышенной влажности (дождь, снег, после мойки), то следует тщательно проверить электрические цепи датчиков скорости всех колес, чтобы определить, не проникла ли туда влага. Если диагностический код неисправности не является текущим, то воспроизведите условия, при которых происходит проникновение влаги. Действуйте так, как описано ниже. Обрызгать проверяемый участок 5-процентным раствором соли. Затем выполнить пробный выезд в различных дорожных условиях (ухабы, повороты и т.п.) на скорости более 24 км/час (15 миль/час). Если в память будет записан диагностический код неисправности, то заменить проверявшийся жгут проводов и (или) датчик. </div>
+				<div class="T1" align="left">Следует тщательно визуально проверить, нет ли каких-либо повреждений или трещин на датчике скорости колеса. Если запись в память диагностического кода неисправности происходит при одной и той же скорости в каждой поездке, то наиболее вероятно повреждение зубчатого кольца.</div>
+				<div class="T1" align="left">Если не выполнить описанные шаги тщательно и полностью, то это может повлечь за собой неправильное определение причины неисправности, ненужную замену деталей и повторное появление в памяти диагностического кода неисправности C1207.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V4F0C12071"><font size="4"><b>C1207 - чрезмерно большие колебания скорости левого заднего колеса</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверка диагностической цепи выполнена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Выполнить проверку цепи диагностики перед выполнением операций, приведенных в диагностической таблице для кода C1207.</div>
+								<div>Найдена неисправность?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Диагностический код неисправности C1206 записан в память как текущий или архивный код?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Перед выполнением операций, приведенных в диагностической таблице для кода C1207, следует выполнить операции по диагностической таблице для кода C1206.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Замок зажигания в положении "OFF".</Li>
+									<Li>Проверить датчик скорости левого заднего колеса, соединительный жгут и зубчатое кольцо на отсутствие физических повреждений.</Li>
+									<Li>Тщательно и полностью проверить, нет ли повреждений (трещины, люфт) у датчика скорости левого заднего колеса.</Li>
+								</OL>
+								<div>Обнаружены ли какие-либо физические повреждения?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устранить повреждение датчика скорости левого заднего колеса, соединительного жгута и (или) зубчатого колеса.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Включить стояночный тормоз.</Li>
+									<Li>Подключить диагностический прибор и выбрать требуемые данные.</Li>
+									<Li>Проверить работу датчиков скорости колес.</Li>
+									<Li>Включить двигатель и наблюдать за работой датчиков скорости колес при работающем двигателе и неподвижном автомобиле. </Li>
+									<Li>Слегка нажать на педаль акселератора, чтобы увеличить холостые обороты двигателя. </Li>
+								</OL>
+								<div>Произошла ли запись в память диагностического кода неисправности C1207 или же скорость по показаниям датчика скорости левого заднего колеса была не равна нулю в то время, когда двигатель работал на неподвижном автомобиле?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Причиной записи диагностического кода C1207 является влияние электромагнитных помех со стороны системы зажигания на цепи датчика скорости левого заднего колеса.</div>
+								<div>Проверить, как проложен на кузове жгут проводов АБС для левого заднего колеса и (или) соединительный жгут, чтобы определить возможные источники электромагнитных помех со стороны системы зажигания, такие как провода свечей зажигания. Изменить прокладку проводов.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Диагностический инструмент остается подключенным.</Li>
+									<Li>Проверить работу датчиков скорости колес.</Li>
+									<Li>Выполнить пробный выезд, довести скорость до максимального зарегистрированного предельного значения, а затем медленно сбросить до нуля. Сделать это несколько раз.</Li>
+								</OL>
+								<div>Произошла ли запись в память диагностического кода неисправности C1207 или же скорость по показаниям датчика скорости левого заднего колеса отличалась во время движения более чем на 5 км/час (3 мили/час) от показаний какого-либо из датчиков других колес.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Неисправность, соответствующая диагностическому коду C1207, является перемежающейся. Обратитесь к разделу "Указания по диагностике".</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Включить стояночный тормоз, замок зажигания в положении "OFF".</Li>
+									<Li>Поднимите и зафиксируйте автомобиль. </Li>
+									<Li>Отсоединить соединительный жгут от датчика скорости левого заднего колеса.</Li>
+									<Li>Подключить омметр к контактам 1 и 2 датчика скорости левого заднего колеса. </Li>
+								</OL>
+								<div>Находится ли сопротивление в требуемом диапазоне? </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>800...1600 ом (сопротивление зависит от температуры)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить датчик скорости левого заднего колеса.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Датчик скорости остается отключенным от соединительного жгута.</Li>
+									<Li>Подключить вольтметр к контактам 1 и 2 датчика скорости левого заднего колеса.</Li>
+									<Li>Выбрать шкалу милливольт переменного тока.</Li>
+									<Li>Провернуть левое заднее колесо, одновременно наблюдая за показаниями вольтметра.</Li>
+								</OL>
+								<div>Находится ли напряжение переменного тока в требуемом диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Не менее 100 мВ</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14
+</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Отсоединить от HECU жгут проводов.</Li>
+									<Li>Отсоединить соединительный жгут датчика левого заднего колеса от жгута проводов АБС на кузове.</Li>
+									<Li>Подключить омметр к контакту 5 жгута проводов HECU, а затем к контакту 2 датчика скорости колеса.</Li>
+								</OL>
+								<div>Находится ли сопротивление в требуемом диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Меньше 2 ом.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 16</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 15</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устранить обрыв или высокое сопротивление между контактами 5 и 2.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">16</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Жгут проводов HECU остается отсоединенным от HECU.</Li>
+									<Li>Соединительный жгут остается отсоединенным от жгута проводов на кузове.</Li>
+									<Li>Подключить омметр к контакту 6 жгута проводов HECU, а затем к контакту 1 датчика скорости колеса.</Li>
+								</OL>
+								<div>Находится ли сопротивление в требуемом диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Меньше 2 ом.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 18</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 17</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">17</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устранить обрыв или высокое сопротивление между контактами 6 и 1.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">18</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Жгут проводов HECU остается отсоединенным от HECU.</Li>
+									<Li>Соединительный жгут остается отсоединенным от жгута проводов на кузове.</Li>
+									<Li>Подключить омметр между контактами 5 и 6 жгута проводов HECU.</Li>
+								</OL>
+								<div>Находится ли сопротивление в требуемом диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>ОЦ (обрыв цепи)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 20</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 19</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">19</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устранить короткое замыкание между этими двумя проводами.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">20</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Заменить соединительный жгут датчика скорости левого заднего колеса.</Li>
+									<Li>Выполнить пробный выезд на различных скоростях и в различных дорожных условиях.</Li>
+								</OL>
+								<div>Произошла ли запись в память диагностического кода неисправности C1207 снова?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 21</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">21</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить HECU.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="V4F0C1208"><font size="4"><b>C1208 - отсутствует сигнал датчика скорости левого заднего колеса </b></font></DIV>
+<P></P>
+		
+			<BR><IMG alt="V5B34F07" src="../../../../graphic-pool/V/5B/3/V5B34F07.png"><BR><A target="_blank" href="../../../../graphic-pool/V/5B/3/V5B34F07.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0CD1"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">При вращении колеса датчик скорости вырабатывает сигнал в виде напряжения переменного тока, возрастающего по мере увеличения скорости колеса. Блок HECU использует частоту сигнала переменного тока для расчета скорости колеса.  Датчик скорости подключен к HECU с помощью так называемой "витой пары" проводов. Благодаря скручиванию проводов уменьшается восприимчивость к электромагнитным помехам, которые могут привести к записи в память диагностического кода неисправности.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0CSD1"><b>Условия установки кода неисправности.</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Для записи в память диагностического кода неисправности C1207 должны быть выполнены все перечисленные ниже условия:</div>
+				<UL>
+					<Li>Диагностические коды неисправностей C1200 или C1203 или C1206 или C1209 не являются текущими.</Li>
+					<Li>Система АБС не работает.</Li>
+					<Li>Выключатель контрольной лампы тормоза выключен.</Li>
+					<Li>Скорость левого заднего колеса равна нулю, а скорость по показаниям всех остальных датчиков скорости колес превышает 8 км/час (5 миль/час) в течение не менее чем 2,5 секунд.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0ATWDS1"><b>Действия, выполняемые при установке кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Реле электромагнитных клапанов размыкается, прекращая подачу питания на электродвигатель насоса и на электромагнитные клапаны.</Li>
+					<Li>В память записывается диагностический код неисправности C1208.</Li>
+					<Li>Система АБС отключена, горит контрольная лампа АБС.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0CCD1"><b>Условия удаления кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Если условия, ставшие причиной записи в память диагностического кода C1208, больше не существуют, то стереть этот диагностический код можно с помощью соответствующего диагностического прибора.</Li>
+					<Li>Диагностический код неисправности, который не записывался в память в течение 100 циклов вождения, стирается из архивных данных.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0DA1"><b>Указания по диагностике</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">При определении причины перемежающейся неисправности необходимо тщательно осмотреть провода и разъемы. Сюда входит  следующее:</div>
+				<UL>
+					<Li>Снятие защитного кабелепровода и проверка проводов на повреждения, замыкания и загрязнения.</Li>
+					<Li>Осмотр контактов с целью проверки правильности их выполнения и отсутствия повреждений.</Li>
+					<Li>Проверка контактов на усилие удержания с помощью запасного контактного штырька или гнезда.</Li>
+					<Li>Извлечение контактов из разъемов для проверки надежности обжатия проволоки контактом.</Li>
+				</UL>
+				<div class="T1" align="left">Если, по словам водителя, контрольная лампа АБС загорается только при повышенной влажности (дождь, снег, после мойки), то следует тщательно проверить электрические цепи датчиков скорости всех колес, чтобы определить, не проникла ли туда влага. Если диагностический код неисправности не является текущим, то воспроизведите условия, при которых происходит проникновение влаги. Действуйте так, как описано ниже. Обрызгать проверяемый участок 5-процентным раствором соли. Затем выполнить пробный выезд в различных дорожных условиях (ухабы, повороты и т.п.) на скорости более 24 км/час (15 миль/час). Если в память будет записан диагностический код неисправности, то заменить проверявшийся жгут проводов и (или) датчик. </div>
+				<div class="T1" align="left">При измерении электрического сопротивления датчика скорости колеса необходимо, чтобы автомобиль имел комнатную температуру, т.к. сопротивление возрастает при увеличении температуры.</div>
+				<div class="T1" align="left">Если не выполнить описанные шаги тщательно и полностью, то это может повлечь за собой неправильное определение причины неисправности, ненужную замену деталей и повторное появление в памяти диагностического кода неисправности C1208.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V4F0C12081"><font size="4"><b>C1208 - отсутствует сигнал датчика скорости левого заднего колеса</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверка диагностической цепи выполнена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Выполнить проверку цепи диагностики до начала поиска причины неисправности по этой таблице.</div>
+								<div>Найдена неисправность?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Замок зажигания в положении "OFF".</Li>
+									<Li>Осмотреть датчик скорости левого переднего колеса, соединительный жгут и зубчатое кольцо на отсутствие физических повреждений.</Li>
+								</OL>
+								<div>Обнаружены ли какие-либо физические повреждения?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устранить повреждения датчика скорости левого заднего колеса и соединительного жгута проводов.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Диагностический код неисправности C1206 записан в память как текущий или архивный код?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Выполнить диагностику для кода неисправности C1206 до начала поиска причины неисправности по этой таблице</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Подключить диагностический прибор и выбрать требуемые данные.</Li>
+									<Li>Проверить работу датчиков скорости колес.</Li>
+									<Li>Выполнить пробный выезд, довести скорость до значения, большего 24 км/час (15 миль/час), а затем медленно сбросить до нуля. Сделать это несколько раз.</Li>
+								</OL>
+								<div>Произошла ли запись в память диагностического кода неисправности C1208 снова или же скорость левого заднего колеса внезапно упала до нуля еще до полной остановки автомобиля?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Неисправность, соответствующая диагностическому коду C1208, является перемежающейся. Обратитесь к разделу "Указания по диагностике"</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Замок зажигания в положении "OFF".</Li>
+									<Li>Поднимите и зафиксируйте автомобиль.</Li>
+									<Li>Отсоединить от HECU жгут проводов.</Li>
+									<Li>Подключить вольтметр к контактам 6 и 5 жгута проводов HECU.</Li>
+									<Li>Выбрать шкалу милливольт переменного тока.</Li>
+									<Li>Провернуть левое переднее колесо, одновременно наблюдая за показаниями вольтметра. Напряжение должно возрастать при увеличении скорости колеса.</Li>
+								</OL>
+								<div>Находится ли напряжение переменного тока в требуемом диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Не менее 100 мВ</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить HECU.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Отсоединить соединительный жгут от датчика скорости левого заднего колеса.</Li>
+									<Li>Подключить омметр к контактам 1 и 2 датчика скорости левого заднего колеса.</Li>
+								</OL>
+								<div>Находится ли сопротивление в требуемом диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>800...1600 ом (сопротивление зависит от температуры)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить датчик скорости левого заднего колеса.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Соединительный жгут остается отсоединенным от датчика скорости левого заднего колеса.</Li>
+									<Li>Подключить вольтметр к контактам 1 и 2 датчика скорости левого заднего колеса.</Li>
+									<Li>Выбрать шкалу милливольт переменного тока.</Li>
+									<Li>Провернуть левое заднее колесо, одновременно наблюдая за показаниями вольтметра. Напряжение должно возрастать при увеличении скорости колеса.</Li>
+								</OL>
+								<div>Находится ли напряжение переменного тока в требуемом диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Не менее 100 мВ</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14
+</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Отсоединить соединительный жгут датчика левого заднего колеса от жгута проводов АБС на кузове.</Li>
+									<Li>Жгут проводов HECU остается отсоединенным от HECU.</Li>
+									<Li>Подключить омметр к контактам 5 и 6 жгута проводов HECU.</Li>
+								</OL>
+								<div>Находится ли сопротивление в требуемом диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>ОЦ (обрыв цепи)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 16</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 15</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Найти и устранить короткое замыкание между этими двумя цепями.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">16</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Жгут проводов HECU остается отсоединенным от HECU.</Li>
+									<Li>Соединительный жгут левого заднего колеса остается отсоединенным от жгута проводов АБС на кузове.</Li>
+									<Li>Подключить омметр к контакту 5 жгута проводов HECU, а затем к контакту 2 датчика скорости колеса.</Li>
+								</OL>
+								<div>Находится ли сопротивление в требуемом диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Меньше 2 ом.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 18</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 17</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">17</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устранить обрыв или высокое сопротивление между контактами 5 и 2.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">18</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Жгут проводов HECU остается отсоединенным от HECU.</Li>
+									<Li>Соединительный жгут левого заднего колеса остается отсоединенным от жгута проводов АБС на кузове.</Li>
+									<Li>Подключить омметр к контакту 6 жгута проводов HECU, а затем к контакту 1 датчика скорости колеса.</Li>
+								</OL>
+								<div>Находится ли сопротивление в требуемом диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Меньше 2 ом.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 20</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 19</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">19</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устранить обрыв или высокое сопротивление между контактами 6 и 1.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">20</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Заменить соединительный жгут датчика скорости левого заднего колеса.</Li>
+									<Li>Выполнить пробный выезд на различных скоростях и в различных дорожных условиях.</Li>
+								</OL>
+								<div>Произошла ли запись в память диагностического кода неисправности C1208 снова?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="V4F0C1209"><font size="4"><b>C1209 - обрыв или замыкание цепи датчика скорости правого заднего колеса </b></font></DIV>
+<P></P>
+		
+			<BR><div align="center">
+<IMG alt="V5B34F08" src="../../../../graphic-pool/V/5B/3/V5B34F08.png"><BR><A target="_blank" href="../../../../graphic-pool/V/5B/3/V5B34F08.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0CD2"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">При вращении колеса датчик скорости вырабатывает сигнал в виде напряжения переменного тока, возрастающего по мере увеличения скорости колеса. Блок HECU использует частоту сигнала переменного тока для расчета скорости колеса.  Датчик скорости подключен к HECU с помощью так называемой "витой пары" проводов. Благодаря скручиванию проводов уменьшается восприимчивость к электромагнитным помехам, которые могут привести к записи в память диагностического кода неисправности.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0CSD2"><b>Условия установки кода неисправности.</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Диагностический код неисправности C1209 может быть записан в память в любой момент времени, когда замок зажигания находится в положении "ON" и HECU обнаружил наличие обрыва, замыкания на "массу" или замыкания на аккумулятор цепи датчика скорости правого заднего колеса.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0ATWDS2"><b>Действия, выполняемые при установке кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Реле электромагнитных клапанов размыкается, прекращая подачу питания на электродвигатель насоса и на электромагнитные клапаны.</Li>
+					<Li>В память записывается диагностический код неисправности C1209.</Li>
+					<Li>Система АБС отключена, горит контрольная лампа АБС.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0CCD2"><b>Условия удаления кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Если условия, ставшие причиной записи в память диагностического кода C1209, больше не существуют, то стереть этот диагностический код можно с помощью соответствующего диагностического прибора.</Li>
+					<Li>Диагностический код неисправности, который не записывался в память в течение 100 циклов вождения, стирается из архивных данных.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0DA2"><b>Указания по диагностике</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">При определении причины перемежающейся неисправности необходимо тщательно осмотреть провода и разъемы. Сюда входит  следующее:</div>
+				<UL>
+					<Li>Снятие защитного кабелепровода и проверка проводов на повреждения, замыкания и загрязнения.</Li>
+					<Li>Осмотр контактов с целью проверки правильности их выполнения и отсутствия повреждений.</Li>
+					<Li>Проверка контактов на усилие удержания с помощью запасного контактного штырька или гнезда.</Li>
+					<Li>Извлечение контактов из разъемов для проверки надежности обжатия проволоки контактом.</Li>
+				</UL>
+				<div class="T1" align="left">Если, по словам водителя, контрольная лампа АБС загорается только при повышенной влажности (дождь, снег, после мойки), то следует тщательно проверить электрические цепи датчиков скорости всех колес, чтобы определить, не проникла ли туда влага. Если диагностический код неисправности не является текущим, то воспроизведите условия, при которых происходит проникновение влаги. Действуйте так, как описано ниже. Обрызгать проверяемый участок 5-процентным раствором соли. Затем выполнить пробный выезд в различных дорожных условиях (ухабы, повороты и т.п.) на скорости более 24 км/час (15 миль/час). Если в память будет записан диагностический код неисправности, то заменить проверявшийся жгут проводов и (или) датчик. </div>
+				<div class="T1" align="left">При измерении электрического сопротивления датчика скорости колеса необходимо, чтобы автомобиль имел комнатную температуру, т.к. сопротивление возрастает при увеличении температуры.</div>
+				<div class="T1" align="left">Если не выполнить описанные шаги тщательно и полностью, то это может повлечь за собой неправильное определение причины неисправности, ненужную замену деталей и повторное появление в памяти диагностического кода неисправности C1209.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V4F0C12091"><font size="4"><b>C1209 - обрыв или замыкание цепи датчика скорости правого заднего колеса</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверка цепи диагностики выполнена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Выполнить проверку цепи диагностики. </div>
+								<div>Найдена неисправность?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Замок зажигания в положении "OFF".</Li>
+									<Li>Проверить, нет ли повреждений датчика скорости правого заднего колеса и соединительного жгута.</Li>
+								</OL>
+								<div>Обнаружены ли какие-либо физические повреждения?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устранить повреждения датчика скорости правого заднего колеса и соединительного жгута проводов.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Выполнить пробный выезд на различных скоростях и в различных дорожных условиях.</div>
+								<div>Произошла ли запись в память диагностического кода неисправности C1209 снова?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Неисправность, соответствующая диагностическому коду C1209, является перемежающейся. Обратитесь к разделу "Указания по диагностике"</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Замок зажигания в положении "OFF", включить стояночный тормоз.</Li>
+									<Li>Поднимите и зафиксируйте автомобиль.</Li>
+									<Li>Отсоединить соединительный жгут от датчика скорости правого заднего колеса.</Li>
+									<Li>Подключить омметр к контактам 2 и 1 датчика скорости правого заднего колеса.</Li>
+								</OL>
+								<div>Находится ли сопротивление в требуемом диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>800...1600 ом (сопротивление зависит от температуры)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить датчик скорости правого заднего колеса. </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Соединительный жгут остается отсоединенным от датчика скорости правого заднего колеса.</Li>
+									<Li>Подключить омметр к контакту 2 датчика скорости правого заднего колеса, а затем к "массе" на кузове.</Li>
+								</OL>
+								<div>Находится ли сопротивление в требуемом диапазоне? </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>ОЦ (обрыв цепи)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Отсоединить от HECU жгут проводов.</Li>
+									<Li>Отсоединить соединительный жгут датчика правого заднего колеса от жгута проводов АБС на кузове.</Li>
+									<Li>Подключить омметр к контакту 23 жгута проводов HECU, а затем к контакту 2 датчика скорости колеса.</Li>
+								</OL>
+								<div>Находится ли сопротивление в требуемом диапазоне? </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Меньше 2 ом.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устранить обрыв или высокое сопротивление между контактами 23 и 2.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Жгут проводов HECU остается отсоединенным от HECU.</Li>
+									<Li>Соединительный жгут правого заднего колеса остается отсоединенным от жгута проводов АБС на кузове.</Li>
+									<Li>Подключить омметр к контакту 22 жгута проводов HECU, а затем к контакту 1 датчика скорости колеса.</Li>
+								</OL>
+								<div>Находится ли сопротивление в требуемом диапазоне? </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Меньше 2 ом.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устранить обрыв или высокое сопротивление между контактами 22 и 1.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14
+</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Жгут проводов HECU остается отсоединенным от HECU.</Li>
+									<Li>Соединительный жгут правого заднего колеса остается отсоединенным от жгута проводов АБС на кузове.</Li>
+									<Li>Подключить вольтметр к контакту 23 жгута проводов HECU, а затем к "массе" на кузове.</Li>
+								</OL>
+								<div>Находится ли напряжение в требуемом диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Менее 1 вольта</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 16</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 15</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устранить замыкание контактов 23 и 2 на источник напряжения.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">16</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Жгут проводов HECU остается отсоединенным от HECU.</Li>
+									<Li>Соединительный жгут правого заднего колеса остается отсоединенным от жгута проводов АБС на кузове.</Li>
+									<Li>Подключить вольтметр к контакту 22 жгута проводов HECU, а затем к "массе" на кузове.</Li>
+								</OL>
+								<div>Находится ли напряжение в требуемом диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Менее 1 вольта</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 18</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 17</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">17</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устранить замыкание контактов 22 и 1 на источник напряжения.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">18</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Жгут проводов HECU остается отсоединенным от HECU.</Li>
+									<Li>Соединительный жгут правого заднего колеса остается отсоединенным от жгута проводов АБС на кузове.</Li>
+									<Li>Подключить омметр к контакту 23 жгута проводов HECU, а затем к "массе" на кузове.</Li>
+								</OL>
+								<div>Находится ли сопротивление в требуемом диапазоне? </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>ОЦ (обрыв цепи)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 20</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 19</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">19</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устранить замыкание на "массу" между контактами 23 и 2.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">20</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Жгут проводов HECU остается отсоединенным от HECU.</Li>
+									<Li>Соединительный жгут правого заднего колеса остается отсоединенным от жгута проводов АБС на кузове.</Li>
+									<Li>Подключить омметр к контакту 22 жгута проводов HECU, а затем к "массе" на кузове.</Li>
+									<Li>Подключить омметр к контакту 23 жгута проводов HECU, а затем к "массе" на кузове. Находится ли сопротивление в требуемом диапазоне?</Li>
+								</OL>
+								<div>Находится ли сопротивление в требуемом диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>ОЦ (обрыв цепи)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 22</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 21</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">21</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устранить замыкание на "массу" между контактами 22 и 1.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">22</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Жгут проводов HECU остается отсоединенным от HECU.</Li>
+									<Li>Соединительный жгут правого заднего колеса остается отсоединенным от жгута проводов АБС на кузове.</Li>
+									<Li>Подключить омметр к контактам 23 и 22 жгута проводов HECU.</Li>
+								</OL>
+								<div>Находится ли сопротивление в требуемом диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>ОЦ (обрыв цепи)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 24</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 23</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">23</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устранить замыкание между этими двумя цепями.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">24</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Заменить соединительный жгут датчика скорости правого заднего колеса.</Li>
+									<Li>Выполнить пробный выезд на различных скоростях и в различных дорожных условиях.</Li>
+								</OL>
+								<div>Произошла ли запись в память диагностического кода неисправности C1209 снова?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 25</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">25</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить HECU.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="V4F0C1210"><font size="4"><b>C1210 - чрезмерно большие колебания скорости правого заднего колеса </b></font></DIV>
+<P></P>
+		
+			<BR><div align="center">
+<IMG alt="V5B34F08" src="../../../../graphic-pool/V/5B/3/V5B34F08.png"><BR><A target="_blank" href="../../../../graphic-pool/V/5B/3/V5B34F08.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0CD3"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">При вращении колеса датчик скорости вырабатывает сигнал в виде напряжения переменного тока, возрастающего по мере увеличения скорости колеса. Блок HECU использует частоту сигнала переменного тока для расчета скорости колеса.  Датчик скорости подключен к HECU с помощью так называемой "витой пары" проводов. Благодаря скручиванию проводов уменьшается восприимчивость к электромагнитным помехам, которые могут привести к записи в память диагностического кода неисправности.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0CSD3"><b>Условия установки кода неисправности.</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Для записи в память диагностического кода неисправности C1210 должны быть выполнены все перечисленные ниже условия:</div>
+				<UL>
+					<Li>Диагностические коды неисправностей C1200 или C1203 или C1206 или C1209 не являются текущими.</Li>
+					<Li>Выключатель контрольной лампы тормоза выключен.</Li>
+					<Li>Ускорение или торможение правого заднего колеса находится вне нормального диапазона значений.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0ATWDS3"><b>Действия, выполняемые при установке кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Реле электромагнитных клапанов размыкается, прекращая подачу питания на электродвигатель насоса и на электромагнитные клапаны.</Li>
+					<Li>В память записывается диагностический код неисправности C1210.</Li>
+					<Li>Система АБС отключена, горит контрольная лампа АБС.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0CCD3"><b>Условия удаления кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Если условия, ставшие причиной записи в память диагностического кода C1210, больше не существуют, то стереть этот диагностический код можно с помощью соответствующего диагностического прибора.</Li>
+					<Li>Диагностический код неисправности, который не записывался в память в течение 100 циклов вождения, стирается из архивных данных.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0DA3"><b>Указания по диагностике</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">При определении причины перемежающейся неисправности необходимо тщательно осмотреть провода и разъемы. Сюда входит  следующее:</div>
+				<UL>
+					<Li>Снятие защитного кабелепровода и проверка проводов на повреждения, замыкания и загрязнения.</Li>
+					<Li>Осмотр контактов с целью проверки правильности их выполнения и отсутствия повреждений.</Li>
+					<Li>Проверка контактов на усилие удержания с помощью запасного контактного штырька или гнезда.</Li>
+					<Li>Извлечение контактов из разъемов для проверки надежности обжатия проволоки контактом.</Li>
+				</UL>
+				<div class="T1" align="left">Если, по словам водителя, контрольная лампа АБС загорается только при повышенной влажности (дождь, снег, после мойки), то следует тщательно проверить электрические цепи датчиков скорости всех колес, чтобы определить, не проникла ли туда влага. Если диагностический код неисправности не является текущим, то воспроизведите условия, при которых происходит проникновение влаги. Действуйте так, как описано ниже. Обрызгать проверяемый участок 5-процентным раствором соли. Затем выполнить пробный выезд в различных дорожных условиях (ухабы, повороты и т.п.) на скорости более 24 км/час (15 миль/час). Если в память будет записан диагностический код неисправности, то заменить проверявшийся жгут проводов и (или) датчик. </div>
+				<div class="T1" align="left">Следует тщательно визуально проверить, нет ли каких-либо повреждений или трещин на датчике скорости колеса. Если запись в память диагностического кода неисправности происходит при одной и той же скорости в каждой поездке, то наиболее вероятно повреждение зубчатого кольца.</div>
+				<div class="T1" align="left">Если не выполнить описанные шаги тщательно и полностью, то это может повлечь за собой неправильное определение причины неисправности, ненужную замену деталей и повторное появление в памяти диагностического кода неисправности C1210.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V4F0C12101"><font size="4"><b>C1210 - чрезмерно большие колебания скорости правого заднего колеса</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверка диагностической цепи выполнена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Выполнить проверку цепи диагностики перед выполнением операций, приведенных в диагностической таблице для кода C1201.</div>
+								<div>Найдена неисправность?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Диагностический код неисправности C0035 записан в память как текущий или архивный код?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Перед выполнением операций, приведенных в диагностической таблице для кода C1210, следует выполнить операции по диагностической таблице для кода C1209.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Замок зажигания в положении "OFF".</Li>
+									<Li>Проверить датчик скорости правого заднего колеса, соединительный жгут и зубчатое кольцо на отсутствие физических повреждений.</Li>
+									<Li>Тщательно и полностью проверить, нет ли повреждений (трещины, люфт) у датчика скорости правого заднего колеса.</Li>
+								</OL>
+								<div>Обнаружены ли какие-либо физические повреждения?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устранить повреждения датчика скорости правого заднего колеса и соединительного жгута проводов.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Включить стояночный тормоз.</Li>
+									<Li>Подключить диагностический прибор и выбрать требуемые данные.</Li>
+									<Li>Проверить работу датчиков скорости колес.</Li>
+									<Li>Включить двигатель и наблюдать за работой датчиков скорости колес при работающем двигателе и неподвижном автомобиле. </Li>
+									<Li>Слегка нажать на педаль акселератора, чтобы увеличить холостые обороты двигателя. </Li>
+								</OL>
+								<div>Произошла ли запись в память диагностического кода неисправности C1210 или же скорость по показаниям датчика скорости правого заднего колеса была не равна нулю в то время, когда двигатель работал на неподвижном автомобиле?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Причиной записи диагностического кода C1210 является влияние электромагнитных помех со стороны системы зажигания на цепи датчика скорости правого заднего колеса.</div>
+								<div>Проверить, как проложен на кузове жгут проводов АБС для правого заднего колеса и (или) соединительный жгут, чтобы определить возможные источники электромагнитных помех со стороны системы зажигания, такие как провода свечей зажигания. Изменить прокладку проводов.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Диагностический инструмент остается подключенным.</Li>
+									<Li>Проверить работу датчиков скорости колес.</Li>
+									<Li>Выполнить пробный выезд, довести скорость до максимального зарегистрированного предельного значения, а затем медленно сбросить до нуля. Сделать это несколько раз.</Li>
+								</OL>
+								<div>Произошла ли запись в память диагностического кода неисправности C1210 или же скорость по показаниям датчика скорости правого заднего колеса отличалась во время движения более чем на 5 км/час (3 мили/час) от показаний какого-либо из датчиков других колес.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Если неисправность, соответствующая диагностическому коду C1210, является перемежающейся то обратитесь к разделу "Указания по диагностике".</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Включить стояночный тормоз, замок зажигания в положении "OFF".</Li>
+									<Li>Поднимите и зафиксируйте автомобиль. </Li>
+									<Li>Отсоединить соединительный жгут от датчика скорости правого заднего колеса.</Li>
+									<Li>Подключить омметр к контактам 2 и 1 датчика скорости правого заднего колеса. </Li>
+								</OL>
+								<div>Находится ли сопротивление в требуемом диапазоне? </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>800...1600 ом (сопротивление зависит от температуры)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить датчик скорости правого заднего колеса.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Датчик скорости остается отключенным от соединительного жгута.</Li>
+									<Li>Подключить вольтметр к контактам 2 и 1 датчика скорости правого заднего колеса.</Li>
+									<Li>Выбрать шкалу милливольт переменного тока.</Li>
+									<Li>Провернуть правое заднее колесо, одновременно наблюдая за показаниями вольтметра.</Li>
+								</OL>
+								<div>Находится ли напряжение переменного тока в требуемом диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Не менее 100 мВ</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14
+</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Отсоединить от HECU жгут проводов.</Li>
+									<Li>Отсоединить соединительный жгут датчика левого заднего колеса от жгута проводов АБС на кузове.</Li>
+									<Li>Подключить омметр к контакту 23 жгута проводов HECU, а затем к контакту 2 датчика скорости колеса.</Li>
+								</OL>
+								<div>Находится ли сопротивление в требуемом диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Меньше 2 ом.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 16</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 15</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устранить обрыв или высокое сопротивление между контактами 23 и 2.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">16</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Жгут проводов HECU остается отсоединенным от HECU.</Li>
+									<Li>Соединительный жгут остается отсоединенным от жгута проводов на кузове.</Li>
+									<Li>Подключить омметр к контакту 22 жгута проводов HECU, а затем к контакту 1.</Li>
+								</OL>
+								<div>Находится ли сопротивление в требуемом диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Меньше 2 ом.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 18</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 17</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">17</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устранить обрыв или высокое сопротивление между контактами 22 и 1.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">18</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Жгут проводов HECU остается отсоединенным от HECU.</Li>
+									<Li>Соединительный жгут остается отсоединенным от жгута проводов на кузове.</Li>
+									<Li>Подключить омметр между контактами 23 и 22 жгута проводов HECU.</Li>
+								</OL>
+								<div>Находится ли сопротивление в требуемом диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>ОЦ (обрыв цепи)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 20</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 19</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">19</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устранить короткое замыкание между этими двумя проводами.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">20</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Заменить соединительный жгут датчика скорости правого заднего колеса.</Li>
+									<Li>Выполнить пробный выезд на различных скоростях и в различных дорожных условиях.</Li>
+								</OL>
+								<div>Произошла ли запись в память диагностического кода неисправности C1210 снова?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 21</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">21</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить HECU.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="V4F0C1211"><font size="4"><b>C1211 - отсутствует сигнал датчика скорости правого заднего колеса </b></font></DIV>
+<P></P>
+		
+			<BR><div align="center">
+<IMG alt="V5B34F08" src="../../../../graphic-pool/V/5B/3/V5B34F08.png"><BR><A target="_blank" href="../../../../graphic-pool/V/5B/3/V5B34F08.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0CD4"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">При вращении колеса датчик скорости вырабатывает сигнал в виде напряжения переменного тока, возрастающего по мере увеличения скорости колеса. Блок HECU использует частоту сигнала переменного тока для расчета скорости колеса.  Датчик скорости подключен к HECU с помощью так называемой "витой пары" проводов. Благодаря скручиванию проводов уменьшается восприимчивость к электромагнитным помехам, которые могут привести к записи в память диагностического кода неисправности.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0CSD4"><b>Условия установки кода неисправности.</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Для записи в память диагностического кода неисправности C1211 должны быть выполнены все перечисленные ниже условия:</div>
+				<UL>
+					<Li>Диагностические коды неисправностей C1200 или C1203 или C1206 или C1209 не являются текущими.</Li>
+					<Li>Система АБС не работает.</Li>
+					<Li>Выключатель контрольной лампы тормоза выключен.</Li>
+					<Li>Скорость правого заднего колеса равна нулю, а скорость по показаниям всех остальных датчиков скорости колес превышает 8 км/час (5 миль/час) в течение не менее чем 2,5 секунд.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0ATWDS4"><b>Действия, выполняемые при установке кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Реле электромагнитных клапанов размыкается, прекращая подачу питания на электродвигатель насоса и на электромагнитные клапаны.</Li>
+					<Li>В память записывается диагностический код неисправности C1211.</Li>
+					<Li>Система АБС отключена, горит контрольная лампа АБС.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0CCD4"><b>Условия удаления кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Если условия, ставшие причиной записи в память диагностического кода C1211, больше не существуют, то стереть этот диагностический код можно с помощью соответствующего диагностического прибора.</Li>
+					<Li>Диагностический код неисправности, который не записывался в память в течение 100 циклов вождения, стирается из архивных данных.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0DA4"><b>Указания по диагностике</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>При определении причины перемежающейся неисправности необходимо тщательно осмотреть провода и разъемы. Сюда входит  следующее:</Li>
+					<Li>Снятие защитного кабелепровода и проверка проводов на повреждения, замыкания и загрязнения.</Li>
+					<Li>Осмотр контактов с целью проверки правильности их выполнения и отсутствия повреждений.</Li>
+					<Li>Проверка контактов на усилие удержания с помощью запасного контактного штырька или гнезда.</Li>
+					<Li>Извлечение контактов из разъемов для проверки надежности обжатия проволоки контактом.</Li>
+				</UL>
+				<div class="T1" align="left">Если, по словам водителя, контрольная лампа АБС загорается только при повышенной влажности (дождь, снег, после мойки), то следует тщательно проверить электрические цепи датчиков скорости всех колес, чтобы определить, не проникла ли туда влага. Если диагностический код неисправности не является текущим, то воспроизведите условия, при которых происходит проникновение влаги. Действуйте так, как описано ниже. Обрызгать проверяемый участок 5-процентным раствором соли. Затем выполнить пробный выезд в различных дорожных условиях (ухабы, повороты и т.п.) на скорости более 24 км/час (15 миль/час). Если в память будет записан диагностический код неисправности, то заменить проверявшийся жгут проводов и (или) датчик. </div>
+				<div class="T1" align="left">При измерении электрического сопротивления датчика скорости колеса необходимо, чтобы автомобиль имел комнатную температуру, т.к. сопротивление возрастает при увеличении температуры.</div>
+				<div class="T1" align="left">Если не выполнить описанные шаги тщательно и полностью, то это может повлечь за собой неправильное определение причины неисправности, ненужную замену деталей и повторное появление в памяти диагностического кода неисправности C1211.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V4F0C12111"><font size="4"><b>C1211 - отсутствует сигнал датчика скорости правого заднего колеса</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверка диагностической цепи выполнена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Выполнить проверку цепи диагностики до начала поиска причины неисправности по этой таблице.</div>
+								<div>Найдена неисправность?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Замок зажигания в положении "OFF".</Li>
+									<Li>Проверить, нет ли повреждений датчика скорости правого заднего колеса и соединительного жгута.</Li>
+								</OL>
+								<div>Обнаружены ли какие-либо физические повреждения?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устранить повреждения датчика скорости правого заднего колеса и соединительного жгута проводов.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="middle" align="center" width="15%"> - </TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Диагностический код неисправности C1209 записан в память как текущий или архивный код?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Выполнить диагностику для кода неисправности C1209 до начала поиска причины неисправности по этой таблице</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="middle" align="center" width="15%"> - </TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Подключить диагностический прибор и выбрать требуемые данные.</Li>
+									<Li>Проверить работу датчиков скорости колес.</Li>
+									<Li>Выполнить пробный выезд, довести скорость до значения, большего 24 км/час (15 миль/час), а затем медленно сбросить до нуля. Сделать это несколько раз.</Li>
+								</OL>
+								<div>Произошла ли запись в память диагностического кода неисправности C1211 снова или же скорость правого заднего колеса внезапно упала до нуля еще до полной остановки автомобиля?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Неисправность, соответствующая диагностическому коду C1211, является перемежающейся. Обратитесь к разделу "Указания по диагностике"</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="middle" align="center" width="15%"> - </TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Замок зажигания в положении "OFF".</Li>
+									<Li>Поднимите и зафиксируйте автомобиль.</Li>
+									<Li>Отсоединить от HECU жгут проводов.</Li>
+									<Li>Подключить вольтметр к контактам 23 и 22 жгута проводов HECU.</Li>
+									<Li>Выбрать шкалу милливольт переменного тока.</Li>
+									<Li>Провернуть правое заднее колесо, одновременно наблюдая за показаниями вольтметра. Напряжение должно возрастать при увеличении скорости колеса.</Li>
+								</OL>
+								<div>Находится ли напряжение переменного тока в требуемом диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Не менее 100 мВ</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить HECU.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Отсоединить соединительный жгут от датчика скорости правого заднего колеса.</Li>
+									<Li>Подключить омметр к контактам 2 и 1 датчика скорости правого заднего колеса.</Li>
+								</OL>
+								<div>Находится ли сопротивление в требуемом диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>800...1600 ом (сопротивление зависит от температуры)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить датчик скорости правого заднего колеса.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Соединительный жгут остается отсоединенным от датчика скорости правого заднего колеса.</Li>
+									<Li>Подключить вольтметр к контактам 2 и 1 датчика скорости правого заднего колеса.</Li>
+									<Li>Выбрать шкалу милливольт переменного тока.</Li>
+									<Li>Провернуть правое заднее колесо, одновременно наблюдая за показаниями вольтметра. Напряжение должно возрастать при увеличении скорости колеса.</Li>
+								</OL>
+								<div>Находится ли напряжение переменного тока в требуемом диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Не менее 100 мВ</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14
+</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Отсоединить соединительный жгут датчика правого заднего колеса от жгута проводов АБС на кузове.</Li>
+									<Li>Жгут проводов HECU остается отсоединенным от HECU.</Li>
+									<Li>Подключить омметр к контактам 23 и 22 жгута проводов HECU.</Li>
+								</OL>
+								<div>Находится ли сопротивление в требуемом диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>ОЦ (обрыв цепи)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 16</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 15</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Найти и устранить короткое замыкание между этими двумя цепями.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">16</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Жгут проводов HECU остается отсоединенным от HECU.</Li>
+									<Li>Соединительный жгут правого заднего колеса остается отсоединенным от жгута проводов АБС на кузове.</Li>
+									<Li>Подключить омметр к контакту 23 жгута проводов HECU, а затем к контакту 2 датчика скорости колеса.</Li>
+								</OL>
+								<div>Находится ли сопротивление в требуемом диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Меньше 2 ом.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 18</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 17</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">17</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устранить обрыв или высокое сопротивление между контактами 23 и 2.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">18</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Жгут проводов HECU остается отсоединенным от HECU.</Li>
+									<Li>Соединительный жгут правого заднего колеса остается отсоединенным от жгута проводов АБС на кузове.</Li>
+									<Li>Подключить омметр к контакту 22 жгута проводов HECU, а затем к контакту 1 датчика скорости колеса.</Li>
+								</OL>
+								<div>Находится ли сопротивление в требуемом диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Меньше 2 ом.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 20</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 19</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">19</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устранить обрыв или высокое сопротивление между контактами 22 и 1.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">20</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Заменить соединительный жгут датчика скорости правого заднего колеса.</Li>
+									<Li>Выполнить пробный выезд на различных скоростях и в различных дорожных условиях.</Li>
+								</OL>
+								<div>Произошла ли запись в память диагностического кода неисправности C1211 снова?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="V4F0C1503"><font size="4"><b>C1503 - ошибка выключателя TCS </b></font></DIV>
+<P></P>
+		
+			<BR><div align="center">
+<IMG alt="V5B34F01" src="../../../../graphic-pool/V/5B/3/V5B34F01.png"><BR><A target="_blank" href="../../../../graphic-pool/V/5B/3/V5B34F01.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0CD8"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Данный диагностический код неисправности используется для определения состояния выключателя и цепи TCS. Напряжение зажигания поступает через плавкий предохранитель F9, контакт 2 разъема C202, выключатель TCS и контакт 14 EBCM.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0CSD8"><b>Условия установки кода неисправности.</b></DIV>
+<P></P>
+			
+				<UL>
+<Li>Контакт выключателя TCS не отрегулирован или произошло его короткое замыкание.</Li>
+					<Li>Цепь выключателя TCS замкнута на "массу".</Li>
+					<Li>Внутренняя неисправность EBCM.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0ATWDS8"><b>Действия, выполняемые при установке кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>В память записывается диагностический код неисправности C1503.</Li>
+					<Li>TCS отключена, контрольная лампа TCS горит.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0CCD9"><b>Условия удаления кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Если условия, ставшие причиной записи в память диагностического кода C1503, больше не существуют, то стереть этот диагностический код можно с помощью соответствующего диагностического прибора.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V4F0C15031"><font size="4"><b>C1503 - ошибка выключателя TCS</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Выполнить проверку цепи диагностики.</div>
+								<div>Это выполнено?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 1</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить предохранитель F9.</div>
+								<div>Предохранитель перегорел?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить плавкий предохранитель и снова проверить диагностические коды неисправностей с помощью диагностического прибора.</div>
+								<div>Записан ли диагностический код неисправности снова?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-
+
+</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить контакт 2 разъема C202, жгут проводов и контакт 14 EBCM.</div>
+								<div>Обнаружили ли вы обрыв или короткое замыкание жгута проводов или деформированные контакты?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устранить обрыв или короткое замыкание жгута проводов и отремонтировать контакты, а затем снова проверить диагностические коды неисправности с помощью  диагностического прибора.</div>
+								<div>Записан ли диагностический код неисправности снова?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить выключатель TCS и снова проверить диагностические коды неисправности с помощью  диагностического прибора.</div>
+								<div>Записан ли диагностический код неисправности снова?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить EBCM и снова проверить диагностические коды неисправностей с помощью диагностического прибора.</div>
+								<div>Записан ли диагностический код неисправности снова?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 1</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="V4F0C1604"><font size="4"><b>C1604 - внутренняя неисправность HECU </b></font></DIV>
+<P></P>
+		
+			<BR><div align="center">
+<IMG alt="V5B34F01" src="../../../../graphic-pool/V/5B/3/V5B34F01.png"><BR><A target="_blank" href="../../../../graphic-pool/V/5B/3/V5B34F01.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0CD5"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Этот диагностический код указывает на возможную внутреннюю неисправность HECU.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0CSD5"><b>Условия установки кода неисправности.</b></DIV>
+<P></P>
+			
+				<UL>
+<Li>Диагностический код неисправности C1604 записывается в память, если возможна неисправность какого-либо внутреннего элемента или микропроцессора.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0ATWDS5"><b>Действия, выполняемые при установке кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Реле электромагнитных клапанов размыкается, прекращая подачу питания на электродвигатель насоса и на электромагнитные клапаны.  </Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0TADD5"><b>Системы AБС и DDRP выключены.</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>В память записывается диагностический код неисправности C1604.</Li>
+					<Li>Горят контрольные лампы АБС и тормозов.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0CCD5"><b>Условия удаления кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Если условия, ставшие причиной записи в память диагностического кода C1604, больше не существуют, то стереть этот диагностический код можно с помощью соответствующего диагностического прибора.</Li>
+					<Li>Диагностический код неисправности, который не записывался в память в течение 100 циклов вождения, стирается из архивных данных.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0DA5"><b>Указания по диагностике</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>При отображении диагностического кода неисправности C1604 на дисплее диагностического прибора, за ним следуют две дополнительных цифры, которые необходимо записать так же, как и любые другие диагностические коды, которые могут отображаться.</Li>
+					<Li>Перед поиском неисправности по таблице, предусмотренной для диагностического кода C1604, необходимо сначала устранить причины низкого напряжения, ухудшения управляемости и других электрических неисправностей.</Li>
+					<Li>Обеспечьте исправность соединение между HECU и BPMV, их надежность, плотность и отсутствие коррозии, утечек и (или) повреждений.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V4F0C16041"><font size="4"><b>C1604 - внутренняя неисправность HECU</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверка диагностической цепи выполнена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Выполнить проверку цепи диагностики. </div>
+								<div>Найдена неисправность?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Установить диагностический прибор.</Li>
+									<Li>Повернуть замок зажигания в положение "ON" не включая двигатель.</Li>
+									<Li>Прочитать диагностические коды неисправностей с помощью диагностического прибора.</Li>
+								</OL>
+								<div>Записаны ли какие-либо еще диагностические коды, помимо C1604, в качестве текущих или архивных?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Аккумулятор должен поддерживать напряжение более 9,6 вольт в течение 10 секунд. Ток не более 30 мА.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Выполнить диагностику для других диагностических кодов неисправности.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Замок зажигания в положении "OFF".</Li>
+									<Li>Отсоединить от HECU жгут проводов.</Li>
+									<Li>Проверить соединения на повреждения, коррозию и надежность контактов.</Li>
+								</OL>
+								<div>Обнаружены ли какие-либо неисправности?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>При необходимости отремонтируйте. </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить HECU.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="V4F0C1605"><font size="4"><b>C1605 - ошибка аппаратуры CAN, C1611 - неисправность EMS по времени ожидания в CAN, C1612 - неисправность TCU по времени ожидания в CAN, C1616 - шина CAN отключена </b></font></DIV>
+<P></P>
+		
+			<BR><div align="center">
+<IMG alt="V6B14F01" src="../../../../graphic-pool/V/6B/1/V6B14F01.png"><BR><A target="_blank" href="../../../../graphic-pool/V/6B/1/V6B14F01.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0CD9"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Этот диагностический код используется для определения состояния CAN (локальная сеть обмена данными) между EBCM (контроллер тормозной системы) и ECM  (контроллер двигателя) или TCM (контроллер коробки передач и главной передачи в сборе).</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0CSD9"><b>Условия установки кода неисправности.</b></DIV>
+<P></P>
+			
+				<UL>
+<Li>В жгуте проводов (или разъеме) между EBCM и ECM (или TCM) имеется короткое замыкание или обрыв.</Li>
+					<Li>Внутренняя неисправность ECM (или TCM) или EBCM.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0ATWDS9"><b>Действия, выполняемые при установке кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>В память записываются диагностические коды C1605, C1611, C1612, C1616.</Li>
+					<Li>TCS отключена, контрольная лампа TCS горит.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0CCD10"><b>Условия удаления кода неисправности</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Если условия, ставшие причиной записи в память диагностических кодов C1605, C1611, C1612, C1616, больше не существуют, то стереть эти диагностические коды можно с помощью диагностического прибора.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V4F0C16051"><font size="4"><b>C1605 - ошибка аппаратуры CAN, C1611 - неисправность EMS по времени ожидания в CAN, C1612 - неисправность TCU по времени ожидания в CAN, C1616 - шина CAN отключена</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Выполнить проверку цепи диагностики.</div>
+								<div>Это выполнено?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 1</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить ECM и TCM.</div>
+								<div>Записаны ли в память какие-либо диагностические коды неисправности?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Стереть из памяти все диагностические коды неисправностей и устранить причину их появления.</Li>
+									<Li>Снова стереть из памяти диагностический код неисправности с помощью диагностического прибора.</Li>
+								</OL>
+								<div>Записан ли диагностический код неисправности снова?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-
+
+</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Проверить провода, контакты и разъемы между EBCM и ECM (TCM).</Li>
+									<Li>Устранить неисправность проводов, контактов и разъемов между EBCM и ECM (TCM). Снова проверить диагностические коды неисправностей с помощью диагностического прибора.</Li>
+									<Li>Снова проверить диагностические коды неисправностей с помощью диагностического прибора.</Li>
+								</OL>
+								<div>Записан ли диагностический код неисправности снова?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить EBCM и снова проверить диагностические коды неисправностей с помощью диагностического прибора.</div>
+								<div>Записан ли диагностический код неисправности снова?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="V4F0C2112"><font size="4"><b>C2112 - неисправность реле или плавкого предохранителя клапана, C2380 - ошибка АБС / клапана TCS </b></font></DIV>
+<P></P>
+		
+			<BR><div align="center">
+<IMG alt="V5B34F01" src="../../../../graphic-pool/V/5B/3/V5B34F01.png"><BR><A target="_blank" href="../../../../graphic-pool/V/5B/3/V5B34F01.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0CD6"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Этот диагностический код указывает на возможную внутреннюю неисправность HECU. При срабатывании (включении) реле HECU, напряжение подается на электромагнитные клапаны и электродвигатель насоса.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0CSD6"><b>Условия установки кода неисправности.</b></DIV>
+<P></P>
+			
+				<UL>
+<Li>Диагностический код неисправности C2112 (C2380) записывается в память, если возможна какая-либо внутренняя неисправность.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0ATWDS6"><b>Действия, выполняемые при установке кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Контрольная лампа АБС не горит.</Li>
+					<Li>В память записывается диагностический код неисправности C2112 (С2380).</Li>
+					<Li>АБС остается функционирующей.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0CCD6"><b>Условия удаления кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Если условия, ставшие причиной записи в память диагностического кода C2112 (C2380), больше не существуют, то стереть этот диагностический код можно с помощью соответствующего диагностического прибора.</Li>
+					<Li>Диагностический код неисправности, который не записывался в память в течение 100 циклов вождения, стирается из архивных данных.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0DA6"><b>Указания по диагностике</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Перед поиском неисправности по таблице, предусмотренной для диагностического кода C2112 (C2380), необходимо сначала устранить причины низкого напряжения, ухудшения управляемости и других электрических неисправностей.</Li>
+					<Li>Обеспечьте исправность соединение между HECU и BPMV, их надежность, плотность и отсутствие коррозии, утечек и (или) повреждений.</Li>
+					<Li>Возможной причиной записи в память диагностического кода C2112 (С2380) является неисправность реле, находящегося в HECU.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V4F0C21121"><font size="4"><b>C2112 - неисправность реле или плавкого предохранителя клапана, C2380 - ошибка АБС / клапана TCS</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверка диагностической цепи выполнена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Выполнить проверку цепи диагностики. </div>
+								<div>Найдена неисправность?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Установить диагностический прибор.</Li>
+									<Li>Повернуть замок зажигания в положение "ON" не включая двигатель.</Li>
+									<Li>Прочитать диагностические коды неисправностей с помощью диагностического прибора.</Li>
+								</OL>
+								<div>Отображаются ли на диагностическом приборе какие-либо еще диагностические коды, помимо C2112, в качестве текущих или архивных?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Аккумулятор должен поддерживать напряжение более 9,6 вольт в течение 10 секунд. Ток не более 30 мА.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Выполнить диагностику для других диагностических кодов неисправности.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Замок зажигания в положении "OFF".</Li>
+									<Li>Отсоединить от HECU жгут проводов.</Li>
+									<Li>Проверить сопротивление между контактом 25 разъема жгута проводов и "массой".</Li>
+								</OL>
+								<div>Находится ли сопротивление в требуемом диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>≈ 0 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Проверить предохранитель Ef3, находящийся в блоке плавких предохранителей в моторном отсеке. И проверить разъемы на повреждения, коррозию и надежность контактов, включая контакт 25.</Li>
+									<Li>При необходимости отремонтируйте.</Li>
+									<Li>Перейти к операции 3.</Li>
+								</OL>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить HECU.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="V4F0C2402"><font size="4"><b>C2402 - неисправность электродвигателя насоса </b></font></DIV>
+<P></P>
+		
+			<BR><div align="center">
+<IMG alt="V5B34F01" src="../../../../graphic-pool/V/5B/3/V5B34F01.png"><BR><A target="_blank" href="../../../../graphic-pool/V/5B/3/V5B34F01.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0CD7"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Электродвигатель насоса находится в клапане модулятора тормозного давления (BPMV). Подключение электродвигателя насоса к "массе" выполнено через контакт 24 HECU.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0CSD7"><b>Условия установки кода неисправности.</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Запись в память диагностического кода C2402 может быть произведена только в том случае, если замок зажигания находится в положении "ON", на электродвигатель насоса сразу после включения поступила команда на выключение, а HECU обнаружил заедание или пониженную скорость вращения электродвигателя насоса.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0ATWDS7"><b>Действия, выполняемые при установке кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Реле электромагнитных клапанов размыкается, прекращая подачу питания на электродвигатель насоса и на электромагнитные клапаны.</Li>
+					<Li>В память записывается диагностический код неисправности C2402.</Li>
+					<Li>Система АБС выключена и горит контрольная лампа АБС.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0CCD7"><b>Условия удаления кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Если условия, ставшие причиной записи в память диагностического кода C2402, больше не существуют, то стереть этот диагностический код можно с помощью соответствующего диагностического прибора.</Li>
+					<Li>Диагностический код неисправности, который не записывался в память в течение 100 циклов вождения, стирается из архивных данных.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V4F0DA7"><b>Указания по диагностике</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Типичные причины записи в память диагностического кода неисправности С2402.</div>
+				<OL>
+					<Li>Неисправен электрический контакт 24.</Li>
+					<Li>Высокое сопротивление цепи "массы" контакта 24.</Li>
+					<Li>Обрыв цепи "массы" контакта 24.</Li>
+					<Li>Неисправность электродвигателя насоса BPVM.</Li>
+					<Li>Неисправность HECU.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V4F0C24021"><font size="4"><b>C2402 - неисправность электродвигателя насоса</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверка диагностической цепи выполнена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Выполнить проверку цепи диагностики. </div>
+								<div>Найдена неисправность?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Замок зажигания в положении "OFF".</Li>
+									<Li>Отсоедините отрицательный кабель аккумулятора.</Li>
+									<Li>Отсоединить от HECU жгут проводов.</Li>
+									<Li>Подключить омметр к отрицательному проводу аккумулятора и к контакту 24 жгута проводов HECU.</Li>
+								</OL>
+								<div>Находится ли измеренное сопротивление в требуемом диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Меньше 2 ом.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Найти и устранить причину высокого сопротивления между цепью "массы" HECU и "массой" шасси.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Осмотреть по всей длине отрицательный провод аккумулятора, идущий к двигателю и (или) соединение с "массой" шасси и проверить исправность, чистоту и плотность соединения.</Li>
+									<Li>Проверить, начиная с контакта 24 HECU, жгут проводов и найти место, где цепь подключена к "массе" шасси. Проверить исправность, чистоту и плотность соединения.</Li>
+								</OL>
+								<div>Оба соединения чистые и плотные?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устранить неисправность соединения с "массой". </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Жгут проводов HECU остается отсоединенным.</Li>
+									<Li>Снять HECU с BPMV.</Li>
+									<Li>Проверить разъем, служащий для подключения HECU к BPMV, на повреждения, коррозию, плохие контакты и присутствие тормозной жидкости.</Li>
+								</OL>
+								<div> Контакты и разъем исправны, а в полости нет тормозной жидкости, повреждений и коррозии? </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>В случае обнаружения повреждений и (или) коррозии, заменить HECU и (или) BPMV.</Li>
+									<Li>В случае обнаружения тормозной жидкости заменить и HECU и BPMV.</Li>
+								</OL>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Подключить омметр к контактам 1 и 2 BPMV.</div>
+								<div>Находится ли измеренное сопротивление в требуемом диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>Меньше 2 ом.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить клапан модулятора тормозного давления.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить HECU.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><BR><TABLE align="center"><TR>
+<TD align="left"><A href="6V2_4F01.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="На предыдущую страницу"></A></TD>
+<TD align="left"></TD>
+<TD align="left"><A href="6V2_4F03.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="На следующую страницу"></A></TD>
+<TD></TD>
+</TR></TABLE>
+<TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Авторское право принадлежит General Motors Chevrolet Europe Все права защищены</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

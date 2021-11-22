@@ -1,0 +1,3306 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>.T2{    BORDER-TOP: white;}  .T3{    BORDER-BOTTOM: white;} .T4{    BORDER-TOP: white;    BORDER-BOTTOM: white} .I{ padding-left : 10pt}  .Tighten{ padding-left : 7pt} .Arial{ font-family : Arial, Helvetica, sans-serif;margin-left: 10pt;margin-right : 10pt } .TableB{ margin-left : 0pt}</style>
+<TITLE>Руководство по техническому обслуживанию2006 Matiz Диагностический код неисправности P0420</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+ function FixMenu()
+{
+menuTop = document.body.scrollTop + document.body.clientHeight -40;
+menu.style.top = menuTop;
+menu.style.width = document.body.clientWidth; 
+}
+
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px"><A border="0" href="6M2_1F09.ru.html"><IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="К началу документа"></A></SPAN><TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt"><TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Matiz/Spark</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left"><TABLE><TR>
+<TD width="5%" align="left"><A href="6M2_1F08.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="На предыдущую страницу"></A></TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left"><A href="6M2_1F10.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="На следующую страницу"></A></TD>
+</TR></TABLE></TD>
+<TD><TABLE width="65%" align="right"><TR>
+<TD style="font-size:10"><A href="../../../GMDE_TIS_START.html" target="_top"><IMG src="../../code/menu-images/home.gif" border="0" alt="Главная страница GMDE"></A></TD>
+<TD style="font-size:10"><A href="../toc_Matiz.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Загрузить нединамическое оглавление"></A></TD>
+<TD style="font-size:10"><A href="../toc_Matiz_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Загрузить динамическое оглавление"></A></TD>
+<TD style="font-size:10"><A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Помощь"></A></TD>
+</TR></TABLE></TD>
+</TR>
+</TBODY></TABLE>
+	
+	
+		<P></P>
+<DIV align="center" id="M1F0P0420"><font size="4"><b>Диагностический код неисправности P0420 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="M1F0LCE"><font size="4"><b>Низкая эффективность работы нейтрализатора</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="M1F0CD"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Для управления выбросом отработавших выхлопных газов углеводородов (НС), оксида углерода (СО), а также оксида азота (NOx) используется трехомпонентный каталитический нейтрализатор. Катализатор в нейтрализаторе ускоряет химическую реакцию окисления НС и СО в выхлопном газе, превращая их в безвредные пары воды и углекислого газа. Он также сокращает количество NOx, превращая его в азот. Каталитический нейтрализатор также может сохранять кислород.</div>
+				<div class="T1" align="left">Контроллер ЭСУД может контролировать данный процесс, используя датчик кислорода с электронагревателем (HO2S2), расположенный в выхлопном потоке за каталитическим нейтрализатором. Датчик HO2S2 выдает сигнал, который показывает количество кислородного катализатора, что в свою очередь указывает на возможность эффективно нейтрализовать выброс отработавших выхлопных газов. Контроллер ЭСУД контролирует работоспособность нейтрализатора, давая ему возможность сначала нагреться, выдерживая период стабилизации, когда двигатель работает на холостом ходу, и затем увеличивая или устраняя лишнее топливо, контролируя реакцию датчика HO2S2. При нормальной работе нейтрализатора отклик датчика HO2S2 на завышенное содержание топлива последовательно сравнивается с датчиком HО2S1. Если отклик датчика HO2S2 по уровню близок отклику датчика HO2S1, то количество кислородного катализатора или работоспособность нейтрализатора воспринимаются как недостаточные, и загорается контрольная лампа индикации неисправности (MIL).</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0CRD"><b>Условия появления кода DTC</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">  <B>(0.8S)</B>
+				</div>
+				<UL>
+<Li>Автомобиль работает в режиме замкнутого контура.</Li>
+					<Li>Температура охлаждающей жидкости двигателя (ЕСТ) выше 70,5°С (158,9°F).</Li>
+					<Li>Массовый расход воздуха в пределах от 22 до 45 кг/час.</Li>
+					<Li>Число оборотов двигателя в пределах от 2400 до 2900 мин-1.</Li>
+					<Li>Скорость автомобиля в пределах от 62 км/ч до 78 км/ч.</Li>
+					<Li>Отклонение в расходе воздуха меньше 5 кг/час.</Li>
+					<Li>Предсказанная температура каталитического нейтрализатора выше 350°С (662°F).</Li>
+					<Li>Двигатель работает более 820 секунд.</Li>
+					<Li>Нет никаких кодов DTC, касающихся датчика HO2S, пропуска зажигания, датчика температуры охлаждающей жидкости, датчика положения коленчатого вала, датчика положения распределительного вала, датчика скорости автомобиля, датчика температуры воздуха в коллекторе, датчика положения дроссельной залонки, привода регулятора холостого хода главной дроссельной заслонки, клапана рециркуляции отработавших газов, корректировки топливоподачи или связи через шину CAN.</Li>
+				</UL>
+				<div class="T1" align="left">  <B>(1.0S)</B>
+				</div>
+				<UL>
+<Li>Автомобиль работает в режиме замкнутого контура.</Li>
+					<Li>Температура охлаждающей жидкости двигателя (ЕСТ) выше 69,75°С (157,55°F).</Li>
+					<Li>Массовый расход воздуха в пределах от 23 до 53 кг/час.</Li>
+					<Li>Число оборотов двигателя в пределах от 2016 до 2880 мин-1.</Li>
+					<Li>Скорость автомобиля в пределах от 65 км/ч до 75 км/ч.</Li>
+					<Li>Максимальное изменение в расходе воздуха 10 кг/ч или меньше.</Li>
+					<Li>АМР больше 70 кПа (10,3 фунта/кв. дюйм).</Li>
+					<Li>Промоделированная температура каталитического нейтрализатора в пределах от 350°С (662°F) до 950°С (174°F).</Li>
+					<Li>Двигатель работает более 960 секунд.</Li>
+					<Li>Нет никаких кодов DTC, касающихся датчика HO2S, пропуска зажигания, датчика температуры охлаждающей жидкости, датчика положения коленчатого вала, датчика положения распределительного вала, датчика скорости автомобиля, датчика температуры воздуха в коллекторе, датчика положения дроссельной залонки, привода регулятора холостого хода главной дроссельной заслонки, клапана рециркуляции отработавших газов, корректировки топливоподачи или связи через шину CAN.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0CSD"><b>Условия установки кода неисправности</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">  <B>(0.8S)</B>
+				</div>
+				<UL>
+<Li>Величина сигнала о фильтрации HO2S2 больше 90.</Li>
+				</UL>
+				<div class="T1" align="left">  <B>(1.0S)</B>
+				</div>
+				<UL>
+<Li>Величина сигнала о фильтрации HO2S2 больше 72.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0ATWD"><b>Действия, выполняемые при установке кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Контрольная лампа индикации неисправности загорается.</Li>
+					<Li>Контроллер записывает рабочие условия в момент определения неисправности. Эта информация сохраняется в буфере записей состояния и протоколах неисправностей.</Li>
+					<Li>Сохраняется архив диагностических кодов неисправности.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0CCM"><b>Условия очистки кода неисправности/индикации неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Лампа индикации неисправности выключается по окончании трех циклов проверки подряд, при которых диагностика выполняется без сбоя.</Li>
+					<Li>Архивный диагностический код неисправности убирается после 40 циклов нагрева без сбоя.</Li>
+					<Li>Диагностический код неисправности может быть очищен сканирующим прибором.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0DA"><b>Диагностическая информация</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Проверка нейтрализатора может прекратиться вследствие изменения нагрузки на двигатель. В процессе проверки нейтрализатора нагрузку двигателя не изменять (т.е. аккумулятор, охлаждающий вентилятор, двигатель нагревателя).</div>
+				<div class="T1" align="left">Периодическая неисправность может быть вызвана слабым контактом, перетертой изоляцией или обрывом проводки в изоляции.</div>
+				<div class="T1" align="left">Любая цепь, которая может быть причиной периодической неисправности, должна быть тщательно проверена на отсутствие следующего:</div>
+				<UL>
+<Li>Снятые клеммы</Li>
+					<Li>Соединение клемм</Li>
+					<Li>Неисправность замков</Li>
+					<Li>Деформированность</Li>
+					<Li>Повреждения клемм</Li>
+					<Li>Слабое соединение клемм с проводами.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="M1F0P04201"><font size="4"><b>DTC P0420 Низкая эффективность работы нейтрализатора</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Провести проверку системы диагностики.</div>
+								<div>Проверка проведена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти </div>
+							<div>  <A target="_blank" href="6M2_1F02.ru.html#M1F0ODSC">"Проверка диагностической системы"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Подключить сканирующий прибор к колодке диагностики.</Li>
+									<Li>Включить зажигание.</Li>
+								</OL>
+								<div>Какие-либо диагностические коды неисправности компонентов установлены?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к соответствующей таблице диагностических кодов неисправности</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Визуально/физически проверить следующее:</div>
+								<UL>
+<Li>Систему выпуска на отсутствие утечки</Li>
+									<Li>Датчик кислорода с электронагревателем (HO2S)</Li>
+								</UL>
+								<div>Проблема найдена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Отремонтировать систему выпуска как требуется</div>
+								<div>Закончен ли ремонт? </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить трехкомпонентный каталитический нейтрализатор.</div>
+								<div>Закончен ли ремонт? </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Используя сканирующий прибор, очистить диагностические коды неисправностей.</Li>
+									<Li>Запустить двигатель и дать ему поработать на холостом ходу при нормальной рабочей температуре.</Li>
+									<Li>Совершить поездку для установки кодов неисправности, как это указано во вспомогательном тексте.</Li>
+								</OL>
+								<div>Сканирующий прибор определяет эту диагностику как прошедшую и успешную?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверьте, не установлены ли дополнительные диагностические коды неисправности.</div>
+								<div>Отображены ли диагностические коды неисправности, которые не были продиагностированы?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к соответствующей таблице диагностических кодов неисправности</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><IMG alt="K5B11F25" src="../../../../graphic-pool/K/5B/1/K5B11F25.png"><BR><A target="_blank" href="../../../../graphic-pool/K/5B/1/K5B11F25.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="M1F0P0444"><font size="4"><b>Диагностический код неисправности (DTC) </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="M1F0EPCCS"><font size="4"><b>Р0444 Цепь клапана продувки адсорбера, отсутствует сигнал</b></font></DIV>
+<P></P>
+		
+		<P></P>
+<DIV align="center" id="M1F0EPCCF"><font size="4"><b>Р0445 Неисправность цепи клапана продувки адсорбера</b></font></DIV>
+<P></P>
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0CD1"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Напряжение зажигания подается прямо к клапану продувки системы улавливания паров бензина (СУПБ). Блок управления регулирует работу клапана продувки СУПБ за счет заземления цепи управления через внутренний переключатель, называемый управляющим устройством. Главное назначение управляющего устройства - заземление управляемого компонента. Блок управления контролирует состояние управляющего устройства. При обнаружении блоком управления отклонения в напряжении для управляемого состояния управляющего устройства устанавливается диагностический код неисправности.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0CRD1"><b>Условия появления кода DTC</b></DIV>
+<P></P>
+			
+				<UL>
+<Li>Включатель зажигания во включенном положении.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0CSD1"><b>Условия установки кода неисправности</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">  <B>(Р0444)</B>
+				</div>
+				<UL>
+<Li>Контроллер ЭСУД обнаруживает состояние обрыва проводов в цепи электромагнитного клапана продувки.</Li>
+				</UL>
+				<div class="T1" align="left">  <B>(Р0445)</B>
+				</div>
+				<UL>
+<Li>Контроллер ЭСУД обнаруживает состояние замыкания на аккумулятор или на массу в цепи электромагнитного клапана продувки.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0ATWD1"><b>Действия, выполняемые при установке кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Контрольная лампа индикации неисправности загорается.</Li>
+					<Li>Контроллер записывает рабочие условия в момент определения неисправности. Эта информация сохраняется в буфере записей состояния и протоколах неисправностей.</Li>
+					<Li>Сохраняется архив диагностических кодов неисправности.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0CCM1"><b>Условия очистки кода неисправности/индикации неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Лампа индикации неисправности выключается по окончании 3 циклов проверки подряд, при которых диагностика выполняется без сбоя.</Li>
+					<Li>Архивный диагностический код неисправности убирается после 40 циклов нагрева без сбоя.</Li>
+					<Li>Диагностический код неисправности может быть очищен сканирующим прибором.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0TD1"><b>Описание проверки</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Нижеприведенный номер относится к номерам этапов из таблицы диагностики.</div>
+				<OL>
+<Li value="2">На этом этапе проверяется наличие проблемы. Клапан продувки СУПБ подвергается широтно-импульсной модуляции (PWM). При подаче сигнала в клапан продувки на 50% должны прослушиваться щелчки. Щелчки должны прекратиться при подаче сигнала 0% клапану продувки СУПБ. Это интенсивность, с которой циклы клапана должны увеличиваться с повышением задаваемого состояния. Интенсивность должна снижаться при понижении задаваемого состояния. При необходимости повторить эти команды.</Li>
+					<Li value="5">На этом этапе проверяется постоянное обеспечение заземления для клапана продувки СУПБ.</Li>
+					<Li value="6">На этом этапе проверяется обеспечение контроллером ЭСУД заземления для клапана продувки СУПБ.</Li>
+				</OL>
+			
+		
+		<P></P>
+<DIV align="center" id="M1F0P04441"><font size="4"><b>DTC P0444 Цепь клапана продувки адсорбера, отсутствует сигнал</b></font></DIV>
+<P></P>
+		
+		
+			<P></P>
+<DIV align="center" id="M1F0P04451"><font size="4"><b>DTC P0445 Неисправность цепи клапана продувки адсорбера</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Вы провели проверку диагностической системы?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти </div>
+							<div>  <A target="_blank" href="6M2_1F02.ru.html#M1F0ODSC">"Проверка диагностической системы"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Включить зажигание при заглушенном двигателе.</Li>
+									<Li>Сканирующим прибором подать управляющий сигнал клапану продувки СУПБ на уровне 50%, затем 0%.</Li>
+								</OL>
+								<div>Прослушиваются или ощущаются щелчки клапана продувки СУПБ при подаче ему сигнала на уровне 50%.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Изучить зарегистрированные данные о сбое для данного кода DTC.</Li>
+									<Li>Выключить зажигание на 30 секунд.</Li>
+									<Li>Запустить двигатель.</Li>
+									<Li>Создать для автомобиля условия появления кода DTC. Можно также создать для автомобиля условия, которые наблюдались на основе зарегистрированных данных о нарушении работы.</Li>
+								</OL>
+								<div>Код DTC показал пропуск зажигания?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>См.   <A target="_blank" href="6M2_1F12.ru.html#M1F0INTER">Непостоянные неисправности"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Выключить зажигание.</Li>
+									<Li>Отсоединить разъём жгута проводов клапана продувки СУПБ.</Li>
+									<Li>Включить зажигание при заглушенном двигателе.</Li>
+									<Li>Проверить цепь напряжения зажигания у разъема жгута проводов клапана продувки СУПБ контрольной лампой, присоединенной к надежному источнику заземления.</Li>
+								</OL>
+								<div>Контрольная лампа горит?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Присоединить контрольную лампу между цепью управления и цепью напряжения зажигания разъема жгута проводов клапана продувки СУПБ .</Li>
+									<Li>Сканирующим прибором подать управляющий сигнал клапану продувки СУПБ на уровне 0%.</Li>
+								</OL>
+								<div>Контрольная лампа загорелась?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Сканирующим прибором подать управляющий сигнал клапану продувки СУПБ на уровне 50%.</div>
+								<div>Контрольная лампа горит при подаче сигнала в клапан продувки СУПБ на уровне 50%?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить цепь управления клапана продувки СУПБ на обрыв или замыкание на источник питания.</div>
+								<div>Неисправность обнаружена и устранена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить цепь управления клапана продувки СУПБ на замыкание на массу.</div>
+								<div>Неисправность обнаружена и устранена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить надежность соединений клапана продувки СУПБ.</div>
+								<div>Неисправность обнаружена и устранена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить надежность соединений контроллера ЭСУД.</div>
+								<div>Неисправность обнаружена и устранена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Провести ремонт цепи напряжения зажигания клапана продувки СУПБ.</div>
+								<div>Ремонт завершен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить клапан продувки СУПБ.</div>
+								<div>Замена произведена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить контроллер ЭСУД.</div>
+								<div>Замена произведена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Сканирующим прибором сбросить коды DTC.</Li>
+									<Li>Выключить зажигание на 30 секунд.</Li>
+									<Li>Запустить двигатель.</Li>
+									<Li>Создать для автомобиля условия появления кода DTC. Можно также создать для автомобиля условия, которые наблюдались на основе зарегистрированных данных о нарушении работы.</Li>
+								</OL>
+								<div>Код DTC показал пропуск зажигания?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 15</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить, не установлены ли дополнительные диагностические коды неисправности.</div>
+								<div>На сканирующем приборе отображаются какие-либо диагностические коды неисправности, которые вы не продиагностировали?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к соответствующей таблице диагностических кодов неисправности</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><IMG alt="K5B11F26" src="../../../../graphic-pool/K/5B/1/K5B11F26.png"><BR><A target="_blank" href="../../../../graphic-pool/K/5B/1/K5B11F26.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="M1F0P0462"><font size="4"><b>Диагностический код неисправности P0462 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="M1F0FLSLV"><font size="4"><b>Датчик уровня топлива, низкое напряжение</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="M1F0CD2"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Датчик уровня топлива изменяет сопротивление на основе уровня топлива. У датчика уровня топлива имеется сигнальная цепь и цепь заземления. Контроллер электронной системы управления двигателем (ЭСУД) подает напряжение 5 В сигнальной цепи к датчику. Контроллер ЭСУД контролирует изменения в таком напряжении, вызываемые изменениями в сопротивлении датчика, для определения уровня топлива.</div>
+				<div class="T1" align="left">Если топливный бак полон, сопротивление датчика низкое, а напряжение сигнала контроллера ЭСУД высокое. Если топливный бак пуст, сопротивление датчика высокое, а напряжение сигнала низкое. Контроллер ЭСУД использует входные сигналы от датчика уровня топлива для расчета общей доли топлива, остающегося в топливном баке. Контроллер ЭСУД использует информацию об уровне топлива для диагностики выделения паров топлива (СУПБ) и пропусков зажигания. Информация об уровне топлива передается в блок приборного щитка (IPC).</div>
+				<div class="T1" align="left">Если контроллер ЭСУД обнаружит снижение напряжения сигнала ниже рабочего диапазона датчика, устанавливается этот диагностический код неисправности.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0CRD2"><b>Условия появления кода DTC</b></DIV>
+<P></P>
+			
+				<UL>
+<Li>Включатель зажигания во включенном положении.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0CSD2"><b>Условия установки кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+<Li>Напряжение сигнала датчика уровня топлива ниже 0,2004 В.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0ATWD2"><b>Действия, выполняемые при установке кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Контрольная лампа индикации неисправности не загорается.</Li>
+					<Li>Контроллер записывает рабочие условия в момент определения неисправности. Эта информация сохраняется в буфере записей состояния и протоколах неисправностей.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0CCM2"><b>Условия очистки кода неисправности/индикации неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Архивный диагностический код неисправности убирается после 40 циклов нагрева без сбоя.</Li>
+					<Li>Диагностический код неисправности может быть очищен сканирующим прибором.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0DA2"><b>Диагностическая информация</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Использовать данные регистрации о сбоях для определения места неустойчивого нарушения. Если невозможно зарегистрировать диагностический код неисправности, то информация, содержащаяся в данных регистрации неисправностей, может помочь в установлении пройденных миль с момента установки диагностического кода неисправности. Счетчик сбоев и счетчик удачных циклов также может помочь в установлении количества циклов зажигания, которые отмечены системой диагностики как удачные и/или неудачные. Совершить поездку в условиях записанных состояний (число оборотов, нагрузка на двигатель, температура и проч.). При этом можно выделить тот диагностический код неисправности.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0TD2"><b>Описание проверки</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Число, приведенное ниже, относится к номеру этапа из диагностической таблицы.</div>
+				<OL>
+<Li value="2">На этом этапе проверяется наличие нарушения.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="M1F0P04621"><font size="4"><b>DTC P0462 Датчик уровня топлива, низкое напряжение</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Вы провели проверку диагностической системы?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти </div>
+							<div>  <A target="_blank" href="6M2_1F02.ru.html#M1F0ODSC">"Проверка диагностической системы"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Включить зажигание при заглушенном двигателе.</Li>
+									<Li>Проверить сканирующим прибором параметр напряжения датчика уровня топлива.</Li>
+								</OL>
+								<div>Напряжение выше указанного?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>4,25 В</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Изучить зарегистрированные данные о сбое для данного кода DTC.</Li>
+									<Li>Выключить зажигание на 30 секунд.</Li>
+									<Li>Запустить двигатель.</Li>
+									<Li>Создать для автомобиля условия появления кода DTC. Можно также создать для автомобиля условия, которые наблюдались на основе зарегистрированных данных о нарушении работы.</Li>
+								</OL>
+								<div>Код DTC показал пропуск зажигания?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <A target="_blank" href="6M2_1F02.ru.html#M1F0DA">"Диагностическая информация"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Выключить зажигание.</Li>
+									<Li>Отсоединить разъем датчика уровня топлива.</Li>
+									<Li>Включить зажигание при заглушенном двигателе.</Li>
+									<Li>Проверить сканирующим прибором параметр напряжения датчика уровня топлива.</Li>
+								</OL>
+								<div>Напряжение меньше указанного значения?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>4,25 В</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить сигнальную цепь датчика уровня топлива на обрыв или замыкание на массу.</div>
+								<div>Неисправность обнаружена и устранена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить на замыкание клемм и надежность соединений датчика уровня топлива.</div>
+								<div>Неисправность обнаружена и устранена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить, нет ли замыкания на клеммах или ненадежного соединения у контроллера электронной системы управления двигателем (ЭСУД).</div>
+								<div>Неисправность обнаружена и устранена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Снять блок датчика топлива</div>
+								<div>Замена произведена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить блок управления.</div>
+								<div>Замена произведена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Сканирующим прибором сбросить коды DTC.</Li>
+									<Li>Выключить зажигание на 30 секунд.</Li>
+									<Li>Запустить двигатель.</Li>
+									<Li>Создать для автомобиля условия появления кода DTC. Можно также создать для автомобиля условия, которые наблюдались на основе зарегистрированных данных о нарушении работы.</Li>
+								</OL>
+								<div>Код DTC показал пропуск зажигания?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить, не установлены ли дополнительные диагностические коды неисправности.</div>
+								<div>На сканирующем приборе отображаются какие-либо диагностические коды неисправности, которые вы не продиагностировали?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к соответствующей таблице диагностических кодов неисправности</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><IMG alt="K5B11F26" src="../../../../graphic-pool/K/5B/1/K5B11F26.png"><BR><A target="_blank" href="../../../../graphic-pool/K/5B/1/K5B11F26.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="M1F0P0463"><font size="4"><b>Диагностический код неисправности P0463 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="M1F0FLSHV"><font size="4"><b>Датчик уровня топлива, высокое напряжение</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="M1F0CD3"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Датчик уровня топлива изменяет сопротивление на основе уровня топлива. У датчика уровня топлива имеется сигнальная цепь и цепь заземления. Контроллер электронной системы управления двигателем (ЭСУД) подает напряжение 5 В сигнальной цепи к датчику. Контроллер ЭСУД контролирует изменения в таком напряжении, вызываемые изменениями в сопротивлении датчика, для определения уровня топлива.</div>
+				<div class="T1" align="left">Если топливный бак полон, сопротивление датчика низкое, а напряжение сигнала контроллера ЭСУД высокое. Если топливный бак пуст, сопротивление датчика высокое, а напряжение сигнала низкое. Контроллер ЭСУД использует входные сигналы от датчика уровня топлива для расчета общей доли топлива, остающегося в топливном баке. Контроллер ЭСУД использует информацию об уровне топлива для диагностики выделения паров топлива (СУПБ) и пропусков зажигания. Информация об уровне топлива передается в блок приборного щитка (IPC).</div>
+				<div class="T1" align="left">Если контроллер ЭСУД обнаружит увеличение напряжения сигнала выше рабочего диапазона датчика, устанавливается этот диагностический код неисправности.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0CRD3"><b>Условия появления кода DTC</b></DIV>
+<P></P>
+			
+				<UL>
+<Li>Включатель зажигания во включенном положении.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0CSD3"><b>Условия установки кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+<Li>Напряжение сигнала датчика уровня топлива выше 4,9022 В.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0ATWD3"><b>Действия, выполняемые при установке кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Контрольная лампа индикации неисправности не загорается.</Li>
+					<Li>Контроллер записывает рабочие условия в момент определения неисправности. Эта информация сохраняется в буфере записей состояния и протоколах неисправностей.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0CCM3"><b>Условия очистки кода неисправности/индикации неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Архивный диагностический код неисправности убирается после 40 циклов нагрева без сбоя.</Li>
+					<Li>Диагностический код неисправности может быть очищен сканирующим прибором.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0DA3"><b>Диагностическая информация</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Использовать данные регистрации о сбоях для определения места неустойчивого нарушения. Если невозможно зарегистрировать диагностический код неисправности, то информация, содержащаяся в данных регистрации неисправностей, может помочь в установлении пройденных миль с момента установки диагностического кода неисправности. Счетчик сбоев и счетчик удачных циклов также может помочь в установлении количества циклов зажигания, которые отмечены системой диагностики как удачные и/или неудачные. Совершить поездку в условиях записанных состояний (число оборотов, нагрузка, температура и проч.). При этом можно выделить тот диагностический код неисправности.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0TD3"><b>Описание проверки</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Число, приведенное ниже, относится к номеру этапа из диагностической таблицы.</div>
+				<OL>
+<Li value="2">На этом этапе проверяется наличие нарушения.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="M1F0P04631"><font size="4"><b>DTC P0463 Датчик уровня топлива, высокое напряжение</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Вы провели проверку диагностической системы?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти </div>
+							<div>  <A target="_blank" href="6M2_1F02.ru.html#M1F0ODSC">"Проверка диагностической системы"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Включить зажигание при заглушенном двигателе.</Li>
+									<Li>Проверить сканирующим прибором параметр напряжения датчика уровня топлива.</Li>
+								</OL>
+								<div>Параметр напряжения меньше указанного значения?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0,25 В</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Изучить зарегистрированные данные о сбое для данного кода DTC.</Li>
+									<Li>Выключить зажигание на 30 секунд.</Li>
+									<Li>Запустить двигатель.</Li>
+									<Li>Создать для автомобиля условия появления кода DTC. Можно также создать для автомобиля условия, которые наблюдались на основе зарегистрированных данных о нарушении работы.</Li>
+								</OL>
+								<div>Код DTC показал пропуск зажигания?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <A target="_blank" href="6M2_1F02.ru.html#M1F0DA">"Диагностическая информация"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Отсоединить датчик уровня топлива через панель доступа под задним сиденьем.</Li>
+									<Li>Соединить 3-амперной проволочной перемычкой с предохранителем сигнальную цепь датчика уровня топлива и контрольную цепь низкого уровня сигнала приемной клеммы датчика уровня топлива.</Li>
+									<Li>Включить зажигание при заглушенном двигателе.</Li>
+									<Li>Проверить сканирующим прибором параметр напряжения датчика уровня топлива.</Li>
+								</OL>
+								<div>Напряжение выше указанного?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0,25 В</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Соединить сигнальную цепь датчика уровня топлива с источником заземления, о котором известно, что он надежен.</div>
+								<div>Напряжение выше указанного?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0,25 В</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить сигнальную цепь датчика уровня топлива на обрыв, высокое сопротивление или замыкание на источник питания.</div>
+								<div>Неисправность обнаружена и устранена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить контрольную цепь низкого уровня сигнала датчика уровня топлива на обрыв или высокое сопротивление.</div>
+								<div>Неисправность обнаружена и устранена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить на замыкание клемм и надежность соединений датчика уровня топлива.</div>
+								<div>Неисправность обнаружена и устранена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить, нет ли замыкания на клеммах или ненадежного соединения у контроллера электронной системы управления двигателем (ЭСУД).</div>
+								<div>Неисправность обнаружена и устранена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Снять блок датчика топлива</div>
+								<div>Замена произведена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить контроллер ЭСУД.</div>
+								<div>Замена произведена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Сканирующим прибором сбросить коды DTC.</Li>
+									<Li>Выключить зажигание на 30 секунд.</Li>
+									<Li>Запустить двигатель.</Li>
+									<Li>Создать для автомобиля условия появления кода DTC. Можно также создать для автомобиля условия, которые наблюдались на основе зарегистрированных данных о нарушении работы.</Li>
+								</OL>
+								<div>Код DTC показал пропуск зажигания?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверьте, не установлены ли дополнительные диагностические коды неисправности.</div>
+								<div>Если ли коды DTC, которые еще не были продиагностированы?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к соответствующей таблице диагностических кодов неисправности</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="K5B11F14" src="../../../../graphic-pool/K/5B/1/K5B11F14.png"><BR><A target="_blank" href="../../../../graphic-pool/K/5B/1/K5B11F14.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="M1F0P0480"><font size="4"><b>Диагностический код неисправности (DTC) </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="M1F0LSCFR"><font size="4"><b>Р0480 - Неисправность цепи реле низких оборотов вентилятора системы охлаждения</b></font></DIV>
+<P></P>
+		
+		<P></P>
+<DIV align="center" id="M1F0HSCFR"><font size="4"><b>P0481 - Неисправность цепи реле вентилятора системы охлаждения, работающего на высоких оборотах</b></font></DIV>
+<P></P>
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0CD4"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Напряжение зажигания подается напрямую к катушке реле вентилятора системы охлаждения. ЭСУД управляет катушкой, заземляя цепь управления посредством внутреннего переключателя, т.н. драйвера. Основной функцией драйвера является подача "массы" на управляемый компонент. У каждого драйвера имеется линия сброса, контролируемая ЭСУД. Когда ЭСУД дает команду на включение компонента, то напряжение цепи управления должно быть низким (около  0В). Когда ЭСУД дает команду на выключение компонента, то потенциал напряжения цепи должен быть высоким (приблизительно равен напряжению аккумулятора). Если цепь обнаружения неисправности определяет напряжение отличное от ожидаемого, состояние линии неисправности изменится и приведет к установке диагностического кода неисправности.</div>
+				<div class="T1" align="left">Реле используется для управления потоком тока высокого напряжения к приводам вентилятора системы охлаждения. Это позволяет драйверу ЭСУД работать только с током относительно низкого напряжения, используемым реле.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0CRD4"><b>Условия появления кода DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Включатель зажигания во включенном положении.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0CSD4"><b>Условия установки кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Имеется обрыв или замыкание на аккумулятор/массу в цепи управления вентилятором системы охлаждения.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0ATWD4"><b>Действия, выполняемые при установке кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Контрольная лампа индикации неисправности загорается.</Li>
+					<Li>Контроллер записывает рабочие условия в момент определения неисправности. Эта информация сохраняется в буфере записей состояния и протоколах неисправностей.</Li>
+					<Li>Сохраняется архив диагностических кодов неисправности.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0CCM4"><b>Условия очистки кода неисправности/индикации неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Лампа индикации неисправности выключается по окончании 3 циклов проверки подряд, при которых диагностика выполняется без сбоя.</Li>
+					<Li>Архивный диагностический код неисправности убирается после 40 циклов нагрева без сбоя.</Li>
+					<Li>Диагностический код неисправности может быть очищен сканирующим прибором.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0DA4"><b>Диагностическая информация</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Использование буфера записи состояний и/или протоколов неисправностей может помочь при определении повторяющейся неисправности. Если код неисправности не может быть продублирован, то информация, включенная в буфер записей состояния и/или протоколы неисправностей может быть полезна при определении расстояния после установки кода неисправности. Счетчик числа отказов и счетчик числа прогонов могут также использоваться для определения числа циклов запуска, в течение которых диагностика показывала значимые состояния буфера записи состояний (мин-1, скорость автомобиля. температура и т.д.). Это поможет установить время отказа кода неисправности.</div>
+			
+		
+		<P></P>
+<DIV align="center" id="M1F0DP04801"><font size="4"><b>DTC P0480 Неисправность цепи реле вентилятора системы охлаждения, работающего на низких оборотах</b></font></DIV>
+<P></P>
+		
+		
+			<P></P>
+<DIV align="center" id="M1F0DP0481"><font size="4"><b>DTC P0481 Неисправность цепи реле вентилятора системы охлаждения, работающего на высоких оборотах</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Провести проверку системы диагностики.</div>
+								<div>Проверка системы завершена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти </div>
+							<div>  <A target="_blank" href="6M2_1F02.ru.html#M1F0ODSC">"Проверка диагностической системы"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Включить зажигание, двигатель не запускать.</Li>
+									<Li>Установить диагностический прибор.</Li>
+									<Li>Дать команду на включение или выключение реле.</Li>
+								</OL>
+								<div>Включается или выключается ли реле по команде?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Повернуть ключ зажигания в положение блокировки.</Li>
+									<Li>Отсоединить разъём контроллера электронной системы управления двигателем (ЭСУД).</Li>
+									<Li>Проволочной перемычкой с предохранителем соединить клемму реле 85 и 30.</Li>
+									<Li>Цифровым вольтметром (DVM) измерить ток в цепи управления реле, поступающий на массу за 2 минуты.</Li>
+								</OL>
+								<div>Сила тока меньше указанного значения?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0,75 А</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти </div>
+							<div>  <A target="_blank" href="6M2_1F02.ru.html#M1F0DA">"Диагностическая информация"</A>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Повернуть ключ зажигания в положение блокировки.</Li>
+									<Li>Отсоединить реле</Li>
+									<Li>Цифровым вольтметром измерить сопротивление на участке от цепи управления реле в разъеме жгута проводов контроллера ЭСУД до массы.</Li>
+								</OL>
+								<div>Показывает ли вольтметр неточное сопротивление?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Повернуть ключ зажигания в положение блокировки.</Li>
+									<Li>Отсоединить реле</Li>
+									<Li>Подключить контрольную лампу между клеммами 86 и 85 катушки реле в разъеме жгута реле.</Li>
+									<Li>Включить зажигание.</Li>
+									<Li>Используя сканирующий прибор, дать команду на включение и выключение реле.</Li>
+								</OL>
+								<div>Включается или выключается ли контрольная лампа по каждой команде?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>При помощи контрольной лампы, подключенной к "массе", проверить цепь питания зажигания в разъеме жгута реле.</Li>
+									<Li>Включить зажигание.</Li>
+								</OL>
+								<div>Контрольная лампа горит?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Повернуть ключ зажигания в положение блокировки.</Li>
+									<Li>Заново подсоединить реле</Li>
+									<Li>Отсоединить разъём контроллера ЭСУД, содержащий цепь управления реле..</Li>
+									<Li>Проволочной перемычкой с предохранителем соединить клемму реле 85 и 30.</Li>
+									<Li>При помощи проволочной перемычки, подключенной к массе, проверить цепь управления реле в разъеме жгута реле.</Li>
+								</OL>
+								<div>Работает ли реле?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить соединения на реле.</div>
+								<div>Найдена ли и устранена ли неисправность?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить соединения на контроллере ЭСУД.</div>
+								<div>Найдена ли и устранена ли неисправность?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Отремонтировать неисправную цепь управления реле.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Отремонтировать неисправную цепь питания зажигания.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить реле.</div>
+								<div>Замена закончена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить контроллер ЭСУД.</div>
+								<div>Замена закончена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Используя сканирующий прибор, очистить диагностические коды неисправностей.</Li>
+									<Li>Запустить двигатель и дать ему поработать на холостом ходу при нормальной рабочей температуре.</Li>
+									<Li>Совершить поездку для установки кодов неисправности, как это указано во вспомогательном тексте.</Li>
+								</OL>
+								<div>Сканирующий прибор определяет эту диагностику как прошедшую и успешную?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверьте, не установлены ли дополнительные диагностические коды неисправности.</div>
+								<div>Отображены ли диагностические коды неисправности, которые не были продиагностированы?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к соответствующей таблице диагностических кодов неисправности</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="K5B11F27" src="../../../../graphic-pool/K/5B/1/K5B11F27.png"><BR><A target="_blank" href="../../../../graphic-pool/K/5B/1/K5B11F27.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="M1F0P0501"><font size="4"><b>Диагностический код неисправности P0501 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="M1F0VSNS"><font size="4"><b>Отсутствует сигнал скорости автомобиля (только с МКПП)</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="M1F0CD5"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Информация о скорости автомобиля поставляется в ЭСУД датчиком скорости автомобиля (VSS). Датчик VSS представляет собой электромагнитный генератор постоянного типа, который устанавливается в КПП и выдает импульсное напряжение, если скорость автомобиля превышает 3 мили/ч (5 км/ч). Уровень напряжения переменного тока и количество импульсов увеличивается с ростом скорости автомобиля. ЭСУД преобразует импульсное напряжение в мили/ч (км/ч) и выдает нужный сигнал на приборную панель для спидометра/счетчика пройденного пути, а также для работы блока системы оптимального регулирования скорости и многофункциональной системы сигнализации. Диагностический код неисправности определит, приемлема ли скорость автомобиля согласно нагрузке и числу оборотов двигателя.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0CRD5"><b>Условия появления кода DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Число оборотов двигателя больше 3488 мин-1. (0.8S) или 2016 мин-1. (1.0S).</Li>
+					<Li>Массовый расход воздуха больше 152,5 мг/верхняя мертвая точка (0.8S) или 217,8 мг/верхняя мертвая точка (1.0S).</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0CSDT5"><b>Условия установки кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Не обнаружено состояние работы автомобиля за 10 секунд (0.8S) или 3 секунды (1.0S).</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0ATWD5"><b>Действия, выполняемые при установке кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Контрольная лампа индикации неисправности загорается.</Li>
+					<Li>Контроллер записывает рабочие условия в момент определения неисправности. Эта информация сохраняется в буфере записей состояния и протоколах неисправностей.</Li>
+					<Li>Сохраняется архив диагностических кодов неисправности.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0CCM5"><b>Условия очистки кода неисправности/индикации неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Лампа индикации неисправности выключается по окончании последующего цикла проверки, при котором диагностика выполняется без сбоя.</Li>
+					<Li>Архивный диагностический код неисправности убирается после 40 циклов нагрева без сбоя.</Li>
+					<Li>При помощи сканирующего прибора можно обнулить диагностический код(ы) неисправности</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0DA5"><b>Диагностическая информация</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Неустойчивая неисправность может быть вызвана слабым контактом, перетертой изоляции или обрывом проводки под изоляцией.</div>
+				<div class="T1" align="left">Сигнальная цепь датчика скорости должна быть тщательно проверена на отсутствие следующего:</div>
+				<UL>
+					<Li>Снятые клеммы</Li>
+					<Li>Соединение клемм</Li>
+					<Li>Неисправность замков</Li>
+					<Li>Деформированность</Li>
+					<Li>Повреждения клемм</Li>
+					<Li>Слабое соединение клемм с проводами</Li>
+					<Li>Физическое повреждение жгутов проводов</Li>
+				</UL>
+				<div class="T1" align="left">Обеспечить, чтобы датчик скорости был установлен с правильным моментом в картере КПП.</div>
+				<div class="T1" align="left">См.   <A target="_blank" href="6M2_1F12.ru.html#M1F0INTER">"Периодические неисправности"</A> в данном разделе.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="M1F0P05011"><font size="4"><b>DTC P0501 Отсутствует сигнал скорости автомобиля (только с МКПП)</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Провести проверку системы диагностики.</div>
+								<div>Проверка системы завершена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти </div>
+							<div>  <A target="_blank" href="6M2_1F02.ru.html#M1F0ODSC">"Проверка диагностической системы"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								
+									<P></P>
+<DIV><B><FONT color="DarkSlateGray">Примечание: Гонка автомобиля при включенной передаче с полностью провисающими колесами ведет в повреждению полуосей.</FONT></B></DIV>
+<P></P>
+								
+								<OL>
+									<Li>Включить зажигание, двигатель не запускать.</Li>
+									<Li>Установить диагностический прибор.</Li>
+									<Li>Поднять ведущие колеса.</Li>
+									<Li>Подпереть нижние рычаги управления таким образом, чтобы полуоси находились в горизонтальном (прямом) положении.</Li>
+									<Li>Дать двигателю поработать на холостом ходу при включенном сцеплении.</Li>
+								</OL>
+								<div>Скорость автомобиля на инструменте сканирования выше указанного значения?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0 миль/ч</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Включить зажигание, двигатель не запускать.</Li>
+									<Li>Просмотреть данные записи состояний и записать параметры.</Li>
+									<Li>Совершить поездку в условиях записанных состояний и условиях установки кода неисправности.</Li>
+								</OL>
+								<div>Скорость автомобиля на сканирующем приборе выше указанного значения?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0 миль/ч</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Выключить зажигание.</Li>
+									<Li>Отсоединить разъём контроллера электронной системы управления двигателем (ЭСУД).</Li>
+									<Li>При помощи цифрового вольтметра, подключенного к массе, замерить напряжение в сигнальной цепи датчика скорости (VSS) на клемме В, вращая колеса.</Li>
+								</OL>
+								<div>Напряжение выше или равно указанному значению?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0,5 В</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Замерить сопротивление в сигнальной цепи датчика скорости, вращая колеса.</div>
+								<div>Сопротивление выше указанного значения?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>1950Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить сигнальную цепь датчика скорости на отсутствие разрыва и устранить неисправность при необходимости.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Находится ли напряжение в пределах или выше указанного значения?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>1300-1950Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить сигнальную цепь датчика скорости на отсутствие короткого замыкания с "массой" или между собой и устранить неисправность при необходимости.</div>
+								<div>Ремонт необходим?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Снять датчик скорости</Li>
+									<Li>Замерить сопротивление между клеммами А и С.</Li>
+								</OL>
+								<div>Находится ли сопротивление в пределах установленного значения?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>1300-1950Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить датчик скорости.</div>
+								<div>Работа закончена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить контроллер ЭСУД.</div>
+								<div>Работа закончена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Используя сканирующий прибор, очистить диагностические коды неисправностей.</Li>
+									<Li>Запустить двигатель и дать ему поработать на холостом ходу при нормальной рабочей температуре.</Li>
+									<Li>Совершить поездку для установки кодов неисправности, как это указано во вспомогательном тексте.</Li>
+								</OL>
+								<div>Сканирующий прибор определяет эту диагностику как прошедшую и успешную?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверьте, не установлены ли дополнительные диагностические коды неисправности.</div>
+								<div>Отображены ли диагностические коды неисправности, которые не были продиагностированы?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к соответствующей таблице диагностических кодов неисправности</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="K5B11F13" src="../../../../graphic-pool/K/5B/1/K5B11F13.png"><BR><A target="_blank" href="../../../../graphic-pool/K/5B/1/K5B11F13.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="M1F0P0510"><font size="4"><b>Диагностический код неисправности P0510 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="M1F0TPSCF"><font size="4"><b>Неисправность цепи переключателя положения дроссельной заслонки</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="M1F0CD6"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Привод регулятора холостого хода главной дроссельной заслонки предназначен для управления частотой вращения на холостом ходу при помощи корпуса дроссельной заслонки. Дроссельная заслонка имеет электропривод для малого угла открытия (0°,18°). Характеристики потока воздуха для малого и большого угла открытия различаются. Градиент функции массового расхода воздуха датчика положения дроссельной заслонки меньше на малых углах, это обеспечивает более высокую точность при управлении холостым ходом. За пределами холостого хода дроссельная заслонка приводится в действие обычным тросом Боудена.</div>
+				<div class="T1" align="left">Переключатель показывает дроссельную заслонку в положении холостого хода при замкнутом контакте. Переключатель закреплен на электроприводе переменного тока и дроссельная заслонка замыкает контакт в зависимости от действительного положения привода.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0CRD6"><b>Условия появления кода DTC</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">  <B>(Выключатель дроссельной заслонки в разомкнутом положении)</B>
+				</div>
+				<UL>
+					<Li>Включатель зажигания во включенном положении.</Li>
+					<Li>Отсутствует адаптация МТС.</Li>
+					<Li>Сбоя в датчике ТР или MTIA нет.</Li>
+				</UL>
+				<div class="T1" align="left">  <B>(Выключатель дроссельной заслонки в замкнутом положении)</B>
+				</div>
+				<UL>
+					<Li>Включатель зажигания во включенном положении.</Li>
+					<Li>Отсутствует адаптация МТС.</Li>
+					<Li>Сбоя в датчике ТР нет.</Li>
+					<Li>Угол открытия дроссельной заслонки больше 24,84° в течение 2-х секунд.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0CSD6"><b>Условия установки кода неисправности</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">  <B>(Выключатель дроссельной заслонки в разомкнутом положении)</B>
+				</div>
+				<UL>
+					<Li>Включатель холостого хода во включенном положении.</Li>
+				</UL>
+				<div class="T1" align="left">  <B>(Выключатель дроссельной заслонки в замкнутом положении)</B>
+				</div>
+				<UL>
+					<Li>Включатель холостого хода в выключенном положении.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0ATWD6"><b>Действия, выполняемые при установке кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Контрольная лампа индикации неисправности загорается.</Li>
+					<Li>Контроллер записывает рабочие условия в момент определения неисправности. Эта информация сохраняется в буфере записей состояния и протоколах неисправностей.</Li>
+					<Li>Сохраняется архив диагностических кодов неисправности.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0CCM6"><b>Условия очистки кода неисправности/индикации неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Лампа индикации неисправности выключается по окончании трех циклов проверки подряд, при которых диагностика выполняется без сбоя.</Li>
+					<Li>Архивный диагностический код неисправности убирается после 40 циклов нагрева без сбоя.</Li>
+					<Li>При помощи сканирующего прибора можно обнулить диагностический код(ы) неисправности</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0DA6"><b>Диагностическая информация</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Неустойчивая неисправность может быть вызвана слабым контактом, перетертой изоляции или обрывом проводки под изоляцией.</div>
+				<div class="T1" align="left">Сигнальная цепь датчика скорости должна быть тщательно проверена на отсутствие следующего:</div>
+				<UL>
+					<Li>Снятые клеммы</Li>
+					<Li>Соединение клемм</Li>
+					<Li>Неисправность замков</Li>
+					<Li>Деформированность</Li>
+					<Li>Повреждения клемм</Li>
+					<Li>Слабое соединение клемм с проводами</Li>
+					<Li>Физическое повреждение жгутов проводов</Li>
+				</UL>
+				<div class="T1" align="left">Обеспечить, чтобы датчик скорости был установлен с правильным моментом в картере КПП.</div>
+				<div class="T1" align="left">См.   <A target="_blank" href="6M2_1F12.ru.html#M1F0INTER">"Периодические неисправности"</A> в данном разделе.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="M1F0P05101"><font size="4"><b>DTC P0510 Неисправность цепи переключателя положения дроссельной заслонки</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Провести проверку системы диагностики.</div>
+								<div>Проверка системы завершена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти </div>
+							<div>  <A target="_blank" href="6M2_1F02.ru.html#M1F0ODSC">"Проверка диагностической системы"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Повернуть ключ зажигания в положение блокировки.</Li>
+									<Li>Отсоединить разъём привода регулятора холостого хода главной дроссельной заслонки.</Li>
+									<Li>Отсоединить разъём контроллера ЭСУД.</Li>
+									<Li>Проверить провод между клеммой 4 разъема привода регулятора холостого хода главной дроссельной заслонки и клеммой 43 разъема контроллера ЭСУД на отсутствие короткого замыкания и обрыв.</Li>
+								</OL>
+								<div>Проблема найдена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить провод между клеммой 4 разъема привода регулятора холостого хода главной дроссельной заслонки и клеммой 43 разъема контроллера ЭСУД на отсутствие высокого напряжения и обрыв.</div>
+								<div>Проблема найдена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Отремонтировать провод или клемму разъема, если необходимо.</div>
+								<div>Ремонт завершен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить MTIA.</div>
+								<div>Замена произведена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить контроллер ЭСУД.</div>
+								<div>Замена произведена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Используя сканирующий прибор, очистить диагностические коды неисправностей.</Li>
+									<Li>Запустить двигатель и дать ему поработать на холостом ходу при нормальной рабочей температуре.</Li>
+									<Li>Совершить поездку для установки кодов неисправности, как это указано во вспомогательном тексте.</Li>
+								</OL>
+								<div>Сканирующий прибор определяет эту диагностику как прошедшую и успешную?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверьте, не установлены ли дополнительные диагностические коды неисправности.</div>
+								<div>Отображены ли диагностические коды неисправности, которые не были продиагностированы?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к соответствующей таблице диагностических кодов неисправности</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><IMG alt="K5B11F12" src="../../../../graphic-pool/K/5B/1/K5B11F12.png"><BR><A target="_blank" href="../../../../graphic-pool/K/5B/1/K5B11F12.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="M1F0P0511"><font size="4"><b>Диагностический код неисправности P0511 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="M1F0ICCF"><font size="4"><b>Неисправность цепи регулировки холостого хода</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="M1F0CD7"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">ЭСУД управляет подачей воздуха в двигатель с помощью клапана регулировки подачи воздуха на холостом ходу. Для увеличения скорости вращения двигателя на холостом ходу, ЭСУД выдает команду на выход иглы клапана регулировки подачи воздуха на выход из седла корпуса дроссельной заслонки. Это позволяет большему количеству воздуха проходить через дроссельную заслонку. Для снижения оборотов ЭСУД выдает команду на вход в корпус дроссельной заслонки. Это сокращает количество кислорода, идущего в обход дроссельной заслонки. Сканирующий прибор считает положение иглы клапана регулировки холостого хода. Чем выше сумма, тем больше воздуха может обойти заслонку.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0CRD7"><b>Условия появления кода DTC</b></DIV>
+<P></P>
+			
+				<UL>
+<Li>Включатель зажигания во включенном положении.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0CSD7"><b>Условия установки кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+<Li>Обнаружен обрыв, замыкание на массу или замыкание на источник питания в цепи.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0ATWD7"><b>Действия, выполняемые при установке кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Контрольная лампа индикации неисправности загорается.</Li>
+					<Li>Контроллер записывает рабочие условия в момент определения неисправности. Эта информация сохраняется в буфере записей состояния и протоколах неисправностей.</Li>
+					<Li>Сохраняется архив диагностических кодов неисправности.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0CCM7"><b>Условия очистки кода неисправности/индикации неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Лампа индикации неисправности выключается по окончании трех циклов проверки подряд, при которых диагностика выполняется без сбоя.</Li>
+					<Li>Архивный диагностический код неисправности убирается после 40 циклов нагрева без сбоя.</Li>
+					<Li>Диагностический код неисправности может быть очищен сканирующим прибором.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0DA7"><b>Диагностическая информация</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Проверить электросоединение клапана регулировки холостого хода на отсутствие неправильного сопряжения</div>
+				<div class="T1" align="left">Осмотреть жгут проводов на наличие повреждений.</div>
+				<div class="T1" align="left">Проверить упорный винт заслонки на отсутствие признаков старения</div>
+				<div class="T1" align="left">Проверить соединение дроссельной заслонки на отсутствие признаков деформации или чрезмерного износа.</div>
+				<div class="T1" align="left">Низкие или нестабильные обороты холостого хода могут быть вызваны следующими причинами:</div>
+				<UL>
+					<Li>Слишком обогащенная или обедненная смесь в системе.</Li>
+					<Li>Посторонние материалы в отверстии дроссельной заслонки или в системе подачи воздуха.</Li>
+					<Li>Утечка или сужение сечения во впускном коллекторе.</Li>
+					<Li>Чрезмерная перегрузка двигателя. Проверить отсутствие заблокированности шкивов, насосов или двигателей на вспомогательном приводе.</Li>
+					<Li>Избыточная масса масла в двигателе.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="M1F0P05111"><font size="4"><b>DTC P0511 Неисправность цепи регулировки холостого хода</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Провести проверку системы диагностики.</div>
+								<div>Проверка проведена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти </div>
+							<div>  <A target="_blank" href="6M2_1F02.ru.html#M1F0ODSC">"Проверка диагностической системы"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Подключить сканирующий прибор к колодке диагностики.</Li>
+									<Li>Поработать двигателем на холостом ходу.</Li>
+									<Li>Передача на парковку или нейтраль, и установить стояночный тормоз.</Li>
+									<Li>Кондиционер выключен.</Li>
+									<Li>При помощи сканирующего прибора дать команду клапану регулировки холостого хода на перемещение вверх и вниз в пределах указанного значения.</Li>
+								</OL>
+								<div>Изменяется ли скорость вращения двигателя плавно по команде со сканирующего прибора?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>900~1200 мин-1.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Выключить зажигание.</Li>
+									<Li>Отсоединить разъем клапана регулировки холостого хода.</Li>
+									<Li>Замерить сопротивление между клеммами А и В клапана регулировки холостого хода.</Li>
+									<Li>Замерить сопротивление между клеммами С и D клапана регулировки холостого хода.</Li>
+								</OL>
+								<div>Сопротивление в пределах установленного значения?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>40~80 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Замерить сопротивление между клеммами В и D клапана регулировки холостого хода.</Li>
+									<Li>Замерить сопротивление между клеммами А и С клапана регулировки холостого хода.</Li>
+								</OL>
+								<div>Измеренное сопротивление соответствует указанному в таблице?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>∞</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Выключить зажигание.</Li>
+									<Li>Отсоединить разъем клапана регулировки холостого хода.</Li>
+									<Li>Включить зажигание.</Li>
+									<Li>При помощи контрольной лампы, подключенной к "массе", проверить клеммы разъема клапана регулировки холостого хода.</Li>
+								</OL>
+								<div>Загорается ли контрольная лампа на клеммах А?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>При помощи контрольной лампы, подключенной к + аккумулятора, проверить клеммы разъема клапана регулировки холостого хода.</div>
+								<div>Загорается ли контрольная лампа на клеммах А?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить отсутствие разрыва или короткого замыкания с "массой" в цепях высокого или низкого сигнала системы регулировки холостого хода.</div>
+								<div>Закончен ли ремонт? </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Запустить двигатель на холостом ходу.</Li>
+									<Li>Подключить контрольную лампу к "массе", проверить клеммы разъема клапана регулировки холостого хода.</Li>
+								</OL>
+								<div>Включается и выключается ли контрольная лампа на всех клеммах?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить отсутствие разрыва или короткого замыкания в цепях высокого или низкого сигнала клапана регулировки холостого хода.</div>
+								<div>Закончен ли ремонт? </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить разъем контроллера ЭСУД на отсутствие слабого контакта и устранить неисправность при необходимости.</div>
+								<div>Закончен ли ремонт? </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 14</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить трубопроводы клапана регулировки холостого хода и устранить неисправность, как требуется.</div>
+								<div>Закончен ли ремонт? </div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить контрольную лампу.</div>
+								<div>Включена ли контрольная лампа постоянно на всех клеммах, на которых она не моргает?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Выключить зажигание.</Li>
+									<Li>Заменить клапан РХХ.</Li>
+								</OL>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Выключить зажигание.</Li>
+									<Li>Заменить контроллер ЭСУД.</Li>
+								</OL>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Используя сканирующий прибор, очистить диагностические коды неисправностей.</Li>
+									<Li>Запустить двигатель и дать ему поработать на холостом ходу при нормальной рабочей температуре.</Li>
+									<Li>Совершить поездку для установки кодов неисправности, как это указано во вспомогательном тексте.</Li>
+								</OL>
+								<div>Сканирующий прибор определяет эту диагностику как прошедшую и успешную?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 16</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">16</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверьте, не установлены ли дополнительные диагностические коды неисправности.</div>
+								<div>Отображены ли диагностические коды неисправности, которые не были продиагностированы?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к соответствующей таблице диагностических кодов неисправности</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="K5B11F34" src="../../../../graphic-pool/K/5B/1/K5B11F34.png"><BR><A target="_blank" href="../../../../graphic-pool/K/5B/1/K5B11F34.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="M1F0P0537"><font size="4"><b>Диагностический код неисправности (DTC) </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="M1F0ETSLV"><font size="4"><b>P0537 - Низкий уровень сигнала датчика температуры испарителя</b></font></DIV>
+<P></P>
+		
+		<P></P>
+<DIV align="center" id="M1F0ETSLV1"><font size="4"><b>P0538 - Высокий уровень сигнала датчика температуры испарителя</b></font></DIV>
+<P></P>
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0CD8"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Полупроводниковый прибор, сопротивление которого значительно изменяется при изменении температуры. Когда температура хладагента в испарителе падает до 05C (05F) и ниже, теплообменник испарителя покрывается инеем и льдом, который ограничивает поток воздуха, в результате чего снижается производительность охлаждения. Термистор представляет собой датчик, предназначенный для предотвращения нарастания льда. Термистор установлен на испарителе.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0CRD8"><b>Условия появления кода DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Двигатель работает</Li>
+					<Li>Включатель кондиционера во включенном положении.</Li>
+					<Li>Температура охлаждающей жидкости двигателя (ЕСТ) выше 39,75°С (103,55°F).</Li>
+					<Li>Реле кондиционера включено дольше 131 секунды.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0CSD8"><b>Условия установки кода неисправности</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">  <B>(Р0537)</B>
+				</div>
+				<UL>
+					<Li>Сигнал датчика температуры испарителя ниже 0,0978 В (0.8S) или 0,0293 В (1.0S).</Li>
+				</UL>
+				<div class="T1" align="left">  <B>(Р0538)</B>
+				</div>
+				<UL>
+					<Li>Сигнал датчика температуры испарителя ниже 4,9 В (0.8S) или 4,98 В (1.0S).</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0ATWD8"><b>Действия, выполняемые при установке кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Контрольная лампа индикации неисправности не загорается.</Li>
+					<Li>Контроллер записывает рабочие условия в момент определения неисправности. Эта информация сохраняется в протоколах неисправностей.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M1F0CCM8"><b>Условия очистки кода неисправности/индикации неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Архивный диагностический код неисправности убирается после 40 циклов нагрева без сбоя.</Li>
+					<Li>Диагностический код неисправности может быть очищен сканирующим прибором.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="M1F0DP05371"><font size="4"><b>DTC P0537 Низкий уровень сигнала датчика температуры испарителя</b></font></DIV>
+<P></P>
+		
+		
+			<P></P>
+<DIV align="center" id="M1F0DP05381"><font size="4"><b>DTC P0538 - Высокий уровень сигнала датчика температуры испарителя</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Провести проверку системы диагностики.</div>
+								<div>Проверка системы завершена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти </div>
+							<div>  <A target="_blank" href="6M2_1F02.ru.html#M1F0ODSC">"Проверка диагностической системы"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Повернуть ключ зажигания в положение блокировки.</Li>
+									<Li>Отсоединить датчик температуры испарителя.</Li>
+									<Li>Замерить сопротивление между клеммами 1 и 2 датчика температуры испарителя.</Li>
+								</OL>
+								<div>Сопротивление в пределах установленного значения?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Повернуть ключ зажигания в положение блокировки.</Li>
+									<Li>Проверить на обрыв, замыкание на массу или на аккумулятор в сигнальной цепи по клемме 2 в разъеме жгута проводов датчика.</Li>
+								</OL>
+								<div>Проблемы выявлена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устранить неисправность в проводе или разъеме между клеммой 46 (0.8S)/49 (1.0S) контроллера ЭСУД и клеммой 2 реле компрессора.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Повернуть ключ зажигания в положение блокировки.</Li>
+									<Li>Отсоединить контроллер ЭСУД</Li>
+									<Li>Проверить на обрыв, замыкание на массу или на аккумулятор в контрольной цепи низкого уровня сигнала по клемме 1 в разъеме жгута проводов датчика.</Li>
+								</OL>
+								<div>Проблемы выявлена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устранить неисправность в проводе или разъеме между клеммой 46 разъема проводов контроллера ЭСУД (0.8S)/49 (1.0S) и клеммой 2 датчика температуры испарителя.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить датчик температуры испарителя.</div>
+								<div>Замена закончена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Повернуть ключ зажигания в положение блокировки.</Li>
+									<Li>Заменить контроллер ЭСУД.</Li>
+								</OL>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Используя сканирующий прибор, очистить диагностические коды неисправностей.</Li>
+									<Li>Запустить двигатель и дать ему поработать на холостом ходу при нормальной рабочей температуре.</Li>
+									<Li>Совершить поездку для установки кодов неисправности, как это указано во вспомогательном тексте.</Li>
+								</OL>
+								<div>Сканирующий прибор определяет эту диагностику как прошедшую и успешную?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверьте, не установлены ли дополнительные диагностические коды неисправности.</div>
+								<div>Отображены ли диагностические коды неисправности, которые не были продиагностированы?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к соответствующей таблице диагностических кодов неисправности</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><BR><TABLE align="center"><TR>
+<TD align="left"><A href="6M2_1F08.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="На предыдущую страницу"></A></TD>
+<TD align="left"></TD>
+<TD align="left"><A href="6M2_1F10.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="На следующую страницу"></A></TD>
+<TD></TD>
+</TR></TABLE>
+<TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Авторское право принадлежит General Motors Chevrolet Europe Все права защищены</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

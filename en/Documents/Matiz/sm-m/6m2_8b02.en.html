@@ -1,0 +1,2837 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>.T2{    BORDER-TOP: white;}  .T3{    BORDER-BOTTOM: white;} .T4{    BORDER-TOP: white;    BORDER-BOTTOM: white} .I{ padding-left : 10pt}  .Tighten{ padding-left : 7pt} .Arial{ font-family : Arial, Helvetica, sans-serif;margin-left: 10pt;margin-right : 10pt } .TableB{ margin-left : 0pt}</style>
+<TITLE>Service Manual2006 Matiz Diagnostic Trouble Code (DTC) B0045</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+ function FixMenu()
+{
+menuTop = document.body.scrollTop + document.body.clientHeight -40;
+menu.style.top = menuTop;
+menu.style.width = document.body.clientWidth; 
+}
+
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px"><A border="0" href="6M2_8B02.en.html"><IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A></SPAN><TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt"><TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Matiz/Spark</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left"><TABLE><TR>
+<TD width="5%" align="left"><A href="6M2_8B01.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="To Previous Page"></A></TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left"><A href="6M2_8B03.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="To Next Page"></A></TD>
+</TR></TABLE></TD>
+<TD><TABLE width="65%" align="right"><TR>
+<TD style="font-size:10"><A href="../../../GMDE_TIS_START.html" target="_top"><IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page"></A></TD>
+<TD style="font-size:10"><A href="../toc_Matiz.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A></TD>
+<TD style="font-size:10"><A href="../toc_Matiz_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A></TD>
+<TD style="font-size:10"><A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A></TD>
+</TR></TABLE></TD>
+</TR>
+</TBODY></TABLE>
+	
+	
+		<BR><div align="center">
+<IMG alt="K5B18B04" src="../../../../graphic-pool/K/5B/1/K5B18B04.png"><BR><A target="_blank" href="../../../../graphic-pool/K/5B/1/K5B18B04.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="M8B0B0045"><font size="4"><b>Diagnostic Trouble Code (DTC) B0045 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="M8B0DSADL"><font size="4"><b>Driver Side Airbag Deployment Loop Voltage Out of Range</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="M8B0CD12"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">When the ignition switch is turned to ON, the sensing and diagnostic module(SDM) will perform tests to diagnose critical malfunctions within itself. After passing these tests, ignition and deployment loop voltages are measured to ensure that they are within their respective normal voltage ranges. The SDM then proceeds with the resistance measurement test. Each inflator low terminal is grounded through a current sink, and each inflator current source is connected to each inflator high terminal to allow a known amount of current to flow. By monitoring the voltage difference between each inflator high and low, the SDM calculates the combined resistance of the inflator module the wiring harness, and the connector terminal contacts.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M8B0DWSW12"><b>DTC B0045 Will Set When</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Voltage at driver side high is higher than 7.5 volts for 5 consecutive test cycle.</Li>
+					<Li>Voltage at driver side high is less than 1.5 volts and the resistance for driver side deployment loop is less than 6 ohms 5 consecutive test cycle.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M8B0DA12"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">An intermittent condition is likely to be caused by a short to ground or voltage in the driver side high and low circuit.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="M8B0B00451"><font size="4"><b>DTC B0045 – Driver Side Airbag Deployment Loop Voltage Out of Range</b></font></DIV>
+<P></P>
+			
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : The sensing and diagnostic module(SDM) can maintain sufficient voltage to deploy the airbags and pretensioners for 1 minute after the ignition is OFF and the fuse has been removed. If the airbags and pretensioners are not disconnected, do not begin service until one minute has passed after disconnecting power to SDM. Otherwise, injury could result. </FONT></I></B></DIV>
+<P></P>
+				
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : During service procedure, be very careful when handling the SDM. Never strike or jar the SDM. Never power the supplemental inflatable restraints(SIR) when the SDM is not rigidly attached to the vehicle. All SDM mounting bolts must be carefully tightened , and the arrow on the SDM must be point toward the front of the vehicle to ensure proper operation of the SIR. The SDM could be activated if it is powered when it is not rigidly attached to the vehicle, resulting in unexpected deployment and possible injury.</FONT></I></B></DIV>
+<P></P>
+				
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : Never measure the resistance of an inflator module with an ohmmeter. An ohmmeter's battery can deploy the airbag and cause injury.</FONT></I></B></DIV>
+<P></P>
+				
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Confirm the ignition switch "OFF".</Li>
+									<Li>Wait for 1 minute to discharge the SDM charger.</Li>
+								</OL>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I> Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Visually inspect the connector and wiring of driver side airbag.</div>
+								<div>Is the connector disconnected or the wiring damaged?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Connect connector or replace the airbag wiring.</Li>
+									<Li>Perform the SIR diagnostic system check.</Li>
+								</OL>
+								<div>Is the DTC removed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Confirm the ignition switch "OFF".</Li>
+									<Li>Disconnect the connector of driver side airbag module.</Li>
+									<Li>Disconnect the connector of SDM wiring.</Li>
+									<Li>Check the resistance between the terminal 1, 2 of passenger side airbag module and the voltage.</Li>
+								</OL>
+								<div>Is the resistance about ∞ ?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>∞</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Replace the airbag wiring.</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the resistance between the terminal 1, 2 of driver side airbag module and the ground.</div>
+								<div>Is the resistance about ∞ ?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>∞</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Replace the airbag wiring.</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Replace the SDM.</Li>
+									<Li>Confirm the ignition switch "ON".</Li>
+									<Li>Erase the DTC using scan tool.</Li>
+									<Li>Perform the SIR diagnostic system check.</Li>
+								</OL>
+								<div>Is the DTC removed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Replace the driver side airbag module.</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="T8B0B0051"><font size="4"><b>Diagnostic Trouble Code (DTC) B0051 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="M8B0DC"><font size="4"><b>Deployment Commanded</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="T8B0CD13"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The sensing and diagnostic module (SDM) contains a sensing device which converts vehicle velocity changes to an electrical signal. The electrical signal generated is processed by the SDM and then compared to a value stored in memory. When the generated signal exceeds the stored value, additional signal processing is performed and the generated signals are compared to signals stored in memory. When two of the generated signals exceed the stored values, the SDM will cause sufficient current to flow through the inflator modules to deploy the airbags and cause DTC B0051 to be set.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M8B0WSW13"><b>DTC B0051 Will Set When</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The SDM detects a frontal crash within 30 degrees of the centerline of the vehicle, of sufficient force to warrant deployment of the airbags.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M8B0AT13"><b>Action Taken</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The SDM turns on the AIRBAG indicator, records crash data, and sets a DTC B0051.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M8B0WCW13"><b>DTC B0051 Will Clear When</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The SDM is replaced. This code cannot be cleared with a scan tool.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="M8B0B00511"><font size="4"><b>DTC B0051 – Deployment Commanded</b></font></DIV>
+<P></P>
+			
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : The sensing and diagnosis module (SDM) can maintain sufficient voltage to deploy the airbags and pretensioners for 1 minute after the ignition is OFF and the fuse has been removed. If the airbags or pretensioners are not disconnected, do not begin service until one minute has passed after disconnecting power to the SDM. Otherwise, injury could result.</FONT></I></B></DIV>
+<P></P>
+				
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : During service procedure, be very careful when handling the SDM. Never strike or jar the SDM. Never power the supplemental restraints system (SIR) when the SDM is not rigidly attached to the vehicle. All SDM mounting bolts must be carefully tightened, and the arrow on the SDM must be pointing toward the front of the vehicle to ensure proper operation of the SIR. The SDM could be activated if it is powered when it is not rigidly attached to the vehicle, resulting in unexpected deployment and possible injury.</FONT></I></B></DIV>
+<P></P>
+				
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : Never measure the resistance of an inflator module with an ohmmeter. An ohmmeter's battery can deploy the airbag and cause injury.</FONT></I></B></DIV>
+<P></P>
+				
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform the SIR Diagnostic System Check.</div>
+								<div>Is the SIR Diagnostic System Check complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Turn the ignition to LOCK and remove the key.</Li>
+									<Li>Check for deployed airbags.</Li>
+								</OL>
+								<div>Have the airbags deployed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Remove the airbag fuse.</Li>
+									<Li>Turn the steering wheel to the straight-ahead position.</Li>
+									<Li>Perform inspections and replace components as directed in Repairs and Inspections Required After An Accident" in this section.</Li>
+									<Li>Replace the SDM. The arrow must be pointing toward the front of the vehicle.</Li>
+									<Li>Connect all SIR components, and ensure that all components are properly mounted.</Li>
+									<Li>Reinstall the airbag fuse.</Li>
+									<Li>Use a scan tool to clear SIR trouble codes.</Li>
+								</OL>
+								<div>Are the repairs complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to "SIR Diagnostic System Check"</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Inspect the front of the vehicle and undercarriage for signs of impact.</div>
+								<div>Are there any signs of impact?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Turn the ignition to LOCK and remove the key.</Li>
+									<Li>Disconnect the passenger airbag, the yellow clock spring connector on the steering column.</Li>
+									<Li>Replace the SDM. The arrow must be pointing toward the front of the vehicle.</Li>
+									<Li>Connect all SIR components, and ensure that all components are properly mounted.</Li>
+								</OL>
+								<div>Are the repairs complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to "SIR Diagnostic System Check"</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<P></P>
+<DIV align="center" id="M8B0B0053"><font size="4"><b>Diagnostic Trouble Code (DTC) B0053 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="M8B0DCLF"><font size="4"><b>Deployment Commanded with Loop Faults</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="M8B0CD14"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The sensing and diagnostic module (SDM) contains a sensing device which converts vehicle velocity changes to an electrical signal. The electrical signal generated is processed by the SDM and then compared to a value stored in memory. When the generated signal exceeds the stored value, additional signal processing is performed and the generated signals are compared to signals stored in memory. When two of the generated signals exceed the stored values, the SDM will cause sufficient current to flow through the inflator modules to deploy the airbags. DTC B0053 is set instead of DTC B0051 when a deployment occurs while an inflator circuit fault is present that could possibly result in a no deployment situation in one or both inflator modules.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M8B0WSW14"><b>DTC B0053 Will Set When</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The SDM detects a frontal crash within to 30 degrees from the centerline of the vehicle, of sufficient force to warrant deployment of the airbags.</Li>
+					<Li>An inflator circuit fault is present.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M8B0AT14"><b>Action Taken</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The SDM turns ON the AIRBAG indicator, records crash data, and sets a DTC B0053.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M8B0WCW14"><b>DTC B0053 Will Clear When</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The SDM is replaced. This code cannot be cleared with a scan tool.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="M8B0B00531"><font size="4"><b>DTC B0053 – Deployment Commanded with Loop Faults</b></font></DIV>
+<P></P>
+			
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : The sensing and diagnosis module (SDM) can maintain sufficient voltage to deploy the airbags and pretensioners for 1 minute after the ignition is OFF and the fuse has been removed. If the airbags or pretensioners are not disconnected, do not begin service until one minute has passed after disconnecting power to the SDM. Otherwise, injury could result.</FONT></I></B></DIV>
+<P></P>
+				
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : During service procedure, be very careful when handling the SDM. Never strike or jar the SDM. Never power the supplemental restraints system (SIR) when the SDM is not rigidly attached to the vehicle. All SDM mounting bolts must be carefully tightened, and the arrow on the SDM must be pointing toward the front of the vehicle to ensure proper operation of the SIR. The SDM could be activated if it is powered when it is not rigidly attached to the vehicle, resulting in unexpected deployment and possible injury.</FONT></I></B></DIV>
+<P></P>
+				
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : Never measure the resistance of an inflator module with an ohmmeter. An ohmmeter's battery can deploy the airbag and cause injury.</FONT></I></B></DIV>
+<P></P>
+				
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform the SIR Diagnostic System Check.</div>
+								<div>Is the SIR Diagnostic System Check complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Turn the ignition to LOCK and remove the key.</Li>
+									<Li>Check for deployed airbags.</Li>
+								</OL>
+								<div>Have the airbags deployed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Remove the airbag fuse.</Li>
+									<Li>Turn the steering wheel to the straight-ahead position.</Li>
+									<Li>Perform inspections and replace components as directed in Repairs and Inspections Required After an Accident" in this section.</Li>
+									<Li>Replace the SDM. The arrow must be pointing toward the front of the vehicle.</Li>
+									<Li>Connect all SRS components, and ensure that all components are properly mounted.</Li>
+									<Li>Reinstall the airbag fuse.</Li>
+									<Li>Use a scan tool to clear SRS trouble codes.</Li>
+								</OL>
+								<div>Are the repairs complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to "SIR Diagnostic System Check"</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Inspect the front of the vehicle and undercarriage for signs of impact.</div>
+								<div>Are there any signs of impact?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Turn the ignition to LOCK and remove the key.</Li>
+									<Li>Disconnect the passenger airbag, and the yellow clock spring connector on the steering column.</Li>
+									<Li>Replace the SDM. The arrow must be pointing toward the front of the vehicle.</Li>
+									<Li>Connect all SIR components, and ensure that all components are properly mounted.</Li>
+								</OL>
+								<div>Are the repairs complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to "SIR Diagnostic System Check"</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="K5B18B05" src="../../../../graphic-pool/K/5B/1/K5B18B05.png"><BR><A target="_blank" href="../../../../graphic-pool/K/5B/1/K5B18B05.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="M8B0B0057"><font size="4"><b>Diagnostic Trouble Code (DTC) B0057 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="M8B0PBPDL"><font size="4"><b>Passenger Belt Pretensioner Deployment Loop Shorted</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="M8B0CD15"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">When the ignition switch is turned to ON, the sensing and diagnostic module(SDM) will perform tests to diagnose critical malfunctions within itself. After passing these tests, ignition and deployment loop voltages are measured to ensure that they are within their respective normal voltage ranges. The SDM then proceeds with the resistance measurement test. Each inflator low terminal is grounded through a current sink, and each inflator current source is connected to each inflator high terminal to allow a known amount of current to flow. By monitoring the voltage difference between each inflator high and low, the SDM calculates the combined resistance of the inflator module the wiring harness, and the connector terminal contacts.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M8B0WSW15"><b>DTC B0057 Will Set When</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The resistance of passenger belt pretensioner deployment loop is lower than 1.3 ohms.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M8B0DA15"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">An intermittent conditiois likely to be caused by a short between the passenger belt pretensioner high and low circuits.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="M8B0B00571"><font size="4"><b>DTC B0057 – Passenger Belt Pretensioner Deployment Loop Shorted</b></font></DIV>
+<P></P>
+			
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : The sensing and diagnostic module(SDM) can maintain sufficient voltage to deploy the airbags and pretensioners for 1 minute after the ignition is OFF and the fuse has been removed. If the airbags and pretensioners are not disconnected, do not begin service until one minute has passed after disconnecting power to SDM. Otherwise, injury could result.</FONT></I></B></DIV>
+<P></P>
+				
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : During service procedure, be very careful when handling the SDM. Never strike or jar the SDM. Never power the supplemental inflatable restraints(SIR) when the SDM is not rigidly attached to the vehicle. All SDM mounting bolts must be carefully tightened , and the arrow on the SDM must be point toward the front of the vehicle to ensure proper operation of the SIR. The SDM could be activated if it is powered when it is not rigidly attached to the vehicle, resulting in unexpected deployment and possible injury.</FONT></I></B></DIV>
+<P></P>
+				
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : Never measure the resistance of an inflator module with an ohmmeter. An ohmmeter's battery can deploy the airbag and cause injury.</FONT></I></B></DIV>
+<P></P>
+				
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Confirm the ignition switch "OFF".</Li>
+									<Li>Wait for 1 minute to discharge the SDM charger.</Li>
+								</OL>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to  <I> Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Visually inspect the connector and wiring of passenger belt pretensioner.</div>
+								<div>Is the connector disconnected or the wiring damaged?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Connect connector or replace the airbag wiring.</Li>
+									<Li>Perform the SIR diagnostic system check.</Li>
+								</OL>
+								<div>Is the DTC removed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Confirm the ignition switch "OFF".</Li>
+									<Li>Disconnect the connector of passenger belt pretensioner.</Li>
+									<Li>Disconnect the connector of SDM wiring.</Li>
+									<Li>Check the resistance between the terminal 1 and 2 of passenger belt pretensioner.</Li>
+								</OL>
+								<div>Is the resistance about ∞?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>∞</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Replace the airbag wiring.</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Replace the SDM.</Li>
+									<Li>Confirm the ignition switch "ON".</Li>
+									<Li>Erase the DTC using scan tool.</Li>
+									<Li>Perform the SIR diagnostic system check.</Li>
+								</OL>
+								<div>Is the DTC removed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Replace the passenger belt pretensioner.</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="K5B18B05" src="../../../../graphic-pool/K/5B/1/K5B18B05.png"><BR><A target="_blank" href="../../../../graphic-pool/K/5B/1/K5B18B05.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="M8B0B0058"><font size="4"><b>Diagnostic Trouble Code (DTC) B0058 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T8B0BVH23"><font size="4"><b>Passenger Side Belt Pretensioner Deployment Loop Open</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="M8B0CD16"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">When the ignition switch is turned to ON, the sensing and diagnostic module (SDM) will perform tests to diagnose critical malfunctions within itself. After passing these tests, ignition and deployment loop voltages are measured to ensure that they are within their respective normal voltage ranges. The SDM then proceeds with the resistance measurement test. Each inflator low terminal is grounded through a current sink, and each inflator current source is connected to each inflator high terminal to allow a known amount of current to flow. By monitoring the voltage difference between each inflator high and low, the SDM calculates the combined resistance of the inflator module, the wiring harness, and the connector terminal contacts.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M8B0WSW16"><b>DTC B0058 Will Set When</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Resistance of the passenger belt pretensioner deployment loop is higher than 4.8 ohms for 5 consecutive test cycle.</Li>
+					<Li>Voltage at passenger belt pretensioner high is less than 2.4 volts and resistance of passenger belt pretensioner deployment loop is higher than or equal to 6 ohms for 5 consecutive test cycle.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M8B0DA16"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">An intermittent condition is likely to be caused by a poor connection at the passenger belt pretensioner connector, or at terminals A7 and A8 of the SDM. An open wire in the passenger belt pretensioner deployment loop will also set DTC B0058.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="M8B0B00581"><font size="4"><b>DTC B0058 – Passenger Belt Pretensioner Deployment Loop Open</b></font></DIV>
+<P></P>
+			
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : The sensing and diagnosis module (SDM) can maintain sufficient voltage to deploy the airbags and pretensioners for 1 minute after the ignition is OFF and the fuse has been removed. If the airbags or pretensioners are not disconnected, do not begin service until one minute has passed after disconnecting power to the SDM. Otherwise, injury could result.</FONT></I></B></DIV>
+<P></P>
+				
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : During service procedure, be very careful when handling the SDM. Never strike or jar the SDM. Never power the supplemental restraints system (SIR) when the SDM is not rigidly attached to the vehicle. All SDM mounting bolts must be carefully tightened, and the arrow on the SDM must be pointing toward the front of the vehicle to ensure proper operation of the SIR. The SDM could be activated if it is powered when it is not rigidly attached to the vehicle, resulting in unexpected deployment and possible injury.</FONT></I></B></DIV>
+<P></P>
+				
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : Never measure the resistance of an inflator module with an ohmmeter. An ohmmeter's battery can deploy the airbag and cause injury.</FONT></I></B></DIV>
+<P></P>
+				
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Confirm the ignition switch "OFF".</Li>
+									<Li>Wait for 1 minute to discharge the SDM charger.</Li>
+								</OL>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to  <I> Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Visually inspect the connector and wiring of passenger belt pretensioner.</div>
+								<div>Is the connector disconnected or the wiring damaged?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Connect connector or replace the airbag wiring.</Li>
+									<Li>Perform the SIR diagnostic system check.</Li>
+								</OL>
+								<div>Is the DTC removed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Confirm the ignition switch "OFF".</Li>
+									<Li>Disconnect the connector of passenger belt pretensioner.</Li>
+									<Li>Disconnect the connector of SDM wiring.</Li>
+									<Li>Check the resistance between the terminal A8, A7 of SDM and the terminal 1,2 of passenger belt pretensioner.</Li>
+								</OL>
+								<div>Is the resistance about 0(zero)?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>≈ 0 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Replace the airbag wiring.</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Replace the SDM.</Li>
+									<Li>Confirm the ignition switch "ON".</Li>
+									<Li>Erase the DTC using scan tool.</Li>
+									<Li>Perform the SIR diagnostic system check.</Li>
+								</OL>
+								<div>Is the DTC removed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Replace the passenger belt pretensioner.</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="K5B18B05" src="../../../../graphic-pool/K/5B/1/K5B18B05.png"><BR><A target="_blank" href="../../../../graphic-pool/K/5B/1/K5B18B05.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="M8B0B0059"><font size="4"><b>Diagnostic Trouble Code (DTC) B0059 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="M8B0PBPDL1"><font size="4"><b>Passenger Belt Pretensioner Deployment Loop Boltage Out of Range</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="M8B0CD17"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">When the ignition switch is turned to ON, the sensing and diagnostic module (SDM) will perform tests to diagnose critical malfunctions within itself. Upon passing these tests, ignition and deployment loop voltages are measured to ensure that they are within their respective normal voltage ranges. The SDM then proceeds with the resistance measurement test. Each inflator low terminal is grounded through a current sink, and each inflator current source is connected to each inflator high terminal to allow a known amount of current to flow. By monitoring the voltage difference between each inflator high and low terminals, the SDM calculates the combined resistance of the inflator module, wiring harness, and connector terminal contacts.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M8B0WSW17"><b>DTC B0059 Will Set When</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Voltage at passenger belt pretensioner high is higher than 7.5 volts for 5 consecutive test cycle.</Li>
+					<Li>Voltage at passenger belt pretensioner high is less than 1.5 volts and the resistance of passenger belt pretensioner deployment loop is less than 6 ohms for 5 consecutive test cycle.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M8B0DA17"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">An intermittent condition is likely to be caused by a short to ground or voltage in the passenger belt pretensioner high and low circuit.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="M8B0B00591"><font size="4"><b>DTC B0059 – Passenger Belt Pretensioner Deployment Loop Voltage Out of Range</b></font></DIV>
+<P></P>
+			
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : The sensing and diagnosis module (SDM) can maintain sufficient voltage to deploy the airbags and pretensioners for 1 minute after the ignition is OFF and the fuse has been removed. If the airbags or pretensioners are not disconnected, do not begin service until one minute has passed after disconnecting power to the SDM. Otherwise, injury could result.</FONT></I></B></DIV>
+<P></P>
+				
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : During service procedure, be very careful when handling the SDM. Never strike or jar the SDM. Never power the supplemental restraints system (SIR) when the SDM is not rigidly attached to the vehicle. All SDM mounting bolts must be carefully tightened, and the arrow on the SDM must be pointing toward the front of the vehicle to ensure proper operation of the SIR. The SDM could be activated if it is powered when it is not rigidly attached to the vehicle, resulting in unexpected deployment and possible injury.</FONT></I></B></DIV>
+<P></P>
+				
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : Never measure the resistance of an inflator module with an ohmmeter. An ohmmeter's battery can deploy the airbag and cause injury.</FONT></I></B></DIV>
+<P></P>
+				
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Confirm the ignition switch "OFF".</Li>
+									<Li>Wait for 1 minute to discharge the SDM charger.</Li>
+								</OL>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I> Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Visually inspect the connector and wiring of passenger belt pretensioner.</div>
+								<div>Is the connector disconnected or the wiring damaged?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Connect connector or replace the airbag wiring.</Li>
+									<Li>Perform the SIR diagnostic system check.</Li>
+								</OL>
+								<div>Is the DTC removed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Confirm the ignition switch "OFF".</Li>
+									<Li>Disconnect the connector of passenger belt pretensioner.</Li>
+									<Li>Disconnect the connector of SDM wiring.</Li>
+									<Li>Check the resistance between the terminal 1, 2 of passenger belt pretensioner and the voltage.</Li>
+								</OL>
+								<div>Is the resistance about ∞ ?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>∞</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Replace the airbag wiring.</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the resistance between the terminal 1, 2 of passenger belt pretensioner and the ground.</div>
+								<div>Is the resistance about ∞ ?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>∞</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Replace the airbag wiring.</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Replace the SDM.</Li>
+									<Li>Confirm the ignition switch "ON".</Li>
+									<Li>Erase the DTC using scan tool.</Li>
+									<Li>Perform the SIR diagnostic system check.</Li>
+								</OL>
+								<div>Is the DTC removed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Replace the passenger belt pretensioner.</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="K5B18B02" src="../../../../graphic-pool/K/5B/1/K5B18B02.png"><BR><A target="_blank" href="../../../../graphic-pool/K/5B/1/K5B18B02.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="M8B0B0061"><font size="4"><b>Diagnostic Trouble Code (DTC) B0061 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="M8B0HWLDO"><font size="4"><b>Hardwired Warning Lamp Diagnostic Open or Short</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="T8B0CD25"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">When the ignition switch is first turned ON, ignition voltage is applied to the indicator lamp and also to the sensing and diagnostic module (SDM) input terminal A10. The SDM responds by flashing the AIRBAG indicator seven times. If the SDM cannot detect voltage on the indicator circuit, a DTC B0061 will be set.</div>
+				<div class="T1" align="left">The SDM also attempts to turn on the AIRBAG indicator, but the indicator will not turn on if inputs have been correctly processed.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M8B0WSW18"><b>DTC B0061 Will Set When</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">During continuous monitoring, the SDM fails to detect voltage at terminal A18, the input terminal for the AIRBAG indicator, for 500 milliseconds.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="M8B0B00611"><font size="4"><b>DTC B0061 – Hardwired Warning Lamp Diagnostic Open or Short</b></font></DIV>
+<P></P>
+			
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : The sensing and diagnosis module (SDM) can maintain sufficient voltage to deploy the airbags and pretensioners for 1 minute after the ignition is OFF and the fuse has been removed. If the airbags or pretensioners are not disconnected, do not begin service until one minute has passed after disconnecting power to the SDM. Otherwise, injury could result.</FONT></I></B></DIV>
+<P></P>
+				
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : During service procedure, be very careful when handling the SDM. Never strike or jar the SDM. Never power the supplemental restraints system (SIR) when the SDM is not rigidly attached to the vehicle. All SDM mounting bolts must be carefully tightened, and the arrow on the SDM must be pointing toward the front of the vehicle to ensure proper operation of the SIR. The SDM could be activated if it is powered when it is not rigidly attached to the vehicle, resulting in unexpected deployment and possible injury.</FONT></I></B></DIV>
+<P></P>
+				
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : Never measure the resistance of an inflator module with an ohmmeter. An ohmmeter's battery can deploy the airbag and cause injury.</FONT></I></B></DIV>
+<P></P>
+				
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform the SIR Diagnostic System Check.</div>
+								<div>Is the SIR Diagnostic System Check complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the instrument panel fuse F10.</div>
+								<div>Is fuse F10 blown?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Check for a short circuit and repair if necessary.</Li>
+									<Li>Replace the fuse.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to "SIR Diagnostic System Check"</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li value="1">Turn the ignition ON.</Li>
+<Li>Turn the ignition ON.</Li>
+									<Li>Check the power supply to fuse F10.</Li>
+								</OL>
+								<div>Is the voltage equal to the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>9-16V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the power supply to fuse F10.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to "SIR Diagnostic System Check"</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li value="1">Remove the telltale box.</Li>
+<Li>Remove the telltale box.</Li>
+									<Li>Check the voltage at telltale box connector A6.</Li>
+								</OL>
+								<div>Is the voltage at A6 equal to the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>9-16V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the open circuit between the instrument panel fuse F10 and telltale box connector A6.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to "SIR Diagnostic System Check"</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Test the telltale box printed circuit for continuity between connectors A6 and B8.</Li>
+									<Li>Is there continuity between A6 and B8 on the printed circuit?</Li>
+								</OL>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the telltale box.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to "SIR Diagnostic System Check"</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li value="2">Turn the ignition to LOCK and remove the key.</Li>
+<Li>Turn the ignition to LOCK and remove the key.</Li>
+									<Li>Disconnect the passenger airbag, the yellow clock spring connector on the steering column.</Li>
+									<Li>Disconnect the SDM electrical connector.</Li>
+									<Li value="1">Turn the ignition ON.</Li>
+<Li>Turn the ignition ON.</Li>
+									<Li value="1">Check the voltage at terminal A18 of the SDM connector.</Li>
+<Li>Check the voltage at terminal A18 of the SDM connector.</Li>
+								</OL>
+								<div>Is the voltage equal to the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>9-16V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the open circuit between the telltale box and the SDM connector terminal A18.</div>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to "SIR Diagnostic System Check"</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Turn the ignition to LOCK and remove the key.</Li>
+									<Li>Disconnect the passenger airbag, the yellow clock spring connector on the steering column and connector C203.</Li>
+									<Li>Replace the SDM. The arrow must be pointing toward the front of the vehicle.</Li>
+									<Li>Connect all SIR components, and ensure that all components are properly mounted.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to "SIR Diagnostic System Check"</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="K5B18B05" src="../../../../graphic-pool/K/5B/1/K5B18B05.png"><BR><A target="_blank" href="../../../../graphic-pool/K/5B/1/K5B18B05.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="M8B0B0064"><font size="4"><b>Diagnostic Trouble Code (DTC) B0064 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T8B0ISDM31"><font size="4"><b>Driver Belt Pretensioner Deployment Loop Shorted</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="M8B0CD27"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">When the ignition switch is turned to ON, the sensing and diagnostic module(SDM) will perform tests to diagnose critical malfunctions within itself. After passing these tests, ignition and deployment loop voltages are measured to ensure that they are within their respective normal voltage ranges. The SDM then proceeds with the resistance measurement test. Each inflator low terminal is grounded through a current sink, and each inflator current source is connected to each inflator high terminal to allow a known amount of current to flow. By monitoring the voltage difference between each inflator high and low, the SDM calculates the combined resistance of the inflator module the wiring harness, and the connector terminal contacts.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M8B0WSW19"><b>DTC 31 Will Set When</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The resistance of driver belt pretensioner deployment loop  is lower than 1.3 ohms.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M8B0DA19"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">An intermittent condition is likely to be caused by a short between the driver belt pretensioner high and low circuits.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="M8B0B00641"><font size="4"><b>DTC B0064 – Driver Belt Pretensioner Deployment Loop Shorted</b></font></DIV>
+<P></P>
+			
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : The sensing and diagnostic module(SDM) can maintain sufficient voltage to deploy the airbags and pretensioners for 1 minute after the ignition is OFF and the fuse has been removed. If the airbags and pretensioners are not disconnected, do not begin service until one minute has passed after disconnecting power to SDM. Otherwise, injury could result.</FONT></I></B></DIV>
+<P></P>
+				
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : During service procedure, be very careful when handling the SDM. Never strike or jar the SDM. Never power the supplemental inflatable restraints(SIR) when the SDM is not rigidly attached to the vehicle. All SDM mounting bolts must be carefully tightened , and the arrow on the SDM must be point toward the front of the vehicle to ensure proper operation of the SIR. The SDM could be activated if it is powered when it is not rigidly attached to the vehicle, resulting in unexpected deployment and possible injury.</FONT></I></B></DIV>
+<P></P>
+				
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : Never measure the resistance of an inflator module with an ohmmeter. An ohmmeter's battery can deploy the airbag and cause injury.</FONT></I></B></DIV>
+<P></P>
+				
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Confirm the ignition switch "OFF".</Li>
+									<Li>Wait for 1 minute to discharge the SDM charger.</Li>
+								</OL>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to  <I> Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Visually inspect the connector and wiring of driver belt pretensioner.</div>
+								<div>Is the connector disconnected or the wiring damaged?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Connect connector or replace the airbag wiring.</Li>
+									<Li>Perform the SIR diagnostic system check.</Li>
+								</OL>
+								<div>Is the DTC removed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Confirm the ignition switch "OFF".</Li>
+									<Li>Disconnect the connector of driver belt pretensioner.</Li>
+									<Li>Disconnect the connector of SDM wiring.</Li>
+									<Li>Check the resistance between the terminal 1 and 2 of driver belt pretensioner.</Li>
+								</OL>
+								<div>Is the resistance about ∞?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>∞</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Replace the airbag wiring.</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Replace the SDM.</Li>
+									<Li>Confirm the ignition switch "ON".</Li>
+									<Li>Erase the DTC using scan tool.</Li>
+									<Li>Perform the SIR diagnostic system check.</Li>
+								</OL>
+								<div>Is the DTC removed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Replace the driver belt pretensioner.</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="K5B18B05" src="../../../../graphic-pool/K/5B/1/K5B18B05.png"><BR><A target="_blank" href="../../../../graphic-pool/K/5B/1/K5B18B05.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="M8B0B0065"><font size="4"><b>Diagnostic Trouble Code (DTC) B0065 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="M8B0DSBPD"><font size="4"><b>Driver Side Belt Pretensioner Deployment Loop Open</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="M8B0CD20"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">When the ignition switch is turned to ON, the sensing and diagnostic module (SDM) will perform tests to diagnose critical malfunctions within itself. After passing these tests, Ignition 1 and deployment loop voltages are measured to ensure that they are within their respective normal voltage ranges. The SDM then proceeds with the resistance measurement test. Each inflator low terminal A5 is grounded through a current sink, and each inflator current source is connected to each inflator high terminal to allow a known amount of current to flow. By monitoring the voltage difference between each inflator high and low, the SDM calculates the combined resistance of the inflator module, the wiring harnes, and the connector terminal contacts.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M8B0WSW20"><b>DTC B0065 Will Set When</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Resistance of the driver belt pretensioner deployment loop is higher than 4.8 ohms for 5 consecutive test cycle.</Li>
+					<Li>Voltage at driver belt pretensioner high terminal is less than 2.4 volts and the resistance of the driver belt pretensioner is higher than or equal to 6 ohms for 5 consecutive test cycle.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M8B0DA20"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">An intermittent condition is likely to be caused by a poor connection, at the driver belt pretensioner connector, or at terminals A5 and A6 of the SDM. An open wire in the driver belt pretensioner deployment loop will also set DTC B0065.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="M8B0B00651"><font size="4"><b>DTC B0065 – Driver Belt Pretensioner Deployment Loop Open</b></font></DIV>
+<P></P>
+			
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : The sensing and diagnosis module (SDM) can maintain sufficient voltage to deploy the airbags and pretensioners for 1 minute after the ignition is OFF and the fuse has been removed. If the airbags or pretensioners are not disconnected, do not begin service until one minute has passed after disconnecting power to the SDM. Otherwise, injury could result.</FONT></I></B></DIV>
+<P></P>
+				
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : During service procedure, be very careful when handling the SDM. Never strike or jar the SDM. Never power the supplemental restraints system (SIR) when the SDM is not rigidly attached to the vehicle. All SDM mounting bolts must be carefully tightened, and the arrow on the SDM must be pointing toward the front of the vehicle to ensure proper operation of the SIR. The SDM could be activated if it is powered when it is not rigidly attached to the vehicle, resulting in unexpected deployment and possible injury.</FONT></I></B></DIV>
+<P></P>
+				
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : Never measure the resistance of an inflator module with an ohmmeter. An ohmmeter's battery can deploy the airbag and cause injury.</FONT></I></B></DIV>
+<P></P>
+				
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Confirm the ignition switch "OFF".</Li>
+									<Li>Wait for 1 minute to discharge the SDM charger.</Li>
+								</OL>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to  <I> Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Visually inspect the connector and wiring of driver belt pretensioner.</div>
+								<div>Is the connector disconnected or the wiring damaged?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Connect connector or replace the airbag wiring.</Li>
+									<Li>Perform the SIR diagnostic system check.</Li>
+								</OL>
+								<div>Is the DTC removed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Confirm the ignition switch "OFF".</Li>
+									<Li>Disconnect the connector of driver belt pretensioner.</Li>
+									<Li>Disconnect the connector of SDM wiring.</Li>
+									<Li>Check the resistance between the terminal A5, A6 of SDM and the terminal 1,2 of driver belt pretensioner.</Li>
+								</OL>
+								<div>Is the resistance about 0(zero)?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>≈ 0 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Replace the airbag wiring.</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Replace the SDM.</Li>
+									<Li>Confirm the ignition switch "ON".</Li>
+									<Li>Erase the DTC using scan tool.</Li>
+									<Li>Perform the SIR diagnostic system check.</Li>
+								</OL>
+								<div>Is the DTC removed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Replace the driver belt pretensioner.</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="K5B18B05" src="../../../../graphic-pool/K/5B/1/K5B18B05.png"><BR><A target="_blank" href="../../../../graphic-pool/K/5B/1/K5B18B05.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="M8B0B0066"><font size="4"><b>Diagnostic Trouble Code (DTC) B0066 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="M8B0DBPDL"><font size="4"><b>Driver Belt Pretensioner Deployment Loop Voltage Out of Range</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="M8B0CD21"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">When the ignition switch is turned to ON, the sensing and diagnostic module (SDM) will perform tests to diagnose critical malfunctions within itself. Upon passing these tests, ignition and deployment loop voltages are measured to ensure that they are within their respective normal voltage ranges. The SDM then proceeds with the resistance measurement test. Each inflator low terminal is grounded through a current sink, and each inflator current source is connected to each inflator high terminal to allow a known amount of current to flow. By monitoring the voltage difference between each inflator high and low terminals, the SDM calculates the combined resistance of the inlfator module, the wiring harness, and connector terminal contacts.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M8B0WSW21"><b>B0066 Will Set When</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Voltage at driver belt pretensioner high is higher than 7.5 volts for 5 consecutive test cycle.</Li>
+					<Li>Voltage at driver belt pretensioner high is less than 1.5 volts and the resistance of driver deployment loop is less than 6 ohms for 5 consecutive test cycle.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M8B0DA21"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">An intermittent condition is likely to be caused by a short to ground or voltage in the driver belt pretensioner high and low circuit.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="M8B0B00661"><font size="4"><b>DTC B0066 – Driver Side Airbag Inflation Record By Side Impact</b></font></DIV>
+<P></P>
+			
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : The sensing and diagnosis module (SDM) can maintain sufficient voltage to deploy the airbags and pretensioners for 1 minute after the ignition is OFF and the fuse has been removed. If the airbags or pretensioners are not disconnected, do not begin service until one minute has passed after disconnecting power to the SDM. Otherwise, injury could result.</FONT></I></B></DIV>
+<P></P>
+				
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : During service procedure, be very careful when handling the SDM. Never strike or jar the SDM. Never power the supplemental restraints system (SIR) when the SDM is not rigidly attached to the vehicle. All SDM mounting bolts must be carefully tightened, and the arrow on the SDM must be pointing toward the front of the vehicle to ensure proper operation of the SIR. The SDM could be activated if it is powered when it is not rigidly attached to the vehicle, resulting in unexpected deployment and possible injury.</FONT></I></B></DIV>
+<P></P>
+				
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : Never measure the resistance of an inflator module with an ohmmeter. An ohmmeter's battery can deploy the airbag and cause injury.</FONT></I></B></DIV>
+<P></P>
+				
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Confirm the ignition switch "OFF".</Li>
+									<Li>Wait for 1 minute to discharge the SDM charger.</Li>
+								</OL>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I> Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Visually inspect the connector and wiring of driver belt pretensioner.</div>
+								<div>Is the connector disconnected or the wiring damaged?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Connect connector or replace the airbag wiring.</Li>
+									<Li>Perform the SIR diagnostic system check.</Li>
+								</OL>
+								<div>Is the DTC removed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Confirm the ignition switch "OFF".</Li>
+									<Li>Disconnect the connector of driver belt pretensioner.</Li>
+									<Li>Disconnect the connector of SDM wiring.</Li>
+									<Li>Check the resistance between the terminal 1, 2 of driver belt pretensioner and the voltage.</Li>
+								</OL>
+								<div>Is the resistance about ∞ ?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>∞</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Replace the airbag wiring.</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the resistance between the terminal 1, 2 of driver belt pretensioner and the ground.</div>
+								<div>Is the resistance about ∞ ?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>∞</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Replace the airbag wiring.</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Replace the SDM.</Li>
+									<Li>Confirm the ignition switch "ON".</Li>
+									<Li>Erase the DTC using scan tool.</Li>
+									<Li>Perform the SIR diagnostic system check.</Li>
+								</OL>
+								<div>Is the DTC removed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Replace the driver belt pretensioner.</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="K5B18B04" src="../../../../graphic-pool/K/5B/1/K5B18B04.png"><BR><A target="_blank" href="../../../../graphic-pool/K/5B/1/K5B18B04.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="M8B0B0077"><font size="4"><b>Diagnostic Trouble Code (DTC) B0077 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="M8B0DSF"><font size="4"><b>Driver SIS Failure</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="M8B0CD22"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The SDM provide a two-wire interface for the SIS. When the ignition is turned ON, SIS operation consists of 3 modes as power-up mode, ID mode and normal mode. During ID mode, the SIS send a sequence of ID/traceability information to SDM. The power mode and ID mode must be completed within 5 seconds of the SIS being powered by SDM. If ID/traceability information is not received and verified within 5 seconds, SDM will set a DTC.</div>
+				<div class="T1" align="left">During normal mode, the SIS transmit a SOH (State Of Health) message once a second. If the SDM receives no SOH message for 5 seconds, the SDM will also set a DTC.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M8B0WSW22"><b>DTC B0077 Will Set When</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The driver side airbag sensor is inoperative.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="M8B0B00771"><font size="4"><b>DTC B0077 – Driver SIS Failure</b></font></DIV>
+<P></P>
+			
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : The sensing and diagnostic module(SDM) can maintain sufficient voltage to deploy the airbags and pretensioners for 1 minute after the ignition is OFF and the fuse has been removed. If the airbags and pretensioners are not disconnected, do not begin service until one minute has passed after disconnecting power to SDM. Otherwise, injury could result.</FONT></I></B></DIV>
+<P></P>
+				
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : During service procedure, be very careful when handling the SDM. Never strike or jar the SDM. Never power the supplemental inflatable restraints(SIR) when the SDM is not rigidly attached to the vehicle. All SDM mounting bolts must be carefully tightened , and the arrow on the SDM must be point toward the front of the vehicle to ensure proper operation of the SIR. The SDM could be activated if it is powered when it is not rigidly attached to the vehicle, resulting in unexpected deployment and possible injury.</FONT></I></B></DIV>
+<P></P>
+				
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : Never measure the resistance of an inflator module with an ohmmeter. An ohmmeter's battery can deploy the airbag and cause injury.</FONT></I></B></DIV>
+<P></P>
+				
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<UL>
+<Li>Confirm the ignition switch "OFF".</Li>
+									<Li>Wait for 1 minute to discharge the SDM charger.</Li>
+								</UL>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to  <I> Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Visually inspect the connector and the wiring of driver SIS.</div>
+								<div>Is the connector disconnected or the wiring damaged?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Connect connector or replace the airbag wiring.</Li>
+									<Li>Perform the SIR diagnostic system check.</Li>
+								</OL>
+								<div>Is the DTC removed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Confirm the ignition switch "OFF".</Li>
+									<Li>Disconnect the connector of driver SIS.</Li>
+									<Li>Disconnect the connector of SDM wiring.</Li>
+									<Li>Check the resistance between the terminal C5, C6 of SDM and the terminal 2, 1 of driver SIS.</Li>
+								</OL>
+								<div>Is the resistance about 0(zero)?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>≈ 0 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Replace the airbag wiring.</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the resistance between the terminal 1, 2 of driver SIS.</div>
+								<div>Is the resistance about ∞?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>∞</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Replace the airbag wiring.</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the resistance between the terminal 1, 2 of driver SIS and the voltage.</div>
+								<div>Is the resistance about ∞?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>∞</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Replace the airbag wiring.</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the resistance between the terminal 1, 2 of driver SIS and the ground.</div>
+								<div>Is the resistance about ∞?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>∞</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Replace the airbag wiring.</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Replace the driver SIS.</Li>
+									<Li>Confirm the ignition switch "ON".</Li>
+									<Li>Erase the DTC using scan tool.</Li>
+									<Li>Perform the SIR diagnostic system check.</Li>
+								</OL>
+								<div>Is the DTC removed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Replace the SDM.</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="K5B18B04" src="../../../../graphic-pool/K/5B/1/K5B18B04.png"><BR><A target="_blank" href="../../../../graphic-pool/K/5B/1/K5B18B04.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="M8B0B0078"><font size="4"><b>Diagnostic Trouble Code (DTC) B0078 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="M8B0PSF"><font size="4"><b>Passenger SIS Failure</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="M8B0CD23"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The SDM provide a two-wire interface for the SIS. When the ignition is turned ON, SIS operation consists of 3 modes as power-up mode, ID mode and normal mode. During ID mode, the SIS send a sequence of ID/traceability information to SDM. The power mode and ID mode must be completed within 5 seconds of the SIS being powered by SDM. If ID/traceability information is not received and verified within 5 seconds, SDM will set a DTC.</div>
+				<div class="T1" align="left">During normal mode, the SIS transmit a SOH (State Of Health) message once a second. If the SDM receives no SOH message for 5 seconds, the SDM will also set a DTC.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T8B0DTC35WSW"><b>DTC B0078 Will Set When</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The the passenger side airbag sensor is inoperative.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="M8B0B00781"><font size="4"><b>DTC B0078 – Passenger SIS Failure</b></font></DIV>
+<P></P>
+			
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : The sensing and diagnostic module(SDM) can maintain sufficient voltage to deploy the airbags and pretensioners for 1 minute after the ignition is OFF and the fuse has been removed. If the airbags and pretensioners are not disconnected, do not begin service until one minute has passed after disconnecting power to SDM. Otherwise, injury could result.</FONT></I></B></DIV>
+<P></P>
+				
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : During service procedure, be very careful when handling the SDM. Never strike or jar the SDM. Never power the supplemental inflatable restraints(SIR) when the SDM is not rigidly attached to the vehicle. All SDM mounting bolts must be carefully tightened , and the arrow on the SDM must be point toward the front of the vehicle to ensure proper operation of the SIR. The SDM could be activated if it is powered when it is not rigidly attached to the vehicle, resulting in unexpected deployment and possible injury.</FONT></I></B></DIV>
+<P></P>
+				
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : Never measure the resistance of an inflator module with an ohmmeter. An ohmmeter's battery can deploy the airbag and cause injury.</FONT></I></B></DIV>
+<P></P>
+				
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<UL>
+<Li>Confirm the ignition switch "OFF".</Li>
+									<Li>Wait for 1 minute to discharge the SDM charger.</Li>
+								</UL>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to  <I> Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Visually inspect the connector and wiring of passenger SIS.</div>
+								<div>Is the connector disconnected or the wiring damaged?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Connect connector or replace the airbag wiring.</Li>
+									<Li>Perform the SIR diagnostic system check.</Li>
+								</OL>
+								<div>Is the DTC removed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Confirm the ignition switch "OFF".</Li>
+									<Li>Disconnect the connector of passenger SIS.</Li>
+									<Li>Disconnect the connector of SDM wiring.</Li>
+									<Li>Check the resistance between the terminal C7, C8 of SDM and the terminal 1, 2 of passenger SIS.</Li>
+								</OL>
+								<div>Is the resistance about 0(zero)?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>≈ 0 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Replace the airbag wiring.</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the resistance between the terminal 1 and 2 of passenger SIS.</div>
+								<div>Is the resistance about ∞?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>∞</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Replace the airbag wiring.</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the resistance between the terminal 1, 2 of passenger SIS and the voltage.</div>
+								<div>Is the resistance about ∞?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>∞</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Replace the airbag wiring.</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check the resistance between the terminal 1, 2 of passenger SIS and the ground.</div>
+								<div>Is the resistance about ∞?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>∞</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Replace the airbag wiring.</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Replace the passenger SIS.</Li>
+									<Li>Confirm the ignition switch "ON".</Li>
+									<Li>Erase the DTC using scan tool.</Li>
+									<Li>Perform the SIR diagnostic system check.</Li>
+								</OL>
+								<div>Is the DTC removed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Replace the SDM.</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="K5B18B04" src="../../../../graphic-pool/K/5B/1/K5B18B04.png"><BR><A target="_blank" href="../../../../graphic-pool/K/5B/1/K5B18B04.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="M8B0B0079"><font size="4"><b>Diagnostic Trouble Code (DTC) B0079 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="M8B0IDS"><font size="4"><b>Incorrect Driver SIS</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="M8B0CD24"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The SDM provide a two-wire interface for the SIS. When the ignition is turned ON, SIS operation consists of 3 modes as power-up mode, ID mode and normal mode. During ID mode, the SIS send a sequence of ID/traceability information to SDM. The power mode and ID mode must be completed within 5 seconds of the SIS being powered by SDM. If ID/traceability information is not received and verified within 5 seconds, SDM will set a DTC.</div>
+				<div class="T1" align="left">During normal mode, the SIS transmit a SOH (State Of Health) message once a second. If the SDM receives no SOH message for 5 seconds, the SDM will also set a DTC.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M8B0WSW24"><b>DTC B0079 Will Set When</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The sensor for communication between the SDM and the driver SIS is not identified.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="M8B0B00791"><font size="4"><b>DTC B0079 – Incorrect Driver SIS</b></font></DIV>
+<P></P>
+			
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : The sensing and diagnostic module(SDM) can maintain sufficient voltage to deploy the airbags and pretensioners for 1 minute after the ignition is OFF and the fuse has been removed. If the airbags and pretensioners are not disconnected, do not begin service until one minute has passed after disconnecting power to SDM. Otherwise, injury could result.</FONT></I></B></DIV>
+<P></P>
+				
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : During service procedure, be very careful when handling the SDM. Never strike or jar the SDM. Never power the supplemental inflatable restraints(SIR) when the SDM is not rigidly attached to the vehicle. All SDM mounting bolts must be carefully tightened , and the arrow on the SDM must be point toward the front of the vehicle to ensure proper operation of the SIR. The SDM could be activated if it is powered when it is not rigidly attached to the vehicle, resulting in unexpected deployment and possible injury.</FONT></I></B></DIV>
+<P></P>
+				
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : Never measure the resistance of an inflator module with an ohmmeter. An ohmmeter's battery can deploy the airbag and cause injury.</FONT></I></B></DIV>
+<P></P>
+				
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Confirm the ignition switch "OFF".</Li>
+									<Li>Wait for a minute the SDM charger to be discharged.</Li>
+								</OL>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to  <I> Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Visually check any damage for the driver side airbag sensor wiring.</div>
+								<div>Is the driver side airbag sensor wiring damaged?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the airbag wiring.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the driver SIS.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="K5B18B04" src="../../../../graphic-pool/K/5B/1/K5B18B04.png"><BR><A target="_blank" href="../../../../graphic-pool/K/5B/1/K5B18B04.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="M8B0B0081"><font size="4"><b>Diagnostic Trouble Code (DTC) B0081 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="M8B0IPS"><font size="4"><b>Incorrect Passenger SIS</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="M8B0CD25"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The SDM provide a two-wire interface for the SIS. When the ignition is turned ON, SIS operation consists of 3 modes as power-up mode, ID mode and normal mode. During ID mode, the SIS send a sequence of ID/traceability information to SDM. The power mode and ID mode must be completed within 5 seconds of the SIS being powered by SDM. If ID/traceability information is not received and verified within 5 seconds, SDM will set a DTC.</div>
+				<div class="T1" align="left">During normal mode, the SIS transmit a SOH (State Of Health) message once a second. If the SDM receives no SOH message for 5 seconds, the SDM will also set a DTC.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M8B0WSW25"><b>DTC B0081 Will Set When</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The sensor for communication between the SDM and the passenger SIS is not identified.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="M8B0B00811"><font size="4"><b>DTC B0081 – Incorrect Passenger SIS</b></font></DIV>
+<P></P>
+			
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : The sensing and diagnostic module(SDM) can maintain sufficient voltage to deploy the airbags and pretensioners for 1 minute after the ignition is OFF and the fuse has been removed. If the airbags and pretensioners are not disconnected, do not begin service until one minute has passed after disconnecting power to SDM. Otherwise, injury could result.</FONT></I></B></DIV>
+<P></P>
+				
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : During service procedure, be very careful when handling the SDM. Never strike or jar the SDM. Never power the supplemental inflatable restraints(SIR) when the SDM is not rigidly attached to the vehicle. All SDM mounting bolts must be carefully tightened , and the arrow on the SDM must be point toward the front of the vehicle to ensure proper operation of the SIR. The SDM could be activated if it is powered when it is not rigidly attached to the vehicle, resulting in unexpected deployment and possible injury.</FONT></I></B></DIV>
+<P></P>
+				
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : Never measure the resistance of an inflator module with an ohmmeter. An ohmmeter's battery can deploy the airbag and cause injury.</FONT></I></B></DIV>
+<P></P>
+				
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Confirm the ignition switch "OFF".</Li>
+									<Li>Wait for a minute the SDM charger to be discharged.</Li>
+								</OL>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to  <I> Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Visually check any damage for the passenger side airbag sensor wiring.</div>
+								<div>Is the passenger side airbag sensor wiring damaged?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the airbag wiring.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the passenger SIS.</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="K5B18B06" src="../../../../graphic-pool/K/5B/1/K5B18B06.png"><BR><A target="_blank" href="../../../../graphic-pool/K/5B/1/K5B18B06.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="M8B0B1000"><font size="4"><b>Diagnostic Trouble Code (DTC) B1000 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="M8B0DSIMF"><font size="4"><b>Discard SDM-Internal Malfunction Fault</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="M8B0CD26"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">When the ignition switch is turned to ON, the sensing and diagnostic module(SDM) will perform turn-on test to diagnose critical malfunctions within SDM itself.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M8B0WSW26"><b>DTC B1000 Will Set When</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The SDM does not implement diagnostic operation. In case of above, the wiring harness of SDM should be checked before replacing the SDM.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="T8B0DTC521"><font size="4"><b>DTC B1000 – Discard SDM-Internal Malfunction Fault</b></font></DIV>
+<P></P>
+			
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : The sensing and diagnostic module(SDM) can maintain sufficient voltage to deploy the airbags and pretensioners for 1 minute after the ignition is OFF and the fuse has been removed. If the airbags and pretensioners are not disconnected, do not begin service until one minute has passed after disconnecting power to SDM. Otherwise, injury could result.</FONT></I></B></DIV>
+<P></P>
+				
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : During service procedure, be very careful when handling the SDM. Never strike or jar the SDM. Never power the supplemental inflatable restraints(SIR) when the SDM is not rigidly attached to the vehicle. All SDM mounting bolts must be carefully tightened , and the arrow on the SDM must be point toward the front of the vehicle to ensure proper operation of the SIR. The SDM could be activated if it is powered when it is not rigidly attached to the vehicle, resulting in unexpected deployment and possible injury.</FONT></I></B></DIV>
+<P></P>
+				
+				
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : Never measure the resistance of an inflator module with an ohmmeter. An ohmmeter's battery can deploy the airbag and cause injury.</FONT></I></B></DIV>
+<P></P>
+				
+			
+		
+	
+	<BR><BR><TABLE align="center"><TR>
+<TD align="left"><A href="6M2_8B01.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="To Previous Page"></A></TD>
+<TD align="left"></TD>
+<TD align="left"><A href="6M2_8B03.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="To Next Page"></A></TD>
+<TD></TD>
+</TR></TABLE>
+<TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright General Motors Chevrolet Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

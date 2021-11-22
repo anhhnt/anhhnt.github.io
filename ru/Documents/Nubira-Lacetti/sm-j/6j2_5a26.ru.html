@@ -1,0 +1,855 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>.T2{    BORDER-TOP: white;}  .T3{    BORDER-BOTTOM: white;} .T4{    BORDER-TOP: white;    BORDER-BOTTOM: white} .I{ padding-left : 10pt}  .Tighten{ padding-left : 7pt} .Arial{ font-family : Arial, Helvetica, sans-serif;margin-left: 10pt;margin-right : 10pt } .TableB{ margin-left : 0pt}</style>
+<TITLE>Руководство по техническому обслуживанию2006 Nubira-Lacetti Диагностический код неисправности (DTC) U0001</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+ function FixMenu()
+{
+menuTop = document.body.scrollTop + document.body.clientHeight -40;
+menu.style.top = menuTop;
+menu.style.width = document.body.clientWidth; 
+}
+
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px"><A border="0" href="6J2_5A26.ru.html"><IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="К началу документа"></A></SPAN><TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt"><TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Nubira-Lacetti</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left"><TABLE><TR>
+<TD width="5%" align="left"><A href="6J2_5A25.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="На предыдущую страницу"></A></TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left"><A href="6J2_5A27.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="На следующую страницу"></A></TD>
+</TR></TABLE></TD>
+<TD><TABLE width="65%" align="right"><TR>
+<TD style="font-size:10"><A href="../../../GMDE_TIS_START.html" target="_top"><IMG src="../../code/menu-images/home.gif" border="0" alt="Главная страница GMDE"></A></TD>
+<TD style="font-size:10"><A href="../toc_Nubira-Lacetti.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Загрузить нединамическое оглавление"></A></TD>
+<TD style="font-size:10"><A href="../toc_Nubira-Lacetti_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Загрузить динамическое оглавление"></A></TD>
+<TD style="font-size:10"><A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Помощь"></A></TD>
+</TR></TABLE></TD>
+</TR>
+</TBODY></TABLE>
+	
+	<BR><IMG alt="J3B15A75" src="../../../../graphic-pool/J/3B/1/J3B15A75.png"><BR><A target="_blank" href="../../../../graphic-pool/J/3B/1/J3B15A75.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="J5A2U0001"><font size="4"><b>Диагностический код неисправности (DTC) U0001 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="J5A2HSCC"><font size="4"><b>Высокоскоростная коммуникация CAN</b></font></DIV>
+		<P></P>
+<DIV align="left" id="J5A2CRD"><b>Условия действия DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>Датчик частоты вращения двигателя показывает 400 об/мин или выше.</Li>
+					<Li>Датчик входной частоты вращения показывает 400 об/мин или выше.</Li>
+					<Li>Контроллер КПП получает от контроллера CAN сигнал о отключении шины.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="J5A2CSDTC"><b>Условия занесения кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Выше приведенные условия возникают непрерывно 7 раз.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="J5A2ATDTC"><b>Действия при занесении кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Контроллер КПП отдает команду на включение сигнализатора неисправностей и заносит соответствующий код при возникновении неисправности в одном цикле зажигания.</Li>
+					<Li>При расчете времени переключения и блокировки контроллер КПП считает, что дроссельная заслонка полностью закрыта.</Li>
+					<Li>Для управления давлением в гидравлических линиях контроллер КПП считает, что дроссельная заслонка полностью открыта.</Li>
+					<Li>Отсутствует блокировка</Li>
+					<Li>Отсутствует управление самообучением.
+</Li>
+					<Li>Не включается 4-я передача.</Li>
+					<Li>Контроллер КПП принимает обороты двигателя равными 0 мин-1.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="J5A2CCDTC"><b>Условия очистки кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Контроллер КПП отдает команду на выключение сигнализатора неисправностей, если в трех циклах зажигания подряд неисправность не наблюдается.</Li>
+					<Li>Очистить код из памяти контроллера можно с помощью диагностического прибора.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="J5A2CF"><b>Причина неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Электрический разъем или жгут между контроллером КПП и контроллером ЭСУД
+</Li>
+					<Li>Контроллер ЭСУД</Li>
+					<Li>контроллер КПП</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="J5A2U00011"><font size="4"><b>DTC U0001 - Высокоскоростная коммуникация CAN</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Выключить зажигание.</Li>
+									<Li>Подключить диагностический прибор.</Li>
+									<Li>Двигатель остановлен. Перевести замок зажигания в положение ON.</Li>
+									<Li>В меню "Diagnostic Trouble Codes Information" ("Информация о кодах") диагностического прибора выбрать команду "Store Freeze Frame/Failure Records" ("Стоп-кадр/Записи о неисправности").</Li>
+									<Li>Сохранить данные стоп-кадра/записи о неисправности.</Li>
+									<Li>В меню "Diagnostic Trouble Codes Information" ("Информация о кодах") выбрать команду "Clear DTC Information" ("Очистить информацию о кодах").</Li>
+									<Li>Очистить информацию о кодах.</Li>
+									<Li>Выполнить один драйв-цикл.</Li>
+								</OL>
+								<div>Сигнализатор неисправности горит?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>В меню "Diagnostic Trouble Codes Information" ("Информация о кодах") выбрать команду "Request DTC by Status" ("Запрос кодов по состоянию").</Li>
+									<Li>Выполнить запрос кодов по состоянию.</Li>
+								</OL>
+								<div>Отображается ли код U0001?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Выключить зажигание.</Li>
+									<Li>Разъединить разъемы контроллера КПП и контроллера ЭСУД.</Li>
+									<Li>Измерить сопротивление между контактом A17 разъема контроллера КПП и контактом 88 разъема контроллера ЭСУД.</Li>
+									<Li>Измерить сопротивление между контактом A7 разъема контроллера КПП и контактом 57 разъема контроллера ЭСУД.</Li>
+								</OL>
+								<div>Измеренное сопротивление находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>0 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<div>Провести необходимый провести ремонт контактов.</div>
+								<div>Действие завершено?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Включить зажигание.</Li>
+									<Li>Измерить напряжение на контакте A17.</Li>
+									<Li>Измерить напряжение на контакте A7.</Li>
+								</OL>
+								<div>Напряжение находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>1.5-3.0 В</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<div>Провести необходимый провести ремонт контактов.</div>
+								<div>Действие завершено?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Заменить контроллер КПП.</Li>
+									<Li>Выключить зажигание.</Li>
+									<Li>Включить зажигание.</Li>
+									<Li>Проверить, появляется ли код неисправности U0001.</Li>
+								</OL>
+								<div>Код занесен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<div>Заменить контроллер ЭСУД.</div>
+								<div>Действие завершено?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>После окончания ремонта выбрать команду "clear info" ("очистить данные") на диагностическом приборе и провести дорожное испытание автомобиля.</Li>
+									<Li>Просмотреть меню "DTC info" ("Информация о кодах").</Li>
+								</OL>
+								<div>Последнее испытание прошло неудачно или отображается текущий код?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Повторить диагностику</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Проверить исправность после ремонта. Ремонт закончен</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><IMG alt="J3B15A75" src="../../../../graphic-pool/J/3B/1/J3B15A75.png"><BR><A target="_blank" href="../../../../graphic-pool/J/3B/1/J3B15A75.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="J5A2U0100"><font size="4"><b>Диагностический код неисправности (DTC) U0100 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="J5A2LCWE"><font size="4"><b>Нарушение связи с ECM/PCM</b></font></DIV>
+		<P></P>
+<DIV align="left" id="J5A2CRD1"><b>Условия действия DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>Неисправное состояние отключения шины CAN.</Li>
+					<Li>Частота вращения коленчатого вала 400 мин-1 или выше.</Li>
+					<Li>Датчик входной частоты вращения показывает 400 мин-1 или больше.</Li>
+					<Li>Контроллер КПП не может обнаружить данные электронного блока управления непрерывно в течение 0.2 секунды.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="J5A2CSDTC1"><b>Условия занесения кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Выше приведенные условия возникают непрерывно 10 раз.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="J5A2ATDTC1"><b>Действия при занесении кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Контроллер КПП отдает команду на включение сигнализатора неисправностей и заносит соответствующий код при возникновении неисправности в одном цикле зажигания.</Li>
+					<Li>При расчете времени переключения и блокировки контроллер КПП считает, что дроссельная заслонка полностью закрыта.</Li>
+					<Li>Для управления давлением в гидравлических линиях контроллер КПП считает, что дроссельная заслонка полностью открыта.</Li>
+					<Li>Отсутствует блокировка</Li>
+					<Li>Отсутствует управление самообучением.
+</Li>
+					<Li>Не включается 4-я передача.</Li>
+					<Li>Контроллер КПП принимает обороты двигателя равными 0 мин-1.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="J5A2CCDTC1"><b>Условия очистки кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Контроллер КПП отдает команду на выключение сигнализатора неисправностей, если в трех циклах зажигания подряд неисправность не наблюдается.</Li>
+					<Li>Очистить код из памяти контроллера можно с помощью диагностического прибора.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="J5A2CF1"><b>Причина неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Электрический разъем или жгут между контроллером КПП и контроллером ЭСУД
+</Li>
+					<Li>Контроллер ЭСУД</Li>
+					<Li>контроллер КПП</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="J5A2U01001"><font size="4"><b>DTC U0100 - Нарушение связи с ECM/PCM</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Выключить зажигание.</Li>
+									<Li>Подключить диагностический прибор.</Li>
+									<Li>Двигатель остановлен. Перевести замок зажигания в положение ON.</Li>
+									<Li>В меню "Diagnostic Trouble Codes Information" ("Информация о кодах") диагностического прибора выбрать команду "Store Freeze Frame/Failure Records" ("Стоп-кадр/Записи о неисправности").</Li>
+									<Li>Сохранить данные стоп-кадра/записи о неисправности.</Li>
+									<Li>В меню "Diagnostic Trouble Codes Information" ("Информация о кодах") выбрать команду "Clear DTC Information" ("Очистить информацию о кодах").</Li>
+									<Li>Очистить информацию о кодах.</Li>
+									<Li>Выполнить один драйв-цикл.</Li>
+								</OL>
+								<div>Сигнализатор неисправности горит?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>В меню "Diagnostic Trouble Codes Information" ("Информация о кодах") выбрать команду "Request DTC by Status" ("Запрос кодов по состоянию").</Li>
+									<Li>Выполнить запрос кодов по состоянию.</Li>
+								</OL>
+								<div>Отображается ли код U0100?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Выключить зажигание.</Li>
+									<Li>Разъединить разъемы контроллера КПП и контроллера ЭСУД.</Li>
+									<Li>Измерить сопротивление между контактом A17 разъема контроллера КПП и контактом 88 разъема контроллера ЭСУД.</Li>
+									<Li>Измерить сопротивление между контактом A7 разъема контроллера КПП и контактом 57 разъема контроллера ЭСУД.</Li>
+								</OL>
+								<div>Измеренное сопротивление находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>0 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<div>Провести необходимый провести ремонт контактов.</div>
+								<div>Действие завершено?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Включить зажигание.</Li>
+									<Li>Измерить напряжение на контакте A17.</Li>
+									<Li>Измерить напряжение на контакте A7.</Li>
+								</OL>
+								<div>Напряжение находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>1.5-3.0 В</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<div>Провести необходимый провести ремонт контактов.</div>
+								<div>Действие завершено?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Заменить контроллер КПП.</Li>
+									<Li>Выключить зажигание.</Li>
+									<Li>Включить зажигание.</Li>
+									<Li>Проверить, появляется ли код U0100.</Li>
+								</OL>
+								<div>Код занесен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<div>Заменить контроллер ЭСУД.</div>
+								<div>Действие завершено?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>После окончания ремонта выбрать команду "clear info" ("очистить данные") на диагностическом приборе и провести дорожное испытание автомобиля.</Li>
+									<Li>Просмотреть меню "DTC info" ("Информация о кодах").</Li>
+								</OL>
+								<div>Последнее испытание прошло неудачно или отображается текущий код?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Повторить диагностику</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Проверить исправность после ремонта. Ремонт закончен</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><IMG alt="J3B15A75" src="../../../../graphic-pool/J/3B/1/J3B15A75.png"><BR><A target="_blank" href="../../../../graphic-pool/J/3B/1/J3B15A75.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="J5A2U0401"><font size="4"><b>Диагностический код неисправности (DTC) U0401 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="J5A2IDRFE"><font size="4"><b>Прием неправильных данных из ECM/PCM</b></font></DIV>
+		<P></P>
+<DIV align="left" id="J5A2CRD2"><b>Условия действия DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>Напряжение зажигания больше, чем 9 вольт.</Li>
+					<Li>Нет неисправного состояния отключения шины CAN.</Li>
+					<Li>Контроллер КПП получает сигнал о частоте вращения коленчатого вала непрерывно в течение 0.2 секунды.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="J5A2CSDTC2"><b>Условия занесения кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Выше приведенные условия возникают непрерывно 10 раз.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="J5A2ATDTC2"><b>Действия при занесении кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Контроллер КПП отдает команду на включение лампы HOLD.</Li>
+					<Li>Отсутствует блокировка</Li>
+					<Li>Не включается 4-я передача.</Li>
+					<Li>Отсутствует управление самообучением.
+</Li>
+					<Li>Отключается управление снижением момента двигателя.</Li>
+					<Li>Отключается управление давлением включения.</Li>
+					<Li>Отсутствует управление N-D электромагнитным клапаном управления моментом.
+</Li>
+					<Li>Контроллер КПП принимает обороты двигателя равными 0 мин-1.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="J5A2CCDTC2"><b>Условия очистки кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Контроллер КПП отдает команду на выключение лампы HOLD, если в трех циклах зажигания подряд неисправность не наблюдается.</Li>
+					<Li>Очистить код из памяти контроллера можно с помощью диагностического прибора.</Li>
+					<Li>Контроллер удалит код из памяти исторических кодов, если в сорока циклах прогрева подряд неисправность не наблюдается.</Li>
+					<Li>Контроллер КПП получает сигнал о частоте вращения коленчатого вала непрерывно в течение 2 секунд.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="J5A2CF2"><b>Причина неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Электрический разъем или жгут между контроллером КПП и контроллером ЭСУД
+</Li>
+					<Li>Контроллер ЭСУД</Li>
+					<Li>контроллер КПП</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="J5A2U04011"><font size="4"><b>DTC U0401 - Прием неправильных данных из ECM/PCM</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Выключить зажигание.</Li>
+									<Li>Подключить диагностический прибор.</Li>
+									<Li>Двигатель остановлен. Перевести замок зажигания в положение ON.</Li>
+									<Li>В меню "Diagnostic Trouble Codes Information" ("Информация о кодах") диагностического прибора выбрать команду "Store Freeze Frame/Failure Records" ("Стоп-кадр/Записи о неисправности").</Li>
+									<Li>Сохранить данные стоп-кадра/записи о неисправности.</Li>
+									<Li>В меню "Diagnostic Trouble Codes Information" ("Информация о кодах") выбрать команду "Clear DTC Information" ("Очистить информацию о кодах").</Li>
+									<Li>Очистить информацию о кодах.</Li>
+									<Li>Выполнить один драйв-цикл.</Li>
+								</OL>
+								<div>Сигнализатор неисправности горит?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>В меню "Diagnostic Trouble Codes Information" ("Информация о кодах") выбрать команду "Request DTC by Status" ("Запрос кодов по состоянию").</Li>
+									<Li>Выполнить запрос кодов по состоянию.</Li>
+								</OL>
+								<div>Отображается ли код U0401?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Выключить зажигание.</Li>
+									<Li>Разъединить разъемы контроллера КПП и контроллера ЭСУД.</Li>
+									<Li>Измерить сопротивление между контактом A17 разъема контроллера КПП и контактом 88 разъема контроллера ЭСУД.</Li>
+									<Li>Измерить сопротивление между контактом A7 разъема контроллера КПП и контактом 57 разъема контроллера ЭСУД.</Li>
+								</OL>
+								<div>Измеренное сопротивление находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>0 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<div>Провести необходимый провести ремонт контактов.</div>
+								<div>Действие завершено?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Включить зажигание.</Li>
+									<Li>Измерить напряжение на контакте A17.</Li>
+									<Li>Измерить напряжение на контакте A7.</Li>
+								</OL>
+								<div>Напряжение находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>1.5-3.0 В</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<div>Провести необходимый провести ремонт контактов.</div>
+								<div>Действие завершено?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Заменить контроллер КПП.</Li>
+									<Li>Выключить зажигание.</Li>
+									<Li>Включить зажигание.</Li>
+									<Li>Проверить, появляется ли код U0401.</Li>
+								</OL>
+								<div>Код занесен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<div>Заменить контроллер ЭСУД.</div>
+								<div>Действие завершено?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>После окончания ремонта выбрать команду "clear info" ("очистить данные") на диагностическом приборе и провести дорожное испытание автомобиля.</Li>
+									<Li>Просмотреть меню "DTC info" ("Информация о кодах").</Li>
+								</OL>
+								<div>Последнее испытание прошло неудачно или отображается текущий код?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Повторить диагностику</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Проверить исправность после ремонта. Ремонт закончен</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><BR><TABLE align="center"><TR>
+<TD align="left"><A href="6J2_5A25.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="На предыдущую страницу"></A></TD>
+<TD align="left"></TD>
+<TD align="left"><A href="6J2_5A27.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="На следующую страницу"></A></TD>
+<TD></TD>
+</TR></TABLE>
+<TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Авторское право принадлежит General Motors Chevrolet Europe Все права защищены</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

@@ -1,0 +1,2227 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>.T2{    BORDER-TOP: white;}  .T3{    BORDER-BOTTOM: white;} .T4{    BORDER-TOP: white;    BORDER-BOTTOM: white} .I{ padding-left : 10pt}  .Tighten{ padding-left : 7pt} .Arial{ font-family : Arial, Helvetica, sans-serif;margin-left: 10pt;margin-right : 10pt } .TableB{ margin-left : 0pt}</style>
+<TITLE>Руководство по техническому обслуживанию2006 Matiz Код C0110</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+ function FixMenu()
+{
+menuTop = document.body.scrollTop + document.body.clientHeight -40;
+menu.style.top = menuTop;
+menu.style.width = document.body.clientWidth; 
+}
+
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px"><A border="0" href="6M2_4F02.ru.html"><IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="К началу документа"></A></SPAN><TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt"><TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Matiz/Spark</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left"><TABLE><TR>
+<TD width="5%" align="left"><A href="6M2_4F01.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="На предыдущую страницу"></A></TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left"><A href="6M2_4F03.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="На следующую страницу"></A></TD>
+</TR></TABLE></TD>
+<TD><TABLE width="65%" align="right"><TR>
+<TD style="font-size:10"><A href="../../../GMDE_TIS_START.html" target="_top"><IMG src="../../code/menu-images/home.gif" border="0" alt="Главная страница GMDE"></A></TD>
+<TD style="font-size:10"><A href="../toc_Matiz.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Загрузить нединамическое оглавление"></A></TD>
+<TD style="font-size:10"><A href="../toc_Matiz_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Загрузить динамическое оглавление"></A></TD>
+<TD style="font-size:10"><A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Помощь"></A></TD>
+</TR></TABLE></TD>
+</TR>
+</TBODY></TABLE>
+	
+	
+		<BR><IMG alt="K5B14F03" src="../../../../graphic-pool/K/5B/1/K5B14F03.png"><BR><A target="_blank" href="../../../../graphic-pool/K/5B/1/K5B14F03.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="M4F0C0110"><font size="4"><b>Код C0110 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="M4F0PMCM"><font size="4"><b>Неисправность цепи электронасоса</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="M4F0CD"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Когда контроллер тормозной системы замыкает на землю реле электронасоса, его контакты замыкаются и на электронасос подается питание аккумуляторной батареи, если при этом замкнуто и реле клапана. Контроллер следит за подаваемым на электронасос напряжением, чтобы таким образом проверить работу электродвигателя насоса.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M4F0DIAGN"><b>ДИАГНОСТИКА</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Данный код неисправности заносится, если контроллер обнаруживает напряжение аккумулятора (B+) при выключенном реле электронасоса, а также если контроллер не обнаруживает напряжение аккумулятора (B+) после включения реле электронасоса.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M4F0CAUSE"><b>Причины</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Неисправность контакта разъема электронасоса.</Li>
+					<Li>Неисправность контакта разъема контроллера тормозной системы.</Li>
+					<Li>Неисправность жгута АБС.</Li>
+					<Li>Повышенное сопротивление цепи заземления кузова.</Li>
+					<Li>Неисправен контроллер тормозной системы.</Li>
+					<Li>Неисправность проводки между разъемом электронасоса и электронасосом.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M4F0FA"><b>Функционирование в режиме неисправности</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">АБС отключена, контрольная лампа АБС горит. Система электронного распределения тормозных усилий (EBD) отключена.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M4F0TD"><b>Описание проверки</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Числа, приведенные ниже, относятся к номерам операции в диагностической таблице:</div>
+				<OL>
+					<Li value="1">В этом шаге разъем проверяется на наличие повреждений.</Li>
+					<Li value="3">Проверяется надежность заземления.</Li>
+					<Li value="7">Проверяется разъем электронасоса со стороны блока АБС.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M4F0DA"><b>Диагностическая информация</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Тщательная проверка жгутов и разъемов является необходимым элементом диагностики. Невыполнение этой проверки может привести к выявлению несуществующих неисправностей, замене исправных деталей и повторному возникновению неисправности.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="M4F0C01101"><font size="4"><b>Код C0110 - Неисправность цепи электронасоса</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Разъедините разъем контроллера тормозной системы.</Li>
+									<Li>Осмотрите контакт 16 на колодках разъема со стороны жгута и со стороны контроллера тормозной системы.</Li>
+								</OL>
+								<div>Выявлено ли повреждение или коррозия контакта?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Отремонтируйте или замените неисправный контакт, разъем, жгут проводов или контроллер по необходимости.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Измерить сопротивление между контактом 16 разъема жгута проводов и "массой" кузова.</div>
+								<div>Измеренное сопротивление соответствует указанному в таблице?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>≈ 0 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Отремонтировать контакт "массы" G103.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устранить обрыв или высокое сопротивление в жгуте проводов между контактом 16 разъема контроллера тормозной системы и "массой". Заменить жгут проводов АБС, если потребуется.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Снять контроллер тормозной системы с автомобиля.</Li>
+									<Li>Отсоединить разъем контроллера тормозной системы и проверить контакты.</Li>
+								</OL>
+								<div>Обнаружены ли повреждения или следы коррозии, препятствующие хорошему контакту с землей?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Отремонтировать или заменить неисправный контакт, разъем или контроллер тормозной системы.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить EBCM.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><IMG alt="K5B14F03" src="../../../../graphic-pool/K/5B/1/K5B14F03.png"><BR><A target="_blank" href="../../../../graphic-pool/K/5B/1/K5B14F03.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="M4F0C0121"><font size="4"><b>Код C0121 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="M4F0VRCM"><font size="4"><b>Неисправность цепи реле клапана</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="M4F0CD1"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">При включенной АБС реле клапана обеспечивает подачу напряжения на электромагнитные клапаны. Кроме этого напряжения, для срабатывания клапанов необходимо, чтобы контроллер АБС замкнул цепи заземления всех катушек клапанов.</div>
+				<div class="T1" align="left">Код C0121 заносится при низком напряжении реле клапана, либо если в цепи питания реле присутствует напряжение 12 вольт в отсутствии соответствующего запроса контроллера АБС. Код также заносится, если в ходе самодиагностики контроллер АБС обнаружит обрыв или замыкание цепей трех или более клапанов.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M4F0DIAGN1"><b>ДИАГНОСТИКА</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Данная процедура предназначена для выявления ненадежного заземления контроллера тормозной системы.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M4F0CAUSE1"><b>Причины</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Коррозия контакта разъема.</Li>
+					<Li>Повреждение жгута электропроводки.</Li>
+					<Li>Нарушение проводимости контакта заземления.</Li>
+					<Li>Неисправен контроллер тормозной системы.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M4F0FA1"><b>Функционирование в режиме неисправности</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Система электронного распределения тормозных усилий (EBD)/АБС отключена, контрольная лампа АБС/EBD включена и горит до конца цикла зажигания. Если неисправность носит непостоянный характер, контроллер включит систему в следующем цикле зажигания и занесет в свою память исторический код неисправности C0121.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M4F0DA1"><b>Диагностическая информация</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Тщательная проверка жгутов и разъемов является необходимым элементом диагностики. Невыполнение этой проверки может привести к выявлению несуществующих неисправностей, замене исправных деталей и повторному возникновению неисправности.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="M4F0C01211"><font size="4"><b>Код C0121 - Неисправность цепи реле клапана</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>С помощью диагностического прибора очистите все коды неисправностей.</Li>
+									<Li>Выполните пробный выезд.</Li>
+								</OL>
+								<div>Код C0121 заносится снова?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Проверьте все разъемы и контакты, особенно разъема контроллера тормозной системы, на наличие повреждений, способных вызвать возникновение непостоянных неисправностей.</Li>
+									<Li>Устраните выявленную неисправность непостоянного характера.</Li>
+								</OL>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Разъединить разъем контроллера тормозной системы.</Li>
+									<Li>Осмотрите контакт 19 на колодках разъема со стороны жгута и со стороны контроллера тормозной системы.</Li>
+								</OL>
+								<div>Обнаружены ли повреждения или следы коррозии контакта 19?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Отремонтировать контакт или разъем или заменить жгут проводов контроллера тормозной системы или контроллер.</div>
+								<div>Измеренное сопротивление соответствует указанному в таблице?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Измерить сопротивление между контактом 19 разъема контроллера тормозной системы и "массой" шасси.</div>
+								<div>Измеренное сопротивление соответствует указанному в таблице?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>≈ 0 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить EBCM.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Отремонтировать контакт "массы" на шасси.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><IMG alt="K5B14F09" src="../../../../graphic-pool/K/5B/1/K5B14F09.png"><BR><A target="_blank" href="../../../../graphic-pool/K/5B/1/K5B14F09.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="M4F0C0161"><font size="4"><b>Код C0161 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="M4F0ABSBS"><font size="4"><b>Неисправность цепи выключателя тормоза АБС</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="M4F0CD2"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">При нажатии на педаль тормоза контакты выключателя стоп-сигнала замыкаются и загорается стоп-сигнал. Напряжение аккумуляторной батареи также подается на контакт 14 контроллера тормозной системы, который сообщает контроллеру АБС, что торможение начато и может потребоваться вмешательство системы АБС. Без такого оповещения сигналы, которые поступают от датчиков скорости колес и могут указывать на необходимость задействования АБС, не могут считаться достоверными. Если педаль тормоза не нажата, через контакт 14 контроллера тормозной системы происходит замыкание стоп-сигналов на "массу".</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M4F0DIAGN2"><b>ДИАГНОСТИКА</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Эта процедура позволяет определить, отсутствует ли сигнал с выключателя стоп-сигнала или он остается постоянным, и выявить, что является причиной этого - неисправность выключателя или цепь.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M4F0CAUSE2"><b>Причины</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Нарушение соединения контроллера тормозной системы с землей или с B+.</Li>
+					<Li>Разрыв, замыкание на землю или на B+ проводки автомобиля.</Li>
+					<Li>Выключатель стоп-сигнала неисправен.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0FA2"><b>Функционирование в режиме неисправности</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">В память заносится код C0161. АБС и система электронного распределения тормозных усилий (EBD) включены, контрольная лампа АБС/EBD не загорается.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J4F0TD1"><b>Описание проверки</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Числа, приведенные ниже, относятся к номерам операции в диагностической таблице:</div>
+				<OL>
+					<Li value="1">Эта простая проверка позволяет ограничить местонахождение неисправности предохранителем, выключателем стоп-сигнала и контроллером тормозной системы.</Li>
+					<Li value="3">Это первая операция при определении, в чем заключается неисправность - в обрыве, замыкании на "массу", на источник напряжения или в неисправности выключателя стоп-сигнала.</Li>
+					<Li value="11">С этого шага начинается поиск разрыва, неисправности разъема или контроллера тормозной системы.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M4F0DA2"><b>Диагностическая информация</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Тщательно осмотрите электропроводку и разъемы. Невыполнение этой проверки может привести к выявлению несуществующих неисправностей, замене исправных деталей и повторному возникновению неисправности.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="M4F0C01611"><font size="4"><b>Код C0161 - Неисправность цепи выключателя тормоза АБС</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Выжмите педаль тормоза.</div>
+								<div>Загорается ли стоп-сигнал?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Снимите ногу с педали тормоза.</div>
+								<div>Стоп-сигнал продолжает гореть?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверьте предохранитель Ef4 в блоке предохранителей двигателя.</div>
+								<div>Предохранитель Ef4 перегорел?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Заменить предохранитель Ef4..</Li>
+									<Li>Проверьте новый предохранитель.</Li>
+								</OL>
+								<div>Новый предохранитель перегорел?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Устранить замыкание на "массу" в цепи стоп-сигнала.</Li>
+									<Li>Установить новый предохранитель Ef4.</Li>
+								</OL>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устранить обрыв в цепи, идущей от контакта 26 разъема С102 в блоке предохранителей двигателя к выключателю стоп-сигнала и к контакту 30 разъема С103, если потребуется.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить функционирование стоп-сигналов и системы АБС.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить выключатель стоп-сигналов на педали тормоза.</div>
+								<div>Выключатель неисправен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Отремонтировать выключатель стоп-сигнала.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10
+</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устранить обрыв в цепи между выключателем стоп-сигнала, разъемом С201, контрольными лампами тормоза, средним верхним стоп-сигналом и контактом 14 разъема контроллера тормозной системы.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Разъедините разъем контроллера тормозной системы.</Li>
+									<Li>С помощью цифрового вольтметра измерить напряжение между контактами 14 и 19 разъема контроллера тормозной системы.</Li>
+									<Li>Попросите помощника выжать педаль тормоза.</Li>
+								</OL>
+								<div>Измеренное напряжение соответствует указанному в таблице?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>11-14 В</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Проверьте надежность соединения контактов 14 и 19 разъема жгута АБС и контроллера тормозной системы.</Li>
+									<Li>Осмотреть провода между контактом 30 разъема С103 и контактом 14 контроллера тормозной системы.</Li>
+									<Li>Проверить цепь между контактом заземления G103 и контактом 19 разъема жгута АБС и контроллера тормозной системы.</Li>
+									<Li>Отремонтировать неисправный контакт или разъем, либо заменить разъем или жгут, если потребуется.</Li>
+								</OL>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить соединение разъема с контроллером тормозной системы.</div>
+								<div>Вы проверили?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Отремонтировать или заменить неисправный разъем, жгут проводов или контроллер, если потребуется.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><IMG alt="K5B14F10" src="../../../../graphic-pool/K/5B/1/K5B14F10.png"><BR><A target="_blank" href="../../../../graphic-pool/K/5B/1/K5B14F10.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="M4F0C0245"><font size="4"><b>Код C0245 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="M4F0WSSFE"><font size="4"><b>Ошибка частоты датчика скорости колеса</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="M4F0CD3"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">При вращении задающего диска, представляющего собой зубчатое колесо, в обмотке датчика скорости колеса наводятся импульсы напряжения переменного тока. Импульс напряжения генерируется при прохождении каждого зуба диска. Контроллер тормозной системы использует частоту следования импульсов для расчета скорости вращения колеса. Значение напряжения генерируемого сигнала зависит от величины воздушного зазора между чувствительным элементом датчика и диском, а также от скорости вращения колеса.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M4F0DIAGN3"><b>ДИАГНОСТИКА</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Код заносится в том случае, когда контроллер тормозной системы не может определить, какой из датчиков скорости колеса неисправен. Чтобы выявить причину возникновения диагностического кода, необходимо проверить все датчики скорости и их электропроводку.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M4F0CAUSE3"><b>Причины</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Неверное число зубьев задающего диска.</Li>
+					<Li>Поврежденный зуб задающего диска.</Li>
+					<Li>Разрыв или замыкание цепи датчика скорости колеса.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M4F0FA3"><b>Функционирование в режиме неисправности</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">АБС отключена, контрольная лампа АБС горит.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M4F0TD3"><b>Описание проверки</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Числа, приведенные ниже, относятся к номерам операции в диагностической таблице:</div>
+				<OL>
+					<Li value="1">С этого шага начинается проверка датчиков скорости передних колес.</Li>
+					<Li value="3">В этом шаге проверяется исправность задающего диска переднего колеса.</Li>
+					<Li value="5">В этом шаге проверяются датчики скорости передних колес.</Li>
+					<Li value="7">В этом шаге жгут датчика скорости переднего колеса проверяется на замыкание.</Li>
+					<Li value="9">В этом шаге жгут датчика скорости переднего колеса проверяется на разрыв.</Li>
+					<Li value="11">С этого шага начинается проверка датчиков скорости задних колес.</Li>
+					<Li value="13">В этом шаге проверяется исправность задающего диска заднего колеса.</Li>
+					<Li value="15">В этом шаге проверяются датчики скорости задних колес.</Li>
+					<Li value="17">В этом шаге жгут датчика скорости заднего колеса проверяется на замыкание.</Li>
+					<Li value="19">В этом шаге жгут датчика скорости заднего колеса проверяется на разрыв.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M4F0DA3"><b>Диагностическая информация</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Код C0245 может быть занесен при проведении автоматического испытания с использованием диагностического прибора, если при этом показания угла открытия дроссельной заслонки в режиме "Data list" не обновляются. В этом случае следует очистить коды, отсоединить диагностический прибор и провести дорожное испытание автомобиля на скорости не менее 12 км/ч (7 миль/ч), чтобы проверить, будет ли код занесен повторно.</div>
+				<div class="T1" align="left">Проверьте задающие диски на наличие царапин, задиров и прочих дефектов, которые могут привести к неправильному формированию сигналов датчиков. Убедитесь, что пространство между зубьями диска не забито грязью, т.к. это может привести к возникновению данного дефекта. </div>
+				<div class="T1" align="left">Сильный износ ступицы/подшипника также может вызвать данный дефект. Зазор между чувствительным элементом датчика и задающим диском может значительно изменяться в результате износа подшипника.</div>
+				<div class="T1" align="left">При установке ступицы заднего колеса и наружного шарнира равных угловых скоростей с неверными задающими дисками, также может возникнуть данный код неисправности. Убедиться, что задающие диски передних и задних колес имеют по 40 зубьев.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="M4F0C02451"><font size="4"><b>Код C0245 - Ошибка частоты датчика скорости колеса</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Осмотрите проводку датчиков скорости передних колес. </div>
+								<div>Обнаружено ли повреждение?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Убедитесь, что на переднем мосту установлены правильные наружные шарниры равных угловых скоростей. Зубчатые кольца датчиков скорости задник колес имеют по 47 зубьев, а задние - по 40.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверьте предохранитель EF2 в блоке предохранителей двигателя.</div>
+								<div>Один из них неисправен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Замените шарнир на шарнир с необходимым диском.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Разъедините разъем датчика скорости колеса.</Li>
+									<Li>Измерьте сопротивление на контактах разъема датчика скорости колеса.</Li>
+								</OL>
+								<div>Измеренное сопротивление находится в указанном диапазоне для обоих колес?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>1000-1500 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Замените неисправный датчик скорости колеса.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Разъедините разъем контроллера АБС.</Li>
+									<Li>Проверьте жгуты проводов датчиков на замыкание проводов внутри жгута при помощи цифрового омметра, подключенного к двум контактам колодки разъема со стороны жгута.</Li>
+									<Li>Также проверьте жгут на возможность замыкания на землю. Измерения следует проводить на контактах разъема.</Li>
+								</OL>
+								<div>Обнаружено ли замыкание в жгутах датчиков?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устраните замыкание в жгутах или замыкание на землю.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверьте целостность проводки цепей обоих датчиков скорости передних колес на участке между разъемом АБС и разъемом датчика.</div>
+								<OL>
+									<Li>Для датчика скорости левого колеса в разъеме АБС используются контакты 6 и 7.</Li>
+									<Li>Для датчика скорости правого колеса в разъеме АБС используются контакты 4 и 5.</Li>
+								</OL>
+								<div>Жгуты обоих датчиков исправны?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устраните повреждение жгута датчика скорости переднего колеса.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Осмотрите проводку датчиков скорости задних колес. </Li>
+									<Li>Проверьте правильность установки датчиков скорости колеса и затяжку болтов крепления датчиков.</Li>
+								</OL>
+								<div>Обнаружено ли повреждение?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Отремонтируйте или замените неисправные детали.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Снимите датчики скорости задних колес и через крепежные отверстия осмотрите задающие диски.</div>
+								<OL>
+<Li>Убедитесь в отсутствии повреждения зубьев дисков.</Li>
+									<Li>Проверьте правильность установки задающего диска.</Li>
+								</OL>
+								<div>Обнаружено ли повреждение или иная неисправность дисков?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 15</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14
+</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Замените ступицу заднего колеса на ступицу с необходимым диском.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Разъедините разъем датчика скорости заднего колеса.</Li>
+									<Li>Измерьте сопротивление на контактах разъема датчика скорости колеса.</Li>
+								</OL>
+								<div>Измеренное сопротивление находится в указанном диапазоне для обоих колес?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>1000-1500 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 17</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 16</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">16</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Замените неисправный датчик скорости колеса.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">17</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Контроллер АБС должен быть отключен. Если нет, отсоедините его.</Li>
+									<Li>Проверьте жгуты проводов датчиков на замыкание проводов внутри жгута при помощи цифрового омметра, подключенного к двум контактам колодки разъема со стороны жгута.</Li>
+									<Li>Также проверьте жгут на возможность замыкания на землю. Измерения следует проводить на контактах разъема.</Li>
+								</OL>
+								<div>Обнаружено ли замыкание в жгутах датчиков?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 18</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 19</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">18</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устраните замыкание в жгутах или замыкание на землю.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">19</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверьте целостность проводки цепей обоих датчиков скорости задних колес на участке между разъемом АБС и разъемом датчика.</div>
+								<OL>
+<Li>Для датчика скорости левого колеса в разъеме АБС используются контакты 8 и 9.</Li>
+									<Li>Для датчика скорости правого колеса в разъеме АБС используются контакты 1 и 3.</Li>
+								</OL>
+								<div>Жгуты обоих датчиков исправны?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 21</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 20</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">20</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устранить обрыв в жгуте датчика скорости заднего колеса или разъема C205.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">21</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить EBCM.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><IMG alt="K5B14F03" src="../../../../graphic-pool/K/5B/1/K5B14F03.png"><BR><A target="_blank" href="../../../../graphic-pool/K/5B/1/K5B14F03.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="M4F0C0550"><font size="4"><b>Код C0550 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="M4F0ABSCM"><font size="4"><b>Внутренняя неисправность контроллера АБС</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="M4F0CD4"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Контроллер АБС проводит ряд проверок самодиагностики. При обнаружении неисправности заносится код C0550.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M4F0DIAGN4"><b>ДИАГНОСТИКА</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Данная процедура предназначена для выявления ненадежного заземления контроллера тормозной системы.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M4F0CAUSE4"><b>Причины</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Коррозия контакта разъема.</Li>
+					<Li>Неисправность контроллера тормозной системы.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M4F0FA4"><b>Функционирование в режиме неисправности</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">АБС отключена, контрольная лампа АБС горит. Система электронного распределения тормозных усилий (EBD) отключена. Если неисправность носит непостоянный характер, контроллер включит систему в следующем цикле зажигания и занесет в свою память исторический код неисправности C0550.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M4F0TD4"><b>Описание проверки</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Числа, приведенные ниже, относятся к номерам операции в диагностической таблице:</div>
+				<OL>
+					<Li value="3">С этого шага начинается проверка надежности контакта подачи напряжения или контакта заземления.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M4F0DA4"><b>Диагностическая информация</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Тщательная проверка жгутов и разъемов является необходимым элементом диагностики. Невыполнение проверки жгутов проводов и электрических разъемов может привести к выявлению несуществующих неисправностей, замене исправных деталей и повторному возникновению неисправности.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="M4F0C05501"><font size="4"><b>Код C0550 - Внутренняя неисправность контроллера АБС</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>С помощью диагностического прибора проверьте, занесены ли другие коды неисправностей.</div>
+								<div>Занесены ли другие коды неисправностей?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>См. таблицы соответствующих кодов</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Очистите все коды неисправностей и выполните пробный выезд.</div>
+								<div>Код C0550 заносится снова?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Проверьте все разъемы и контакты, особенно разъема контроллера тормозной системы, на наличие повреждений, способных вызвать возникновение непостоянных неисправностей.</Li>
+									<Li>Устраните все обнаруженные неисправности.</Li>
+								</OL>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Поверните замок зажигания в положение OFF.</Li>
+									<Li>Отсоединить разъем контроллера тормозной системы.</Li>
+									<Li>Включить зажигание.</Li>
+									<Li>Измерить напряжение между землей и контактами 15, 17 и 18 разъема контроллера тормозной системы.</Li>
+								</OL>
+								<div>Измеренное напряжение соответствует указанному в таблице?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>11-14 В</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Проверьте контакты подачи напряжения питания и заземления на контроллер тормозной системы.</Li>
+									<Li>Устраните разрыв или повышенное сопротивление.</Li>
+								</OL>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить исправность контактов разъема контроллера тормозной системы.</div>
+								<div>Выявлены ли неисправности?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Устраните выявленную неисправность разъема.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Очистите все коды неисправностей и выполните пробный выезд.</div>
+								<div>Код C0550 заносится снова?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить EBCM.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><IMG alt="K5B14F03" src="../../../../graphic-pool/K/5B/1/K5B14F03.png"><BR><A target="_blank" href="../../../../graphic-pool/K/5B/1/K5B14F03.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="M4F0C0800"><font size="4"><b>Код C0800 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="M4F0LVF"><font size="4"><b>Пониженное напряжение</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="M4F0CD5"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Для нормальной работы контроллера тормозной системы необходимо, чтобы питающее напряжение было не ниже определенного уровня. Контроллер следит за тем, чтобы сигнал напряжения бортовой сети от замка зажигания не упал ниже допустимого уровня.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M4F0DIAGN5"><b>ДИАГНОСТИКА</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Проверяется наличие напряжения питания от аккумуляторной батареи, надежность заземления, отсутствие перегоревших предохранителей, исправность замка зажигания и цепей.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M4F0CAUSE5"><b>Причины</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Неисправный аккумулятор.</Li>
+					<Li>Ненадежное заземление.</Li>
+					<Li>Поврежденный разъем.</Li>
+					<Li>Разрыв или замыкание провода.</Li>
+					<Li>Перегоревший предохранитель.</Li>
+					<Li>Неисправность замка зажигания.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M4F0FA5"><b>Функционирование в режиме неисправности</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">На время снижения напряжения АБС отключается, а контрольная лампа АБС загорается и остается включенной до конца цикла зажигания. Если неисправность носит непостоянный характер, контроллер тормозной системы включит систему в следующем цикле зажигания и занесет в свою память исторический код неисправности C0800.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M4F0TD5"><b>Описание проверки</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Числа, приведенные ниже, относятся к номерам операции в диагностической таблице:</div>
+				<OL>
+					<Li value="1">Этой проверкой определяется наличие напряжения на аккумуляторе и сильноточном источнике.</Li>
+					<Li value="7">Проверяется напряжение на источнике зажигания 1.</Li>
+					<Li value="11">С этого шага начинается проверка напряжения на разъеме жгута АБС, подключаемом к контроллеру тормозной системы.</Li>
+					<Li value="15">Проверяется надежность заземления.</Li>
+					<Li value="16">Проверяется исправность разъема контроллера тормозной системы.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="M4F0DA5"><b>Диагностическая информация</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Тщательная проверка жгутов и разъемов является необходимым элементом диагностики. Невыполнение этой проверки может привести к выявлению несуществующих неисправностей, замене исправных деталей и повторному возникновению неисправности.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="M4F0C08001"><font size="4"><b>Код C0800 - Пониженное напряжение</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверьте напряжение на аккумуляторе.</div>
+								<div>Измеренное напряжение находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>11-14 В</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Зарядите или замените аккумулятор по необходимости.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверьте предохранитель EF2 в блоке предохранителей двигателя.</div>
+								<div>Предохранитель перегорел?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Замените предохранитель EF2.</Li>
+									<Li>Поверните замок зажигания в положение ON.</Li>
+								</OL>
+								<div>Предохранитель снова перегорел?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Поверните замок зажигания в положение OFF.</Li>
+									<Li>Проверить провода КРС/ЧЕР жгута АБС от контактов 1, 2 разъема C104 блока предохранителей двигателя до контактов 17 и 18 разъема контроллера тормозной системы.</Li>
+									<Li>Устраните обнаруженные в цепи замыкания.</Li>
+								</OL>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Поверните замок зажигания в положение OFF.</Li>
+									<Li>Подключите диагностический прибор.</Li>
+									<Li>Очистите все диагностические коды.</Li>
+									<Li>Выполните пробный выезд.</Li>
+								</OL>
+								<div>Код C0800 заносится повторно?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить предохранитель F14 в блоке предохранителей панели приборов.</div>
+								<div>Предохранитель перегорел?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Заменить предохранитель F14.</Li>
+									<Li>Поверните замок зажигания в положение ON.</Li>
+								</OL>
+								<div>Предохранитель снова перегорел?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Поверните замок зажигания в положение OFF.</Li>
+									<Li>Проверить провода РОЗ/КРС между предохранителем F14 и контактом 8 разъема C103, контактом 15 разъема контроллера тормозной системы.</Li>
+									<Li>Устраните обнаруженные в цепи замыкания.</Li>
+								</OL>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Поверните замок зажигания в положение OFF.</Li>
+									<Li>Подключите диагностический прибор.</Li>
+									<Li>Очистите все диагностические коды.</Li>
+									<Li>Выполните пробный выезд.</Li>
+								</OL>
+								<div>Код C0800 заносится повторно?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Разъедините электрический разъем контроллера тормозной системы.</Li>
+									<Li>Поверните замок зажигания в положение ON.</Li>
+									<Li>Проверьте наличие напряжения аккумуляторной батареи между землей и контактом 17 и между землей и контактом 18.</Li>
+								</OL>
+								<div>Измеренное напряжение находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>11-14 В</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Поверните замок зажигания в положение OFF.</Li>
+									<Li>Проверить оранжевые провода между контактами 17 и 18 разъема контроллера тормозной системы и контактами 1, 2 разъема C104 блока предохранителей двигателя.</Li>
+									<Li>Устраните разрыв цепи.</Li>
+								</OL>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверьте напряжение между землей и контактом 15 разъема контроллера тормозной системы.</div>
+								<div>Измеренное напряжение находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>11-14 В</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 17</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 14</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Поверните замок зажигания в положение OFF.</Li>
+									<Li>Проверить предохранитель Ef6 в блоке предохранителей двигателя.</Li>
+								</OL>
+								<div>Предохранитель перегорел?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 16</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить предохранитель Ef6.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">16</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Проверить цепь между контактом 15 разъема контроллера тормозной системы и контактом 8 разъема С103 и F14 блока предохранителей.</Li>
+									<Li>Проверить провод от блока предохранителей в панели приборов до контакта 4 (IG1) замка зажигания.</Li>
+									<Li>Проверить провод от контакта 2 замка зажигания до контакта 7 разъема С102 блока предохранителей двигателя.</Li>
+									<Li>Устраните разрыв цепи, возможное повреждение контакта или неисправность замка зажигания.</Li>
+								</OL>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">17</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Поверните замок зажигания в положение OFF.</Li>
+									<Li>Измерить сопротивление между "массой" и контактами 16 и 19 разъема контроллера тормозной системы.</Li>
+								</OL>
+								<div>Измеренное сопротивление соответствует указанному в таблице?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 18</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 20</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">18</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверьте контакты 15, 16, 17, 18 и 19 разъема контроллера тормозной системы.</div>
+								<div>Обнаружен ли поврежденный контакт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 19</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 21</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">19</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Отремонтируйте неисправный контакт или замените разъем или жгут проводов по необходимости.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">20</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Обеспечьте надежность контакта заземления.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">21</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Подключите диагностический прибор.</Li>
+									<Li>Очистите все диагностические коды.</Li>
+									<Li>Выполните пробный выезд.</Li>
+								</OL>
+								<div>Код C0800 заносится снова?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 23</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 22</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">22</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Проверьте жгут проводов и разъемы на наличие возможных причин непостоянных неисправностей.</Li>
+									<Li>Устраните выявленную неисправность непостоянного характера.</Li>
+								</OL>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">23</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Заменить EBCM.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><BR><TABLE align="center"><TR>
+<TD align="left"><A href="6M2_4F01.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="На предыдущую страницу"></A></TD>
+<TD align="left"></TD>
+<TD align="left"><A href="6M2_4F03.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="На следующую страницу"></A></TD>
+<TD></TD>
+</TR></TABLE>
+<TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Авторское право принадлежит General Motors Chevrolet Europe Все права защищены</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

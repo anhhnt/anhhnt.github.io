@@ -1,0 +1,3329 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>.T2{    BORDER-TOP: white;}  .T3{    BORDER-BOTTOM: white;} .T4{    BORDER-TOP: white;    BORDER-BOTTOM: white} .I{ padding-left : 10pt}  .Tighten{ padding-left : 7pt} .Arial{ font-family : Arial, Helvetica, sans-serif;margin-left: 10pt;margin-right : 10pt } .TableB{ margin-left : 0pt}</style>
+<TITLE>Руководство по техническому обслуживанию2006 Evanda Код P1606</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+ function FixMenu()
+{
+menuTop = document.body.scrollTop + document.body.clientHeight -40;
+menu.style.top = menuTop;
+menu.style.width = document.body.clientWidth; 
+}
+
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px"><A border="0" href="6V2_5A05.ru.html"><IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="К началу документа"></A></SPAN><TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt"><TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Evanda</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left"><TABLE><TR>
+<TD width="5%" align="left"><A href="6V2_5A04.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="На предыдущую страницу"></A></TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left"><A href="6V2_5A06.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="На следующую страницу"></A></TD>
+</TR></TABLE></TD>
+<TD><TABLE width="65%" align="right"><TR>
+<TD style="font-size:10"><A href="../../../GMDE_TIS_START.html" target="_top"><IMG src="../../code/menu-images/home.gif" border="0" alt="Главная страница GMDE"></A></TD>
+<TD style="font-size:10"><A href="../toc_Evanda.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Загрузить нединамическое оглавление"></A></TD>
+<TD style="font-size:10"><A href="../toc_Evanda_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Загрузить динамическое оглавление"></A></TD>
+<TD style="font-size:10"><A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Помощь"></A></TD>
+</TR></TABLE></TD>
+</TR>
+</TBODY></TABLE>
+	
+	<BR><div align="center">
+<IMG alt="V6B15A03" src="../../../../graphic-pool/V/6B/1/V6B15A03.png"><BR><A target="_blank" href="../../../../graphic-pool/V/6B/1/V6B15A03.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V5A0P1606"><font size="4"><b>Код P1606 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V5A0DFEW"><font size="4"><b>Неисправность внешней сторожевой схемы</b></font></DIV>
+		<P></P>
+<DIV align="left" id="V5A0CD1"><b>Описание схемы</b></DIV>
+<P></P>
+			<div class="T1" align="left">Запускается внешняя сторожевая схема. Если внешняя сторожевая схема не выключился через 30 мс, появляется сообщение о неисправности.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CSD1"><b>Условия занесения кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Напряжение в бортовой сети чрезмерно высокое или низкое.</Li>
+					<Li>Входное напряжение коробки передач чрезмерно высокое или низкое.</Li>
+					<Li>Код заносится сразу после возникновения описанных выше условий.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0ATWD1"><b>Действия при занесении кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Загорается индикатор неисправности (MIL).</Li>
+					<Li>Контроллер КПП записывает в память рабочие условия на момент возникновения неисправности. Эта информация хранится в буфере записей о неисправностях.</Li>
+					<Li>С помощью гидравлической системы управления включается аварийный/замещающий режим и постоянная четвертая передача.</Li>
+					<Li>После выключения/включения зажигания: 3 передача с помощью гидравлического управления Также возможны Р, R и N.</Li>
+					<Li>Отключается подача питания на электромагнитный клапан-регулятор давления EDS.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CCMD1"><b>Условия очистки кода неисправности/выключения индикатора неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Сигнализатор неисправностей гаснет, если неисправность не наблюдалась в трех циклах зажигания.</Li>
+					<Li>Контроллер удалит код из памяти исторических кодов, если в 40 циклах прогрева подряд неисправность не наблюдается.</Li>
+					<Li>Исторические коды неисправностей можно очистить с помощью диагностического прибора.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0DA1"><b>Диагностическая информация</b></DIV>
+<P></P>
+			<UL>
+<Li>При появлении кода неисправности P1606 причиной неисправности может быть контроллер КПП.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="V5A0P16061"><font size="4"><b>Код P1606 - Неисправность внешней сторожевой схемы</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<div>Выполнить проверку системы бортовой диагностики.</div>
+								<div>Проверка завершена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к пункту   <I><A target="_blank" href="6V2_1F02.ru.html#V1F0ODSC">"Проверка системы бортовой диагностики" </A></I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Подключить диагностический прибор.</Li>
+									<Li>Включить зажигание при выключенном двигателе.</Li>
+								</OL>
+								<div>Появляется ли на дисплее Р1606?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к пункту   <I><A target="_blank" href="6V2_1F02.ru.html#V1F0DA">"Диагностическая информация"</A></I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<div>Проверить целостность предохранителей EF30 и F10.</div>
+								<div>Неисправность обнаружена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<div>При необходимости заменить предохранитель.</div>
+								<div>Действие завершено?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Выключить зажигание.</Li>
+									<Li>Отсоединить электрический разъем контроллера КПП.</Li>
+									<Li>Проверить жгут проводов на наличие замыкания на напряжение аккумулятора между предохранителями (EF30 или F10) и контактами разъема контроллера КПП (В3, С15 или С16).</Li>
+								</OL>
+								<div>Неисправность обнаружена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Отремонтировать жгут проводов.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I><A target="_blank" href="6V2_1F01.ru.html#J1F0DA">Шагу 6</A></I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<div>Проверить жгут проводов на наличие разрыва между предохранителями (EF30 или F10) и контактами разъема контроллера КПП (В3, С15 или С16).</div>
+								<div>Неисправность обнаружена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Отремонтировать жгут проводов.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   Шагу 7
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<div>Проверить жгут проводов на наличие разрыва или замыкания на землю на участке между контактами (В12 или В13) разъема контроллера КПП и G104.</div>
+								<div>Неисправность обнаружена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Отремонтировать жгут проводов.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   Шагу 8
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<div>Проверить жгут проводов на наличие замыкания на питание между контактами (В12 или В13) и G103.</div>
+								<div>Неисправность обнаружена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Отремонтировать жгут проводов.</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   Шагу 9
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<div>Заменить контроллер КПП.</div>
+								<div>Замена завершена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>С помощью диагностического прибора очистить коды неисправностей.</Li>
+									<Li>Провести дорожные испытания автомобиля с условиями для появления данного кода неисправности, как описано в тексте.</Li>
+								</OL>
+								<div>Появляется ли на дисплее диагностического прибора сообщение о том, что проверка была выполнена успешно?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Проверить наличие кодов неисправности.</Li>
+									<Li>Выявлены ли коды неисправностей, которые еще не диагностировались?</Li>
+								</OL>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>таблице соответствующего кода</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><div align="center">
+<IMG alt="V6B15A06" src="../../../../graphic-pool/V/6B/1/V6B15A06.png"><BR><A target="_blank" href="../../../../graphic-pool/V/6B/1/V6B15A06.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V5A0P1671"><font size="4"><b>Код P1671 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V5A0CTMF"><font size="4"><b>Ошибка передачи сообщения по шине CAN</b></font></DIV>
+		<P></P>
+<DIV align="left" id="V5A0CD2"><b>Описание схемы</b></DIV>
+<P></P>
+			<div class="T1" align="left">Контроллер КПП является электронным устройством, который обрабатывает поступающие к нему сигналы датчиков и управляет работой КПП по специальному алгоритму. На основе данных, передаваемых датчиками, контроллер управляет различными исполнительными механизмами.</div>
+				<div class="T1" align="left">Контроллер КПП и контроллер ЭСУД обмениваются данными по шине CAN. Передаются следующие данные:</div>
+				<UL>
+<Li>Сигнал о неисправности двигателя.</Li>
+					<Li>Частота вращения коленчатого вала.</Li>
+					<Li>Сигнал снижения крутящего момента двигателя.</Li>
+					<Li>Температура охлаждающей жидкости двигателя.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CSD2"><b>Условия занесения кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Напряжение в бортовой сети чрезмерно высокое или низкое.</Li>
+					<Li>Замыкание или разрыв жгута проводов шины CAN.</Li>
+					<Li>Неисправен контроллер КПП или контроллер ЭСУД.</Li>
+					<Li>Код заносится сразу после возникновения описанных выше условий.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0ATWD2"><b>Действия при занесении кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Загорается сигнализатор неисправности.</Li>
+					<Li>Контроллер КПП записывает в память рабочие условия на момент возникновения неисправности. Эта информация хранится в буфере записей о неисправностях.</Li>
+					<Li>С помощью гидравлической системы управления включается аварийный/замещающий режим и постоянная четвертая передача.</Li>
+					<Li>После выключения/включения зажигания: 3 передача с помощью гидравлического управления Также возможны Р, R и N.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CCMD2"><b>Условия очистки кода неисправности/выключения индикатора неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Индикатор неисправностей гаснет, если в трех циклах зажигания подряд неисправность не наблюдается.</Li>
+					<Li>Контроллер удалит код из памяти исторических кодов, если в 40 циклах прогрева подряд неисправность не наблюдается.</Li>
+					<Li>Очистить исторический код из памяти контроллера можно и с помощью диагностического прибора.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="V5A0P16711"><font size="4"><b>Код Р1671 - Ошибка передачи сообщения по шине CAN</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<div>Выполнить проверку системы бортовой диагностики.</div>
+								<div>Проверка завершена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к пункту   <I><A target="_blank" href="6V2_1F02.ru.html#V1F0ODSC">"Проверка системы бортовой диагностики" </A></I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Выключить зажигание.</Li>
+									<Li>Разъединить электрические разъемы жгута контроллера КПП и жгута контроллера ЭСУД.</Li>
+									<Li>Измерить сопротивление между контактом A8 электрического разъема жгута КПП и контактом K14 разъема жгута контроллера ЭСУД.</Li>
+									<Li>Измерить сопротивление между контактом A16 электрического разъема жгута КПП и контактом K15 разъема жгута контроллера ЭСУД.</Li>
+								</OL>
+								<div>Измеренное сопротивление находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>≈ 0 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<div>При необходимости отремонтировать неисправные контакты.</div>
+								<div>Действие завершено?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Включить зажигание.</Li>
+									<Li>Измерить напряжение на контакте A8.</Li>
+									<Li>Измерить напряжение на контакте A16.</Li>
+								</OL>
+								<div>Напряжение находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>11-14В</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<div>При необходимости устранить замыкание контакта (контактов) на напряжение питания.</div>
+								<div>Действие завершено?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Заменить контроллер КПП.</Li>
+									<Li>Выключить и включить зажигание.</Li>
+									<Li>Проверить, занесен ли код неисправности P1671.</Li>
+								</OL>
+								<div>Код неисправности занесен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Заменить контроллер ЭСУД.</Li>
+									<Li>Действие завершено?</Li>
+								</OL>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>После окончания ремонта выбрать команду "clear info" ("очистить данные") на диагностическом приборе и провести дорожное испытание автомобиля.</Li>
+									<Li>Просмотреть информацию о кодах ("DTC info").</Li>
+								</OL>
+								<div>Последнее испытание прошло неудачно или отображается текущий код?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Начать диагностику заново
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Неисправность устранена. Закончить проверку по таблице.</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><div align="center">
+<IMG alt="V6B15A06" src="../../../../graphic-pool/V/6B/1/V6B15A06.png"><BR><A target="_blank" href="../../../../graphic-pool/V/6B/1/V6B15A06.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V5A0P1672"><font size="4"><b>Код P1672 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V5A0CBOF"><font size="4"><b>Неисправность отключения шины CAN</b></font></DIV>
+		<P></P>
+<DIV align="left" id="V5A0CD3"><b>Описание схемы</b></DIV>
+<P></P>
+			<div class="T1" align="left">Контроллер КПП является электронным устройством, который обрабатывает поступающие к нему сигналы датчиков и управляет работой КПП по специальному алгоритму. На основе данных, передаваемых датчиками, контроллер управляет различными исполнительными механизмами.</div>
+				<div class="T1" align="left">Контроллер КПП и контроллер ЭСУД обмениваются данными по шине CAN. Передаются следующие данные:</div>
+				<UL>
+<Li>Сигнал о неисправности двигателя.</Li>
+					<Li>Частота вращения коленчатого вала.</Li>
+					<Li>Сигнал снижения крутящего момента двигателя.</Li>
+					<Li>Температура охлаждающей жидкости двигателя.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CSD3"><b>Условия занесения кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Напряжение в бортовой сети чрезмерно высокое или низкое.</Li>
+					<Li>Замыкание или разрыв жгута проводов шины CAN.</Li>
+					<Li>Неисправен контроллер КПП или контроллер ЭСУД.</Li>
+					<Li>Код заносится сразу после возникновения описанных выше условий.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0ATWD3"><b>Действия при занесении кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Загорается сигнализатор неисправности.</Li>
+					<Li>Контроллер КПП записывает в память рабочие условия на момент возникновения неисправности. Эта информация хранится в буфере записей о неисправностях.</Li>
+					<Li>С помощью гидравлической системы управления включается аварийный/замещающий режим и постоянная четвертая передача.</Li>
+					<Li>После выключения/включения зажигания: 3 передача с помощью гидравлического управления Также возможны Р, R и N.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CCMD3"><b>Условия очистки кода неисправности/выключения индикатора неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Индикатор неисправностей гаснет, если в трех циклах зажигания подряд неисправность не наблюдается.</Li>
+					<Li>Контроллер удалит код из памяти исторических кодов, если в 40 циклах прогрева подряд неисправность не наблюдается.</Li>
+					<Li>Очистить исторический код из памяти контроллера можно и с помощью диагностического прибора.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="V5A0P16721"><font size="4"><b>Код P1672 - Неисправность отключения шины CAN</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<div>Выполнить проверку системы бортовой диагностики.</div>
+								<div>Проверка завершена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к пункту   <I><A target="_blank" href="6V2_1F02.ru.html#V1F0ODSC">"Проверка системы бортовой диагностики" </A></I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Выключить зажигание.</Li>
+									<Li>Разъединить электрические разъемы жгута контроллера КПП и жгута контроллера ЭСУД.</Li>
+									<Li>Измерить сопротивление между контактом A8 электрического разъема жгута КПП и контактом K14 разъема жгута контроллера ЭСУД.</Li>
+									<Li>Измерить сопротивление между контактом A16 электрического разъема жгута КПП и контактом K15 разъема жгута контроллера ЭСУД.</Li>
+								</OL>
+								<div>Измеренное сопротивление находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>≈ 0 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<div>При необходимости отремонтировать неисправные контакты.</div>
+								<div>Действие завершено?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Включить зажигание.</Li>
+									<Li>Измерить напряжение на контакте A8.</Li>
+									<Li>Измерить напряжение на контакте A16.</Li>
+								</OL>
+								<div>Напряжение находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>11-14В</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<div>При необходимости устранить замыкание контакта (контактов) на напряжение питания.</div>
+								<div>Действие завершено?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Заменить контроллер КПП.</Li>
+									<Li>Выключить и включить зажигание.</Li>
+									<Li>Проверить, занесен ли код неисправности P1672.</Li>
+								</OL>
+								<div>Код неисправности занесен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Заменить контроллер ЭСУД.</Li>
+									<Li>Действие завершено?</Li>
+								</OL>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>После окончания ремонта выбрать команду "clear info" ("очистить данные") на диагностическом приборе и провести дорожное испытание автомобиля.</Li>
+									<Li>Просмотреть информацию о кодах ("DTC info").</Li>
+								</OL>
+								<div>Последнее испытание прошло неудачно или отображается текущий код?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Начать диагностику заново
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Неисправность устранена. Закончить проверку по таблице.</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><div align="center">
+<IMG alt="V6B15A06" src="../../../../graphic-pool/V/6B/1/V6B15A06.png"><BR><A target="_blank" href="../../../../graphic-pool/V/6B/1/V6B15A06.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V5A0P1673"><font size="4"><b>Код P1673 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V5A0CREMF"><font size="4"><b>Ошибка приема сообщения контроллера по шине CAN</b></font></DIV>
+		<P></P>
+<DIV align="left" id="V5A0CD4"><b>Описание схемы</b></DIV>
+<P></P>
+			<div class="T1" align="left">Контроллер КПП является электронным устройством, который обрабатывает поступающие к нему сигналы датчиков, в том числе о качестве переключения, и управляет работой КПП по специальному алгоритму. На основе данных, передаваемых датчиками, контроллер управляет различными исполнительными механизмами.</div>
+				<div class="T1" align="left">Контроллер КПП и контроллер ЭСУД обмениваются данными по шине CAN. Передаются следующие данные:</div>
+				<UL>
+<Li>Сигнал о неисправности двигателя.</Li>
+					<Li>Частота вращения коленчатого вала.</Li>
+					<Li>Сигнал снижения крутящего момента двигателя.</Li>
+					<Li>Температура охлаждающей жидкости двигателя.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CSD4"><b>Условия занесения кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Напряжение в бортовой сети чрезмерно высокое или низкое.</Li>
+					<Li>Замыкание или разрыв жгута проводов шины CAN.</Li>
+					<Li>Неисправен контроллер КПП или контроллер ЭСУД.</Li>
+					<Li>Код заносится сразу после возникновения описанных выше условий.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0ATWD4"><b>Действия при занесении кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Загорается сигнализатор неисправности.</Li>
+					<Li>Контроллер КПП записывает в память рабочие условия на момент возникновения неисправности. Эта информация хранится в буфере записей о неисправностях.</Li>
+					<Li>С помощью гидравлической системы управления включается аварийный/замещающий режим и постоянная четвертая передача.</Li>
+					<Li>После выключения/включения зажигания: 3 передача с помощью гидравлического управления Также возможны Р, R и N.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CCMD4"><b>Условия очистки кода неисправности/выключения индикатора неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Индикатор неисправностей гаснет, если в трех циклах зажигания подряд неисправность не наблюдается.</Li>
+					<Li>Контроллер удалит код из памяти исторических кодов, если в 40 циклах прогрева подряд неисправность не наблюдается.</Li>
+					<Li>Очистить исторический код из памяти контроллера можно и с помощью диагностического прибора.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="V5A0P16731"><font size="4"><b>Код P1673 - Ошибка приема сообщения контроллера по шине CAN</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<div>Выполнить проверку системы бортовой диагностики.</div>
+								<div>Проверка завершена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к пункту   <I><A target="_blank" href="6V2_1F02.ru.html#V1F0ODSC">"Проверка системы бортовой диагностики" </A></I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Выключить зажигание.</Li>
+									<Li>Разъединить электрические разъемы жгута контроллера КПП и жгута контроллера ЭСУД.</Li>
+									<Li>Измерить сопротивление между контактом A8 электрического разъема жгута КПП и контактом K14 разъема жгута контроллера ЭСУД.</Li>
+									<Li>Измерить сопротивление между контактом A16 электрического разъема жгута КПП и контактом K15 разъема жгута контроллера ЭСУД.</Li>
+								</OL>
+								<div>Измеренное сопротивление находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>≈ 0 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<div>При необходимости отремонтировать неисправные контакты.</div>
+								<div>Действие завершено?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Включить зажигание.</Li>
+									<Li>Измерить напряжение на контакте A8.</Li>
+									<Li>Измерить напряжение на контакте A16.</Li>
+								</OL>
+								<div>Напряжение находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>11-14В</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<div>При необходимости устранить замыкание контакта (контактов) на напряжение питания.</div>
+								<div>Действие завершено?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Заменить контроллер КПП.</Li>
+									<Li>Выключить и включить зажигание.</Li>
+									<Li>Проверить, занесен ли код неисправности P1673.</Li>
+								</OL>
+								<div>Код неисправности занесен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Заменить контроллер ЭСУД.</Li>
+									<Li>Действие завершено?</Li>
+								</OL>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>После окончания ремонта выбрать команду "clear info" ("очистить данные") на диагностическом приборе и провести дорожное испытание автомобиля.</Li>
+									<Li>Просмотреть информацию о кодах ("DTC info").</Li>
+								</OL>
+								<div>Последнее испытание прошло неудачно или отображается текущий код?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Начать диагностику заново
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Неисправность устранена. Закончить проверку по таблице.</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><div align="center">
+<IMG alt="J6B35A07" src="../../../../graphic-pool/J/6B/3/J6B35A07.png"><BR><A target="_blank" href="../../../../graphic-pool/J/6B/3/J6B35A07.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V5A0P1839"><font size="4"><b>Код P1839 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V5A0E3OSG"><font size="4"><b>Короткое замыкание выхода EDS3 на массу</b></font></DIV>
+		<P></P>
+<DIV align="left" id="V5A0CD5"><b>Описание схемы</b></DIV>
+<P></P>
+			<div class="T1" align="left">Клапан-регулятор давления (клапан EDS 3, 4, 5, 6) является высокоточным электронным регулятором давления, который управляет работой фрикционных муфт, тормозов и блокировочной муфтой.</div>
+				<div class="T1" align="left">Клапан понижает системное давление, которое затем подается на электромагнитные клапаны и клапаны регулировки давления. Это позволяет использовать менее мощные электромагнитные клапаны. На клапаны EDS должно подаваться постоянное давление.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CSD5"><b>Условия занесения кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Выходное напряжение EDS 3 составляет меньше 2 Вольт.</Li>
+					<Li>Отсутствуют коды неисправностей Р1840, Р1841.</Li>
+					<Li>Код заносится сразу после возникновения описанных выше условий.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0ATWD5"><b>Действия при занесении кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Загорается сигнализатор неисправности.</Li>
+					<Li>Контроллер КПП записывает в память рабочие условия на момент возникновения неисправности. Эта информация хранится в буфере записей о неисправностях.</Li>
+					<Li>С помощью гидравлической системы управления включается аварийный/замещающий режим и постоянная четвертая передача.</Li>
+					<Li>После выключения/включения зажигания: 3 передача с помощью гидравлического управления Также возможны Р, R и N.</Li>
+					<Li>Отключается подача питания на электромагнитный клапан-регулятор давления EDS.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CCMD5"><b>Условия очистки кода неисправности/выключения индикатора неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Сигнализатор неисправностей гаснет, если неисправность не наблюдалась в трех циклах зажигания.</Li>
+					<Li>Контроллер удалит код из памяти исторических кодов, если в 40 циклах прогрева подряд неисправность не наблюдается.</Li>
+					<Li>Очистить исторический код из памяти контроллера можно и с помощью диагностического прибора.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0DA5"><b>Диагностическая информация</b></DIV>
+<P></P>
+			<UL>
+<Li>При появлении кода P1839 причиной неисправности может быть клапан EDS3.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="V5A0P18391"><font size="4"><b>Код P1839 - Короткое замыкание выхода EDS 3 на массу</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<div>Выполнить проверку системы бортовой диагностики.</div>
+								<div>Проверка завершена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к пункту   <I><A target="_blank" href="6V2_1F02.ru.html#V1F0ODSC">"Проверка системы бортовой диагностики" </A></I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Подключить диагностический прибор.</Li>
+									<Li>Включить зажигание при выключенном двигателе.</Li>
+									<Li>На диагностическом приборе выбрать "Actuating" ("Управление исполнительными механизмами").</Li>
+									<Li>Подать команду на включение/выключение EDS 3.</Li>
+								</OL>
+								<div>EDS 3 включается и выключается?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>вкл/выкл</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к пункту   <I><A target="_blank" href="6V2_1F02.ru.html#V1F0DA">"Диагностическая информация"</A></I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Выключить зажигание.</Li>
+									<Li>Разъединить электрический разъем КПП.</Li>
+									<Li>Измерить сопротивление между контактами 5 и 6 электрического разъема жгута КПП.</Li>
+								</OL>
+								<div>Измеренное сопротивление находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>Темп.</div>
+							<div>25°С (77°Ф) </div>
+							<div>6 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Снять масляный поддон.</Li>
+									<Li>Разъединить электрический разъем жгута EDS 3.</Li>
+									<Li>Измерить сопротивление между контактом 2 EDS 3 и массой.</Li>
+									<Li>Измерить сопротивление между контактом 1 EDS 3 и массой.</Li>
+								</OL>
+								<div>Измеренное сопротивление находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>∞</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<div>Устранить замыкание внутренней линии (EDS 3) на массу.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<div>Заменить EDS 3.</div>
+								<div>Замена завершена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Разъединить электрический разъем жгута КПП и разъем контроллера КПП.</Li>
+									<Li>Измерить сопротивление между контактом 5 EDS 3 и массой.</Li>
+									<Li>Измерить сопротивление между контактом 6 EDS 3 и массой.</Li>
+								</OL>
+								<div>Измеренное сопротивление находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>∞</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<div>Устранить замыкание жгута КПП на массу.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<div>Заменить контроллер КПП.</div>
+								<div>Замена завершена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>После окончания ремонта выбрать команду "clear info" ("очистить данные") на диагностическом приборе и провести дорожное испытание автомобиля.</Li>
+									<Li>Просмотреть информацию о кодах ("DTC info").</Li>
+								</OL>
+								<div>Последнее испытание прошло неудачно или отображается текущий код?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Начать диагностику заново
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Неисправность устранена. Закончить проверку по таблице.
+							</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><div align="center">
+<IMG alt="J6B35A07" src="../../../../graphic-pool/J/6B/3/J6B35A07.png"><BR><A target="_blank" href="../../../../graphic-pool/J/6B/3/J6B35A07.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V5A0P1840"><font size="4"><b>Код P1840 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V5A0E3OSP"><font size="4"><b>Короткое замыкание выхода EDS3 на напряжение питания</b></font></DIV>
+		<P></P>
+<DIV align="left" id="V5A0CD6"><b>Описание схемы</b></DIV>
+<P></P>
+			<div class="T1" align="left">Клапан-регулятор давления (клапан EDS 3, 4, 5, 6) является высокоточным электронным регулятором давления, который управляет работой фрикционных муфт, тормозов и блокировочной муфтой.</div>
+				<div class="T1" align="left">Клапан понижает системное давление, которое затем подается на электромагнитные клапаны и клапаны регулировки давления. Это позволяет использовать менее мощные электромагнитные клапаны. На клапаны EDS должно подаваться постоянное давление.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CSD6"><b>Условия занесения кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Выходное напряжение EDS 3 (при Вкл.) составляет 12 Вольт.</Li>
+					<Li>Отсутствуют коды неисправностей Р1839, Р1841.</Li>
+					<Li>Код заносится сразу после возникновения описанных выше условий.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0ATWD6"><b>Действия при занесении кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Загорается сигнализатор неисправности.</Li>
+					<Li>Контроллер КПП записывает в память рабочие условия на момент возникновения неисправности. Эта информация хранится в буфере записей о неисправностях.</Li>
+					<Li>С помощью гидравлической системы управления включается аварийный/замещающий режим и постоянная четвертая передача.</Li>
+					<Li>После выключения/включения зажигания: 3 передача с помощью гидравлического управления Также возможны Р, R и N.</Li>
+					<Li>Отключается подача питания на электромагнитный клапан-регулятор давления EDS.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CCMD6"><b>Условия очистки кода неисправности/выключения индикатора неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Сигнализатор неисправностей гаснет, если неисправность не наблюдалась в трех циклах зажигания.</Li>
+					<Li>Контроллер удалит код из памяти исторических кодов, если в 40 циклах прогрева подряд неисправность не наблюдается.</Li>
+					<Li>Очистить исторический код из памяти контроллера можно и с помощью диагностического прибора.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0DA6"><b>Диагностическая информация</b></DIV>
+<P></P>
+			<UL>
+<Li>При появлении кода неисправности P1840 причиной неисправности может быть EDS3.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="V5A0P18401"><font size="4"><b>Код P1840 - Короткое замыкание выхода EDS 3 на напряжение питания</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<div>Выполнить проверку системы бортовой диагностики.</div>
+								<div>Проверка завершена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к пункту   <I><A target="_blank" href="6V2_1F02.ru.html#V1F0ODSC">"Проверка системы бортовой диагностики" </A></I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Подключить диагностический прибор.</Li>
+									<Li>Включить зажигание при выключенном двигателе.</Li>
+									<Li>На диагностическом приборе выбрать "Actuating" ("Управление исполнительными механизмами").</Li>
+									<Li>Подать команду на включение/выключение EDS 3.</Li>
+								</OL>
+								<div>EDS 3 включается и выключается?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>вкл/выкл</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к пункту   <I><A target="_blank" href="6V2_1F02.ru.html#V1F0DA">"Диагностическая информация"</A></I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Снять масляный поддон.</Li>
+									<Li>Разъединить электрический разъем жгута EDS 3.</Li>
+									<Li>Включить зажигание при выключенном двигателе.</Li>
+									<Li>Измерить напряжение на контакте 1 электрического разъема EDS3.</Li>
+								</OL>
+								<div>Напряжение находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>11-14В</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<div>Устранить замыкание внутренней линии (EDS 3) на напряжение питания.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<div>Заменить EDS 3.</div>
+								<div>Замена завершена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Проверить наличие кодов неисправности.</Li>
+									<Li>Выявлены ли коды неисправностей, которые еще не диагностировались?</Li>
+								</OL>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>таблице соответствующего кода</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><div align="center">
+<IMG alt="J6B35A07" src="../../../../graphic-pool/J/6B/3/J6B35A07.png"><BR><A target="_blank" href="../../../../graphic-pool/J/6B/3/J6B35A07.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V5A0P1841"><font size="4"><b>Код P1841 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V5A0E3OO"><font size="4"><b>Обрыв выхода EDS3</b></font></DIV>
+		<P></P>
+<DIV align="left" id="V5A0CD7"><b>Описание схемы</b></DIV>
+<P></P>
+			<div class="T1" align="left">Клапан-регулятор давления (клапан EDS 3, 4, 5, 6) является высокоточным электронным регулятором давления, который управляет работой фрикционных муфт, тормозов и блокировочной муфтой.</div>
+				<div class="T1" align="left">Клапан понижает системное давление, которое затем подается на электромагнитные клапаны и клапаны регулировки давления. Это позволяет использовать менее мощные электромагнитные клапаны. На клапаны EDS должно подаваться постоянное давление.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CSD7"><b>Условия занесения кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Выходное напряжение EDS 3 составляет менее 10 мА.</Li>
+					<Li>Отсутствуют коды неисправностей Р1839, Р1840.</Li>
+					<Li>Код заносится сразу после возникновения описанных выше условий.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0ATWD7"><b>Действия при занесении кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Загорается сигнализатор неисправности.</Li>
+					<Li>Контроллер КПП записывает в память рабочие условия на момент возникновения неисправности. Эта информация хранится в буфере записей о неисправностях.</Li>
+					<Li>С помощью гидравлической системы управления включается аварийный/замещающий режим и постоянная четвертая передача.</Li>
+					<Li>После выключения/включения зажигания: 3 передача с помощью гидравлического управления Также возможны Р, R и N.</Li>
+					<Li>Отключается подача питания на электромагнитный клапан-регулятор давления EDS.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CCMD7"><b>Условия очистки кода неисправности/выключения индикатора неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Сигнализатор неисправностей гаснет, если неисправность не наблюдалась в трех циклах зажигания.</Li>
+					<Li>Контроллер удалит код из памяти исторических кодов, если в 40 циклах прогрева подряд неисправность не наблюдается.</Li>
+					<Li>Очистить исторический код из памяти контроллера можно и с помощью диагностического прибора.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0DA7"><b>Диагностическая информация</b></DIV>
+<P></P>
+			<UL>
+<Li>При появлении кода P1841 причиной неисправности может быть клапан EDS3.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="V5A0P18411"><font size="4"><b>Код P1841 - Обрыв выхода EDS 3</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<div>Выполнить проверку системы бортовой диагностики.</div>
+								<div>Проверка завершена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к пункту   <I><A target="_blank" href="6V2_1F02.ru.html#V1F0ODSC">"Проверка системы бортовой диагностики" </A></I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Подключить диагностический прибор.</Li>
+									<Li>Включить зажигание при выключенном двигателе.</Li>
+									<Li>На диагностическом приборе выбрать "Actuating" ("Управление исполнительными механизмами").</Li>
+									<Li>Подать команду на включение/выключение EDS 3.</Li>
+								</OL>
+								<div>EDS 3 включается и выключается?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>вкл/выкл</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к пункту   <I><A target="_blank" href="6V2_1F02.ru.html#V1F0DA">"Диагностическая информация"</A></I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Выключить зажигание.</Li>
+									<Li>Разъединить электрический разъем КПП.</Li>
+									<Li>Измерить сопротивление между контактами 5 и 6 электрического разъема жгута КПП.</Li>
+								</OL>
+								<div>Измеренное сопротивление находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>Темп.</div>
+							<div>25°С (77°Ф) </div>
+							<div>6 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Снять масляный поддон.</Li>
+									<Li>Разъединить электрический разъем жгута EDS 3.</Li>
+									<Li>Измерить сопротивление между контактом 2 EDS 3 и контактом 5 разъема КПП.</Li>
+									<Li>Измерить сопротивление между контактом 1 EDS 3 и контактом 6 разъема КПП.</Li>
+								</OL>
+								<div>Измеренное сопротивление находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>≈ 0 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Устранить разрыв цепи (между контактами 2 и 5).</Li>
+									<Li>Устранить разрыв цепи (между контактами 1 и 6).</Li>
+								</OL>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<div>Заменить EDS 3.</div>
+								<div>Замена завершена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Разъединить электрический разъем жгута КПП и разъем контроллера КПП.</Li>
+									<Li>Измерить сопротивление между контактом 5 электрического разъема КПП и контактом C7 разъема контроллера КПП.</Li>
+									<Li>Измерить сопротивление между контактом 6 электрического разъема КПП и контактом A11 разъема контроллера КПП.</Li>
+								</OL>
+								<div>Измеренное сопротивление находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>≈ 0 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<div>Устранить разрыв цепи жгута проводов коробки передач.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<div>Заменить контроллер КПП.</div>
+								<div>Замена завершена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>После окончания ремонта выбрать команду "clear info" ("очистить данные") на диагностическом приборе и провести дорожное испытание автомобиля.</Li>
+									<Li>Просмотреть информацию о кодах ("DTC info").</Li>
+								</OL>
+								<div>Последнее испытание прошло неудачно или отображается текущий код?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Начать диагностику заново
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Неисправность устранена. Закончить проверку по таблице.
+							</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><div align="center">
+<IMG alt="V3B15A32" src="../../../../graphic-pool/V/3B/1/V3B15A32.png"><BR><A target="_blank" href="../../../../graphic-pool/V/3B/1/V3B15A32.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V5A0P1850"><font size="4"><b>Код P1850 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V5A0S1OSG"><font size="4"><b>Короткое замыкание выхода соленоида 1 на массу</b></font></DIV>
+		<P></P>
+<DIV align="left" id="V5A0CD8"><b>Описание схемы</b></DIV>
+<P></P>
+			<div class="T1" align="left">Клапаны механизма переключения представляют собой два одинаковых электромагнитных клапана, управляющих переключением передних передач. Включение и выключение этих клапанов приводит к изменению давления в линиях гидропривода механизма переключения (фрикционных муфт и тормозов).</div>
+				<div class="T1" align="left">Включением и выключением электромагнитного клапана 1 управляется подача высокого или низкого магистрального давления (к каждому клапану муфты), т.е., при включенном клапане 1 давление в магистрали будет низким (87~116 ф/кв.д (6~8 бар)), а при выключенном клапане 1 давление в магистрали будет высоким (232~261 ф/кв.д (16~18 бар)). Включением и выключением электромагнитного клапана 2 управляется поток масла к клапану муфты E или клапану блокирующей муфты.</div>
+				<div class="T1" align="left">Контроллер КПП отслеживает состояние нескольких входных сигналов и включает или выключает электромагнитные клапаны и выбирает передачи в соответствии с режимом движения автомобиля.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CSD8"><b>Условия занесения кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Замыкание цепи электромагнитного клапана на массу.</Li>
+					<Li>Отсутствуют коды неисправностей Р1851, Р1852.</Li>
+					<Li>Код заносится сразу после возникновения описанных выше условий.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0ATWD8"><b>Действия при занесении кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Замигает лампа "HOLD".</Li>
+					<Li>Контроллер КПП записывает в память рабочие условия на момент возникновения неисправности. Эта информация хранится в буфере записей о неисправностях.</Li>
+					<Li>С помощью гидравлической системы управления включается аварийный/замещающий режим и постоянная четвертая передача.</Li>
+					<Li>После выключения/включения зажигания: 3 передача с помощью гидравлического управления Также возможны Р, R и N.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CCMD8"><b>Условия очистки кода неисправности/выключения индикатора неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Лампа "HOLD" погаснет, если неисправность не будет обнаружена в трех циклах зажигания.</Li>
+					<Li>Контроллер удалит код из памяти исторических кодов, если в 40 циклах прогрева подряд неисправность не наблюдается.</Li>
+					<Li>Очистить исторический код из памяти контроллера можно и с помощью диагностического прибора.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0DA8"><b>Диагностическая информация</b></DIV>
+<P></P>
+			<UL>
+<Li>При появлении кода неисправности P1850 причиной неисправности может быть электромагнитный клапан 1.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="V5A0P18501"><font size="4"><b>Код P1850 - Короткое замыкание выхода соленоида 1 на массу</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<div>Выполнить проверку системы бортовой диагностики.</div>
+								<div>Проверка завершена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к пункту   <I><A target="_blank" href="6V2_1F02.ru.html#V1F0ODSC">"Проверка системы бортовой диагностики" </A></I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Подключить диагностический прибор.</Li>
+									<Li>Включить зажигание при выключенном двигателе.</Li>
+									<Li>Записать, затем стереть коды неисправности.</Li>
+									<Li>На диагностическом приборе выбрать "Actuating" ("Управление исполнительными механизмами").</Li>
+									<Li>Подать команду на включение/выключение электромагнитного клапана 1.</Li>
+								</OL>
+								<div>Электромагнитный клапан 1 включается и выключается?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>вкл/выкл</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к пункту   <I><A target="_blank" href="6V2_1F02.ru.html#V1F0DA">"Диагностическая информация"</A></I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Выключить зажигание.</Li>
+									<Li>Разъединить электрический разъем КПП.</Li>
+									<Li>Измерить сопротивление между контактами 3 и 12 электрического разъема жгута КПП.</Li>
+								</OL>
+								<div>Измеренное сопротивление находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>Темп.</div>
+							<div>25°С (77°Ф) </div>
+							<div>26~34,5 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Снять масляный поддон.</Li>
+									<Li>Разъединить электрический разъем жгута электромагнитного клапана 1.</Li>
+									<Li>Измерить сопротивление между контактом 2 электромагнитного клапана 1 и массой.</Li>
+									<Li>Измерить сопротивление между контактом 1 электромагнитного клапана 1 и массой.</Li>
+								</OL>
+								<div>Измеренное сопротивление находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>∞</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<div>Устранить замыкание внутренней линии (электромагнитный клапан 1) на массу.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<div>Заменить электромагнитный клапан 1.</div>
+								<div>Замена завершена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Разъединить электрический разъем жгута КПП и разъем контроллера КПП.</Li>
+									<Li>Измерить сопротивление между контактом 3 электрического разъема жгута КПП и массой.</Li>
+									<Li>Измерить сопротивление между контактом 12 электрического разъема жгута КПП и массой.</Li>
+								</OL>
+								<div>Измеренное сопротивление находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>∞</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<div>Устранить замыкание жгута КПП на массу.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<div>Заменить контроллер КПП.</div>
+								<div>Замена завершена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>После окончания ремонта выбрать команду "clear info" ("очистить данные") на диагностическом приборе и провести дорожное испытание автомобиля.</Li>
+									<Li>Просмотреть информацию о кодах ("DTC info").</Li>
+									<Li>Последнее испытание прошло неудачно или отображается текущий код?</Li>
+								</OL>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Начать диагностику заново
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Неисправность устранена. Закончить проверку по таблице.
+							</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><div align="center">
+<IMG alt="V3B15A32" src="../../../../graphic-pool/V/3B/1/V3B15A32.png"><BR><A target="_blank" href="../../../../graphic-pool/V/3B/1/V3B15A32.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V5A0P1851"><font size="4"><b>Код P1851 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V5A0S1OSP"><font size="4"><b>Короткое замыкание выхода соленоида 1 на напряжение питания</b></font></DIV>
+		<P></P>
+<DIV align="left" id="V5A0CD9"><b>Описание схемы</b></DIV>
+<P></P>
+			<div class="T1" align="left">Клапаны механизма переключения представляют собой два одинаковых электромагнитных клапана, управляющих переключением передних передач. Включение и выключение этих клапанов приводит к изменению давления в линиях гидропривода механизма переключения (фрикционных муфт и тормозов).</div>
+				<div class="T1" align="left">Включением и выключением электромагнитного клапана 1 управляется подача высокого или низкого магистрального давления (к каждому клапану муфты), т.е., при включенном клапане 1 давление в магистрали будет низким (87~116 ф/кв.д (6~8 бар)), а при выключенном клапане 1 давление в магистрали будет высоким (232~261 ф/кв.д (16~18 бар)). Включением и выключением электромагнитного клапана 2 управляется поток масла к клапану муфты E или клапану блокирующей муфты.</div>
+				<div class="T1" align="left">Контроллер КПП отслеживает состояние нескольких входных сигналов и включает или выключает электромагнитные клапаны и выбирает передачи в соответствии с режимом движения автомобиля.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CSD9"><b>Условия занесения кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Замыкание цепи электромагнитного клапана на напряжение питания.</Li>
+					<Li>Отсутствуют коды неисправностей Р1850, Р1852.</Li>
+					<Li>Код заносится сразу после возникновения описанных выше условий.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0ATWD9"><b>Действия при занесении кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Замигает лампа "HOLD". Контроллер КПП записывает в память рабочие условия на момент возникновения неисправности. Эта информация хранится в буфере записей о неисправностях.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CCMD9"><b>Условия очистки кода неисправности/выключения индикатора неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Лампа "HOLD" погаснет, если неисправность не будет обнаружена в трех циклах зажигания.</Li>
+					<Li>Контроллер удалит код из памяти исторических кодов, если в 40 циклах прогрева подряд неисправность не наблюдается.</Li>
+					<Li>Очистить исторический код из памяти контроллера можно и с помощью диагностического прибора.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0DA9"><b>Диагностическая информация</b></DIV>
+<P></P>
+			<UL>
+<Li>При появлении кода неисправности P1851 причиной неисправности может быть электромагнитный клапан 1.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="V5A0P18511"><font size="4"><b>Код P1851 - Короткое замыкание выхода соленоида 1 на напряжение питания</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<div>Выполнить проверку системы бортовой диагностики.</div>
+								<div>Проверка завершена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к пункту   <I><A target="_blank" href="6V2_1F02.ru.html#V1F0ODSC">"Проверка системы бортовой диагностики" </A></I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Подключить диагностический прибор.</Li>
+									<Li>Включить зажигание при выключенном двигателе.</Li>
+									<Li>На диагностическом приборе выбрать "Actuating" ("Управление исполнительными механизмами").</Li>
+									<Li>Подать команду на включение/выключение электромагнитного клапана 1.</Li>
+								</OL>
+								<div>Электромагнитный клапан 1 включается и выключается?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>вкл/выкл</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к пункту   <I><A target="_blank" href="6V2_1F02.ru.html#V1F0DA">"Диагностическая информация"</A></I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Снять масляный поддон.</Li>
+									<Li>Разъединить электрический разъем жгута электромагнитного клапана 1.</Li>
+									<Li>Включить зажигание при выключенном двигателе.</Li>
+									<Li>Измерить напряжение на контакте 1 электромагнитного клапана 1.</Li>
+								</OL>
+								<div>Напряжение находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>11-14В</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<div>Устранить замыкание внутренней линии (электромагнитный клапан 1) на напряжение питания.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<div>Заменить электромагнитный клапан 1.</div>
+								<div>Замена завершена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Проверить наличие кодов неисправности.</Li>
+									<Li>Выявлены ли коды неисправностей, которые еще не диагностировались?</Li>
+								</OL>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>таблице соответствующего кода</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><div align="center">
+<IMG alt="V3B15A32" src="../../../../graphic-pool/V/3B/1/V3B15A32.png"><BR><A target="_blank" href="../../../../graphic-pool/V/3B/1/V3B15A32.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V5A0P1852"><font size="4"><b>Код P1852 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V5A0S1OO"><font size="4"><b>Обрыв выхода соленоида 1</b></font></DIV>
+		<P></P>
+<DIV align="left" id="V5A0CD10"><b>Описание схемы</b></DIV>
+<P></P>
+			<div class="T1" align="left">Клапаны механизма переключения представляют собой два одинаковых электромагнитных клапана, управляющих переключением передних передач. Включение и выключение этих клапанов приводит к изменению давления в линиях гидропривода механизма переключения (фрикционных муфт и тормозов).</div>
+				<div class="T1" align="left">Включением и выключением электромагнитного клапана 1 управляется подача высокого или низкого магистрального давления (к каждому клапану муфты), т.е., при включенном клапане 1 давление в магистрали будет низким (87~116 ф/кв.д (6~8 бар)), а при выключенном клапане 1 давление в магистрали будет высоким (232~261 ф/кв.д (16~18 бар)). Включением и выключением электромагнитного клапана 2 управляется поток масла к клапану муфты E или клапану блокирующей муфты.</div>
+				<div class="T1" align="left">Контроллер КПП отслеживает состояние нескольких входных сигналов и включает или выключает электромагнитные клапаны и выбирает передачи в соответствии с режимом движения автомобиля.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CSD10"><b>Условия занесения кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Разрыв цепи электромагнитного клапана.</Li>
+					<Li>Отсутствуют коды неисправностей Р1850, Р1851.</Li>
+					<Li>Код заносится сразу после возникновения описанных выше условий.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0ATWD10"><b>Действия при занесении кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Замигает лампа "HOLD".</Li>
+					<Li>Контроллер КПП записывает в память рабочие условия на момент возникновения неисправности. Эта информация хранится в буфере записей о неисправностях.</Li>
+					<Li>С помощью гидравлической системы управления включается аварийный/замещающий режим и постоянная четвертая передача.</Li>
+					<Li>После выключения/включения зажигания: 3 передача с помощью гидравлического управления Также возможны Р, R и N.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CCMD10"><b>Условия очистки кода неисправности/выключения индикатора неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Лампа "HOLD" погаснет, если неисправность не будет обнаружена в трех циклах зажигания.</Li>
+					<Li>Контроллер удалит код из памяти исторических кодов, если в 40 циклах прогрева подряд неисправность не наблюдается.</Li>
+					<Li>Очистить исторический код из памяти контроллера можно и с помощью диагностического прибора.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0DA10"><b>Диагностическая информация</b></DIV>
+<P></P>
+			<UL>
+<Li>При появлении кода неисправности P1852 причиной неисправности может быть электромагнитный клапан 1.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="V5A0P18521"><font size="4"><b>Код P1852 - Обрыв выхода соленоида 1</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<div>Выполнить проверку системы бортовой диагностики.</div>
+								<div>Проверка завершена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к пункту   <I><A target="_blank" href="6V2_1F02.ru.html#V1F0ODSC">"Проверка системы бортовой диагностики" </A></I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Подключить диагностический прибор.</Li>
+									<Li>Включить зажигание при выключенном двигателе.</Li>
+									<Li>На диагностическом приборе выбрать "Actuating" ("Управление исполнительными механизмами").</Li>
+									<Li>Подать команду на включение/выключение электромагнитного клапана 1.</Li>
+								</OL>
+								<div>Электромагнитный клапан 1 включается и выключается?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>вкл/выкл</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к пункту   <I><A target="_blank" href="6V2_1F02.ru.html#V1F0DA">"Диагностическая информация"</A></I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Выключить зажигание.</Li>
+									<Li>Разъединить электрический разъем КПП.</Li>
+									<Li>Измерить сопротивление между контактами 3 и 12 электрического разъема жгута КПП.</Li>
+								</OL>
+								<div>Измеренное сопротивление находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>Темп.</div>
+							<div>25°С (77°Ф) </div>
+							<div>6 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Снять масляный поддон.</Li>
+									<Li>Разъединить электрический разъем жгута электромагнитного клапана 1.</Li>
+									<Li>Измерить сопротивление между контактом 1 электромагнитного клапана 1 и контактом 12 электрического разъема жгута КПП.</Li>
+									<Li>Измерить сопротивление между контактом 2 электромагнитного клапана 1 и контактом 3 электрического разъема жгута КПП.</Li>
+								</OL>
+								<div>Измеренное сопротивление находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>≈ 0 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Устранить разрыв цепи (между контактами 1 и 12).</Li>
+									<Li>Устранить разрыв цепи (между контактами 2 и 3).</Li>
+								</OL>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<div>Заменить электромагнитный клапан 1.</div>
+								<div>Замена завершена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Разъединить электрический разъем жгута КПП и разъем контроллера КПП.</Li>
+									<Li>Измерить сопротивление между контактом 3 электрического разъема КПП и контактом C8 разъема контроллера КПП.</Li>
+									<Li>Измерить сопротивление между контактом 12 электрического разъема КПП и контактом A9 разъема контроллера КПП.</Li>
+								</OL>
+								<div>Измеренное сопротивление находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>≈ 0 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<div>Устранить разрыв цепи жгута проводов коробки передач.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<div>Заменить контроллер КПП.</div>
+								<div>Замена завершена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>После окончания ремонта выбрать команду "clear info" ("очистить данные") на диагностическом приборе и провести дорожное испытание автомобиля.</Li>
+									<Li>Просмотреть информацию о кодах ("DTC info").</Li>
+									<Li>Последнее испытание прошло неудачно или отображается текущий код?</Li>
+								</OL>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Начать диагностику заново
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Неисправность устранена. Закончить проверку по таблице.
+							</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><div align="center">
+<IMG alt="V3B15A32" src="../../../../graphic-pool/V/3B/1/V3B15A32.png"><BR><A target="_blank" href="../../../../graphic-pool/V/3B/1/V3B15A32.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V5A0P1853"><font size="4"><b>Код P1853 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V5A0S2OSG"><font size="4"><b>Короткое замыкание выхода соленоида 2 на массу</b></font></DIV>
+		<P></P>
+<DIV align="left" id="V5A0CD11"><b>Описание схемы</b></DIV>
+<P></P>
+			<div class="T1" align="left">Клапаны механизма переключения представляют собой два одинаковых электромагнитных клапана, управляющих переключением передних передач. Включение и выключение этих клапанов приводит к изменению давления в линиях гидропривода механизма переключения (фрикционных муфт и тормозов).</div>
+				<div class="T1" align="left">Включением и выключением электромагнитного клапана 2 управляется подача высокого или низкого магистрального давления (к каждому клапану муфты), т.е., при включенном клапане 2 давление в магистрали будет низким (87~116 ф/кв.д (6~8 бар)), а при выключенном клапане 1 давление в магистрали будет высоким (232~261 ф/кв.д (16~18 бар)). Включением и выключением электромагнитного клапана 2 управляется поток масла к клапану муфты E или клапану блокирующей муфты.</div>
+				<div class="T1" align="left">Контроллер КПП отслеживает состояние нескольких входных сигналов и включает или выключает электромагнитные клапаны и выбирает передачи в соответствии с режимом движения автомобиля.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CSD11"><b>Условия занесения кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Замыкание цепи электромагнитного клапана на массу.</Li>
+					<Li>Отсутствуют коды неисправностей Р1854, Р1855.</Li>
+					<Li>Код заносится сразу после возникновения описанных выше условий.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0ATWD11"><b>Действия при занесении кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Загорается сигнализатор неисправности.</Li>
+					<Li>Контроллер КПП записывает в память рабочие условия на момент возникновения неисправности. Эта информация хранится в буфере записей о неисправностях.</Li>
+					<Li>С помощью гидравлической системы управления включается аварийный/замещающий режим и постоянная четвертая передача.</Li>
+					<Li>После выключения/включения зажигания: 3 передача с помощью гидравлического управления Также возможны Р, R и N.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CCMD11"><b>Условия очистки кода неисправности/выключения индикатора неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Сигнализатор неисправностей гаснет, если неисправность не наблюдалась в трех циклах зажигания.</Li>
+					<Li>Контроллер удалит код из памяти исторических кодов, если в 40 циклах прогрева подряд неисправность не наблюдается.</Li>
+					<Li>Очистить исторический код из памяти контроллера можно и с помощью диагностического прибора.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0DA11"><b>Диагностическая информация</b></DIV>
+<P></P>
+			<UL>
+<Li>При появлении кода неисправности P1853 причиной неисправности может быть электромагнитный клапан 2.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="V5A0P18531"><font size="4"><b>Код P1853 - Короткое замыкание выхода соленоида 2 на массу</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<div>Выполнить проверку системы бортовой диагностики.</div>
+								<div>Проверка завершена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к пункту   <I><A target="_blank" href="6V2_1F02.ru.html#V1F0ODSC">"Проверка системы бортовой диагностики" </A></I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Подключить диагностический прибор.</Li>
+									<Li>Включить зажигание при выключенном двигателе.</Li>
+									<Li>Записать, затем стереть коды неисправности.</Li>
+									<Li>На диагностическом приборе выбрать "Actuating" ("Управление исполнительными механизмами").</Li>
+									<Li>Подать команду на включение/выключение электромагнитного клапана 2.</Li>
+								</OL>
+								<div>Электромагнитный клапан 2 включается и выключается?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>вкл/выкл</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к пункту   <I><A target="_blank" href="6V2_1F02.ru.html#V1F0DA">"Диагностическая информация"</A></I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Выключить зажигание.</Li>
+									<Li>Разъединить электрический разъем КПП.</Li>
+									<Li>Измерить сопротивление между контактами 3 и 12 электрического разъема жгута КПП.</Li>
+								</OL>
+								<div>Измеренное сопротивление находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>Темп.</div>
+							<div>25°С (77°Ф) </div>
+							<div>26~34,5 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Снять масляный поддон.</Li>
+									<Li>Разъединить электрический разъем жгута электромагнитного клапана  2.</Li>
+									<Li>Измерить сопротивление между контактом 2 электромагнитного клапана 2 и массой.</Li>
+									<Li>Измерить сопротивление между контактом 1 электромагнитного клапана 2 и массой.</Li>
+								</OL>
+								<div>Измеренное сопротивление находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>∞</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<div>Устранить замыкание внутренней линии (электромагнитный клапан 2) на массу.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<div>Заменить электромагнитный клапан 2.</div>
+								<div>Замена завершена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Разъединить электрический разъем жгута КПП и разъем контроллера КПП.</Li>
+									<Li>Измерить сопротивление между контактом 3 электрического разъема жгута КПП и массой.</Li>
+									<Li>Измерить сопротивление между контактом 13 электрического разъема жгута КПП и массой.</Li>
+								</OL>
+								<div>Измеренное сопротивление находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>∞</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<div>Устранить замыкание жгута КПП на массу.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<div>Заменить контроллер КПП.</div>
+								<div>Замена завершена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>После окончания ремонта выбрать команду "clear info" ("очистить данные") на диагностическом приборе и провести дорожное испытание автомобиля.</Li>
+									<Li>Просмотреть информацию о кодах ("DTC info").</Li>
+									<Li>Последнее испытание прошло неудачно или отображается текущий код?</Li>
+								</OL>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Начать диагностику заново
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Неисправность устранена. Закончить проверку по таблице.
+							</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><div align="center">
+<IMG alt="V3B15A32" src="../../../../graphic-pool/V/3B/1/V3B15A32.png"><BR><A target="_blank" href="../../../../graphic-pool/V/3B/1/V3B15A32.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V5A0P1854"><font size="4"><b>Код P1854 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V5A0S2OSP"><font size="4"><b>Короткое замыкание выхода соленоида 2 на напряжение питания</b></font></DIV>
+		<P></P>
+<DIV align="left" id="V5A0CD12"><b>Описание схемы</b></DIV>
+<P></P>
+			<div class="T1" align="left">Клапаны механизма переключения представляют собой два одинаковых электромагнитных клапана, управляющих переключением передних передач. Включение и выключение этих клапанов приводит к изменению давления в линиях гидропривода механизма переключения (фрикционных муфт и тормозов).</div>
+				<div class="T1" align="left">Включением и выключением электромагнитного клапана 2 управляется подача высокого или низкого магистрального давления (к каждому клапану муфты), т.е., при включенном клапане 2 давление в магистрали будет низким (87~116 ф/кв.д (6~8 бар)), а при выключенном клапане 1 давление в магистрали будет высоким (232~261 ф/кв.д (16~18 бар)). Включением и выключением электромагнитного клапана 2 управляется поток масла к клапану муфты E или клапану блокирующей муфты.</div>
+				<div class="T1" align="left">Контроллер КПП отслеживает состояние нескольких входных сигналов и включает или выключает электромагнитные клапаны и выбирает передачи в соответствии с режимом движения автомобиля.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CSD12"><b>Условия занесения кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Замыкание цепи электромагнитного клапана на напряжение питания.</Li>
+					<Li>Отсутствуют коды неисправностей Р1853, Р1855.</Li>
+					<Li>Код заносится сразу после возникновения описанных выше условий.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0ATWD12"><b>Действия при занесении кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Загорается сигнализатор неисправности.</Li>
+					<Li>Контроллер КПП записывает в память рабочие условия на момент возникновения неисправности. Эта информация хранится в буфере записей о неисправностях.</Li>
+					<Li>Включается аварийный/замещающий режим и постоянная 4-я передача.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CCMD12"><b>Условия очистки кода неисправности/выключения индикатора неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Сигнализатор неисправностей гаснет, если неисправность не наблюдалась в трех циклах зажигания.</Li>
+					<Li>Контроллер удалит код из памяти исторических кодов, если в 40 циклах прогрева подряд неисправность не наблюдается.</Li>
+					<Li>Очистить исторический код из памяти контроллера можно и с помощью диагностического прибора.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0DA12"><b>Диагностическая информация</b></DIV>
+<P></P>
+			<UL>
+<Li>При появлении кода неисправности P1854 причиной неисправности может быть электромагнитный клапан 2.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="V5A0P18541"><font size="4"><b>Код P1854 - Короткое замыкание выхода соленоида 2 на напряжение питания</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<div>Выполнить проверку системы бортовой диагностики.</div>
+								<div>Проверка завершена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к пункту   <I><A target="_blank" href="6V2_1F02.ru.html#V1F0ODSC">"Проверка системы бортовой диагностики" </A></I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Подключить диагностический прибор.</Li>
+									<Li>Включить зажигание при выключенном двигателе.</Li>
+									<Li>На диагностическом приборе выбрать "Actuating" ("Управление исполнительными механизмами").</Li>
+									<Li>Подать команду на включение/выключение электромагнитного клапана 2.</Li>
+								</OL>
+								<div>Электромагнитный клапан 2 включается и выключается?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>вкл/выкл</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к пункту   <I><A target="_blank" href="6V2_1F02.ru.html#V1F0DA">"Диагностическая информация"</A></I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Снять масляный поддон.</Li>
+									<Li>Разъединить электрический разъем жгута электромагнитного клапана  2.</Li>
+									<Li>Включить зажигание при выключенном двигателе.</Li>
+									<Li>Измерить напряжение на контакте 1 электромагнитного клапана 2.</Li>
+								</OL>
+								<div>Напряжение находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>11-14В</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<div>Устранить замыкание внутренней линии (электромагнитный клапан 2) на напряжение питания.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<div>Заменить электромагнитный клапан 2.</div>
+								<div>Замена завершена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Проверить наличие кодов неисправности.</Li>
+									<Li>Выявлены ли коды неисправностей, которые еще не диагностировались?</Li>
+								</OL>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>таблице соответствующего кода</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><div align="center">
+<IMG alt="V3B15A32" src="../../../../graphic-pool/V/3B/1/V3B15A32.png"><BR><A target="_blank" href="../../../../graphic-pool/V/3B/1/V3B15A32.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V5A0P1855"><font size="4"><b>Код P1855 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V5A0S2O"><font size="4"><b>Обрыв выхода соленоида 2</b></font></DIV>
+		<P></P>
+<DIV align="left" id="V5A0CD13"><b>Описание схемы</b></DIV>
+<P></P>
+			<div class="T1" align="left">Клапаны механизма переключения представляют собой два одинаковых электромагнитных клапана, управляющих переключением передних передач. Включение и выключение этих клапанов приводит к изменению давления в линиях гидропривода механизма переключения (фрикционных муфт и тормозов).</div>
+				<div class="T1" align="left">Включением и выключением электромагнитного клапана 2 управляется подача высокого или низкого магистрального давления (к каждому клапану муфты), т.е., при включенном клапане 2 давление в магистрали будет низким (87~116 ф/кв.д (6~8 бар)), а при выключенном клапане 1 давление в магистрали будет высоким (232~261 ф/кв.д (16~18 бар)). Включением и выключением электромагнитного клапана 2 управляется поток масла к клапану муфты E или клапану блокирующей муфты.</div>
+				<div class="T1" align="left">Контроллер КПП отслеживает состояние нескольких входных сигналов и включает или выключает электромагнитные клапаны и выбирает передачи в соответствии с режимом движения автомобиля.</div>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CSD13"><b>Условия занесения кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Разрыв цепи электромагнитного клапана.</Li>
+					<Li>Отсутствуют коды неисправностей Р1853, Р1854.</Li>
+					<Li>Код заносится сразу после возникновения описанных выше условий.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0ATWD13"><b>Действия при занесении кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Загорается сигнализатор неисправности.</Li>
+					<Li>Контроллер КПП записывает в память рабочие условия на момент возникновения неисправности. Эта информация хранится в буфере записей о неисправностях.</Li>
+					<Li>Включается аварийный/замещающий режим и постоянная 4-я передача.</Li>
+					<Li>После выключения/включения зажигания: 3 передача с помощью гидравлического управления Также возможны Р, R и N.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0CCMD13"><b>Условия очистки кода неисправности/выключения индикатора неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Сигнализатор неисправностей гаснет, если неисправность не наблюдалась в трех циклах зажигания.</Li>
+					<Li>Контроллер удалит код из памяти исторических кодов, если в 40 циклах прогрева подряд неисправность не наблюдается.</Li>
+					<Li>Очистить исторический код из памяти контроллера можно и с помощью диагностического прибора.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="V5A0DA13"><b>Диагностическая информация</b></DIV>
+<P></P>
+			<UL>
+<Li>При появлении кода неисправности P1855 причиной неисправности может быть электромагнитный клапан 2.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="V5A0P18551"><font size="4"><b>Код P1855 - Обрыв выхода соленоида 2</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<div>Выполнить проверку системы бортовой диагностики.</div>
+								<div>Проверка завершена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к пункту   <I><A target="_blank" href="6V2_1F02.ru.html#V1F0ODSC">"Проверка системы бортовой диагностики" </A></I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Подключить диагностический прибор.</Li>
+									<Li>Включить зажигание при выключенном двигателе.</Li>
+									<Li>На диагностическом приборе выбрать "Actuating" ("Управление исполнительными механизмами").</Li>
+									<Li>Подать команду на включение/выключение электромагнитного клапана 2.</Li>
+								</OL>
+								<div>Электромагнитный клапан 2 включается и выключается?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>вкл/выкл</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к пункту   <I><A target="_blank" href="6V2_1F02.ru.html#V1F0DA">"Диагностическая информация"</A></I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Выключить зажигание.</Li>
+									<Li>Разъединить электрический разъем КПП.</Li>
+									<Li>Измерить сопротивление между контактами 3 и 12 электрического разъема жгута КПП.</Li>
+								</OL>
+								<div>Измеренное сопротивление находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>Темп.</div>
+							<div>25°С (77°Ф) </div>
+							<div>6 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Снять масляный поддон.</Li>
+									<Li>Разъединить электрический разъем жгута электромагнитного клапана  2.</Li>
+									<Li>Измерить сопротивление между контактом 1 электромагнитного клапана 2 и контактом 13 разъема КПП.</Li>
+									<Li>Измерить сопротивление между контактом 2 электромагнитного клапана 2 и контактом 3 разъема КПП.</Li>
+								</OL>
+								<div>Измеренное сопротивление находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>≈ 0 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Устранить разрыв цепи (между контактами 1 и 13).</Li>
+									<Li>Устранить разрыв цепи (между контактами 2 и 3).</Li>
+								</OL>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<div>Заменить электромагнитный клапан 2.</div>
+								<div>Замена завершена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Разъединить электрический разъем жгута КПП и разъем контроллера КПП.</Li>
+									<Li>Измерить сопротивление между контактом 3 электрического разъема КПП и контактом C8 разъема контроллера КПП.</Li>
+									<Li>Измерить сопротивление между контактом 13 электрического разъема КПП и контактом A9 разъема контроллера КПП.</Li>
+								</OL>
+								<div>Измеренное сопротивление находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>≈ 0 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<div>Устранить разрыв цепи жгута проводов коробки передач.</div>
+								<div>Ремонт закончен?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Система исправна
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<div>Заменить контроллер КПП.</div>
+								<div>Замена завершена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>После окончания ремонта выбрать команду "clear info" ("очистить данные") на диагностическом приборе и провести дорожное испытание автомобиля.</Li>
+									<Li>Просмотреть информацию о кодах ("DTC info").</Li>
+									<Li>Последнее испытание прошло неудачно или отображается текущий код?</Li>
+								</OL>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Начать диагностику заново
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Неисправность устранена. Закончить проверку по таблице.
+							</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><BR><TABLE align="center"><TR>
+<TD align="left"><A href="6V2_5A04.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="На предыдущую страницу"></A></TD>
+<TD align="left"></TD>
+<TD align="left"><A href="6V2_5A06.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="На следующую страницу"></A></TD>
+<TD></TD>
+</TR></TABLE>
+<TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Авторское право принадлежит General Motors Chevrolet Europe Все права защищены</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

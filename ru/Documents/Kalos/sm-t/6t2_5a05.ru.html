@@ -1,0 +1,2245 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>.T2{    BORDER-TOP: white;}  .T3{    BORDER-BOTTOM: white;} .T4{    BORDER-TOP: white;    BORDER-BOTTOM: white} .I{ padding-left : 10pt}  .Tighten{ padding-left : 7pt} .Arial{ font-family : Arial, Helvetica, sans-serif;margin-left: 10pt;margin-right : 10pt } .TableB{ margin-left : 0pt}</style>
+<TITLE>Руководство по техническому обслуживанию2006 Kalos Диагностический код неисправности (DTC) P0973</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+ function FixMenu()
+{
+menuTop = document.body.scrollTop + document.body.clientHeight -40;
+menu.style.top = menuTop;
+menu.style.width = document.body.clientWidth; 
+}
+
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px"><A border="0" href="6T2_5A05.ru.html"><IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="К началу документа"></A></SPAN><TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt"><TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Kalos/Aveo</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left"><TABLE><TR>
+<TD width="5%" align="left"><A href="6T2_5A04.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="На предыдущую страницу"></A></TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left"><A href="6T2_5A06.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="На следующую страницу"></A></TD>
+</TR></TABLE></TD>
+<TD><TABLE width="65%" align="right"><TR>
+<TD style="font-size:10"><A href="../../../GMDE_TIS_START.html" target="_top"><IMG src="../../code/menu-images/home.gif" border="0" alt="Главная страница GMDE"></A></TD>
+<TD style="font-size:10"><A href="../toc_Kalos.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Загрузить нединамическое оглавление"></A></TD>
+<TD style="font-size:10"><A href="../toc_Kalos_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Загрузить динамическое оглавление"></A></TD>
+<TD style="font-size:10"><A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Помощь"></A></TD>
+</TR></TABLE></TD>
+</TR>
+</TBODY></TABLE>
+	
+	<BR><IMG alt="S6B15A16" src="../../../../graphic-pool/S/6B/1/S6B15A16.png"><BR><A target="_blank" href="../../../../graphic-pool/S/6B/1/S6B15A16.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="T5A0P0973"><font size="4"><b>Диагностический код неисправности (DTC) P0973 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T5A0SSE"><font size="4"><b>Электрическая неисправность электромагнитного клапана переключения передач 1 (SS1) (замыкание на массу)</b></font></DIV>
+		<P></P>
+<DIV align="left" id="T5A0CRD"><b>Условия действия DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>Нет аварийного режима.</Li>
+					<Li>Контроллер КПП обнаруживает сигнал OFF (12В) электромагнитного клапана переключения передач 1 (SS1), когда драйвер электромагнитого клапана SS1 выводит сигнал ON (0В) непрерывно в течение 0.5 секунды.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CSDTC"><b>Условия записи диагностического кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Выше приведенные условия возникают непрерывно 1 раз.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0ATDTC"><b>Действия при занесении кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Контроллер КПП отдает команду на включение сигнализатора неисправностей и заносит соответствующий код при возникновении неисправности в одном цикле зажигания.</Li>
+					<Li>Отключается управление блокировкой.</Li>
+					<Li>Отключается управление снижением момента двигателя.</Li>
+					<Li>Отключается управление давлением включения.
+</Li>
+					<Li>Отсутствует управление N-D электромагнитным клапаном управления моментом.</Li>
+					<Li>Отсутствует управление самообучением.</Li>
+					<Li>После принятия решения о наличии неисправности: включается аварийный режим.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0TCM"><b>Схема переключения передач контроллером КПП (Диапазон: D)</b></DIV>
+<P></P>
+			<Table border="1" width="100%" cellspacing="0">
+<Thead bgcolor="eeeeee">
+<tr>
+<td align="center" valign="middle" colspan="3" width="50%" class="T1"><b><div>Обычная</div>
+								
+							</b></td>
+							<td align="center" valign="middle" colspan="3" width="50%" class="T1"><b><div>Отказ клапана переключения 1</div>
+								
+							</b></td>
+						</tr>
+						<tr>
+<td align="center" valign="middle" width="16%" class="T1"><b><div>Передача</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="17%" class="T1"><b><div>Клапан переключения 1</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="17%" class="T1"><b><div>Клапан переключения 2</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="16%" class="T1"><b><div>Передача</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="17%" class="T1"><b><div>Клапан переключения 1</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="17%" class="T1"><b><div>Клапан переключения 2</div>
+								
+							</b></td>
+						</tr>
+					</Thead>
+					<Tbody align="center" valign="middle">
+<tr colspan="">
+<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>1-я</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Вкл.</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Вкл.</div>
+								
+							</td>
+							<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>3-я</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ОТКАЗ</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Выкл.</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>2-я</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Вкл.</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Выкл.</div>
+								
+							</td>
+							<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>3-я</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ОТКАЗ</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Выкл.</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>3-я</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Выкл.</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Выкл.</div>
+								
+							</td>
+							<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>3-я</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ОТКАЗ</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Выкл.</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>4-я</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Выкл.</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Вкл.</div>
+								
+							</td>
+							<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>4-я</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ОТКАЗ</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Вкл.</div>
+								
+							</td>
+						</tr>
+					</Tbody>
+				</Table>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CCDTC"><b>Условия очистки кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Контроллер КПП отдает команду на выключение сигнализатора неисправностей, если в трех циклах зажигания подряд неисправность не наблюдается.</Li>
+					<Li>Очистить код из памяти контроллера можно с помощью диагностического прибора.</Li>
+					<Li>Контроллер удалит код из памяти исторических кодов, если в сорока циклах прогрева подряд неисправность не наблюдается.</Li>
+					<Li>Контроллер КПП обнаруживает сигнал ON электромагнитного клапана переключения передач SS1, когда драйвер электромагнитого клапана SS1 выводит сигнал ON непрерывно в течение 1000 мсек.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CF"><b>Причина неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Электрический разъем или жгут между электромагнитным клапаном переключения передач 1 и контроллером КПП</Li>
+					<Li>Клапан переключения 1</Li>
+					<Li>контроллер КПП</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="T5A0P09731"><font size="4"><b>DTC 0973 - Электрическая неисправность электромагнитного клапана переключения передач 1 (SS1) (замыкание на массу)</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Выключить зажигание.</Li>
+									<Li>Подключить диагностический прибор.</Li>
+									<Li>Двигатель остановлен. Перевести замок зажигания в положение ON.</Li>
+									<Li>В меню "Diagnostic Trouble Codes Information" ("Информация о кодах") диагностического прибора выбрать команду "Store Freeze Frame/Failure Records" ("Стоп-кадр/Записи о неисправности").</Li>
+									<Li>Сохранить данные стоп-кадра/записи о неисправности.</Li>
+									<Li>В меню "Diagnostic Trouble Codes Information" ("Информация о кодах") выбрать команду "Clear DTC Information" ("Очистить информацию о кодах").</Li>
+									<Li>Очистить информацию о кодах.</Li>
+									<Li>Выполнить один драйв-цикл.</Li>
+								</OL>
+								<div>Сигнализатор неисправности горит?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме (см. "Проверка жгутов и электрических разъемов" в этом разделе)</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>В меню "Diagnostic Trouble Codes Information" ("Информация о кодах") выбрать команду "Request DTC by Status" ("Запрос кодов по состоянию").</Li>
+									<Li>Выполнить запрос кодов по состоянию.</Li>
+								</OL>
+								<div>Отображается ли код P0973?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме (см. "Проверка жгутов и электрических разъемов" в этом разделе)</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Выключить зажигание.</Li>
+									<Li>Проверить сопротивление между жгутом автомобиля и электромагнитным клапаном переключения передач 1. См.   <A target="_blank" href="6T2_5A02.ru.html#T5A0UI">"Проверка состояния агрегата"</A> в этом разделе.</Li>
+									<Li>Разъединить разъем контроллера КПП (X-1) и проверить сопротивление между контактами A16 и A23.</Li>
+								</OL>
+								<div>Результат измерения находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>20°C (68°F) 11-16 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Проверить наличие неисправности между колодкой жгута автомобиля и контроллером КПП.</Li>
+									<Li>Проверить колодки разъема. См. "Проверка жгутов и электрических разъемов" в этом разделе.</Li>
+									<Li>Проверить надежность соединения колодок разъема (C-1).</Li>
+								</OL>
+								<div>Соединение исправно?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить неисправность колодок жгута.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Проверить наличие неисправности между жгутом автомобиля и клапаном переключения передач 1.</Li>
+									<Li>Разъединить разъем жгута КПП (X-3) и проверить сопротивление между контактом 5 разъема клапана переключения передач 1 и землей.</Li>
+								</OL>
+								<div>Результат измерения находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>20°C (68°F) 11-16 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Заменить основной контроллер КПП.</Li>
+									<Li>После устранения кодов провести испытание с воспроизведением условий возникновения неисправности.</Li>
+								</OL>
+								<div>Отображается ли код неисправности?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме (см. "Проверка жгутов и электрических разъемов" в этом разделе)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Заменить контроллер КПП</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Проверить наличие неисправности жгута автомобиля или разъемов.</Li>
+									<Li>Проверить жгут на наличие разрывов или замыканий. Проверить соединение между разъемами (C-3). См. "Проверка жгутов и электрических разъемов" в этом разделе.</Li>
+								</OL>
+								<div>Все исправно?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Заменить жгут или отрегулировать разъемы</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Проверить наличие неисправности жгута КПП или разъемов клапана переключения передач 1.</Li>
+									<Li>Проверить исправность клапана переключения передач 1. См.   <A target="_blank" href="6T2_5A02.ru.html#T5A0UI">"Проверка состояния агрегата"</A> в этом разделе.</Li>
+								</OL>
+								<div>Неисправность обнаружена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Заменить электромагнитный клапан переключения передач 1</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Проверить наличие неисправности жгута КПП.</Li>
+									<Li>Проверить жгут КПП на наличие разрывов или замыканий. Проверить соединение между разъемами (C-6). См. "Проверка жгутов и электрических разъемов" в этом разделе.</Li>
+								</OL>
+								<div>Все исправно?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме </div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Заменить жгут КПП или отрегулировать разъемы.</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><IMG alt="S6B15A16" src="../../../../graphic-pool/S/6B/1/S6B15A16.png"><BR><A target="_blank" href="../../../../graphic-pool/S/6B/1/S6B15A16.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="T5A0P0974"><font size="4"><b>Диагностический код неисправности (DTC) P0974 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T5A0SSE1"><font size="4"><b>Электрическая неисправность электромагнитного клапана переключения передач 1 (SS1) (разрыв или замыкание на электропитание)</b></font></DIV>
+		<P></P>
+<DIV align="left" id="T5A0CRD1"><b>Условия действия DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>Нет аварийного режима.</Li>
+					<Li>Контроллер КПП обнаруживает сигнал ON (12В) электромагнитного клапана переключения передач 1 (SS1), когда драйвер электромагнитного клапана SS1 выводит сигнал OFF (0В) непрерывно в течение 0.5 секунды.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CSDTC1"><b>Условия записи диагностического кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Выше приведенные условия возникают непрерывно 1 раз.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0ATDTC1"><b>Действия при занесении кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Контроллер КПП отдает команду на включение сигнализатора неисправностей и заносит соответствующий код при возникновении неисправности в одном цикле зажигания.</Li>
+					<Li>Отключается управление блокировкой.</Li>
+					<Li>Отключается управление снижением момента двигателя.</Li>
+					<Li>Отключается управление давлением включения.
+</Li>
+					<Li>Отсутствует управление N-D электромагнитным клапаном управления моментом.</Li>
+					<Li>Отсутствует управление самообучением.</Li>
+					<Li>После принятия решения о наличии неисправности: включается аварийный режим.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0TCM1"><b>Схема переключения передач контроллером КПП (Диапазон: D)</b></DIV>
+<P></P>
+			<Table border="1" width="100%" cellspacing="0">
+<Thead bgcolor="eeeeee">
+<tr>
+<td align="center" valign="middle" colspan="3" width="50%" class="T1"><b><div>Обычная</div>
+								
+							</b></td>
+							<td align="center" valign="middle" colspan="3" width="50%" class="T1"><b><div>Отказ клапана переключения 1</div>
+								
+							</b></td>
+						</tr>
+						<tr>
+<td align="center" valign="middle" width="16%" class="T1"><b><div>Передача</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="17%" class="T1"><b><div>Клапан переключения 1</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="17%" class="T1"><b><div>Клапан переключения 2</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="16%" class="T1"><b><div>Передача</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="17%" class="T1"><b><div>Клапан переключения 1</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="17%" class="T1"><b><div>Клапан переключения 2</div>
+								
+							</b></td>
+						</tr>
+					</Thead>
+					<Tbody align="center" valign="middle">
+<tr colspan="">
+<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>1-я</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Вкл.</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Вкл.</div>
+								
+							</td>
+							<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>3-я</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ОТКАЗ</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Выкл.</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>2-я</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Вкл.</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Выкл.</div>
+								
+							</td>
+							<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>3-я</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ОТКАЗ</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Выкл.</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>3-я</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Выкл.</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Выкл.</div>
+								
+							</td>
+							<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>3-я</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ОТКАЗ</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Выкл.</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>4-я</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Выкл.</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Вкл.</div>
+								
+							</td>
+							<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>4-я</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ОТКАЗ</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Вкл.</div>
+								
+							</td>
+						</tr>
+					</Tbody>
+				</Table>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CCDTC1"><b>Условия очистки кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Контроллер КПП отдает команду на выключение сигнализатора неисправностей, если в трех циклах зажигания подряд неисправность не наблюдается.</Li>
+					<Li>Очистить код из памяти контроллера можно с помощью диагностического прибора.</Li>
+					<Li>Контроллер удалит код из памяти исторических кодов, если в сорока циклах прогрева подряд неисправность не наблюдается.</Li>
+					<Li>Контроллер КПП обнаруживает сигнал OFF электромагнитного клапана переключения передач SS1, когда драйвер электромагнитого клапана SS1 выводит сигнал OFF непрерывно в течение 1000 мсек.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CF1"><b>Причина неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Электрический разъем или жгут между электромагнитным клапаном переключения передач 1 и контроллером КПП</Li>
+					<Li>Клапан переключения 1</Li>
+					<Li>контроллер КПП</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="T5A0P09741"><font size="4"><b>DTC P0974 - Электрическая неисправность электромагнитного клапана переключения передач 1 (SS1) (разрыв или замыкание на электропитание)</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Выключить зажигание.</Li>
+									<Li>Подключить диагностический прибор.</Li>
+									<Li>Двигатель остановлен. Перевести замок зажигания в положение ON.</Li>
+									<Li>В меню "Diagnostic Trouble Codes Information" ("Информация о кодах") диагностического прибора выбрать команду "Store Freeze Frame/Failure Records" ("Стоп-кадр/Записи о неисправности").</Li>
+									<Li>Сохранить данные стоп-кадра/записи о неисправности.</Li>
+									<Li>В меню "Diagnostic Trouble Codes Information" ("Информация о кодах") выбрать команду "Clear DTC Information" ("Очистить информацию о кодах").</Li>
+									<Li>Очистить информацию о кодах.</Li>
+									<Li>Выполнить один драйв-цикл.</Li>
+								</OL>
+								<div>Сигнализатор неисправности горит?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме (см. "Проверка жгутов и электрических разъемов" в этом разделе)</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>В меню "Diagnostic Trouble Codes Information" ("Информация о кодах") выбрать команду "Request DTC by Status" ("Запрос кодов по состоянию").</Li>
+									<Li>Выполнить запрос кодов по состоянию.</Li>
+								</OL>
+								<div>Отображается ли код P0974?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме (см. "Проверка жгутов и электрических разъемов" в этом разделе)</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Выключить зажигание.</Li>
+									<Li>Проверить сопротивление между жгутом автомобиля и электромагнитным клапаном переключения передач 1. См.   <A target="_blank" href="6T2_5A02.ru.html#T5A0UI">"Проверка состояния агрегата"</A> в этом разделе.</Li>
+									<Li>Разъединить разъем контроллера КПП (X-1) и проверить сопротивление между контактами A16 и A23.</Li>
+								</OL>
+								<div>Результат измерения находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>20°C (68°F) 11-16 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Проверить наличие неисправности между колодкой жгута автомобиля и контроллером КПП.</Li>
+									<Li>Проверить колодки разъема. См. "Проверка жгутов и электрических разъемов" в этом разделе.</Li>
+									<Li>Проверить надежность соединения колодок разъема (C-1).</Li>
+								</OL>
+								<div>Соединение исправно?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить неисправность колодок жгута.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Проверить наличие неисправности между жгутом автомобиля и клапаном переключения передач 1.</Li>
+									<Li>Разъединить разъем жгута КПП (X-3) и проверить сопротивление между контактом 5 разъема клапана переключения передач 1 и землей.</Li>
+								</OL>
+								<div>Результат измерения находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>20°C (68°F) 11-16 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Заменить основной контроллер КПП.</Li>
+									<Li>После устранения кодов провести испытание с воспроизведением условий возникновения неисправности.</Li>
+								</OL>
+								<div>Отображается ли код неисправности?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме (см. "Проверка жгутов и электрических разъемов" в этом разделе)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Заменить контроллер КПП</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Проверить наличие неисправности жгута автомобиля или разъемов.</Li>
+									<Li>Проверить жгут на наличие разрывов или замыканий. Проверить соединение между разъемами (C-3). См. "Проверка жгутов и электрических разъемов" в этом разделе.</Li>
+								</OL>
+								<div>Все исправно?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Заменить жгут или отрегулировать разъемы</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Проверить наличие неисправности жгута КПП или разъемов клапана переключения передач 1.</Li>
+									<Li>Проверить исправность клапана переключения передач 1. См.   <A target="_blank" href="6T2_5A02.ru.html#T5A0UI">"Проверка состояния агрегата"</A> в этом разделе.</Li>
+								</OL>
+								<div>Неисправность обнаружена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Заменить электромагнитный клапан переключения передач 1</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Проверить наличие неисправности жгута КПП.</Li>
+									<Li>Проверить жгут КПП на наличие разрывов или замыканий. Проверить соединение между разъемами (C-6). См. "Проверка жгутов и электрических разъемов" в этом разделе.</Li>
+								</OL>
+								<div>Все исправно?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме </div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Заменить жгут КПП или отрегулировать разъемы.</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><IMG alt="S6B15A16" src="../../../../graphic-pool/S/6B/1/S6B15A16.png"><BR><A target="_blank" href="../../../../graphic-pool/S/6B/1/S6B15A16.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="T5A0P0976"><font size="4"><b>Диагностический код неисправности (DTC) P0976 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T5A0SS2E"><font size="4"><b>Электрическая неисправность электромагнитного клапана переключения передач 2 (SS2) (замыкание на массу)</b></font></DIV>
+		<P></P>
+<DIV align="left" id="T5A0CRD2"><b>Условия действия DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>Нет аварийного режима.</Li>
+					<Li>Контроллер КПП обнаруживает сигнал OFF (12В) электромагнитного клапана переключения передач 2 (SS2), когда драйвер электромагнитного клапана SS2 выводит сигнал ON (0В) непрерывно в течение 0.5 секунды.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CSDTC2"><b>Условия записи диагностического кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Выше приведенные условия возникают непрерывно 1 раз.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0ATDTC2"><b>Действия при занесении кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Контроллер КПП отдает команду на включение сигнализатора неисправностей и заносит соответствующий код при возникновении неисправности в одном цикле зажигания.</Li>
+					<Li>Отключается управление блокировкой.</Li>
+					<Li>Отключается управление снижением момента двигателя.</Li>
+					<Li>Отключается управление давлением включения.
+</Li>
+					<Li>Отсутствует управление N-D электромагнитным клапаном управления моментом.</Li>
+					<Li>Отсутствует управление самообучением.</Li>
+					<Li>После принятия решения о наличии неисправности: включается аварийный режим.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0TCM2"><b>Схема переключения передач контроллером КПП (Диапазон: D)</b></DIV>
+<P></P>
+			<Table border="1" width="100%" cellspacing="0">
+<Thead bgcolor="eeeeee">
+<tr>
+<td align="center" valign="middle" colspan="3" width="50%" class="T1"><b><div>Обычная</div>
+								
+							</b></td>
+							<td align="center" valign="middle" colspan="3" width="50%" class="T1"><b><div>Отказ клапана переключения 2</div>
+								
+							</b></td>
+						</tr>
+						<tr>
+<td align="center" valign="middle" width="16%" class="T1"><b><div>Передача</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="17%" class="T1"><b><div>Клапан переключения 1</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="17%" class="T1"><b><div>Клапан переключения 2</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="16%" class="T1"><b><div>Передача</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="17%" class="T1"><b><div>Клапан переключения 1</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="17%" class="T1"><b><div>Клапан переключения 2</div>
+								
+							</b></td>
+						</tr>
+					</Thead>
+					<Tbody align="center" valign="middle">
+<tr colspan="">
+<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>1-я</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Вкл.</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Вкл.</div>
+								
+							</td>
+							<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>2-я</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Вкл.</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ОТКАЗ</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>2-я</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Вкл.</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Выкл.</div>
+								
+							</td>
+							<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>2-я</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Вкл.</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ОТКАЗ</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>3-я</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Выкл.</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Выкл.</div>
+								
+							</td>
+							<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>3-я</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Выкл.</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ОТКАЗ</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>4-я</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Выкл.</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Вкл.</div>
+								
+							</td>
+							<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>3-я</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Выкл.</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ОТКАЗ</div>
+								
+							</td>
+						</tr>
+					</Tbody>
+				</Table>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CCDTC2"><b>Условия очистки кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Контроллер КПП отдает команду на выключение сигнализатора неисправностей, если в трех циклах зажигания подряд неисправность не наблюдается.</Li>
+					<Li>Очистить код из памяти контроллера можно с помощью диагностического прибора.</Li>
+					<Li>Контроллер удалит код из памяти исторических кодов, если в сорока циклах прогрева подряд неисправность не наблюдается.</Li>
+					<Li>Контроллер КПП обнаруживает сигнал ON электромагнитного клапана переключения передач SS2, когда драйвер электромагнитного клапана SS2 выводит сигнал ON непрерывно в течение 1000 мсек.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CF2"><b>Причина неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Электрический разъем или жгут между электромагнитным клапаном переключения передач 2 и контроллером КПП</Li>
+					<Li>Клапан переключения 2</Li>
+					<Li>контроллер КПП</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="T5A0P09761"><font size="4"><b>DTC P0976 - Электрическая неисправность электромагнитного клапана переключения передач 2 (SS2) (замыкание на массу)</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Выключить зажигание.</Li>
+									<Li>Подключить диагностический прибор.</Li>
+									<Li>Двигатель остановлен. Перевести замок зажигания в положение ON.</Li>
+									<Li>В меню "Diagnostic Trouble Codes Information" ("Информация о кодах") диагностического прибора выбрать команду "Store Freeze Frame/Failure Records" ("Стоп-кадр/Записи о неисправности").</Li>
+									<Li>Сохранить данные стоп-кадра/записи о неисправности.</Li>
+									<Li>В меню "Diagnostic Trouble Codes Information" ("Информация о кодах") выбрать команду "Clear DTC Information" ("Очистить информацию о кодах").</Li>
+									<Li>Очистить информацию о кодах.</Li>
+									<Li>Выполнить один драйв-цикл.</Li>
+								</OL>
+								<div>Сигнализатор неисправности горит?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме (см. "Проверка жгутов и электрических разъемов" в этом разделе)</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>В меню "Diagnostic Trouble Codes Information" ("Информация о кодах") выбрать команду "Request DTC by Status" ("Запрос кодов по состоянию").</Li>
+									<Li>Выполнить запрос кодов по состоянию.</Li>
+								</OL>
+								<div>Отображается ли код P0976?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме (см. "Проверка жгутов и электрических разъемов" в этом разделе)</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Выключить зажигание.</Li>
+									<Li>Проверить сопротивление между жгутом автомобиля и электромагнитным клапаном переключения передач 2. См.   <A target="_blank" href="6T2_5A02.ru.html#T5A0UI">"Проверка состояния агрегата"</A> в этом разделе.</Li>
+									<Li>Разъединить разъем контроллера КПП (X-1) и проверить сопротивление между контактами A15 и A23. </Li>
+								</OL>
+								<div>Результат измерения находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>20°C (68°F) 11-16 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Проверить наличие неисправности между колодкой жгута автомобиля и контроллером КПП.</Li>
+									<Li>Проверить колодки разъема. См. "Проверка жгутов и электрических разъемов" в этом разделе.</Li>
+									<Li>Проверить надежность соединения колодок разъема (C-1).</Li>
+								</OL>
+								<div>Соединение исправно?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить неисправность колодок жгута.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Проверить наличие неисправности между жгутом автомобиля и клапаном переключения передач 2.</Li>
+									<Li>Разъединить разъем жгута КПП (X-3) и проверить сопротивление между контактом 10 разъема клапана переключения передач 2 и землей.</Li>
+								</OL>
+								<div>Результат измерения находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>20°C (68°F) 11-16 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Заменить основной контроллер КПП.</Li>
+									<Li>После устранения кодов провести испытание с воспроизведением условий возникновения неисправности.</Li>
+								</OL>
+								<div>Отображается ли код неисправности?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме (см. "Проверка жгутов и электрических разъемов" в этом разделе)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Заменить контроллер КПП</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Проверить наличие неисправности жгута автомобиля или разъемов.</Li>
+									<Li>Проверить жгут на наличие разрывов или замыканий. Проверить соединение между разъемами (C-3). См. "Проверка жгутов и электрических разъемов" в этом разделе.</Li>
+								</OL>
+								<div>Все исправно?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Заменить жгут или отрегулировать разъемы</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Проверить наличие неисправности жгута КПП или разъемов клапана переключения передач 2.</Li>
+									<Li>Проверить исправность клапана переключения передач 2. См.   <A target="_blank" href="6T2_5A02.ru.html#T5A0UI">"Проверка состояния агрегата"</A> в этом разделе.</Li>
+								</OL>
+								<div>Неисправность обнаружена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Заменить электромагнитный клапан переключения передач 2</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Проверить наличие неисправности жгута КПП.</Li>
+									<Li>Проверить жгут КПП на наличие разрывов или замыканий. Проверить соединение между разъемами (C-6). См. "Проверка жгутов и электрических разъемов" в этом разделе.</Li>
+								</OL>
+								<div>Все исправно?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме </div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Заменить жгут КПП или отрегулировать разъемы.</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><IMG alt="S6B15A16" src="../../../../graphic-pool/S/6B/1/S6B15A16.png"><BR><A target="_blank" href="../../../../graphic-pool/S/6B/1/S6B15A16.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="T5A0P0977"><font size="4"><b>Диагностический код неисправности (DTC) P0977 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T5A0SS2E1"><font size="4"><b>Электрическая неисправность электромагнитного клапана переключения передач 2 (SS2) (разрыв или замыкание на электропитание)</b></font></DIV>
+		<P></P>
+<DIV align="left" id="T5A0CRD3"><b>Условия действия DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>Нет аварийного режима.</Li>
+					<Li>Контроллер КПП обнаруживает сигнал ON (12В) электромагнитного клапана переключения передач 2 (SS2), когда драйвер электромагнитного клапана SS2 выводит сигнал OFF (0В) непрерывно в течение 0.5 секунды.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CSDTC3"><b>Условия записи диагностического кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Выше приведенные условия возникают непрерывно 1 раз.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0ATDTC3"><b>Действия при занесении кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Контроллер КПП отдает команду на включение сигнализатора неисправностей и заносит соответствующий код при возникновении неисправности в одном цикле зажигания.</Li>
+					<Li>Отключается управление блокировкой.</Li>
+					<Li>Отключается управление снижением момента двигателя.</Li>
+					<Li>Отключается управление давлением включения.
+</Li>
+					<Li>Отсутствует управление N-D электромагнитным клапаном управления моментом.</Li>
+					<Li>Отсутствует управление самообучением.</Li>
+					<Li>После принятия решения о наличии неисправности: включается аварийный режим.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0TCM3"><b>Схема переключения передач контроллером КПП (Диапазон: D)</b></DIV>
+<P></P>
+			<Table border="1" width="100%" cellspacing="0">
+<Thead bgcolor="eeeeee">
+<tr>
+<td align="center" valign="middle" colspan="3" width="50%" class="T1"><b><div>Обычная</div>
+								
+							</b></td>
+							<td align="center" valign="middle" colspan="3" width="50%" class="T1"><b><div>Отказ клапана переключения 2</div>
+								
+							</b></td>
+						</tr>
+						<tr>
+<td align="center" valign="middle" width="16%" class="T1"><b><div>Передача</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="17%" class="T1"><b><div>Клапан переключения 1</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="17%" class="T1"><b><div>Клапан переключения 2</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="16%" class="T1"><b><div>Передача</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="17%" class="T1"><b><div>Клапан переключения 1</div>
+								
+							</b></td>
+							<td align="center" valign="middle" width="17%" class="T1"><b><div>Клапан переключения 2</div>
+								
+							</b></td>
+						</tr>
+					</Thead>
+					<Tbody align="center" valign="middle">
+<tr colspan="">
+<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>1-я</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Вкл.</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Вкл.</div>
+								
+							</td>
+							<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>2-я</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Вкл.</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ОТКАЗ</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>2-я</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Вкл.</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Выкл.</div>
+								
+							</td>
+							<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>2-я</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Вкл.</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ОТКАЗ</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>3-я</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Выкл.</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Выкл.</div>
+								
+							</td>
+							<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>3-я</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Выкл.</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ОТКАЗ</div>
+								
+							</td>
+						</tr>
+						<tr colspan="">
+<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>4-я</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Выкл.</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Вкл.</div>
+								
+							</td>
+							<td class="T1" width="16%" colspan="" rowspan="" align="" valign="middle">
+<div>3-я</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>Выкл.</div>
+								
+							</td>
+							<td class="T1" width="17%" colspan="" rowspan="" align="" valign="middle">
+<div>ОТКАЗ</div>
+								
+							</td>
+						</tr>
+					</Tbody>
+				</Table>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CCDTC3"><b>Условия очистки кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Контроллер КПП отдает команду на выключение сигнализатора неисправностей, если в трех циклах зажигания подряд неисправность не наблюдается.</Li>
+					<Li>Очистить код из памяти контроллера можно с помощью диагностического прибора.</Li>
+					<Li>Контроллер удалит код из памяти исторических кодов, если в сорока циклах прогрева подряд неисправность не наблюдается.</Li>
+					<Li>Контроллер КПП обнаруживает сигнал OFF электромагнитного клапана переключения передач SS2, когда драйвер электромагнитного клапана SS2 выводит сигнал OFF непрерывно в течение 1000 мсек.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CF3"><b>Причина неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Электрический разъем или жгут между электромагнитным клапаном переключения передач 2 и контроллером КПП</Li>
+					<Li>Клапан переключения 2</Li>
+					<Li>контроллер КПП</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="T5A0P09771"><font size="4"><b>DTC P0977 - Электрическая неисправность электромагнитного клапана переключения передач 2 (SS2) (разрыв или замыкание на электропитание)</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Выключить зажигание.</Li>
+									<Li>Подключить диагностический прибор.</Li>
+									<Li>Двигатель остановлен. Перевести замок зажигания в положение ON.</Li>
+									<Li>В меню "Diagnostic Trouble Codes Information" ("Информация о кодах") диагностического прибора выбрать команду "Store Freeze Frame/Failure Records" ("Стоп-кадр/Записи о неисправности").</Li>
+									<Li>Сохранить данные стоп-кадра/записи о неисправности.</Li>
+									<Li>В меню "Diagnostic Trouble Codes Information" ("Информация о кодах") выбрать команду "Clear DTC Information" ("Очистить информацию о кодах").</Li>
+									<Li>Очистить информацию о кодах.</Li>
+									<Li>Выполнить один драйв-цикл.</Li>
+								</OL>
+								<div>Сигнализатор неисправности горит?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме (см. "Проверка жгутов и электрических разъемов" в этом разделе)</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>В меню "Diagnostic Trouble Codes Information" ("Информация о кодах") выбрать команду "Request DTC by Status" ("Запрос кодов по состоянию").</Li>
+									<Li>Выполнить запрос кодов по состоянию.</Li>
+								</OL>
+								<div>Отображается ли код P0977?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме (см. "Проверка жгутов и электрических разъемов" в этом разделе)</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Выключить зажигание.</Li>
+									<Li>Проверить сопротивление между жгутом автомобиля и электромагнитным клапаном переключения передач 2. См.   <A target="_blank" href="6T2_5A02.ru.html#T5A0UI">"Проверка состояния агрегата"</A> в этом разделе.</Li>
+									<Li>Разъединить разъем контроллера КПП (X-1) и проверить сопротивление между контактами A15 и A23. </Li>
+								</OL>
+								<div>Результат измерения находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>20°C (68°F) 11-16 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Проверить наличие неисправности между колодкой жгута автомобиля и контроллером КПП.</Li>
+									<Li>Проверить колодки разъема. См. "Проверка жгутов и электрических разъемов" в этом разделе.</Li>
+									<Li>Проверить надежность соединения колодок разъема (C-1).</Li>
+								</OL>
+								<div>Соединение исправно?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить неисправность колодок жгута.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Проверить наличие неисправности между жгутом автомобиля и клапаном переключения передач 2.</Li>
+									<Li>Разъединить разъем жгута КПП (X-3) и проверить сопротивление между контактом 10 разъема клапана переключения передач 2 и землей.</Li>
+								</OL>
+								<div>Результат измерения находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>20°C (68°F) 11-16 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Заменить основной контроллер КПП.</Li>
+									<Li>После устранения кодов провести испытание с воспроизведением условий возникновения неисправности.</Li>
+								</OL>
+								<div>Отображается ли код неисправности?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме (см. "Проверка жгутов и электрических разъемов" в этом разделе)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Заменить контроллер КПП</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Проверить наличие неисправности жгута автомобиля или разъемов.</Li>
+									<Li>Проверить жгут на наличие разрывов или замыканий. Проверить соединение между разъемами (C-3). См. "Проверка жгутов и электрических разъемов" в этом разделе.</Li>
+								</OL>
+								<div>Все исправно?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Заменить жгут или отрегулировать разъемы</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Проверить наличие неисправности жгута КПП или разъемов клапана переключения передач 2.</Li>
+									<Li>Проверить исправность клапана переключения передач 2. См.   <A target="_blank" href="6T2_5A02.ru.html#T5A0UI">"Проверка состояния агрегата"</A> в этом разделе.</Li>
+								</OL>
+								<div>Неисправность обнаружена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Заменить электромагнитный клапан переключения передач 2</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Проверить наличие неисправности жгута КПП.</Li>
+									<Li>Проверить жгут КПП на наличие разрывов или замыканий. Проверить соединение между разъемами (C-6). См. "Проверка жгутов и электрических разъемов" в этом разделе.</Li>
+								</OL>
+								<div>Все исправно?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме </div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Заменить жгут КПП или отрегулировать разъемы.</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><IMG alt="S6B15A15" src="../../../../graphic-pool/S/6B/1/S6B15A15.png"><BR><A target="_blank" href="../../../../graphic-pool/S/6B/1/S6B15A15.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="T5A0P2769"><font size="4"><b>Диагностический код неисправности (DTC) P2769 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T5A0TCCE"><font size="4"><b>Электрическая неисправность блокировочной муфты гидротрансформатора (TCC) (замыкание на массу)</b></font></DIV>
+		<P></P>
+<DIV align="left" id="T5A0CRD4"><b>Условия действия DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>Нет аварийного режима.</Li>
+					<Li>Контроллер КПП обнаруживает сигнал OFF (12В) блокировочного электромагнитного клапана, когда драйвер блокировочного электромагнитного клапана выводит сигнал ON (0В) непрерывно в течение 0.5 секунды.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CSDTC4"><b>Условия записи диагностического кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Выше приведенные условия возникают непрерывно 1 раз.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0ATDTC4"><b>Действия при занесении кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Контроллер КПП отдает команду на включение сигнализатора неисправностей и заносит соответствующий код при возникновении неисправности в двух циклах зажигания подряд.</Li>
+					<Li>Электромагнитный клапан блокировки не работает.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CCDTC4"><b>Условия очистки кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Контроллер КПП отдает команду на выключение сигнализатора неисправностей, если в трех циклах зажигания подряд неисправность не наблюдается.</Li>
+					<Li>Очистить код из памяти контроллера можно с помощью диагностического прибора.</Li>
+					<Li>Контроллер удалит код из памяти исторических кодов, если в сорока циклах прогрева подряд неисправность не наблюдается.</Li>
+					<Li>Контроллер КПП обнаруживает сигнал ON блокировочного электромагнитного клапана, когда драйвер блокировочного электромагнитного клапана выводит сигнал ON непрерывно в течение 1000 мсек.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CF4"><b>Причина неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Электрический разъем или жгут между блокировочным клапаном и контроллером КПП</Li>
+					<Li>Блокировочный электромагнитный клапан</Li>
+					<Li>контроллер КПП</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="T5A0P27691"><font size="4"><b>DTC P2769 - Электрическая неисправность блокировочной муфты гидротрансформатора (TCC) (замыкание на массу)</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Выключить зажигание.</Li>
+									<Li>Подключить диагностический прибор.</Li>
+									<Li>Двигатель остановлен. Перевести замок зажигания в положение ON.</Li>
+									<Li>В меню "Diagnostic Trouble Codes Information" ("Информация о кодах") диагностического прибора выбрать команду "Store Freeze Frame/Failure Records" ("Стоп-кадр/Записи о неисправности").</Li>
+									<Li>Сохранить данные стоп-кадра/записи о неисправности.</Li>
+									<Li>В меню "Diagnostic Trouble Codes Information" ("Информация о кодах") выбрать команду "Clear DTC Information" ("Очистить информацию о кодах").</Li>
+									<Li>Очистить информацию о кодах.</Li>
+									<Li>Выполнить два драйв-цикла.</Li>
+								</OL>
+								<div>Сигнализатор неисправности горит?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме (см. "Проверка жгутов и электрических разъемов" в этом разделе)</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>В меню "Diagnostic Trouble Codes Information" ("Информация о кодах") выбрать команду "Request DTC by Status" ("Запрос кодов по состоянию").</Li>
+									<Li>Выполнить запрос кодов по состоянию.</Li>
+								</OL>
+								<div>Отображается ли код P2769?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме (см. "Проверка жгутов и электрических разъемов" в этом разделе)</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Выключить зажигание.</Li>
+									<Li>Проверить сопротивление между жгутом автомобиля и блокировочным клапаном. См.   <A target="_blank" href="6T2_5A02.ru.html#T5A0UI">"Проверка состояния агрегата"</A> в этом разделе.</Li>
+									<Li>Разъединить разъем контроллера КПП (X-1) и проверить сопротивление между контактами A5 и A23.</Li>
+								</OL>
+								<div>Результат измерения находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>20°C (68°F) 11-16 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Проверить наличие неисправности между колодкой жгута автомобиля и контроллером КПП.</Li>
+									<Li>Проверить колодки разъема. См. "Проверка жгутов и электрических разъемов" в этом разделе.</Li>
+									<Li>Проверить надежность соединения колодок разъема (C-1).</Li>
+								</OL>
+								<div>Соединение исправно?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить неисправность колодок жгута.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Проверить наличие неисправности между жгутом автомобиля и блокировочным клапаном.</Li>
+									<Li>Разъединить разъем жгута КПП (X-3) и проверить сопротивление между контактом 4 разъема блокировочного клапана и землей.</Li>
+								</OL>
+								<div>Результат измерения находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>20°C (68°F) 11-16 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Заменить основной контроллер КПП.</Li>
+									<Li>После устранения кодов провести испытание с воспроизведением условий возникновения неисправности.</Li>
+								</OL>
+								<div>Отображается ли код неисправности?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме (см. "Проверка жгутов и электрических разъемов" в этом разделе)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Заменить контроллер КПП</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Проверить наличие неисправности жгута автомобиля или разъемов.</Li>
+									<Li>Проверить жгут на наличие разрывов или замыканий. Проверить соединение между разъемами (C-3). См. "Проверка жгутов и электрических разъемов" в этом разделе.</Li>
+								</OL>
+								<div>Все исправно?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Заменить жгут или отрегулировать разъемы</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Проверить наличие неисправности жгута КПП или разъемов блокировочного клапана.</Li>
+									<Li>Проверить электромагнитный клапан блокировки. См.   <A target="_blank" href="6T2_5A02.ru.html#T5A0UI">"Проверка состояния агрегата"</A> в этом разделе.</Li>
+								</OL>
+								<div>Неисправность обнаружена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Заменить блокировочный электромагнитный клапан</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Проверить наличие неисправности жгута КПП.</Li>
+									<Li>Проверить жгут КПП на наличие разрывов или замыканий. Проверить соединение между разъемами (C-6). См. "Проверка жгутов и электрических разъемов" в этом разделе.</Li>
+								</OL>
+								<div>Все исправно?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме </div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Заменить жгут КПП или отрегулировать разъемы.</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><IMG alt="S6B15A15" src="../../../../graphic-pool/S/6B/1/S6B15A15.png"><BR><A target="_blank" href="../../../../graphic-pool/S/6B/1/S6B15A15.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+		<P></P>
+<DIV align="center" id="T5A0P2770"><font size="4"><b>Диагностический код неисправности (DTC) P2770 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="T5A0TCCE1"><font size="4"><b>Электрическая неисправность блокировочной муфты гидротрансформатора (TCC) (разрыв или замыкание на электропитание)</b></font></DIV>
+		<P></P>
+<DIV align="left" id="T5A0CRD5"><b>Условия действия DTC</b></DIV>
+<P></P>
+			<UL>
+<Li>Нет аварийного режима.</Li>
+					<Li>Контроллер КПП обнаруживает сигнал ON (12В) блокировочного электромагнитного клапана, когда драйвер блокировочного электромагнитного клапана выводит сигнал OFF (0В) непрерывно в течение 0.5 секунды.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CSDTC5"><b>Условия записи диагностического кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Выше приведенные условия возникают непрерывно 1 раз.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0ATDTC5"><b>Действия при занесении кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Контроллер КПП отдает команду на включение сигнализатора неисправностей и заносит соответствующий код при возникновении неисправности в двух циклах зажигания подряд.</Li>
+					<Li>Контроллер КПП не выводит блокировочный сигнал.</Li>
+					<Li>1-я передача зафиксирована ниже 10 км/час (6 миль/ч).</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CCDTC5"><b>Условия очистки кода неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Контроллер КПП отдает команду на выключение сигнализатора неисправностей, если в трех циклах зажигания подряд неисправность не наблюдается.</Li>
+					<Li>Очистить код из памяти контроллера можно с помощью диагностического прибора.</Li>
+					<Li>Контроллер удалит код из памяти исторических кодов, если в сорока циклах прогрева подряд неисправность не наблюдается.</Li>
+					<Li>Контроллер КПП обнаруживает сигнал OFF блокировочного электромагнитного клапана, когда драйвер блокировочного электромагнитного клапана выводит сигнал OFF непрерывно в течение 1000 мсек.</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="left" id="T5A0CF5"><b>Причина неисправности</b></DIV>
+<P></P>
+			<UL>
+<Li>Электрический разъем или жгут между блокировочным клапаном и контроллером КПП</Li>
+					<Li>Блокировочный электромагнитный клапан</Li>
+					<Li>контроллер КПП</Li>
+				</UL>
+			
+		
+		<P></P>
+<DIV align="center" id="T5A0P27701"><font size="4"><b>DTC P2770 - Электрическая неисправность блокировочной муфты гидротрансформатора (TCC) (разрыв или замыкание на электропитание)</b></font></DIV>
+<P></P>
+			<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+<TR>
+<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Выключить зажигание.</Li>
+									<Li>Подключить диагностический прибор.</Li>
+									<Li>Двигатель остановлен. Перевести замок зажигания в положение ON.</Li>
+									<Li>В меню "Diagnostic Trouble Codes Information" ("Информация о кодах") диагностического прибора выбрать команду "Store Freeze Frame/Failure Records" ("Стоп-кадр/Записи о неисправности").</Li>
+									<Li>Сохранить данные стоп-кадра/записи о неисправности.</Li>
+									<Li>В меню "Diagnostic Trouble Codes Information" ("Информация о кодах") выбрать команду "Clear DTC Information" ("Очистить информацию о кодах").</Li>
+									<Li>Очистить информацию о кодах.</Li>
+									<Li>Выполнить два драйв-цикла.</Li>
+								</OL>
+								<div>Сигнализатор неисправности горит?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме (см. "Проверка жгутов и электрических разъемов" в этом разделе)</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>В меню "Diagnostic Trouble Codes Information" ("Информация о кодах") выбрать команду "Request DTC by Status" ("Запрос кодов по состоянию").</Li>
+									<Li>Выполнить запрос кодов по состоянию.</Li>
+								</OL>
+								<div>Отображается ли код P2770?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме (см. "Проверка жгутов и электрических разъемов" в этом разделе)</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Выключить зажигание.</Li>
+									<Li>Проверить сопротивление между жгутом автомобиля и блокировочным клапаном. См.   <A target="_blank" href="6T2_5A02.ru.html#T5A0UI">"Проверка состояния агрегата"</A> в этом разделе.</Li>
+									<Li>Разъединить разъем контроллера КПП (X-1) и проверить сопротивление между контактами A5 и A23.</Li>
+								</OL>
+								<div>Результат измерения находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>20°C (68°F) 11-16 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Проверить наличие неисправности между колодкой жгута автомобиля и контроллером КПП.</Li>
+									<Li>Проверить колодки разъема. См. "Проверка жгутов и электрических разъемов" в этом разделе.</Li>
+									<Li>Проверить надежность соединения колодок разъема (C-1).</Li>
+								</OL>
+								<div>Соединение исправно?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить неисправность колодок жгута.</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Проверить наличие неисправности между жгутом автомобиля и блокировочным клапаном.</Li>
+									<Li>Разъединить разъем жгута КПП (X-3) и проверить сопротивление между контактом 4 разъема блокировочного клапана и землей.</Li>
+								</OL>
+								<div>Результат измерения находится в указанном диапазоне?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>20°C (68°F) 11-16 Ом</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Заменить основной контроллер КПП.</Li>
+									<Li>После устранения кодов провести испытание с воспроизведением условий возникновения неисправности.</Li>
+								</OL>
+								<div>Отображается ли код неисправности?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме (см. "Проверка жгутов и электрических разъемов" в этом разделе)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Заменить контроллер КПП</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Проверить наличие неисправности жгута автомобиля или разъемов.</Li>
+									<Li>Проверить жгут на наличие разрывов или замыканий. Проверить соединение между разъемами (C-3). См. "Проверка жгутов и электрических разъемов" в этом разделе.</Li>
+								</OL>
+								<div>Все исправно?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Заменить жгут или отрегулировать разъемы</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Проверить наличие неисправности жгута КПП или разъемов блокировочного клапана.</Li>
+									<Li>Проверить электромагнитный клапан блокировки. См.   <A target="_blank" href="6T2_5A02.ru.html#T5A0UI">"Проверка состояния агрегата"</A> в этом разделе.</Li>
+								</OL>
+								<div>Неисправность обнаружена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Заменить блокировочный электромагнитный клапан</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Перейти к   <I>Шагу 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+<OL>
+<Li>Проверить наличие неисправности жгута КПП.</Li>
+									<Li>Проверить жгут КПП на наличие разрывов или замыканий. Проверить соединение между разъемами (C-6). См. "Проверка жгутов и электрических разъемов" в этом разделе.</Li>
+								</OL>
+								<div>Все исправно?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Устранить непостоянный контакт в электрическом разъеме </div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+<div>Заменить жгут КПП или отрегулировать разъемы.</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><BR><TABLE align="center"><TR>
+<TD align="left"><A href="6T2_5A04.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="На предыдущую страницу"></A></TD>
+<TD align="left"></TD>
+<TD align="left"><A href="6T2_5A06.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="На следующую страницу"></A></TD>
+<TD></TD>
+</TR></TABLE>
+<TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Авторское право принадлежит General Motors Chevrolet Europe Все права защищены</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

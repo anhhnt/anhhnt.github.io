@@ -1,0 +1,1456 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>.T2{    BORDER-TOP: white;}  .T3{    BORDER-BOTTOM: white;} .T4{    BORDER-TOP: white;    BORDER-BOTTOM: white} .I{ padding-left : 10pt}  .Tighten{ padding-left : 7pt} .Arial{ font-family : Arial, Helvetica, sans-serif;margin-left: 10pt;margin-right : 10pt } .TableB{ margin-left : 0pt}</style>
+<TITLE>Руководство по техническому обслуживанию2005 Evanda Диагностический код неисправности P0341</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+ function FixMenu()
+{
+menuTop = document.body.scrollTop + document.body.clientHeight -40;
+menu.style.top = menuTop;
+menu.style.width = document.body.clientWidth; 
+}
+
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px"><A border="0" href="6V2_1F08.ru.html"><IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="К началу документа"></A></SPAN><TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt"><TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Evanda</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left"><TABLE><TR>
+<TD width="5%" align="left"><A href="6V2_1F07.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="На предыдущую страницу"></A></TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left"><A href="6V2_1F09.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="На следующую страницу"></A></TD>
+</TR></TABLE></TD>
+<TD><TABLE width="65%" align="right"><TR>
+<TD style="font-size:10"><A href="../../../GMDE_TIS_START.html" target="_top"><IMG src="../../code/menu-images/home.gif" border="0" alt="Главная страница GMDE"></A></TD>
+<TD style="font-size:10"><A href="../toc_Evanda.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Загрузить нединамическое оглавление"></A></TD>
+<TD style="font-size:10"><A href="../toc_Evanda_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Загрузить динамическое оглавление"></A></TD>
+<TD style="font-size:10"><A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Помощь"></A></TD>
+</TR></TABLE></TD>
+</TR>
+</TBODY></TABLE>
+	
+	
+		<BR><div align="center">
+<IMG alt="V3B11F51" src="../../../../graphic-pool/V/3B/1/V3B11F51.png"><BR><A target="_blank" href="../../../../graphic-pool/V/3B/1/V3B11F51.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V1F0P0341"><font size="4"><b>Диагностический код неисправности P0341 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V1F0CR"><font size="4"><b>Датчик положения распределительного вала, выход сигнала из допустимого диапазона</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="V1F0SD"><b>Описание системы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Датчик положения распределительного вала используется для поддержания связи между положением коленчатого вала и распределительного вала, чтобы контроллер ЭСУД смог определить, какой цилиндр готов к подаче топлива форсункой. Датчик положения распределительного вала также используется для определения того, в каком цилиндре происходит пропуск зажигания при наличии пропуска зажигания. В случае, когда контроллер ЭСУД не может воспользоваться информацией от датчика положения распределительного вала, происходит установка диагностического кода неисправности, и контроллер ЭСУД производит подачу топлива в двигатель методом попеременного синхронного двойного впрыска.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CSDT"><b>Условия установки кода неисправности.</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Опорный импульс от датчика положения распределительного вала с точным интервалом через каждые 4 цилиндра не определяется.</Li>
+					<Li>Двигатель работает</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0ATWD"><b>Действия, выполняемые при установке кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Контрольная лампа индикации неисправности загорается после трех последовательных поездок с неисправностью.</Li>
+					<Li>Контроллер записывает рабочие условия в момент определения неисправности. Эта информация сохраняется в буфере записей состояния и протоколах неисправностей.</Li>
+					<Li>Сохраняется архив диагностических кодов неисправности.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CCMD"><b>Условия очистки кода неисправности/индикации неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Контрольная лампа индикации неисправности отключается через четыре последовательных цикла зажигания, в которых диагностика не обнаружила неисправность.</Li>
+					<Li>Архив диагностических кодов неисправности очищается через 40 последовательных циклов нагрева без неисправностей.</Li>
+					<Li>Диагностический код неисправности может быть очищен сканирующим прибором.</Li>
+					<Li>Отключение питания контроллера ЭСУД более, чем на 10 секунд.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0DA"><b>Указания по диагностике</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Периодическая неисправность может быть вызвана слабым контактом, перетертой изоляцией или обрывом проводки в изоляции.</div>
+				<div class="T1" align="left">Любая цепь, подозреваемая в создании переменной неисправности, должна быть тщательно проверена на отсутствие следующего:</div>
+				<UL>
+					<Li>Снятые клеммы</Li>
+					<Li>Соединение клемм</Li>
+					<Li>Неисправность замков</Li>
+					<Li>Деформированность</Li>
+					<Li>Повреждения клемм</Li>
+					<Li>Слабое соединение клемм с проводами</Li>
+					<Li>Физическое повреждение жгутов проводов</Li>
+				</UL>
+				<div class="T1" align="left">В любой момент, когда возникает нарушение связи, в контрольном счетчике работы датчика положения распределительного вала перестает увеличиваться показание.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0TD"><b>Описание проверки</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Приведенными ниже числами указываются номера операций в таблице диагностики.</div>
+				<OL>
+					<Li value="1">Бортовая система диагностики (EOBD) предлагает мастеру выполнить основные проверки и сохранить состояние и данные неисправностей в сканирующем приборе. Это создает электронную копию данных, записанную при возникновении неисправности. Информация сохраняется в сканирующем приборе для дальнейшей обработки.</Li>
+					<Li value="2">При этой операции определяется, является ли DTC P0341 результатом серьезного сбоя или неустойчивой неисправности.</Li>
+					<Li value="3">Показание на счетчике должно перестать увеличиваться при отсоединении электрического разъема датчика и устанавливается DTC P0342 при отсоединении датчика. Если показание счетчика все равно увеличивается, то контроллер ЭСУД неисправен.</Li>
+					<Li value="4">Соединения у датчика проверяются переставлением электрического разъема датчика положения распределительного вала. Убедиться в надежности закрепления электрического разъема.</Li>
+					<Li value="5">Ослабление соединения в любой из цепей датчика положения распределительного вала приводит к увеличению показаний счетчика ресинхронизации датчика положения распределительного вала. Как только ослабляется соединение, у контрольного счетчика работы датчика положения распределительного вала перестает наращиваться показание, но оно увеличивается у датчика ресинхронизации датчика положения распределительного вала.</Li>
+					<Li value="8">Заменяемый контроллер ЭСУД должен быть запрограммирован. Перепрограммирование контроллера ЭСУД описано в последней технологической инструкции Techline.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V1F0P03411"><font size="4"><b>DTC P0341 Датчик положения распределительного вала, выход сигнала из допустимого диапазона</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Провести проверку бортовой системы диагностики (EOBD).</div>
+								<div>Проверка проведена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к разделу  <A target="_blank" href="6V2_1F02.ru.html#V1F0ODSC">Проверка бортовой системы диагностики"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Выключите зажигание.</Li>
+									<Li>Подключить сканирующий прибор к колодке диагностики.</Li>
+									<Li>Запустить двигатель и задать автомобилю рабочий режим в условиях записанных состояний и условий установки диагностического кода неисправности.</Li>
+								</OL>
+								<div>Установлен ли диагностический код неисправности Р0341?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <A target="_blank" href="6V2_1F02.ru.html#V1F0DA">"Диагностическая информация"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Выключите зажигание.</Li>
+									<Li>Отсоедините разъем датчика положения распределительного вала (СМР).</Li>
+									<Li>Включите зажигание.</Li>
+									<Li>При помощи вольтметра проверить напряжение между клеммой 1 разъема проводки датчика положения распределительного вала (со стороны блока ЭСУД) и массой.</Li>
+								</OL>
+								<div>Напряжение близко к установленному значению?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>5 В</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>При помощи вольтметра проверить напряжение между клеммой 3 разъема проводки датчика положения распределительного вала и массой.</div>
+								<div>Напряжение больше указанного значения?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>10 В</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Контрольной лампой, подключенной к массе, проверить клемму 1 разъема жгута проводов датчика положения распределительного вала.</div>
+								<div>Контрольная лампа горит?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Контрольной лампой, подключенной к + аккумулятора, проверить клемму 2 разъема жгута проводов датчика положения распределительного вала.</div>
+								<div>Контрольная лампа горит?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+							<div class="p"></div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить надежность соединения на электрических разъемах датчика положения распределительного вала и при необходимости их восстановить.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Выключите зажигание.</Li>
+									<Li>Отсоединить разъём контроллера ЭСУД.</Li>
+									<Li>Устранить короткое замыкание в цепи сигнала датчика положения распределительного вала.</Li>
+								</OL>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 14</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить на обрыв или замыкание на массу цепи сигнала датчика положения распределительного вала и при необходимости устранить его.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить надежность соединения или на обрыв в цепи питания от + аккумулятора у датчика положения распределительного вала и при необходимости произвести ремонт.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить надежность соединения или на обрыв в цепи заземления датчика положения распределительного вала и при необходимости произвести ремонт.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить надежность соединения в цепи сигнала датчика положения распределительного вала и при необходимости произвести ремонт.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 14</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Выключите зажигание.</Li>
+									<Li>Заменить датчик положения распределительного вала.</Li>
+								</OL>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Выключите зажигание.</Li>
+									<Li>Заменить контроллер ЭСУД.</Li>
+								</OL>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 15</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Используя сканирующий прибор, очистить диагностические коды неисправностей.</Li>
+									<Li>Запустить двигатель и дать ему поработать на холостом ходу при нормальной рабочей температуре.</Li>
+									<Li>Совершить поездку для установки кодов неисправности, как это указано во вспомогательном тексте.</Li>
+								</OL>
+								<div>Сканирующий прибор определяет эту диагностику как прошедшую и успешную?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 16</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">16</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверьте, не установлены ли дополнительные диагностические коды неисправности.</div>
+								<div>Отображены ли диагностические коды неисправности, которые не были продиагностированы?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти разделу "Таблица применимых диагностических кодов неисправности"</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="V3B11F51" src="../../../../graphic-pool/V/3B/1/V3B11F51.png"><BR><A target="_blank" href="../../../../graphic-pool/V/3B/1/V3B11F51.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V1F0P0342"><font size="4"><b>Диагностический код неисправности P0342 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V1F0CPNS"><font size="4"><b>Датчик положения распределительного вала, отсутствует сигнал</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="V1F0SD1"><b>Описание системы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Датчик положения распределительного вала используется для поддержания связи между положением коленчатого вала и распределительного вала, чтобы контроллер ЭСУД смог определить, какой цилиндр готов к подаче топлива форсункой. Датчик положения распределительного вала также используется для определения того, в каком цилиндре происходит пропуск зажигания при наличии пропуска зажигания. В случае, когда контроллер ЭСУД не может воспользоваться информацией от датчика положения распределительного вала, происходит установка диагностического кода неисправности, и контроллер ЭСУД производит подачу топлива в двигатель методом попеременного синхронного двойного впрыска.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CSDT1"><b>Условия установки кода неисправности.</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Импульс от датчика положения распределительного вала просматривается через каждые 4 цилиндра.</Li>
+					<Li>Двигатель работает</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="T1F0ATWD1"><b>Действия, выполняемые при установке кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Контрольная лампа индикации неисправности загорается.</Li>
+					<Li>Контроллер записывает рабочие условия в момент определения неисправности. Эта информация сохраняется в буфере записей состояния и протоколах неисправностей.</Li>
+					<Li>Сохраняется архив диагностических кодов неисправности.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CCMD1"><b>Условия очистки кода неисправности/индикации неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Контрольная лампа индикации неисправности отключается через четыре последовательных цикла зажигания, в которых диагностика не обнаружила неисправность.</Li>
+					<Li>Архив диагностических кодов неисправности очищается через 40 последовательных циклов нагрева без неисправностей.</Li>
+					<Li>Диагностический код неисправности может быть очищен сканирующим прибором.</Li>
+					<Li>Отключение питания контроллера ЭСУД более, чем на 10 секунд.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0DA1"><b>Указания по диагностике</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Периодическая неисправность может быть вызвана слабым контактом, перетертой изоляцией или обрывом проводки в изоляции.</div>
+				<div class="T1" align="left">Любая цепь, подозреваемая в создании переменной неисправности, должна быть тщательно проверена на отсутствие следующего:</div>
+				<UL>
+					<Li>Снятые клеммы</Li>
+					<Li>Соединение клемм</Li>
+					<Li>Неисправность замков</Li>
+					<Li>Деформированность</Li>
+					<Li>Повреждения клемм</Li>
+					<Li>Слабое соединение клемм с проводами</Li>
+					<Li>Физическое повреждение жгутов проводов</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0TD1"><b>Описание проверки</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Приведенными ниже числами указываются номера операций в таблице диагностики.</div>
+				<OL>
+					<Li value="1">Бортовая система диагностики (EOBD) предлагает мастеру выполнить основные проверки и сохранить состояние и данные неисправностей в сканирующем приборе, если это необходимо. Это создает электронную копию данных, записанную при возникновении неисправности. Информация сохраняется в сканирующем приборе для дальнейшей обработки.</Li>
+					<Li value="2">В этой операции определяется, является ли DTC P0342 результатом серьезного сбоя или неустойчивой неисправности.</Li>
+					<Li value="4">Устанавливается присутствие напряжения в датчике положения распределительного вала.</Li>
+					<Li value="7">При этой операции проверяется напряжение, подаваемое от контроллера ЭСУД на датчик положения распределительного вала.</Li>
+					<Li value="12">Заменяемый контроллер ЭСУД должен быть запрограммирован. Перепрограммирование контроллера ЭСУД описано в последней технологической инструкции Techline.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V1F0P03421"><font size="4"><b>DTC P0342 Датчик положения распределительного вала, отсутствует сигнал</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Провести проверку бортовой системы диагностики (EOBD).</div>
+								<div>Проверка проведена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к разделу  <A target="_blank" href="6V2_1F02.ru.html#V1F0ODSC">Проверка бортовой системы диагностики"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Выключите зажигание.</Li>
+									<Li>Подключить сканирующий прибор к колодке диагностики.</Li>
+									<Li>Запустить двигатель на холостом ходу.</Li>
+								</OL>
+								<div>Показание счетчика работы датчика положения распределительного вала увеличивается?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Включите зажигание.</Li>
+									<Li>Просмотреть данные записи состояний и записать параметры.</Li>
+									<Li>Запустить двигатель и задать автомобилю рабочий режим в условиях записанных состояний и условий установки диагностического кода неисправности.</Li>
+								</OL>
+								<div>Показание счетчика работы датчика положения распределительного вала увеличивается?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Выключите зажигание.</Li>
+									<Li>Отсоединить разъем датчика положения распределительного вала</Li>
+									<Li>Включите зажигание.</Li>
+									<Li>Контрольной лампой, подключенной к массе, проверить клемму 3 разъема жгута проводов датчика положения распределительного вала.</Li>
+								</OL>
+								<div>Контрольная лампа горит?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Контрольной лампой, подключенной к + аккумулятора, проверить клемму 2 разъема жгута проводов датчика положения распределительного вала.</div>
+								<div>Контрольная лампа горит?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить надежность соединения или на обрыв в цепи питания датчика положения распределительного вала с + аккумулятора и при необходимости произвести ремонт.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <A target="_blank" href="6V2_1F02.ru.html#V1F0DA">"Диагностическая информация"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>При помощи цифрового вольтметра проверить напряжение между клеммой 1 разъема проводки датчика положения распределительного вала и массой.</div>
+								<div>Показание цифрового вольтметра близко к указанным значениям?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>5 В</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить надежность соединения или на обрыв в цепи заземления датчика положения распределительного вала и при необходимости произвести ремонт.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Выключите зажигание.</Li>
+									<Li>Отсоединить разъём контроллера электронной системы управления двигателем (ЭСУД).</Li>
+									<Li>Проверить цепь сигнала датчика положения распределительного вала на обрыв или замыкание на массу или на + аккумулятора и при необходимости произвести ремонт.</Li>
+								</OL>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить на обрыв или замыкание на массу цепи сигнала датчика положения распределительного вала и при необходимости устранить его.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Выключите зажигание.</Li>
+									<Li>Заменить датчик положения распределительного вала.</Li>
+								</OL>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Выключите зажигание.</Li>
+									<Li>Заменить контроллер ЭСУД.</Li>
+								</OL>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Используя сканирующий прибор, очистить диагностические коды неисправностей.</Li>
+									<Li>Запустить двигатель и дать ему поработать на холостом ходу при нормальной рабочей температуре.</Li>
+									<Li>Совершить поездку для установки кодов неисправности, как это указано во вспомогательном тексте.</Li>
+								</OL>
+								<div>Сканирующий прибор определяет эту диагностику как прошедшую и успешную?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверьте, не установлены ли дополнительные диагностические коды неисправности.</div>
+								<div>Отображены ли диагностические коды неисправности, которые не были продиагностированы?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти разделу "Таблица применимых диагностических кодов неисправности"</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="V4B11F11" src="../../../../graphic-pool/V/4B/1/V4B11F11.png"><BR><A target="_blank" href="../../../../graphic-pool/V/4B/1/V4B11F11.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V1F0P0351"><font size="4"><b>Диагностический код неисправности P0351 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V1F0ICCAF"><font size="4"><b>Цепь управления зажигания, неисправность типа А (цилиндр 2 и 3)</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="V1F0CD2"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Контроллер электронной системы управления двигателем (ЭСУД) служит источником заземления для электронной цепи А регулирования момента зажигания. Когда контроллер ЭСУД размыкает "массу" первичной катушки зажигания, магнитное поле катушки исчезает. Исчезновение магнитного поля вызывает появление напряжения во вторичной катушке, которая выдает разряд на свече зажигания.</div>
+				<div class="T1" align="left">Цепь между контроллером ЭСУД и катушкой электронной системы зажигания контролируется на наличие обрыва, замыкания на источник напряжения и замыкание на массу. При обнаружении контроллером ЭСУД неисправности в электронной цепи А регулирования момента зажигания он устанавливает диагностический код неисправности (DTC) 0351.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CSDT2"><b>Условия установки кода неисправности.</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Сигнал обратной связи об отказе контроля.</Li>
+					<Li>Включено зажигание.</Li>
+					<Li>Подсчет сбоев при увеличении числа признаков сбоя.</Li>
+					<Li>Должно быть получено более 200 сбоев за 255 испытательных циклов.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0ATWD2"><b>Действия, выполняемые при установке кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Контрольная лампа индикации неисправности загорается.</Li>
+					<Li>Контроллер записывает рабочие условия в момент определения неисправности. Эта информация сохраняется в буфере записей состояния и протоколах неисправностей.</Li>
+					<Li>На низких оборотах включается вентилятор системы охлаждения.</Li>
+					<Li>Сохраняется архив диагностических кодов неисправности.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CCMD2"><b>Условия очистки кода неисправности/индикации неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Контрольная лампа индикации неисправности отключается через четыре последовательных цикла зажигания, в которых диагностика не обнаружила неисправность.</Li>
+					<Li>Архив диагностических кодов неисправности очищается через 40 последовательных циклов нагрева без неисправностей.</Li>
+					<Li>Диагностический код неисправности может быть очищен сканирующим прибором.</Li>
+					<Li>Отключение питания контроллера ЭСУД более, чем на 10 секунд.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0DA2"><b>Указания по диагностике</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Неустойчивая неисправность может быть вызвана слабым контактом, перетертой изоляции или обрывом проводки под изоляцией. Проверить:</div>
+				<UL>
+					<Li>Слабое соединение - проверить жгут проводов контроллера ЭСУД и разъемы на слабый контакт, неисправность замков, деформированность или повреждения клемм и слабое соединение клемм с проводами.</Li>
+					<Li>Повреждения жгутов - осмотреть жгут проводов на наличие повреждений. Если жгут проводов кажется исправным, отсоединить контроллер ЭСУД, включить зажигание и проследить за показаниями вольтметра в цепи опорного сигнала 58Х,  перемещая разъемы и жгуты проводки, относящиеся к контроллеру ЭСУД. Изменения в уровне сигнала покажут место нахождения неисправности.</Li>
+				</UL>
+				<div class="T1" align="left">Просмотр протоколов неисправностей после последней неудавшейся диагностической проверки поможет определить, как часто происходило условие, вызывавшее установку диагностического кода неисправности. Это поможет продиагностировать условия.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V1F0P03511"><font size="4"><b>DTC P0351 - Неисправность цепи А управления зажиганием (2-й и 3-й цилиндры)</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Провести проверку бортовой системы диагностики (EOBD).</div>
+								<div>Проверка проведена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к разделу  <A target="_blank" href="6V2_1F02.ru.html#V1F0ODSC">Проверка бортовой системы диагностики"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить, нет ли нарушения в соединении или повреждения клеммы С у катушки электронной системы зажигания, и при необходимости произвести ремонт.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить, нет ли нарушения в соединении или повреждения клеммы М51/М35 у контроллера ЭСУД, и при необходимости произвести ремонт.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Выключить зажигание.</Li>
+									<Li>Отсоединить разъём контроллера ЭСУД.</Li>
+									<Li>Проверить цепь управления зажиганием на замыкание на массу и устранить неисправность, если необходимо.</Li>
+								</OL>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить цепь управления зажиганием на отсутствие напряжения короткого замыкания на источник напряжения и устранить неисправность при необходимости.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить на обрыв цепь управления зажиганием и устранить неисправность при необходимости.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Выключите зажигание.</Li>
+									<Li>Заменить контроллер ЭСУД.</Li>
+								</OL>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Используя сканирующий прибор, очистить диагностические коды неисправностей.</Li>
+									<Li>Запустить двигатель и дать ему поработать на холостом ходу при нормальной рабочей температуре.</Li>
+									<Li>Совершить поездку для установки кодов неисправности, как это указано во вспомогательном тексте.</Li>
+								</OL>
+								<div>Сканирующий прибор определяет эту диагностику как прошедшую и успешную?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверьте, не установлены ли дополнительные диагностические коды неисправности.</div>
+								<div>Отображены ли диагностические коды неисправности, которые не были продиагностированы?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к соответствующей таблице диагностических кодов неисправности</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="V4B11F11" src="../../../../graphic-pool/V/4B/1/V4B11F11.png"><BR><A target="_blank" href="../../../../graphic-pool/V/4B/1/V4B11F11.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Показать иллюстрацию"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Перевод текста в иллюстрациях"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="V1F0P0352"><font size="4"><b>Диагностический код неисправности P0352 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="V1F0ICCBF"><font size="4"><b>Цепь управления зажигания, неисправность типа В (цилиндр 1 и 4)</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="V1F0CD3"><b>Описание схемы</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Контроллер электронной системы управления двигателем (ЭСУД) служит источником заземления для электронной цепи А регулирования момента зажигания. Когда контроллер ЭСУД размыкает "массу" первичной катушки зажигания, магнитное поле катушки исчезает. Исчезновение магнитного поля вызывает появление напряжения во вторичной катушке, которая выдает разряд на свече зажигания.</div>
+				<div class="T1" align="left">Цепь между контроллером ЭСУД и катушкой электронной системы зажигания контролируется на наличие обрыва, замыкания на источник напряжения и замыкание на массу. При обнаружении контроллером ЭСУД неисправности в электронной цепи А регулирования момента зажигания он устанавливает диагностический код неисправности (DTC) 0351.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CSDT3"><b>Условия установки кода неисправности.</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Сигнал обратной связи об отказе контроля.</Li>
+					<Li>Включено зажигание.</Li>
+					<Li>Подсчет сбоев при увеличении числа признаков сбоя.</Li>
+					<Li>Должно быть получено более 200 сбоев за 255 испытательных циклов.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0ATWD3"><b>Действия, выполняемые при установке кода неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Контрольная лампа индикации неисправности загорается.</Li>
+					<Li>Контроллер записывает рабочие условия в момент определения неисправности. Эта информация сохраняется в буфере записей состояния и протоколах неисправностей.</Li>
+					<Li>На низких оборотах включается вентилятор системы охлаждения.</Li>
+					<Li>Сохраняется архив диагностических кодов неисправности.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0CCMD3"><b>Условия очистки кода неисправности/индикации неисправности</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Контрольная лампа индикации неисправности отключается через четыре последовательных цикла зажигания, в которых диагностика не обнаружила неисправность.</Li>
+					<Li>Архив диагностических кодов неисправности очищается через 40 последовательных циклов нагрева без неисправностей.</Li>
+					<Li>Диагностический код неисправности может быть очищен сканирующим прибором.</Li>
+					<Li>Отключение питания контроллера ЭСУД более, чем на 10 секунд.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="V1F0DA3"><b>Указания по диагностике</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Неустойчивая неисправность может быть вызвана слабым контактом, перетертой изоляции или обрывом проводки под изоляцией. Проверить:</div>
+				<UL>
+					<Li>Слабое соединение - проверить жгут проводов контроллера ЭСУД и разъемы на слабый контакт, неисправность замков, деформированность или повреждения клемм и слабое соединение клемм с проводами.</Li>
+					<Li>Повреждения жгутов - осмотреть жгут проводов на наличие повреждений. Если жгут проводов кажется исправным, отсоединить контроллер ЭСУД, включить зажигание и проследить за показаниями вольтметра в цепи опорного сигнала 58Х,  перемещая разъемы и жгуты проводки, относящиеся к контроллеру ЭСУД. Изменения в уровне сигнала покажут место нахождения неисправности.</Li>
+				</UL>
+				<div class="T1" align="left">Просмотр протоколов неисправностей после последней неудавшейся диагностической проверки поможет определить, как часто происходило условие, вызывавшее установку диагностического кода неисправности. Это поможет продиагностировать условия.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="V1F0P03521"><font size="4"><b>DTC P0352 - Неисправность цепи В управления зажиганием (1-й и 4-й цилиндры)</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Шаг</B></TD>
+<TD align="center"><B>Операция</B></TD>
+<TD align="center"><B>Значения</B></TD>
+<TD align="center"><B>Да</B></TD>
+<TD align="center"><B>Нет</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Провести проверку бортовой системы диагностики (EOBD).</div>
+								<div>Проверка проведена?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к разделу  <A target="_blank" href="6V2_1F02.ru.html#V1F0ODSC">Проверка бортовой системы диагностики"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить, нет ли нарушения в соединении или повреждения клеммы а у катушки электронной системы зажигания, и при необходимости произвести ремонт.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить, нет ли нарушения в соединении или повреждения клеммы М33/М1 у контроллера ЭСУД, и при необходимости произвести ремонт.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Выключите зажигание.</Li>
+									<Li>Отсоединить разъём контроллера ЭСУД.</Li>
+									<Li>Проверить цепь управления зажиганием на замыкание на массу и устранить неисправность, если необходимо.</Li>
+								</OL>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить контрольную лампу индикации неисправности на замыкание на источник напряжения и устранить неисправность, если необходимо.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверить на обрыв цепь управления зажиганием и устранить неисправность при необходимости.</div>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Выключите зажигание.</Li>
+									<Li>Заменить контроллер ЭСУД.</Li>
+								</OL>
+								<div>Закончен ли ремонт?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 8</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Используя сканирующий прибор, очистить диагностические коды неисправностей.</Li>
+									<Li>Запустить двигатель и дать ему поработать на холостом ходу при нормальной рабочей температуре.</Li>
+									<Li>Совершить поездку для установки кодов неисправности, как это указано во вспомогательном тексте.</Li>
+								</OL>
+								<div>Сканирующий прибор определяет эту диагностику как прошедшую и успешную?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к   <I>операции 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Проверьте, не установлены ли дополнительные диагностические коды неисправности.</div>
+								<div>Отображены ли диагностические коды неисправности, которые не были продиагностированы?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Перейти к соответствующей таблице диагностических кодов неисправности</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Система в норме</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><BR><TABLE align="center"><TR>
+<TD align="left"><A href="6V2_1F07.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="На предыдущую страницу"></A></TD>
+<TD align="left"></TD>
+<TD align="left"><A href="6V2_1F09.ru.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="На следующую страницу"></A></TD>
+<TD></TD>
+</TR></TABLE>
+<TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Авторское право принадлежит General Motors Chevrolet Europe Все права защищены</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

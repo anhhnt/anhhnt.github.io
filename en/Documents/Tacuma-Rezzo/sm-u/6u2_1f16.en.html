@@ -1,0 +1,690 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>.T2{    BORDER-TOP: white;}  .T3{    BORDER-BOTTOM: white;} .T4{    BORDER-TOP: white;    BORDER-BOTTOM: white} .I{ padding-left : 10pt}  .Tighten{ padding-left : 7pt} .Arial{ font-family : Arial, Helvetica, sans-serif;margin-left: 10pt;margin-right : 10pt } .TableB{ margin-left : 0pt}</style>
+<TITLE>Service Manual2006 TACUMA </TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+ function FixMenu()
+{
+menuTop = document.body.scrollTop + document.body.clientHeight -40;
+menu.style.top = menuTop;
+menu.style.width = document.body.clientWidth; 
+}
+
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px"><A border="0" href="6U2_1F16.en.html"><IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A></SPAN><TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt"><TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">TACUMA</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left"><TABLE><TR>
+<TD width="5%" align="left"><A href="6U2_1F15.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="To Previous Page"></A></TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left"><A href="6U2_1F17.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="To Next Page"></A></TD>
+</TR></TABLE></TD>
+<TD><TABLE width="65%" align="right"><TR>
+<TD style="font-size:10"><A href="../../../GMDE_TIS_START.html" target="_top"><IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page"></A></TD>
+<TD style="font-size:10"><A href="../toc_Tacuma-Rezzo.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A></TD>
+<TD style="font-size:10"><A href="../toc_Tacuma-Rezzo_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A></TD>
+<TD style="font-size:10"><A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A></TD>
+</TR></TABLE></TD>
+</TR>
+</TBODY></TABLE>
+<DIV>
+	
+	<BR><DIV align="center"><B><FONT size="5">SECTION   1F</FONT></B></DIV>
+	<BR><DIV align="center" id="U1F0EC"><B><FONT size="6"></FONT></B></DIV>
+	
+		<P></P>
+<DIV align="center" id="U1F0DTCP"><font size="4"><b>DIAGNOSTIC TROUBLE CODE (DTC) P0601 </b></font></DIV>
+<P></P>
+		
+		<P></P>
+<DIV align="center" id="U1F0CMROM"><font size="4"><b>CONTROL MODULE READ ONLY MEMORY (ROM) </b></font></DIV>
+<P></P>
+			<P></P>
+<DIV align="left" id="U1F0CD"><b>Circuit Description</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">The Engine Control Module (ECM) is the control center of the fuel injection system. It constantly looks at the information from various sensors, and controls the systems that affect vehicle performance. The ECM also performs the diagnostic function of the system. It can recognize operational problems, alert the driver through the Malfunction Indicator Lamp (MIL) (Check Engine), and store a Diagnostic Trouble Code (DTC) or DTCs which identify the problem areas to aid the technician in making repairs. An Electrically Erasable Programmable Read Only Memory (EEPROM) is used to house the program information and the calibrations required for engine, transmission, and powertrain diagnostics operation. The ECM uses a value called a checksum for error detection of the software. The checksum is a value that is equal to all the numbers in the software added together. The ECM adds all the values in the software, and if that value does not equal the checksum value, a checksum error is indicated.</div>
+				
+			
+			<P></P>
+<DIV align="left" id="U1F0CSDTC"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+				
+					<UL>
+						<Li>Ignition switch is turned to ON.</Li>
+						<Li>S/W major ID not equal to value in S/W.</Li>
+					</UL>
+				
+			
+			<P></P>
+<DIV align="left" id="U1F0ATDTC"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+				
+					<UL>
+						<Li>The Malfunction Indicator Lamp (MIL) will illuminate.</Li>
+						<Li>The ECM will attempt to record operating conditions at the time the failure is detected. However, since this is the internal ECM fault, this information may be or may not be reliable. This information will be stored in the freeze Frame and Failure Records buffers.</Li>
+						<Li>A history DTC is stored.</Li>
+					</UL>
+				
+			
+			<P></P>
+<DIV align="left" id="U1F0CCMIL"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+				
+					<UL>
+						<Li>The MIL turn off after four consecutive ignition cycles in which the diagnostic runs without a fault.</Li>
+						<Li>A history DTC will clear after 40 consecutive warm-up cycles without a fault.</Li>
+						<Li>DTC(s) can be cleared by using the scan tool.</Li>
+						<Li>Disconnecting the ECM battery feed for more than 10 seconds.</Li>
+					</UL>
+				
+			
+			<P></P>
+<DIV align="left" id="U1F0TD"><b>Test Description</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">Number(s) below refer to the step number(s) on the Diagnostic Table.</div>
+					<OL>
+						<Li>The On-Board Diagnostic (EOBD) System Check prompts the technician to complete some basic checks and store the freeze frame and failure records data on the scan tool if applicable. This creates an electronic copy of the data taken when the malfunction occurred. The information is then stored on the scan tool for later reference.</Li>
+						<Li>The replacement ECM must be reprogrammed. Refer to the latest Techline procedure for ECM reprogramming.</Li>
+					</OL>
+				
+			
+			<P></P>
+<DIV align="center" id="U1F0CMROM1"><font size="4"><b>DTC P0601 - Control Module Read Only Memory (ROM)</b></font></DIV>
+<P></P>
+				
+					<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+						<TR>
+							<TD valign="middle" align="center" width="6%">1</TD>
+							<TD width="49%" valign="top">
+								
+									<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+									<div>Was the check performed?</div>
+								
+							</TD>
+							<TD valign="middle" align="center" width="15%">
+								<div>-</div>
+							</TD>
+							<TD valign="bottom" align="center" width="15%">
+								<div>Go to   <I>Step 2</I>
+</div>
+							</TD>
+							<TD valign="bottom" align="center" width="15%">
+								<div>Go to"On-Board Diagnostic System Check"</div>
+							</TD>
+						</TR>
+						<TR>
+							<TD valign="middle" align="center" width="6%">2</TD>
+							<TD width="49%" valign="top">
+								
+									<OL>
+										<Li>Turn the ignition OFF.</Li>
+										<Li>Replace the Engine Control Module (ECM).</Li>
+									</OL>
+									<div>Is the repair complete?</div>
+								
+							</TD>
+							<TD valign="middle" align="center" width="15%">
+								<div>-</div>
+							</TD>
+							<TD valign="bottom" align="center" width="15%">
+								<div>Go to   <I>Step 3</I>
+</div>
+							</TD>
+							<TD valign="bottom" align="center" width="15%">
+								<div>-</div>
+							</TD>
+						</TR>
+						<TR>
+							<TD valign="middle" align="center" width="6%">3</TD>
+							<TD width="49%" valign="top">
+								
+									<OL>
+										<Li>Using the scan tool, clear the Diagnostic Trouble Codes (DTCs).</Li>
+										<Li>Start the engine and idle at normal operating temperature.</Li>
+										<Li>Operate the vehicle within the conditions for setting this DTC as specified in the supporting text.</Li>
+									</OL>
+									<div>Does the scan tool indicate that this diagnostic has run and passed?</div>
+								
+							</TD>
+							<TD valign="middle" align="center" width="15%">
+								<div>-</div>
+							</TD>
+							<TD valign="bottom" align="center" width="15%">
+								<div>Go to   <I>Step 4</I>
+</div>
+							</TD>
+							<TD valign="bottom" align="center" width="15%">
+								<div>Go to   <I>Step 2</I>
+</div>
+							</TD>
+						</TR>
+						<TR>
+							<TD valign="middle" align="center" width="6%">4</TD>
+							<TD width="49%" valign="top">
+								
+									<div>Check if any additional DTCs are set.</div>
+									<div>Are any DTCs displayed that have not been diagnosed?</div>
+								
+							</TD>
+							<TD valign="middle" align="center" width="15%">
+								<div>-</div>
+							</TD>
+							<TD valign="bottom" align="center" width="15%">
+								<div>Go to Applicable DTC table</div>
+							</TD>
+							<TD valign="bottom" align="center" width="15%">
+								<div>System OK</div>
+							</TD>
+						</TR>
+					</TBODY>
+</TABLE>
+				
+			
+		
+		<P></P>
+<DIV align="center" id="U1F0DTCP1"><font size="4"><b>DIAGNOSTIC TROUBLE CODE (DTC) P0602 </b></font></DIV>
+<P></P>
+		
+		<P></P>
+<DIV align="center" id="U1F0CMP"><font size="4"><b>CONTROL MODULE NOT PROGRAMMED </b></font></DIV>
+<P></P>
+			<P></P>
+<DIV align="left" id="U1F0CD1"><b>Circuit Description</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">The Engine Control Module (ECM) is the control center of the fuel injection system. It constantly looks at the information from various sensors, and controls the systems that affect vehicle performance. The ECM also performs the diagnostic function of the system. It can recognize operational problems, alert the driver through the Malfunction Indicator Lamp (MIL) (Check Engine), and store a Diagnostic Trouble Code (DTC) or DTCs which identify the problem areas to aid the technician in making repairs. An Electrically Erasable Programmable Read Only Memory (EEPROM) is used to house the program information and the calibrations required for engine, transmission, and powertrain diagnostics operation. The ECM uses a value called a checksum for error detection of the software. The checksum is a value that is equal to all the numbers in the software added together. The ECM changes the checksum after reprogramming and adds all the values in the software, and if that value does not equal the checksum value, a ECM reprogramming error is indicated.</div>
+				
+			
+			<P></P>
+<DIV align="left" id="U1F0CSDTC1"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+				
+					<UL>
+						<Li>Calibration ID is not equal to the value in the software level.</Li>
+					</UL>
+				
+			
+			<P></P>
+<DIV align="left" id="U1F0ATDTC1"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+				
+					<UL>
+						<Li>The Malfunction Indicator Lamp (MIL) will illuminate.</Li>
+						<Li>The ECM will attempt to record operating conditions at the time the failure is detected. However, since this is the internal ECM fault, this information may be or may not be reliable. This information will be stored in the freeze Frame and Failure Records buffers.</Li>
+						<Li>A history DTC is stored.</Li>
+					</UL>
+				
+			
+			<P></P>
+<DIV align="left" id="U1F0CCMIL1"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+				
+					<UL>
+						<Li>The MIL turn off after four consecutive ignition cycles in which the diagnostic runs without a fault.</Li>
+						<Li>A history DTC will clear after 40 consecutive warm-up cycles without a fault.</Li>
+						<Li>DTC(s) can be cleared by using the scan tool.</Li>
+						<Li>Disconnecting the ECM battery feed for more than 10 seconds.</Li>
+					</UL>
+				
+			
+			<P></P>
+<DIV align="center" id="U1F0CMNP"><font size="4"><b>DTC P0602 - Control Module Not Programmed</b></font></DIV>
+<P></P>
+				
+					<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+						<TR>
+							<TD valign="middle" align="center" width="6%">1</TD>
+							<TD width="49%" valign="top">
+								
+									<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+									<div>Was the check performed?</div>
+								
+							</TD>
+							<TD valign="middle" align="center" width="15%">
+								<div>-</div>
+							</TD>
+							<TD valign="bottom" align="center" width="15%">
+								<div>Go to   <I>Step 2</I>
+</div>
+							</TD>
+							<TD valign="bottom" align="center" width="15%">
+								<div>Go to "On-Board Diagnostic System Check"</div>
+							</TD>
+						</TR>
+						<TR>
+							<TD valign="middle" align="center" width="6%">2</TD>
+							<TD width="49%" valign="top">
+								
+									<OL>
+										<Li>Turn the ignition OFF.</Li>
+										<Li>Replace the Engine Control Module (ECM).</Li>
+									</OL>
+									<div>Is the repair complete?</div>
+								
+							</TD>
+							<TD valign="middle" align="center" width="15%">
+								<div>-</div>
+							</TD>
+							<TD valign="bottom" align="center" width="15%">
+								<div>Go to   <I>Step 3</I>
+</div>
+							</TD>
+							<TD valign="middle" align="center" width="15%"> - </TD>
+						</TR>
+						<TR>
+							<TD valign="middle" align="center" width="6%">3</TD>
+							<TD width="49%" valign="top">
+								
+									<OL>
+										<Li>Using the scan tool, clear the Diagnostic Trouble Codes (DTCs).</Li>
+										<Li>Start the engine and idle at normal operating temperature.</Li>
+										<Li>Operate the vehicle within the Conditions for setting this DTC as specified in the supporting text.</Li>
+									</OL>
+									<div>Does the scan tool indicate that this diagnostic has run and passed?</div>
+								
+							</TD>
+							<TD valign="middle" align="center" width="15%">
+								<div>-</div>
+							</TD>
+							<TD valign="bottom" align="center" width="15%">
+								<div>Go to   <I>Step 4</I>
+</div>
+							</TD>
+							<TD valign="bottom" align="center" width="15%">
+								<div>Go to   <I>Step 2</I>
+</div>
+							</TD>
+						</TR>
+						<TR>
+							<TD valign="middle" align="center" width="6%">4</TD>
+							<TD width="49%" valign="top">
+								
+									<div>Check if any additional DTCs are set.</div>
+									<div>Are any DTCs displayed that have not been diagnosed?</div>
+								
+							</TD>
+							<TD valign="middle" align="center" width="15%">
+								<div>-</div>
+							</TD>
+							<TD valign="bottom" align="center" width="15%">
+								<div>Go to Applicable DTC Table</div>
+							</TD>
+							<TD valign="bottom" align="center" width="15%">
+								<div>System OK</div>
+							</TD>
+						</TR>
+					</TBODY>
+</TABLE>
+				
+			
+		
+		<P></P>
+<DIV align="center" id="U1F0DTCP2"><font size="4"><b>DIAGNOSTIC TROUBLE CODE (DTC) P0606 </b></font></DIV>
+<P></P>
+		
+		<P></P>
+<DIV align="center" id="U1F0CMIP"><font size="4"><b>CONTROL MODULE INTERNAL PERFORMANCE </b></font></DIV>
+<P></P>
+			<P></P>
+<DIV align="left" id="U1F0CD2"><b>Circuit Description</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">The Engine Control Module (ECM) is the control center of the fuel injection system. It constantly looks at the information from various sensors, and controls the systems that affect vehicle performance. The ECM also performs the diagnostic function of the system. It can recognize operational problems, alert the driver through the Malfunction Indicator Lamp (MIL) (Check Engine), and store a Diagnostic Trouble Code (DTC) or DTCs which identify the problem areas to aid the technician in making repairs. An Electrically Erasable Programmable Read Only Memory (EEPROM) is used to house the program information and the calibrations required for engine, transmission, and powertrain diagnostics operation. The Diagnostic Trouble Code (DTC) will stored, when the ECM detects corrupted serial peripheral interface (SPI) comunication between main CPU and output driver I/C.</div>
+				
+			
+			<P></P>
+<DIV align="left" id="U1F0CSDTC2"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+				
+					<UL>
+						<Li>Ignition switch is turned to ON.</Li>
+						<Li>Battery voltage is greater than 11 volts.</Li>
+					</UL>
+				
+			
+			<P></P>
+<DIV align="left" id="U1F0ATDTC2"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+				
+					<UL>
+						<Li>The Malfunction Indicator Lamp (MIL) will illuminate after three consecutive trip with a fail.</Li>
+						<Li>The ECM will record operating conditions at the time the diagnostic fails. This information will be stored in the Freeze Frame and Failure Records buffers.</Li>
+						<Li>A history DTC is stored.</Li>
+					</UL>
+				
+			
+			<P></P>
+<DIV align="left" id="U1F0CCMIL2"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+				
+					<UL>
+						<Li>A history DTC will clear after 40 consecutive warm-up cycles without a fault.</Li>
+						<Li>DTC(s) can be cleared by using the scan tool.</Li>
+						<Li>Disconnecting the ECM battery feed for more than 10 seconds.</Li>
+					</UL>
+				
+			
+			<P></P>
+<DIV align="center" id="U1F0CMIP1"><font size="4"><b>DTC P0606 - Control Module Internal Performance</b></font></DIV>
+<P></P>
+				
+					<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+						<TR>
+							<TD valign="middle" align="center" width="6%">1</TD>
+							<TD width="49%" valign="top">
+								
+									<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+									<div>Was the check performed?</div>
+								
+							</TD>
+							<TD valign="middle" align="center" width="15%">
+								<div>-</div>
+							</TD>
+							<TD valign="bottom" align="center" width="15%">
+								<div>Go to   <I>Step 2</I>
+</div>
+							</TD>
+							<TD valign="bottom" align="center" width="15%">
+								<div>Go to "On-Board Diagnostic System Check"</div>
+							</TD>
+						</TR>
+						<TR>
+							<TD valign="middle" align="center" width="6%">2</TD>
+							<TD width="49%" valign="top">
+								
+									<OL>
+										<Li>Turn the ignition OFF.</Li>
+										<Li>Replace the Engine Control Module (ECM).</Li>
+									</OL>
+									<div>Is the repair complete?</div>
+								
+							</TD>
+							<TD valign="middle" align="center" width="15%">
+								<div>-</div>
+							</TD>
+							<TD valign="bottom" align="center" width="15%">
+								<div>Go to   <I>Step 3</I>
+</div>
+							</TD>
+							<TD valign="bottom" align="center" width="15%">
+								<div>-</div>
+							</TD>
+						</TR>
+						<TR>
+							<TD valign="middle" align="center" width="6%">3</TD>
+							<TD width="49%" valign="top">
+								
+									<OL>
+										<Li>Using the scan tool, clear the Diagnostic Trouble Codes (DTCs).</Li>
+										<Li>Start the engine and idle at normal operating temperature.</Li>
+										<Li>Operate the vehicle within the Conditions for setting this DTC as specified in the supporting text.</Li>
+									</OL>
+									<div>Does the scan tool indicate that this diagnostic has run and passed?</div>
+								
+							</TD>
+							<TD valign="middle" align="center" width="15%">
+								<div>-</div>
+							</TD>
+							<TD valign="bottom" align="center" width="15%">
+								<div>Go to   <I>Step 4</I>
+</div>
+							</TD>
+							<TD valign="bottom" align="center" width="15%">
+								<div>Go to   <I>Step 2</I>
+</div>
+							</TD>
+						</TR>
+						<TR>
+							<TD valign="middle" align="center" width="6%">4</TD>
+							<TD width="49%" valign="top">
+								
+									<div>Check if any additional DTCs are set.</div>
+									<div>Are any DTCs displayed that have not been diagnosed?</div>
+								
+							</TD>
+							<TD valign="middle" align="center" width="15%">
+								<div>-</div>
+							</TD>
+							<TD valign="bottom" align="center" width="15%">
+								<div>Go to Applicable DTC table</div>
+							</TD>
+							<TD valign="bottom" align="center" width="15%">
+								<div>System OK</div>
+							</TD>
+						</TR>
+					</TBODY>
+</TABLE>
+				
+			
+		
+		<P></P>
+<DIV align="center" id="U1F0DTCP3"><font size="4"><b>DIAGNOSTIC TROUBLE CODE (DTC) P0700 </b></font></DIV>
+<P></P>
+		
+		<P></P>
+<DIV align="center" id="U1F0TCMRI"><font size="4"><b>TRANSMISSION CONTROL MODULE (TCM) REQUESTED MIL ILLUMINATION </b></font></DIV>
+<P></P>
+			<P></P>
+<DIV align="left" id="U1F0CD3"><b>Circuit Description</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">The Transmission Control Module (TCM) and the Engine Control Module (ECM) are connected through the serial data link circuit. The TCM sends a Class-II P-code status message to the ECM every 100 milliseconds to confirm the transmission is functioning correctly.</div>
+					<div class="T1" align="left">If the TCM detects either an A- or B-type malfunction within the transmission, the TCM will send to the ECM a P-code status message to turn the Malfunction Indicator Lamp (MIL) ON and set DTC P0700.</div>
+				
+			
+			<P></P>
+<DIV align="left" id="U1F0CSDTC3"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+				
+					<UL>
+						<Li>Received message from the TCM indicating malfunction is detected in TCM.</Li>
+					</UL>
+				
+			
+			<P></P>
+<DIV align="left" id="U1F0ATDTC3"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+				
+					<UL>
+						<Li>The Malfunction Indicator Lamp (MIL) will illuminate.</Li>
+						<Li>The ECM will record operating conditions at the time the diagnostic fails. This information will be stored in the Freeze Frame and/or Failure Records buffers.</Li>
+						<Li>A history DTC is stored.</Li>
+					</UL>
+				
+			
+			<P></P>
+<DIV align="left" id="U1F0CCMIL3"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+				
+					<UL>
+						<Li>A history DTC will clear after 40 consecutive warm-up cycles without a fault.</Li>
+						<Li>DTC(s) can be cleared by using the scan tool.</Li>
+						<Li>Disconnecting the ECM battery feed for more than 10 seconds.</Li>
+					</UL>
+				
+			
+			<P></P>
+<DIV align="left" id="U1F0DA"><b>Diagnostic Aids</b></DIV>
+<P></P>
+				
+					<div class="T1" align="left">An intermittent may be caused by a poor connection, rubbed-through wire insulation or a wire broken inside the insulation.</div>
+					<div class="T1" align="left">Check for a poor connection or damaged ECM/TCM harness. Inspect the serial data link circuit for the following conditions:</div>
+					<UL>
+						<Li>Improper mating</Li>
+						<Li>Broken locks</Li>
+						<Li>Improperly formed</Li>
+						<Li>Damaged terminals</Li>
+						<Li>Poor terminal-to-wiring connections</Li>
+						<Li>Damaged harness</Li>
+					</UL>
+				
+			
+			<P></P>
+<DIV align="center" id="U1F0TCMRI1"><font size="4"><b>DTC P0700 - Transmission Control Module (TCM) Requested MIL Illumination</b></font></DIV>
+<P></P>
+				
+					<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+						<TR>
+							<TD valign="middle" align="center" width="6%">1</TD>
+							<TD width="49%" valign="top">
+								
+									<div>Perform an On-Board Diagnostic (EOBD) System Check.</div>
+									<div>Was the check performed?</div>
+								
+							</TD>
+							<TD valign="middle" align="center" width="15%">
+								<div>-</div>
+							</TD>
+							<TD valign="bottom" align="center" width="15%">
+								<div>Go to   <I>Step 2</I>
+</div>
+							</TD>
+							<TD valign="bottom" align="center" width="15%">
+								<div>Go to "On-Board Diagnostic System Check"</div>
+							</TD>
+						</TR>
+						<TR>
+							<TD valign="middle" align="center" width="6%">2</TD>
+							<TD width="49%" valign="top">
+								
+									<OL>
+										<Li>Install a scan tool to the Data Link Connector (DLC).</Li>
+										<Li>Turn the ignition ON.</Li>
+										<Li>Select Transmission Control Module (TCM) Diagnostic Trouble Code (DTC) with scan tool.</Li>
+									</OL>
+									<div>Is a transmission DTC displayed?</div>
+								
+							</TD>
+							<TD valign="middle" align="center" width="15%">
+								<div>-</div>
+							</TD>
+							<TD valign="bottom" align="center" width="15%">
+								<div>Go to   <I>Step 3</I>
+</div>
+							</TD>
+							<TD valign="bottom" align="center" width="15%">
+								<div>Go to   <I>Step 4</I>
+</div>
+							</TD>
+						</TR>
+						<TR>
+							<TD valign="middle" align="center" width="6%">3</TD>
+							<TD width="49%" valign="top">
+								
+									<OL>
+										<Li>Repair transmission malfunction. Refer to the applicable DTC table in the transmission repair section.</Li>
+										<Li>Using a scan tool, clear the TCM DTC.</Li>
+									</OL>
+									<div>Is the repair complete?</div>
+								
+							</TD>
+							<TD valign="middle" align="center" width="15%">
+								<div>-</div>
+							</TD>
+							<TD valign="bottom" align="center" width="15%">
+								<div>Go to   <I>Step 4</I>
+</div>
+							</TD>
+							<TD valign="bottom" align="center" width="15%">
+								<div>-</div>
+							</TD>
+						</TR>
+						<TR>
+							<TD valign="middle" align="center" width="6%">4</TD>
+							<TD width="49%" valign="top">
+								
+									<OL>
+										<Li>Using the scan tool, clear the Diagnostic Trouble Codes (DTCs).</Li>
+										<Li>Start the engine and idle at normal operating temperature.</Li>
+										<Li>Operate the vehicle within the Conditions for setting this DTC as specified in the supporting text.</Li>
+									</OL>
+									<div>Does the scan tool indicate that this diagnostic has run and passed?</div>
+								
+							</TD>
+							<TD valign="middle" align="center" width="15%">
+								<div>-</div>
+							</TD>
+							<TD valign="bottom" align="center" width="15%">
+								<div>Go to   <I>Step 5</I>
+</div>
+							</TD>
+							<TD valign="bottom" align="center" width="15%">
+								<div>Go to   <I>Step 2</I>
+</div>
+							</TD>
+						</TR>
+						<TR>
+							<TD valign="middle" align="center" width="6%">5</TD>
+							<TD width="49%" valign="top">
+								
+									<div>Check if any additional DTCs are set.</div>
+									<div>Are any DTCs displayed that have not been diagnosed?</div>
+								
+							</TD>
+							<TD valign="middle" align="center" width="15%">
+								<div>-</div>
+							</TD>
+							<TD valign="bottom" align="center" width="15%">
+								<div>Go to Applicable DTC Table</div>
+							</TD>
+							<TD valign="bottom" align="center" width="15%">
+								<div>System OK</div>
+							</TD>
+						</TR>
+					</TBODY>
+</TABLE>
+				
+			
+		
+	
+	</DIV>
+<BR><BR><TABLE align="center"><TR>
+<TD align="left"><A href="6U2_1F15.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="To Previous Page"></A></TD>
+<TD align="left"></TD>
+<TD align="left"><A href="6U2_1F17.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="To Next Page"></A></TD>
+<TD></TD>
+</TR></TABLE>
+<TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright General Motors Chevrolet Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

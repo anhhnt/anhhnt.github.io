@@ -1,0 +1,4804 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>.T2{    BORDER-TOP: white;}  .T3{    BORDER-BOTTOM: white;} .T4{    BORDER-TOP: white;    BORDER-BOTTOM: white} .I{ padding-left : 10pt}  .Tighten{ padding-left : 7pt} .Arial{ font-family : Arial, Helvetica, sans-serif;margin-left: 10pt;margin-right : 10pt } .TableB{ margin-left : 0pt}</style>
+<TITLE>Service Manual2006 Nubira-Lacetti TROUBLE CODE DIAGNOSIS (1.4L/1.6L DOHC)</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+ function FixMenu()
+{
+menuTop = document.body.scrollTop + document.body.clientHeight -40;
+menu.style.top = menuTop;
+menu.style.width = document.body.clientWidth; 
+}
+
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px"><A border="0" href="6J2_1F04.en.html"><IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A></SPAN><TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt"><TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Nubira-Lacetti</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left"><TABLE><TR>
+<TD width="5%" align="left"><A href="6J2_1F03.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="To Previous Page"></A></TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left"><A href="6J2_1F05.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="To Next Page"></A></TD>
+</TR></TABLE></TD>
+<TD><TABLE width="65%" align="right"><TR>
+<TD style="font-size:10"><A href="../../../GMDE_TIS_START.html" target="_top"><IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page"></A></TD>
+<TD style="font-size:10"><A href="../toc_Nubira-Lacetti.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A></TD>
+<TD style="font-size:10"><A href="../toc_Nubira-Lacetti_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A></TD>
+<TD style="font-size:10"><A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A></TD>
+</TR></TABLE></TD>
+</TR>
+</TBODY></TABLE>
+	
+	<P></P>
+<DIV align="center" id="J1F0TCD"><B><FONT size="5">TROUBLE CODE DIAGNOSIS (1.4L/1.6L DOHC)</FONT></B></DIV>
+<P></P>
+	
+		<P></P>
+<DIV align="left" id="J1F0CTC"><font size="4"><b>Clearing Trouble Codes
+ </b></font></DIV>
+<P></P>
+		
+			
+				<P></P>
+<DIV><B><FONT color="DarkSlateGray">Notice : To prevent Engine Control Module (ECM) damage, the key must be OFF when disconnecting or reconnecting the power to the ECM (for example battery cable, ECM pigtail connector, ECM fuse, jumper cables, etc.).When the ECM sets a Diagnostic Trouble Code (DTC), the Malfunction Indicator Lamp (MIL) lamp will be turned on only for type A, B and E but a DTC will be stored in the ECM's memory for all types of DTC. If the problem is intermittent, the MIL will go out after 10 seconds if the fault is no longer present. The DTC will stay in the ECM's memory until cleared by scan tool. Removing battery voltage for 10 seconds will clear some stored DTCs.</FONT></B></DIV>
+<P></P>
+			
+			<div class="T1" align="left">DTCs should be cleared after repairs have been completed. Some diagnostic tables will tell you to clear the codes before using the chart. This allows the ECM to set the DTC while going through the chart, which will help to find the cause of the problem more quickly.</div>
+		
+	
+	
+		<P></P>
+<DIV align="center" id="J1F0DTC"><font size="4"><b>Diagnostic Trouble Codes (1.4L/1.6L DOHC) </b></font></DIV>
+<P></P>
+		
+			<Table border="1" width="100%" cellspacing="0">
+				<Thead bgcolor="eeeeee">
+					<tr>
+						<td align="center" valign="middle" class="T1" width="10%"><b>
+							
+								<div>DTC</div>
+							
+						</b></td>
+						<td align="center" valign="middle" class="T1" width="64%"><b>
+							
+								<div>Function</div>
+							
+						</b></td>
+						<td align="center" valign="middle" class="T1" width="10%"><b>
+							
+								<div>Error Type</div>
+							
+						</b></td>
+						<td align="center" valign="middle" class="T1" width="16%"><b>
+							
+								<div>Illuminate MIL</div>
+							
+						</b></td>
+					</tr>
+				</Thead>
+				<Tbody align="center" valign="middle">
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0030</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>HO2S (Sensor 1) Heater Circuit Not Functioning</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0036</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>HO2S (Sensor 2) Heater Circuit Not Functioning</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0107</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Manifold Absolute Pressure Sensor Low Voltage</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>A</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0108</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Manifold Absolute Pressure Sensor High Voltage</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>A</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0112</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Intake Air Temperature Sensor Low Voltage</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0113</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Intake Air Temperature Sensor High Voltage</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0117</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Engine Coolant Temperature Sensor Low Voltage</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>A</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0118</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Engine Coolant Temperature Sensor High Voltage</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>A</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0122</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Throttle Position Sensor Low Voltage</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>A</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0123</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Throttle Position Sensor High Voltage</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>A</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0131</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>HO2S (Sensor 1) Low Voltage	</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>A</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0132</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>HO2S (Sensor 1) High Voltage</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>A</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0133</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>HO2S (Sensor 1) Poor Performance</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0137</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>HO2S (Sensor 2) Low Voltage</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0138</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>HO2S (Sensor 2) High Voltage</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0140</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>HO2S (Snesor 2) Circuit or Signal Fault</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0171</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Fuel Trim System Too Lean</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0172</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Fuel Trim System Too Rich</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0222</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Main Throttle Idle Actuator (MTIA) Low Voltage</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0223</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Main Throttle Idle Actuator (MTIA) High Voltage</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0261</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Injector 1 Low Voltage</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>A</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0262</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Injector 1 High Voltage</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>A</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0264</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Injector 2 Low Voltage</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>A</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0265</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Injector 2 High Voltage</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>A</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0267</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Injector 3 Low Voltage</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>A</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0268</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Injector 3 High Voltage</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>A</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0270</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Injector 4 Low Voltage</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>A</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0271</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Injector 4 High Voltage</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>A</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0300</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Multiple Cylinder Misfire Detected</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0327</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Knock Sensor Circuit Fault</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>Cnl</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>NO</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0335</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Crankshaft Position Sensor Electrical Error</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0336</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Crankshaft Position Sensor Pulse Error</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0337</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Crankshaft Position Sensor No Signal</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0341</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Camshaft Position Sensor Rationality</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0342</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Camshaft Position Sensor No Signal</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0351</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Ignition Control Circuit 1 and 4 Fault</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>A</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0352</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Ignition Control Circuit 2 and 3 Fault</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>A</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0400</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Exhaust Gas Recirculation Flow Out of Limit</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0401</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Exhaust Gas Recirculation Blocked</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0403</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>EGR Valve Circuit Failure</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0404</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Exhaust Gas Recirculation Valve Failure</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0405</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>EGR FeedBack Circuit Low Voltage or Open</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0406</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>EGR FeedBack Circuit High Voltage or Line Break</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0420</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Lower Catalyst Efficiency</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0444</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>EVAP Purge Control Circuit No Signal</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0445</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>EVAP Purge Control Circuit Fault</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0462</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Fuel Level Sensor Low Voltage</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>Cnl</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>NO</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0463</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Fuel Level Sensor High Voltage</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>Cnl</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>NO</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0480</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Low Speed Cooling Fan Relay Circuit Fault</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0481</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>High Speed Cooling Fan Relay High Voltage</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0501</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Vehicle Speed No Signal (M/T only)</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>A</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0510</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Throttle Position Switch Circuit Fault</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0562</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>System Voltage  Too Low</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>Cnl</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>NO</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0563</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>System Voltage  Too High</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>Cnl</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>NO</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0601</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Engine Control Module Check - Sum Error</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0604</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Engine Control Module RAM Error</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0605</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Engine Control Module Write Error</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0628</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Fuel Pump Relay Low Voltage</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>Cnl</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>NO</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0629</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Fuel Pump Relay High Voltage</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>Cnl</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>NO</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0646</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>A/C Compressor Relay Low Voltage</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>Cnl</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>NO</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0647</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>A/C Compressor Relay High Voltage</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>Cnl</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>NO</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0650</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Malfunction Indicator Lamp Low Voltage</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0656</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Fuel Level Output Circuit Malfunction</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>Cnl</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>NO</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0661</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Variable Intake Manifold Solenoid Low Voltage</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>A</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0662</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Variable Intake Manifold Solenoid High Voltage</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>A</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P0700</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Transmission Fault General TCM Malfunction (A/T only)</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>A</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P1390</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Rough Road Sensor Circuit Fault (0.8 only)</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>Cnl</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>NO</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P1396</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>ABS Rough Road Data Invalid</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>Cnl</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>NO</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P1504</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Vehicle Speed No Signal (A/T only)</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>A</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P1610</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Main Relay High Voltage</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>Cnl</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>NO</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P1611</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Main Relay Low Voltage</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>Cnl</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>NO</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P1628</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Immobilizer No Successful Communication</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>Cnl</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>NO</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P1629</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Immobilizer Wrong Computation</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>Cnl</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>NO</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P1650</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Malfunction Indicator Lamp High Voltage</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P2101</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Idle Charge Actuator Circuit Fault</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P2118</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Idle Charge Actuator Mechanical Error</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>P2119</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>Idle Charge Actuator Functional Error</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+					<tr colspan="">
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>U0101</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="left" valign="middle">
+							
+								<div>TCM Message Missing (A/T only)</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>E</div>
+							
+						</td>
+						<td class="T1" width="" colspan="" rowspan="" align="" valign="middle">
+							
+								<div>YES</div>
+							
+						</td>
+					</tr>
+				</Tbody>
+			</Table>
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="J6B11F32" src="../../../../graphic-pool/J/6B/1/J6B11F32.png"><BR><A target="_blank" href="../../../../graphic-pool/J/6B/1/J6B11F32.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="J1F0P0030"><font size="4"><b>Diagnostic Trouble Code (DTC) </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="J1F0HHCNF"><font size="4"><b>P0030 H02S (Sensor 1) Heater Circuit Not Functioning
+</b></font></DIV>
+<P></P>
+		
+		<P></P>
+<DIV align="center" id="J1F0HHCNF1"><font size="4"><b>P0036 H02S (Sensor 2) Heater Circuit Not Functioning
+</b></font></DIV>
+<P></P>
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0CD"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">Heated oxygen sensors are used for fuel control and post catalyst monitoring. Each HO2S compares the oxygen content of the surrounding air with the oxygen content of the exhaust stream. When the vehicle is first started, the engine control module (ECM) operates in an open loop mode, ignoring the HO2S signal voltage when calculating the air fuel ratio. The ECM supplies the HO2S with a reference voltage of about 0.45V. The HO2S generates a voltage within a range of 0~1V that fluctuates above and below bias voltage once in closed loop. A high HO2S voltage output indicates a rich fuel mixture. A low HO2S voltage output indicates a lean mixture. Heating elements inside the HO2S minimize the time required for the sensors to reach operating temperature, and then provide an accurate voltage signal. The ECM controls the HO2S heater low control circuit with a low side driver. The HO2S heater diagnostic monitors the current draw through the HO2S low side driver when the engine is running. If the ECM detects that the HO2S heater low control circuit current exceeds a calibrated amount, this DTC will set.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0CRD"><b>Conditions for Running the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>HO2S heater PWM reach 98% after cranking.</Li>
+					<Li>No failure on the HO2S by hardware check exists.</Li>
+					<Li>Airflow is between 25kg/h and 65kg/h.</Li>
+					<Li>Battery voltage is between 11.07V and 15.47V.</Li>
+					<Li>Predicted catalyst temperature is higher than 300°C (572°F).</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0CSD"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>HO2S heater resistance is less than 3 ohms or greater than 35 ohms.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0AWDS"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The Malfunction Indicator Lamp (MIL) will illuminate.</Li>
+					<Li>The ECM will record operating conditions at the time the diagnostic fails. The information will be stored in the freeze frame and failure records buffers.</Li>
+					<Li>A history DTC is stored.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0CCM"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The MIL will turn off at the end of 3 consecutive validation cycles in which the diagnostic runs without a fault.</Li>
+					<Li>A history DTC will clear after 40 warm up cycles without a fault.</Li>
+					<Li>DTC(s) can be cleared by using the scan tool.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0DA"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The number(s) below refer to step(s) on the diagnostic table.</div>
+				<OL>
+<Li value="5">This step is testing the heater control circuit for high resistance. If the voltage is more than the specified value, test the circuit for high resistance.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="J1F0P00301"><font size="4"><b>DTC P0030 - H02S (Sensor 1) Heater Circuit Not Functioning</b></font></DIV>
+<P></P>
+		
+		
+			<P></P>
+<DIV align="center" id="J1F0P00361"><font size="4"><b>DTC P0036 - H02S (Sensor 2) Heater Circuit Not Functioning
+</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform the Diagnostic System Check.</div>
+								<div>Is the system check complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="6J2_1F02.en.html#J1F0DSC">"Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Start the engine.</Li>
+									<Li>Allow the engine to reach the normal operating temperature.</Li>
+									<Li>Observe the DTC Information with a scan tool.</Li>
+								</OL>
+								<div>Did the DTC fail this ignition?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Observe the Freeze Frame/Failure Records for this DTC.</Li>
+									<Li>Turn OFF the ignition for 30 seconds.</Li>
+									<Li>Start the engine.</Li>
+									<Li>Operate the vehicle within the Conditions for Running the DTC. You may also operate the vehicle within the conditions that you observed from the Freeze Frame/Failure Records.</Li>
+								</OL>
+								<div>Did the DTC fail this ignition?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="6J2_1F12.en.html#J1F0INTER">"Intermittents"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn OFF the ignition.</Li>
+									<Li>Disconnect the fuse that supplies battery voltage to the heated oxygen sensor (HO2S) heater.</Li>
+									<Li>Disconnect the harness connector of the affected HO2S.</Li>
+									<Li>Measure the resistance of the battery voltage circuit of the HO2S heater from the fuse terminal to the harness connector terminal of the HO2S heater.</Li>
+								</OL>
+								<div>Is the resistance less than the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>3 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Start the engine.</Li>
+									<Li>Probe the control circuit of the HO2S heater with a test lamp connected to battery positive voltage.</Li>
+									<Li>Measure the voltage from the probe of the test lamp to a good ground.</Li>
+								</OL>
+								<div>Is the voltage less than the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>0.3 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Test the control circuit of the HO2S heater for high resistance.</div>
+								<div>Did you find and correct the condition?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Test for shorted terminals and poor connections at the HO2S.</div>
+								<div>Did you find and correct the condition?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Test for shorted terminals and poor connections at the engine control module (ECM).</div>
+								<div>Did you find and correct the condition?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Repair the high resistance in the battery voltage circuit of the HO2S heater.</div>
+								<div>Did you complete the repair?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the appropriate HO2S.</div>
+								<div>Did you complete the replacement?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the ECM.</div>
+								<div>Did you complete the replacement?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Clear the DTCs with a scan tool.</Li>
+									<Li>Turn OFF the ignition for 30 seconds.</Li>
+									<Li>Start the engine.</Li>
+									<Li>Operate the vehicle within the Conditions for Running the DTC. You may also operate the vehicle within the conditions that you observed from the Freeze Frame/Failure Records.</Li>
+								</OL>
+								<div>Did the DTC fail this ignition?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are there any DTCs that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to applicable DTC table</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="J3B11F28" src="../../../../graphic-pool/J/3B/1/J3B11F28.png"><BR><A target="_blank" href="../../../../graphic-pool/J/3B/1/J3B11F28.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="J1F0P0107"><font size="4"><b>Diagnostic Trouble Code (DTC) </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="J1F0MAPSL"><font size="4"><b>P0107 Manifold Absolute Pressure Sensor Low Voltage</b></font></DIV>
+<P></P>
+		
+		<P></P>
+<DIV align="center" id="J1F0MAPSL1"><font size="4"><b>P0108 Manifold Absolute Pressure Sensor High Voltage</b></font></DIV>
+<P></P>
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0CD1"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The engine control module (ECM) uses the Manifold Absolute Pressure (MAP) sensor to control the fuel delivery and the ignition timing. The MAP sensor measures the changes in the intake manifold pressure, which results from engine load (intake manifold vacuum) and the rpm changes; and converts these into voltage outputs. The ECM sends a 5 volt-reference voltage to the MAP sensor. As the manifold pressure changes, the output voltage of the MAP sensor also changes. By monitoring the MAP sensor output voltage, the ECM knows the manifold pressure. A low-pressure (low voltage) output voltage will be about 1.0 to 1.5 volts at idle, while higher pressure (high voltage) output voltage will be about 4.5 to 4.8 at wide open throttle (WOT). The MAP sensor is metric pressure, allowing the ECM to make adjustments for different altitudes.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0CRD1"><b>Conditions for Running the DTC</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">  <B>(P0107)</B>
+				</div>
+				<UL>
+					<Li>Engine stopped for more than 1.02 seconds.</Li>
+					<Li>No crank error exists.</Li>
+				</UL>
+				<div class="T1" align="left">or</div>
+				<UL>
+<Li>Engine idle.</Li>
+					<Li>No TP sensor and/or IAC valve (or MTIA) error exists.</Li>
+					<Li>Engine speed is less than 1216 rpm.</Li>
+					<Li>No TP sensor exists.</Li>
+					<Li>Engine speed is less than 4000 rpm.</Li>
+					<Li>Throttle position is higher than 15°.</Li>
+				</UL>
+				<div class="T1" align="left">  <B>(P0108)</B>
+				</div>
+				<UL>
+					<Li>Engine running.</Li>
+					<Li>Engine is idling for more than 2.49 seconds.</Li>
+					<Li>No TP sensor error exists.</Li>
+					<Li>Engine speed is between 1216 rpm and 3008 rpm.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0CSD1"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">  <B>(P0107)</B>
+				</div>
+				<UL>
+					<Li>Manifold Absolute Pressure (MAP) is less than 12 kPa (1.74 psi).</Li>
+				</UL>
+				<div class="T1" align="left">  <B>(P0108)</B>
+				</div>
+				<UL>
+					<Li>Manifold Absolute Pressure (MAP) is higher than 95 kPa (13.78 psi).</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0ATWD1"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The Malfunction Indicator Lamp (MIL) will illuminate.</Li>
+					<Li>The ECM will record operating conditions at the time the diagnostic fails. This information will be stored in the Freeze Frame and Failure Records buffers.</Li>
+					<Li>A history DTC is stored.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0CCM1"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The MIL will turn off at the end of a consecutive validation cycle in which the diagnostic runs without a fault.</Li>
+					<Li>A history DTC will clear after 40 consecutive warm-up cycles without a fault.</Li>
+					<Li>DTC(s) can be cleared by using the scan tool.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0DA1"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">With the ignition ON and the engine stopped, the manifold pressure is equal to atmosphere pressure and the signal voltage will be high.</div>
+				<div class="T1" align="left">The ECM as an indication of vehicle altitude uses this information. Comparison of this reading with a known good vehicle with the same sensor is a good way to check the accuracy of a suspect sensor. Readings should be the same ± 0.4volt.</div>
+				<div class="T1" align="left">If this DTC is intermittent, refer to  <A target="_blank" href="6J2_1F03.en.html#J1F0MAPC">"Manifold Absolute Pressure Check" </A>in this section for further diagnosis.</div>
+				<div class="T1" align="left">If the connections are OK, monitor the manifold absolute pressure (MAP) sensor signal voltage while moving related connectors and the wiring harness. If the failure is induced, the display on the scan tool will change. This may help to isolate the location of an intermittent malfunction.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="J1F0P01071"><font size="4"><b>DTC P0107 - Manifold Absolute Pressure Sensor Low Voltage</b></font></DIV>
+<P></P>
+		
+		
+			<P></P>
+<DIV align="center" id="J1F0P01081"><font size="4"><b>DTC P0108 - Manifold Absolute Pressure Sensor High Voltage</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform the Diagnostic System Check.</div>
+								<div>Is the system check complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="6J2_1F02.en.html#J1F0DSC">"Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Connect the scan tool to the data link connector (DLC).</Li>
+									<Li>Turn the ignition switch to ON.</Li>
+								</OL>
+								<div>Does the scan tool show the manifold absolute pressure (MAP) sensor voltage above the value specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>4V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Disconnect the the MAP sensor.</Li>
+									<Li>Apply 68 kPa (20 inHg) of vacuum to the MAP sensor.</Li>
+								</OL>
+								<div>Does the scan tool show the MAP sensor voltage within the value specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>1.0-1.5V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="6J2_1F02.en.html#J1F0DA">"Diagnostic Aids"</A>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Disconnect the MAP sensor connector.</Li>
+									<Li>Turn the ignition switch to ON.</Li>
+									<Li>Measure the voltage between the MAP sensor connector terminals A and C.</Li>
+								</OL>
+								<div>Does the voltage measure within the value specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>4.5-5.5V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Connect a fused jumper between the MAP sensor connector terminals B and C.</div>
+								<div>Does the scan tool show the MAP sensor voltage above the value specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>4V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Measure the voltage between the MAP sensor connector terminal A and ground.</div>
+								<div>Does the voltage measure within the value specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>4.5-5.5V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Check for an open, short to ground, or short to battery voltage in the wire between the MAP sensor connector terminal A and the ECM connector terminal 13.</Li>
+								</OL>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Check for an open, short to ground, or short to battery voltage in the wire between the MAP sensor connector terminal C and the ECM connector terminal 50.</Li>
+								</OL>
+								<div>Is the problem found ?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Check for an open, short to ground, or short to battery voltage in the wire between the MAP sensor connector terminal B and the ECM connector terminal 75.</Li>
+								</OL>
+								<div>Is the problem found ?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Repair the wire or the connector terminal as needed.</Li>
+									<Li>Clear any DTCs from the ECM.</Li>
+									<Li>Perform the diagnostic system check.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Replace the Manifold Absolute Pressure (MAP) sensor.</Li>
+									<Li>Clear any DTCs from the ECM.</Li>
+									<Li>Perform the diagnostic system check.</Li>
+								</OL>
+								<div>Is the replacement complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the ECM.</div>
+								<div>Is the replacement complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are any DTCs displaced that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to applicable DTC table</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="J3B11F51" src="../../../../graphic-pool/J/3B/1/J3B11F51.png"><BR><A target="_blank" href="../../../../graphic-pool/J/3B/1/J3B11F51.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="J1F0P0112"><font size="4"><b>Diagnostic Trouble Code (DTC) P0112
+
+ </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="J1F0IATSL"><font size="4"><b>Intake Air Temperature Sensor Low Voltage</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="J1F0CD2"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The Intake Air Temperature (IAT) Sensor uses a thermistor to control the signal voltage to the engine control module (ECM). The ECM supplies a 5 volt reference voltage and a ground to the sensor. When the air is cold, the resistance is high ; therefore IAT sensor signal voltage will be high. If the intake air is warm, resistance is low ; therefore the IAT sensor signal voltage will be low.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0CRD2"><b>Conditions for Running the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Ignition switch is ON.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0CSDT2"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>IAT voltage is less than 0.01V.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0ATWD2"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The Malfunction Indicator Lamp (MIL) will illuminate.</Li>
+					<Li>The ECM will record operating conditions at the time the diagnostic fail. This information will be stored in the Freeze Frame and Failure Records buffers.</Li>
+					<Li>A history DTC is stored.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0CCMD2"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The MIL will turn off at the end of three consecutive validation cycles in which the diagnostic runs without a fault.</Li>
+					<Li>A history DTC will clear after 40 warm up cycles without a fault.</Li>
+					<Li>DTC(s) can be cleared by using the scan tool.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0DA2"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<UL>
+<Li>If the vehicle is at ambient temperature, compare the IAT sensor to the engine coolant temperature(ECT) sensor. The IAT sensor and the ECT sensor should be relatively close to each other.</Li>
+					<Li>Use the temperature vs. Resistance Values table to evaluate the possibility of a skewed sensor. Refer to   <A target="_blank" href="6J2_1F0.en.html#J1F0TR">"Temperature vs. Resistance" </A>
+
+in this section.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="J1F0P01121"><font size="4"><b>DTC P0112 - Intake Air Temperature Sensor Low Voltage</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform the Diagnostic System Check.</div>
+								<div>Is the system check complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="6J2_1F02.en.html#J1F0DSC">"Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Connect the scan tool to the data link connector(DLC).</Li>
+									<Li>Run the engine until it reaches operating temperature.</Li>
+								</OL>
+								<div>Does the scan tool show the IAT sensor reading within the value specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>15~80°C (60~176°F)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="6J2_1F02.en.html#J1F0DA">"Diagnostic Aids"</A>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Disconnect the IAT sensor connector.</Li>
+									<Li>Turn the ignition switch to ON.</Li>
+								</OL>
+								<div>Does the scan tool show the IAT sensor reading below the value specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-30°C (-22°F)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for a faulty IAT sensor connector or connector terminals.</div>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for a short to ground in the wire between the IAT connector terminal 1 and the ECM connector terminal 78.</div>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for a short to 5V reference voltage in the wire between the IAT sensor connector terminal 2 and the ECM connector terminal 13.</div>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Repair the wire or the connector terminal as needed.</Li>
+									<Li>Clear any DTCs from the ECM.</Li>
+									<Li>Run the engine until it reaches operating temperature.</Li>
+									<Li>Perform the diagnostic system check.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Replace the IAT sensor.</Li>
+									<Li>Clear any DTCs from the ECM.</Li>
+									<Li>Run the engine until it reaches operating temperature.</Li>
+									<Li>Perform the diagnostic system check.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Replace the engine control module(ECM).</Li>
+									<Li>Run the engine until it reaches operating temperature.</Li>
+									<Li>Perform the diagnostic system check.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are any DTCs displaced that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to the applicable DTC table</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="J3B11F51" src="../../../../graphic-pool/J/3B/1/J3B11F51.png"><BR><A target="_blank" href="../../../../graphic-pool/J/3B/1/J3B11F51.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="J1F0P0113"><font size="4"><b>Diagnostic Trouble Code (DTC) P0113
+
+ </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="J1F0IATSH"><font size="4"><b>Intake Air Temperature Sensor High Voltage</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="J1F0CD3"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The Intake Air Temperature (IAT) Sensor uses a thermistor to control the signal voltage to the engine control module (ECM). The ECM supplies a 5 volt reference voltage and a ground to the sensor . when the air is cold, the resistance is high ; therefore IAT sensor signal voltage will be high. If the intake air is warm, resistance is low ; therefore the IAT sensor signal voltage will be low.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0CRD3"><b>Conditions for Running the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Ignition switch is ON.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0CSDT3"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>IAT voltage is less than 4.99V.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0ATWD3"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The Malfunction Indicator Lamp (MIL) will illuminate.</Li>
+					<Li>The ECM will record operating conditions at the time the diagnostic fails. This information will be stored in the Freeze Frame and Failure Records buffers.</Li>
+					<Li>A history DTC is stored.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0CCMD3"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The MIL will turn off at the end of three consecutive validation cycles in which the diagnostic runs without a fault.</Li>
+					<Li>A history DTC will clear after 40 warm up cycles without a fault.</Li>
+					<Li>DTC(s) can be cleared by using the scan tool.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0DA3"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>If the vehicle is at ambient temperature, compare the IAT sensor to the engine coolant temperature (ECT) sensor. The IAT sensor and the ECT sensor should be relatively close to each other.</Li>
+					<Li>Use the temperature vs. Resistance Values table to evaluate the possibility of a skewed sensor. Refer to   <A target="_blank" href="6J2_1F0.en.html#J1F0TR">"Temperature vs. Resistance" </A> in this section.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="J1F0P01131"><font size="4"><b>DTC P0113 - Intake Air Temperature Sensor High Voltage</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform the Diagnostic System Check.</div>
+								<div>Is the system check complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="6J2_1F02.en.html#J1F0DSC">"Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Connect the scan tool to the data link connector (DLC).</Li>
+									<Li>Run the engine unit it reaches operating temperature.</Li>
+								</OL>
+								<div>Does the scan tool show the intake air temperature (IAT) sensor reading within the value specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>15~80°C (60~176°F)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="6J2_1F02.en.html#J1F0DA">"Diagnostic Aids"</A>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Disconnect the IAT sensor connector.</Li>
+									<Li>Jumper the IAT sensor connector terminal 1 and 2.</Li>
+									<Li>Turn the ignition switch to ON.</Li>
+								</OL>
+								<div>Does the scan tool show the IAT sensor reading above the value specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>120°C (248°F)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for a faulty IAT sensor connector or connector terminals.</div>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Measure the voltage between the IAT sensor connector terminal 1 and 2.</div>
+								<div>Does the voltage measure within the value specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>4.5~5.5V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Measure the voltage between the IAT sensor connector terminal 1 and the ground.</div>
+								<div>Does the voltage measure within the value specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>4.5~5.5V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Check for an open or short to battery voltage in the wire between the IAT sensor connector terminal 2 and the ECM connector terminal 13.</Li>
+								</OL>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Check for an open or short to battery voltage in the wire between the IAT sensor connector terminal 1 and the ECM connector terminal 78.</Li>
+								</OL>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Replace the IAT sensor.</Li>
+									<Li>Clear any DTCs from the ECM.</Li>
+									<Li>Perform the diagnostic system check.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Repair the wire or the connector terminals as needed.</Li>
+									<Li>Clear any DTCs from the ECM.</Li>
+									<Li>Perform the diagnostic system check.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Replace the ECM.</Li>
+									<Li>Perform the diagnostic system check.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are any DTCs displaced that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to applicable DTC table</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="J3B11F52" src="../../../../graphic-pool/J/3B/1/J3B11F52.png"><BR><A target="_blank" href="../../../../graphic-pool/J/3B/1/J3B11F52.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="J1F0P0117"><font size="4"><b>Diagnostic Trouble Code (DTC) P0117 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="J1F0ECTSL"><font size="4"><b>Engine Coolant Temperature Sensor Low Voltage</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="J1F0CD4"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The Engine Coolant Temperature (ECT) sensor uses a thermistor to control the signal voltage to the engine control module (ECM).</div>
+				<div class="T1" align="left">The ECM supplies a voltage on the signal circuit to the sensor. When the engine coolant is cold, the resistance is high; therefore the ECT signal voltage will be high.</div>
+				<div class="T1" align="left">As the engine warms, the sensor resistance becomes low, and the voltage drops. At normal engine operating temperature, the voltage will be between 1.5 and 2.0 volts at the ECT signal terminal.</div>
+				<div class="T1" align="left">The ECT sensor is used to the following items:</div>
+				<UL>
+					<Li>Fuel delivery.</Li>
+					<Li>Lock Up Clutch (LUC).</Li>
+					<Li>Ignition.</Li>
+					<Li>Evaporative Emission (EVAP) Canister Purge Valve.</Li>
+					<Li>Electric cooling fan.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0CRD4"><b>Conditions for Running the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Ignition switch is ON.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0CSDT4"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>ECT voltage is less than 0.03V.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0ATWD4"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The Malfunction Indicator Lamp (MIL) will illuminate.</Li>
+					<Li>The ECM will record operating conditions at the time the diagnostic fails. This information will be stored in the Freeze Frame and Failure Records buffers.</Li>
+					<Li>A history DTC is stored.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0CCMD4"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The MIL will turn off at the end of a consecutive validation cycle in which the diagnostic runs without a fault.</Li>
+					<Li>A history DTC will clear after 40 warm-up cycles without a fault.</Li>
+					<Li>DTC(s) can be cleared by using the scan tool.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0DA4"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">After the engine has started, the ECT should rise steadily to about 90°C (194°F) then stabilize when the thermostat opens.</div>
+				<div class="T1" align="left">Use the temperature vs. Resistance values table to evaluate the possibility of a skewed sensor. Refer to   <A target="_blank" href="6J2_1F0.en.html#J1F0TR">"Temperature vs. Resistance" </A>in this section.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="J1F0P01171"><font size="4"><b>DTC P0117 - Engine Coolant Temperature Sensor Low Voltage</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform the Diagnostic System Check.</div>
+								<div>Is the system check complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="6J2_1F02.en.html#J1F0DSC">"Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Connect the scan tool to the data link connector(DLC).</Li>
+									<Li>Run the engine until it reaches operating temperature.</Li>
+								</OL>
+								<div>Does the scan tool show the ECT sensor reading within the value specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>80~110°C (176~230°F)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="6J2_1F02.en.html#J1F0DA">"Diagnostic Aids"</A>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Disconnect the ECT sensor connector.</Li>
+									<Li>Turn the ignition switch to ON.</Li>
+								</OL>
+								<div>Does the scan tool show the ECT sensor reading below the value specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-30°C (-22°F)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for a faulty ECT sensor connector or connector terminals.</div>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for a short to ground in the wire between the ECT connector terminal 1 and the ECM connector terminal 76.</div>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for a short to 5V reference voltage between the ECT sensor connector terminal 2 and the ECM connector terminal 19.</div>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Repair the wire or the connector terminal as needed.</Li>
+									<Li>Clear any DTCs from the ECM.</Li>
+									<Li>Run the engine until it reaches operating temperature.</Li>
+									<Li>Perform the diagnostic system check.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Replace the ECT sensor.</Li>
+									<Li>Clear any DTCs from the ECM.</Li>
+									<Li>Run the engine until it reaches operating temperature.</Li>
+									<Li>Perform the diagnostic system check.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Replace the engine control module(ECM).</Li>
+									<Li>Run the engine until it reaches operating temperature.</Li>
+									<Li>Perform the diagnostic system check.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are any DTCs displaced that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to the applicable DTC table</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="J3B11F52" src="../../../../graphic-pool/J/3B/1/J3B11F52.png"><BR><A target="_blank" href="../../../../graphic-pool/J/3B/1/J3B11F52.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="J1F0P0118"><font size="4"><b>Diagnostic Trouble Code (DTC) P0118 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="J1F0ECTSH"><font size="4"><b>Engine Coolant Temperature Sensor High Voltage</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="J1F0CD5"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The Engine Coolant Temperature (ECT) uses a thermistor to control the signal voltage to the engine control module (ECM).</div>
+				<div class="T1" align="left">The ECM supplies a voltage on the signal circuit to the sensor. When the engine coolant is cold, the resistance is high; therefore the ECT sensor signal voltage will be high.</div>
+				<div class="T1" align="left">As the engine warms, the sensor resistance becomes low, and the voltage drops. At normal engine operating temperature, the voltage will be between 1.5 and 2.0 volts at the ECT signal terminal.</div>
+				<div class="T1" align="left">The ECT sensor is used to the following items:</div>
+				<UL>
+					<Li>Fuel delivery.</Li>
+					<Li>Lock Up Clutch (LUC).</Li>
+					<Li>Ignition.</Li>
+					<Li>Evaporative Emission (EVAP) Canister Purge Valve.</Li>
+					<Li>Electric cooling fan.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0CRD5"><b>Conditions for Running the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Ignition switch is ON.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0CSDT5"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>ECT voltage is greater than 4.98V.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0ATWD5"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The Malfunction Indicator Lamp (MIL) will illuminate.</Li>
+					<Li>The ECM will record operating conditions at the time the diagnostic fails. This information will be stored in the Freeze Frame and Failure Records buffers.</Li>
+					<Li>A history DTC is stored.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0CCMD5"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The MIL will turn off at the end of a consecutive validation cycle in which the diagnostic runs without a fault.</Li>
+					<Li>A history DTC will clear after 40 warm-up cycles without a fault.</Li>
+					<Li>DTC(s) can be cleared by using the scan tool.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0DA5"><b>Diagnostic Aids</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">After the engine has started, the ECT should rise steadily to about 90°C (194°F) then stabilize when the thermostat opens.</div>
+				<div class="T1" align="left">Use the temperature vs. Resistance values table to evaluate the possibility of a skewed sensor. Refer to   <A target="_blank" href="6J2_1F0.en.html#J1F0TR">"Temperature vs. Resistance" </A>in this section.</div>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="J1F0P01181"><font size="4"><b>DTC P0118 - Engine Coolant Temperature Sensor High Voltage</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform the Diagnostic System Check.</div>
+								<div>Is the system check complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="6J2_1F02.en.html#J1F0DSC">"Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Connect the scan tool to the data link connector (DLC).</Li>
+									<Li>Run the engine unit it reaches operating temperature.</Li>
+								</OL>
+								<div>Does the scan tool show the ECT sensor reading within the value specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>80~110°C (176~230°F)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="6J2_1F02.en.html#J1F0DA">"Diagnostic Aids"</A>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Disconnect the ECT sensor connector.</Li>
+									<Li>Jumper the ECT sensor connector terminal 1 and 2.</Li>
+									<Li>Turn the ignition switch to ON.</Li>
+								</OL>
+								<div>Does the scan tool show the ECT sensor reading above the value specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>120°C (248°F)</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check for a faulty ECT sensor connector or connector terminals.</div>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Measure the voltage between the ECT sensor connector terminal 1 and 2.</div>
+								<div>Does the voltage measure within the value specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>4.5~5.5V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Measure the voltage between the ECT sensor connector terminal 1 and the ground.</div>
+								<div>Does the voltage measure within the value specified?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>4.5~5.5V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Check for an open or short to battery voltage in the wire between the ECT sensor connector terminal 2 and the ECM connector terminal 19.</Li>
+								</OL>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Check for an open or short to battery voltage in the wire between the ECT sensor connector terminal 1 and the ECM connector terminal 76.</Li>
+								</OL>
+								<div>Is the problem found?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Replace the ECT sensor.</Li>
+									<Li>Clear any DTCs from the ECM.</Li>
+									<Li>Perform the diagnostic system check.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Turn the ignition switch to LOCK.</Li>
+									<Li>Repair the wire or the connector terminals as needed.</Li>
+									<Li>Clear any DTCs from the ECM.</Li>
+									<Li>Perform the diagnostic system check.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Replace the ECM.</Li>
+									<Li>Perform the diagnostic system check.</Li>
+								</OL>
+								<div>Is the repair complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are any DTCs displaced that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to applicable DTC table</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="J3B11F30" src="../../../../graphic-pool/J/3B/1/J3B11F30.png"><BR><A target="_blank" href="../../../../graphic-pool/J/3B/1/J3B11F30.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="J1F0P0122"><font size="4"><b>Diagnostic Trouble Code (DTC) P0122 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="J1F0TPSLV"><font size="4"><b>Throttle Position Sensor Low Voltage
+
+</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="J1F0CD6"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The Engine Control Module (ECM) supplies a 5 volt reference voltage signal and a ground to the Throttle Position (TP) sensor. The TP sensor sends a voltage signal back to the ECM relative to the throttle plate opening. The voltage signal will vary from approximately 0.33 volts at closed throttle, to over 4.3 volts at Wide Open Throttle (WOT).</div>
+				<div class="T1" align="left">The TP signal is used by the ECM for fuel control and for most of the ECM controlled outputs. The TP signal is one of the most important inputs used by the ECM for fuel control and most of the ECM controlled outputs.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0CRD6"><b>Conditions for Running the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Ignition switch is ON.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0CSD6"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Throttle Position (TP) sensor signal voltage is less than 0.3V.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0ATWD6"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The Malfunction Indicator Lamp (MIL) will illuminate.</Li>
+					<Li>The ECM will record operating conditions at the time the diagnostic fails. The information will be stored in the freeze frame and failure records buffers.</Li>
+					<Li>A history DTC is stored.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0CCM6"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The MIL will turn off at the end of a consecutive validation cycle in which the diagnostic runs without a fault.</Li>
+					<Li>A history DTC will clear after 40 warm up cycles without a fault.</Li>
+					<Li>DTC(s) can be cleared by using the scan tool.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="JT1F0TD"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The number(s) below refer to step(s) on the diagnostic table.</div>
+				<OL>
+<Li value="3">If the DTC cannot be duplicated, the information included in the Freeze Frame data can be useful. Use the scan tool information to determine the status of the DTC. If the DTC occurs intermittently, using intermittents may isolate the condition.</Li>
+					<Li value="4">This step determines if there is a short to ground or an open condition in the circuits.</Li>
+					<Li value="7">The 5-volt reference circuits are internally and externally connected at the controller. Other sensors that share the 5-volt reference circuit may also have DTCs set. Disconnecting a sensor on the shared 5-volt reference circuit may isolate a shorted sensor. Review the electrical schematic and diagnose the shared circuits and sensors.</Li>
+					<Li value="9">The ECM and/or the TP sensor may be damaged if the low reference circuit is shorted to battery positive voltage.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="J1F0P01221"><font size="4"><b>DTC P0122 - Throttle Position Sensor Low Voltage</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform the Diagnostic System Check.</div>
+								<div>Is the system check complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="6J2_1F02.en.html#J1F0DSC">"Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Turn ON the ignition, with the engine OFF.</Li>
+									<Li>Depress the accelerator pedal to the wide open throttle (WOT) position while monitoring the throttle position (TP) angle on the scan tool.</Li>
+								</OL>
+								<div>Does the TP sensor angle increase from below the first specified value to above the second specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>15%</div>
+							<div>85%</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Observe the Freeze Frame/Failure Records for this DTC.</Li>
+									<Li>Turn OFF the ignition for 30 seconds.</Li>
+									<Li>Start the engine.</Li>
+									<Li>Operate the vehicle within the Conditions for Running the DTC. You may also operate the vehicle within the conditions that you observed from the Freeze Frame/Failure Records.</Li>
+								</OL>
+								<div>Did the DTC fail this ignition?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="6J2_1F12.en.html#J1F0INTER">"Intermittents"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Turn OFF the ignition.</Li>
+									<Li>Disconnect the  MTIA connector.</Li>
+									<Li>Turn ON the ignition, with the engine OFF.</Li>
+									<Li>Measure the voltage from the 5-volt reference circuit of the TP sensor to a good ground with a DMM.</Li>
+								</OL>
+								<div>Is the voltage more than the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>4.8 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Connect a 3-amp fused jumper wire between the 5-volt reference circuit and the signal circuit of the TP sensor.</Li>
+									<Li>Observe the TP sensor percentage parameter with a scan tool.</Li>
+								</OL>
+								<div>Is the percentage more than the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>85%</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Measure the resistance between the low reference circuit of the TP sensor and the engine control module (ECM) housing with a DMM.</div>
+								<div>Is the resistance less than the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>2 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Test the 5-volt reference circuit of the TP sensor for the following conditions:</div>
+								<UL>
+<Li>An open</Li>
+									<Li>A short to ground</Li>
+									<Li>High resistance</Li>
+								</UL>
+								<div>Did you find and correct the condition?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Test the signal circuit of the TP sensor for the following conditions:</div>
+								<UL>
+<Li>An open</Li>
+									<Li>A short to ground</Li>
+									<Li>High resistance</Li>
+								</UL>
+								<div>Did you find and correct the condition?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Test the low reference circuit of the TP sensor for the following conditions:</div>
+								<UL>
+<Li>An open</Li>
+									<Li>High resistance</Li>
+									<Li>A short to voltage</Li>
+								</UL>
+								<div>Did you find and correct the condition?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Test for an intermittent and for a poor connection at the MTIA.</div>
+								<div>Did you find and correct the condition?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Test for an intermittent and for a poor connection at the ECM.</div>
+								<div>Did you find and correct the condition?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the MTIA.</div>
+								<div>Did you complete the replacement?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the ECM.</div>
+								<div>Did you complete the replacement?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Clear the DTCs with a scan tool.</Li>
+									<Li>Turn OFF the ignition for 30 seconds.</Li>
+									<Li>Start the engine.</Li>
+									<Li>Operate the vehicle within the Conditions for Running the DTC. You may also operate the vehicle within the conditions that you observed from the Freeze Frame/Failure Records.</Li>
+								</OL>
+								<div>Did the DTC fail this ignition?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 15</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are there any DTCs that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to applicable DTC table</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	
+		<BR><div align="center">
+<IMG alt="J3B11F30" src="../../../../graphic-pool/J/3B/1/J3B11F30.png"><BR><A target="_blank" href="../../../../graphic-pool/J/3B/1/J3B11F30.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+</div>
+<BR>
+		<P></P>
+<DIV align="center" id="J1F0P0123"><font size="4"><b>Diagnostic Trouble Code (DTC) P0123 </b></font></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="J1F0TPSHV"><font size="4"><b>Throttle Position Sensor High Voltage</b></font></DIV>
+		
+			<P></P>
+<DIV align="left" id="J1F0CD7"><b>Circuit Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The Engine Control Module (ECM) supplies a 5 volt reference voltage signal and a ground to the Throttle Position (TP) sensor. The TP sensor sends a voltage signal back to the ECM relative to the throttle plate opening. The voltage signal will vary from approximately 0.33 volts at closed throttle, to over 4.3 volts at Wide Open Throttle (WOT).</div>
+				<div class="T1" align="left">The TP signal is used by the ECM for fuel control and for most of the ECM controlled outputs. The TP signal is one of the most important inputs used by the ECM for fuel control and most of the ECM controlled outputs.</div>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0CRD7"><b>Conditions for Running the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Ignition switch is ON.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0CSD7"><b>Conditions for Setting the DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>Throttle Position (TP) sensor signal voltage is higher than or 4.9V.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0ATWD7"><b>Action Taken When the DTC Sets</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The Malfunction Indicator Lamp (MIL) will illuminate.</Li>
+					<Li>The ECM will record operating conditions at the time the diagnostic fails. The information will be stored in the freeze frame and failure records buffers.</Li>
+					<Li>A history DTC is stored.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="J1F0CCM7"><b>Conditions for Clearing the MIL/DTC</b></DIV>
+<P></P>
+			
+				<UL>
+					<Li>The MIL will turn off at the end of a consecutive validation cycle in which the diagnostic runs without a fault.</Li>
+					<Li>A history DTC will clear after 40 warm up cycles without a fault.</Li>
+					<Li>DTC(s) can be cleared by using the scan tool.</Li>
+				</UL>
+			
+		
+		
+			<P></P>
+<DIV align="left" id="JT1F0TD7"><b>Test Description</b></DIV>
+<P></P>
+			
+				<div class="T1" align="left">The number(s) below refer to step(s) on the diagnostic table.</div>
+				<OL>
+<Li value="4">This step determines if there is a short to voltage or an open condition in the circuits.</Li>
+					<Li value="8">The engine control module (ECM) and TP sensor may be damaged if the circuit is shorted to battery positive voltage.</Li>
+					<Li value="9">This step determines if the circuit has a short to voltage. A short to voltage can cause multiple DTCs to set. The 5-volt reference circuits are internally and externally connected at the controller. Other sensors that share the 5-volt reference circuit may also have DTCs set. Disconnecting a sensor on the shared 5-volt reference circuit may isolate a shorted sensor. Review the electrical schematic and diagnose the shared circuits and sensors.</Li>
+				</OL>
+			
+		
+		
+			<P></P>
+<DIV align="center" id="J1F0P01231"><font size="4"><b>DTC P0123 - Throttle Position Sensor High Voltage</b></font></DIV>
+<P></P>
+			
+				<TABLE border="1" width="100%" cellspacing="0">
+<THEAD bgcolor="eeeeee"><TR>
+<TD align="center"><B>Step</B></TD>
+<TD align="center"><B>Action</B></TD>
+<TD align="center"><B>Value(s)</B></TD>
+<TD align="center"><B>Yes</B></TD>
+<TD align="center"><B>No</B></TD>
+</TR></THEAD>
+<TBODY>
+					<TR>
+						<TD valign="middle" align="center" width="6%">1</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Perform the Diagnostic System Check.</div>
+								<div>Is the system check complete?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="6J2_1F02.en.html#J1F0DSC">"Diagnostic System Check"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">2</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Start the engine.</Li>
+									<Li>Allow the engine to idle.</Li>
+									<Li>Observe the TP sensor percentage parameter with a scan tool.</Li>
+								</OL>
+								<div>Is the percentage more than the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>15%</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 3</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">3</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Observe the Freeze Frame/Failure Records for this DTC.</Li>
+									<Li>Turn OFF the ignition for 30 seconds.</Li>
+									<Li>Start the engine.</Li>
+									<Li>Operate the vehicle within the Conditions for Running the DTC. You may also operate the vehicle within the conditions that you observed from the Freeze Frame/Failure Records.</Li>
+								</OL>
+								<div>Did the DTC fail this ignition?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 4</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <A target="_blank" href="6J2_1F12.en.html#J1F0INTER">"Intermittents"</A>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">4</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+<Li>Turn OFF the ignition.</Li>
+									<Li>Disconnect the MTIA connector.</Li>
+									<Li>Turn ON the ignition, with the engine OFF.</Li>
+									<Li>Observe the TP sensor percentage parameter with a scan tool.</Li>
+								</OL>
+								<div>Is the percentage less than the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>15%</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 5</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 7</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">5</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Measure the voltage from the 5-volt reference circuit of the TP sensor to a good ground.</div>
+								<div>Does the voltage measure more than the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>5.2 V</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 9</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 6</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">6</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Measure the resistance between the low reference circuit of the TP sensor and the engine control module (ECM) housing with a DMM.</div>
+								<div>Is the resistance less than the specified value?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>2 Ω</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 10</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 8</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">7</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Test the signal circuit of the TP sensor for a short to voltage.</div>
+								<div>Did you find and correct the condition?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">8</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Test the low reference circuit of the TP sensor for the following conditions:</div>
+								<UL>
+<Li>A short to voltage</Li>
+									<Li>An open</Li>
+									<Li>High resistance</Li>
+								</UL>
+								<div>Did you find and correct the condition?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">9</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Test the 5-volt reference circuit of the TP sensor for a short to voltage.</div>
+								<div>Did you find and correct the condition?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 11</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">10</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Test for an intermittent and for a poor connection at the MTIA.</div>
+								<div>Did you find and correct the condition?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 12</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">11</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Test for an intermittent and for a poor connection at the ECM.</div>
+								<div>Did you find and correct the condition?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 13</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">12</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the MTIA.</div>
+								<div>Did you complete the replacement?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">13</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Replace the ECM.</div>
+								<div>Did you complete the replacement?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 14</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>-</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">14</TD>
+						<TD width="49%" valign="top">
+							
+								<OL>
+									<Li>Clear the DTCs with a scan tool.</Li>
+									<Li>Turn OFF the ignition for 30 seconds.</Li>
+									<Li>Start the engine.</Li>
+									<Li>Operate the vehicle within the Conditions for Running the DTC. You may also operate the vehicle within the conditions that you observed from the Freeze Frame/Failure Records.</Li>
+								</OL>
+								<div>Did the DTC fail this ignition?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 2</I>
+							</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to   <I>Step 15</I>
+							</div>
+						</TD>
+					</TR>
+					<TR>
+						<TD valign="middle" align="center" width="6%">15</TD>
+						<TD width="49%" valign="top">
+							
+								<div>Check if any additional DTCs are set.</div>
+								<div>Are there any DTCs that have not been diagnosed?</div>
+							
+						</TD>
+						<TD valign="middle" align="center" width="15%">
+							<div>-</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>Go to applicable DTC table</div>
+						</TD>
+						<TD valign="bottom" align="center" width="15%">
+							<div>System OK</div>
+						</TD>
+					</TR>
+				</TBODY>
+</TABLE>
+			
+		
+	
+	<BR><BR><TABLE align="center"><TR>
+<TD align="left"><A href="6J2_1F03.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="To Previous Page"></A></TD>
+<TD align="left"></TD>
+<TD align="left"><A href="6J2_1F05.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="To Next Page"></A></TD>
+<TD></TD>
+</TR></TABLE>
+<TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright General Motors Chevrolet Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>
